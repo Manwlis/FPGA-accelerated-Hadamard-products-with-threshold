@@ -51,7 +51,7 @@ int main(int argc, char ** argv)
 	printf("Seed %u\nSize %u\nDimension %u\nThreshold %f\n", seed, size, dim, threshold);
 	fflush(stdout);	
 
-	// data0: dim*dim
+	// data0: dim*dim*
 	dataType_t * data0 = (dataType_t *)malloc(sizeof(dataType_t)*dim*dim);
 	assert(data0!=NULL);
 
@@ -82,10 +82,6 @@ int main(int argc, char ** argv)
 	dataType_t * data2_sw = (dataType_t *)malloc(sizeof(dataType_t)*dim*size);
 	assert(data2_sw!=NULL);
 
-
-	printf("Calling myFunc... ");
-	fflush(stdout);
-
 	/* timing */
 	double totalTime_sw=0.0;
 	struct timespec timerStart_sw;
@@ -100,9 +96,29 @@ int main(int argc, char ** argv)
 
 	printf("Software execution time: %f\n", totalTime_sw);
 
-	printf("DONE\n");
-	fflush(stdout);
 
+	// ektypwsh apotelesmatwn gia elenxo or8othtas
+	int j;
+	for(i = 0; i < size; i++){
+		for(j = 0; j < dim; j++){
+			printf("%.1f ", data0[i*j]);
+		}
+		printf("\n");
+	}
+	printf("\n");	
+	for(i = 0; i < size; i++){
+		for(j = 0; j < dim; j++){
+			printf("%.1f ", data1[i*j]);
+		}
+		printf("\n");
+	}
+	printf("\n");
+	for(i = 0; i < size; i++){
+		for(j = 0; j < dim; j++){
+			printf("%6.2f ", data2_sw[i*j]);
+		}
+		printf("\n");
+	}
 
 	/******************************/
 	/* Part 2: Hardware Execution */
@@ -126,13 +142,6 @@ int main(int argc, char ** argv)
 	// totalTime_hw = (timerStop_hw.tv_sec-timerStart_hw.tv_sec)+ (timerStop_hw.tv_nsec-timerStart_hw.tv_nsec) / BILLION;
 
 	// printf("Hardware execution time: %f\n", totalTime_hw);
-
-
-
-
-
-
-
 
 
 
