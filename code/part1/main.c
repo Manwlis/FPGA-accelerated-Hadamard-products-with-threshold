@@ -30,6 +30,7 @@ void myFunc (unsigned int size, unsigned int dim, dataType_t threshold, dataType
 	}
 }
 
+
 int main(int argc, char ** argv)
 {
 	unsigned int i;
@@ -51,7 +52,7 @@ int main(int argc, char ** argv)
 	printf("Seed %u\nSize %u\nDimension %u\nThreshold %f\n", seed, size, dim, threshold);
 	fflush(stdout);	
 
-	// data0: dim*dim
+	// data0: dim*dim*
 	dataType_t * data0 = (dataType_t *)malloc(sizeof(dataType_t)*dim*dim);
 	assert(data0!=NULL);
 
@@ -72,7 +73,6 @@ int main(int argc, char ** argv)
 		dataType_t d = ((float)(rand()%10))/10;
 		data1[i] = t+d;
 	}
-
 
 
 	/****************************************/
@@ -96,6 +96,30 @@ int main(int argc, char ** argv)
 	totalTime_sw = (timerStop_sw.tv_sec-timerStart_sw.tv_sec)+ (timerStop_sw.tv_nsec-timerStart_sw.tv_nsec) / BILLION;
 
 	printf("Software execution time: %f\n", totalTime_sw);
+
+	// ektypwsh apotelesmatwn gia elenxo or8othtas
+	int j;
+	for(i = 0; i < size; i++){
+		for(j = 0; j < dim; j++){
+			printf("%.1f ", data0[i*j]);
+		}
+		printf("\n");
+	}
+	printf("\n");	
+	for(i = 0; i < size; i++){
+		for(j = 0; j < dim; j++){
+			printf("%.1f ", data1[i*j]);
+		}
+		printf("\n");
+	}
+	printf("\n");
+	for(i = 0; i < size; i++){
+		for(j = 0; j < dim; j++){
+			printf("%6.2f ", data2_sw[i*j]);
+		}
+		printf("\n");
+	}
+
 
 	/******************************/
 	/* Part 2: Hardware Execution */
@@ -124,7 +148,7 @@ int main(int argc, char ** argv)
 	free(data0);
 	free(data1);
 	free(data2_sw);
-	// free(data2_hw);
+	free(data2_hw);
 
 	return 0;
 }

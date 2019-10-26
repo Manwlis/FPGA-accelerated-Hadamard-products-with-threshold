@@ -5,7 +5,6 @@
 #include <stdlib.h>
 #include <time.h>
 #include <assert.h>
-#include <time.h>
 
 #define BILLION 1E9
 
