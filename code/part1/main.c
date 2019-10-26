@@ -79,12 +79,9 @@ int main(int argc, char ** argv)
 	/* Part 1: Reference Software Execution */
 	/****************************************/
 
+	// data2: dim*size
 	dataType_t * data2_sw = (dataType_t *)malloc(sizeof(dataType_t)*dim*size);
 	assert(data2_sw!=NULL);
-
-
-	printf("Calling myFunc... ");
-	fflush(stdout);
 
 	/* timing */
 	double totalTime_sw=0.0;
@@ -100,40 +97,28 @@ int main(int argc, char ** argv)
 
 	printf("Software execution time: %f\n", totalTime_sw);
 
-	printf("DONE\n");
-	fflush(stdout);
-
-
 	/******************************/
 	/* Part 2: Hardware Execution */
 	/******************************/
 
-	// // data2: dim*size
-	// dataType_t * data2 = (dataType_t *)malloc(sizeof(dataType_t)*dim*size);
-	// assert(data2!=NULL);
+	// data2: dim*size
+	dataType_t * data2_hw = (dataType_t *)malloc(sizeof(dataType_t)*dim*size);
+	assert(data2_hw!=NULL);
 
+	/* timing */
+	double totalTime_hw=0.0;
+	struct timespec timerStart_hw;
+	struct timespec timerStop_hw;
 
-
-	// /* timing */
-	// double totalTime_hw=0.0;
-	// struct timespec timerStart_hw;
-	// struct timespec timerStop_hw;
-
-	// clock_gettime(CLOCK_REALTIME, &timerStart_hw);
+	clock_gettime(CLOCK_REALTIME, &timerStart_hw);
 	
+	// klhsh accelerator
+	myFuncAccel(size, dim, threshold, data0, data1, data2_hw);
 
-	// clock_gettime(CLOCK_REALTIME, &timerStop_hw);
-	// totalTime_hw = (timerStop_hw.tv_sec-timerStart_hw.tv_sec)+ (timerStop_hw.tv_nsec-timerStart_hw.tv_nsec) / BILLION;
+	clock_gettime(CLOCK_REALTIME, &timerStop_hw);
+	totalTime_hw = (timerStop_hw.tv_sec-timerStart_hw.tv_sec)+ (timerStop_hw.tv_nsec-timerStart_hw.tv_nsec) / BILLION;
 
-	// printf("Hardware execution time: %f\n", totalTime_hw);
-
-
-
-
-
-
-
-
+	printf("Hardware execution time: %f\n", totalTime_hw);
 
 
 	free(data0);
