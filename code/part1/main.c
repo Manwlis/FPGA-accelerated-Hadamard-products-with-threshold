@@ -1,4 +1,5 @@
 #include "myLib.h"
+#include "myIP.c"  // na fhgei sto hls
 
 void myFunc (unsigned int size, unsigned int dim, dataType_t threshold, dataType_t * data0, dataType_t * data1, dataType_t * data2)
 {
@@ -20,6 +21,9 @@ void myFunc (unsigned int size, unsigned int dim, dataType_t threshold, dataType
 		// threshold
 		for ( l = 0 ; r && ( l < dim ) ; l ++ ) {
 			r = ( data2 [ i*dim + l ] > threshold ) ;
+
+			// printf("%d, %f > %f\n", r, data2[ i*dim + l ], threshold); gia na dw pws douleuei
+
 		}
 		// mhdenismos an einai panw apo to threshold
 		if ( r ) {
@@ -33,7 +37,9 @@ void myFunc (unsigned int size, unsigned int dim, dataType_t threshold, dataType
 
 int main(int argc, char ** argv)
 {
-	unsigned int i;
+	unsigned int i,j;
+
+	assert(argc==5);
 
 	unsigned int seed = (unsigned int)atoi(argv[1]);
 	assert(seed>=0);
@@ -97,29 +103,6 @@ int main(int argc, char ** argv)
 
 	printf("Software execution time: %f\n", totalTime_sw);
 
-	// ektypwsh apotelesmatwn gia elenxo or8othtas
-	int j;
-	for(i = 0; i < size; i++){
-		for(j = 0; j < dim; j++){
-			printf("%.1f ", data0[i*j]);
-		}
-		printf("\n");
-	}
-	printf("\n");	
-	for(i = 0; i < size; i++){
-		for(j = 0; j < dim; j++){
-			printf("%.1f ", data1[i*j]);
-		}
-		printf("\n");
-	}
-	printf("\n");
-	for(i = 0; i < size; i++){
-		for(j = 0; j < dim; j++){
-			printf("%6.2f ", data2_sw[i*j]);
-		}
-		printf("\n");
-	}
-
 
 	/******************************/
 	/* Part 2: Hardware Execution */
@@ -143,6 +126,60 @@ int main(int argc, char ** argv)
 	totalTime_hw = (timerStop_hw.tv_sec-timerStart_hw.tv_sec)+ (timerStop_hw.tv_nsec-timerStart_hw.tv_nsec) / BILLION;
 
 	printf("Hardware execution time: %f\n", totalTime_hw);
+
+
+
+
+
+	/******************************/
+	/* Elenxos or8othtas			*/
+	/******************************/
+
+
+	// eisodoi
+	printf("\ndata0\n");
+	for(i = 0; i < size; i++){
+		for(j = 0; j < dim; j++){
+			printf("%.1f ", data0[i*j]);
+		}
+		printf("\n");
+	}
+	printf("\ndata1\n");
+	for(i = 0; i < size; i++){
+		for(j = 0; j < dim; j++){
+			printf("%.1f ", data1[i*j]);
+		}
+		printf("\n");
+	}
+
+	// eksodos sw
+	printf("\ndata2_sw\n");
+	for(i = 0; i < size; i++){
+		for(j = 0; j < dim; j++){
+			printf("%6.2f ", data2_sw[i*dim + j]);
+		}
+		printf("\n");
+	}
+
+	// eksodos hw
+	printf("\ndata2_hw\n");
+	for(i = 0; i < size; i++){
+		for(j = 0; j < dim; j++){
+			printf("%6.2f ", data2_hw[i*dim + j]);
+		}
+		printf("\n");
+	}
+
+	// sigkrishs apotelesmatwn
+	printf("\n\n");
+	for(i = 0; i < size; i++){
+		for(j = 0; j < dim; j++){
+			if(data2_hw[i*dim + j] != data2_sw[i*dim + j]) // sprintf gia stroggulopoihsh, oi float logika 8a exoun la8oi
+				printf("error pos %d: sw = %6.2f, hw =  %6.2f\n", i*dim + j, data2_sw[i*dim + j], data2_hw[i*dim + j]);
+		}
+	}
+
+
 
 
 	free(data0);
