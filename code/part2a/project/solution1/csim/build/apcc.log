@@ -1,0 +1,6 @@
+INFO: [HLS 200-10] Running '/run/media/epetrakos/60GB/Xilinx/Vivado/2019.1/bin/unwrapped/lnx64.o/apcc'
+INFO: [HLS 200-10] For user 'epetrakos' on host 'tower-pc' (Linux_x86_64 version 5.2.21-1-MANJARO) on Mon Oct 28 17:59:14 EET 2019
+INFO: [HLS 200-10] On os "Manjaro Linux"
+INFO: [HLS 200-10] In directory '/home/epetrakos/Documents/GitHub/HRY591-project/code/part2a/project/solution1/csim/build'
+INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_epetrakos/211031572278354894310
+INFO: [APCC 202-1] APCC is done.

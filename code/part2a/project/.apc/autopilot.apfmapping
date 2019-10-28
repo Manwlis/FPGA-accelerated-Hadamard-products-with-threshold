@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="myIP.c" path="/home/epetrakos/Documents/GitHub/HRY591-project/code/part2a/myIP.c"/>
+  </source>
+  <testbench>
+    <originFiles name="main.c" path="/home/epetrakos/Documents/GitHub/HRY591-project/code/part2a/main.c"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>
