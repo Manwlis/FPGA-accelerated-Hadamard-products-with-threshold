@@ -20,6 +20,7 @@ void myFunc (unsigned int size, unsigned int dim, dataType_t threshold, dataType
 		int r = 1 ;
 		// threshold
 		for ( l = 0 ; r && ( l < dim ) ; l ++ ) {
+
 			r = ( data2 [ i*dim + l ] > threshold ) ;
 		}
 		// mhdenismos an einai panw apo to threshold
@@ -93,7 +94,11 @@ int main(int argc, char ** argv)
 
 	clock_gettime(CLOCK_REALTIME, &timerStart_sw);
 
-	myFunc(size, dim, threshold, data0, data1, data2_sw);
+	if( dim == 4 )
+		myFunc4(size, dim, threshold, data0, data1, data2_sw);
+	else
+		myFunc16(size, dim, threshold, data0, data1, data2_sw);
+
 
 	clock_gettime(CLOCK_REALTIME, &timerStop_sw);
 	totalTime_sw = (timerStop_sw.tv_sec-timerStart_sw.tv_sec)+ (timerStop_sw.tv_nsec-timerStart_sw.tv_nsec) / BILLION;
@@ -129,40 +134,23 @@ int main(int argc, char ** argv)
 	/* Elenxos or8othtas			*/
 	/******************************/
 
-//	// print inputs
-//	printf("\ndata0\n");
-//	for(i = 0; i < size; i++){
-//		for(j = 0; j < dim; j++){
-//			printf("%.1f ", data0[i*j]);
-//		}
-//		printf("\n");
-//	}
-//	printf("\ndata1\n");
-//	for(i = 0; i < size; i++){
-//		for(j = 0; j < dim; j++){
-//			printf("%.1f ", data1[i*j]);
-//		}
-//		printf("\n");
-//	}
-//
-//	// print sw output
-//	printf("\ndata2_sw\n");
-//	for(i = 0; i < size; i++){
-//		for(j = 0; j < dim; j++){
-//			printf("%6.2f ", data2_sw[i*dim + j]);
-//		}
-//		printf("\n");
-//	}
-//
-//	// print hw output
-//	printf("\ndata2_hw\n");
-//	for(i = 0; i < size; i++){
-//		for(j = 0; j < dim; j++){
-//			printf("%6.2f ", data2_hw[i*dim + j]);
-//		}
-//		printf("\n");
-//	}
+/*	// print sw output
+	printf("\ndata2_sw\n");
+	for(i = 0; i < size; i++){
+		for(j = 0; j < dim; j++){
+			printf("%6.2f ", data2_sw[i*dim + j]);
+		}
+		printf("\n");
+	}
 
+	// print hw output
+	printf("\ndata2_hw\n");
+	for(i = 0; i < size; i++){
+		for(j = 0; j < dim; j++){
+			printf("%6.2f ", data2_hw[i*dim + j]);
+		}
+		printf("\n");
+	}*/
 	printf("\n");
 
 	// compare outputs
@@ -176,7 +164,7 @@ int main(int argc, char ** argv)
 			sprintf(string_sw, "%.2f", data2_sw[i*dim + j]);
 			// sprintf outputs strings. Need strcmp
 			if(strcmp(string_hw, string_sw) != 0){
-				printf("error pos %d: sw = %s, hw =  %s\n", i*dim + j, string_hw, string_sw);
+				printf("error pos %d: hw = %s, sw =  %s\n", i*dim + j, string_hw, string_sw);
 				flag = 0;
 			}
 		}

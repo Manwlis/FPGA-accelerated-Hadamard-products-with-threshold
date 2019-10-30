@@ -129,22 +129,6 @@ int main(int argc, char ** argv)
 	/* Elenxos or8othtas			*/
 	/******************************/
 
-//	// print inputs
-//	printf("\ndata0\n");
-//	for(i = 0; i < size; i++){
-//		for(j = 0; j < dim; j++){
-//			printf("%.1f ", data0[i*j]);
-//		}
-//		printf("\n");
-//	}
-//	printf("\ndata1\n");
-//	for(i = 0; i < size; i++){
-//		for(j = 0; j < dim; j++){
-//			printf("%.1f ", data1[i*j]);
-//		}
-//		printf("\n");
-//	}
-//
 //	// print sw output
 //	printf("\ndata2_sw\n");
 //	for(i = 0; i < size; i++){
@@ -169,9 +153,11 @@ int main(int argc, char ** argv)
 	char string_hw[7], string_sw[7];
 	int flag = 1;
 
+
+/*	Ta apotelesmata exoun mexri 2 xrhsima dekadika pshfia. Gia na apofigw la8os arnhtika match kanw stroggulopoihsh.	*/
 	for(i = 0; i < size; i++){
 		for(j = 0; j < dim; j++){
-			// 2 decimal places needed. Use sprintf for rounding
+			// sprintf for rounding
 			sprintf(string_hw, "%.2f", data2_hw[i*dim + j]);
 			sprintf(string_sw, "%.2f", data2_sw[i*dim + j]);
 			// sprintf outputs strings. Need strcmp
