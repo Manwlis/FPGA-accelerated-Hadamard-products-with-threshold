@@ -1,4 +1,6 @@
 main.c
+include myIP.c
+asserts
 xronometrhsh hw/sw
 ektypwsh eisodwn/eksodwn
 sugkrish eksodwn
