@@ -1,5 +1,4 @@
 #include "myLib.h"
-#include "myIP.c"
 
 
 void myFunc (unsigned int size, unsigned int dim, dataType_t threshold, dataType_t * data0, dataType_t * data1, dataType_t * data2)
@@ -123,8 +122,8 @@ int main(int argc, char ** argv)
 	// klhsh accelerators
 	if( dim == 4 )
 		myFuncAccel4(size, dim, threshold, data0, data1, data2_hw);
-	else
-		myFuncAccel16(size, dim, threshold, data0, data1, data2_hw);
+	//else
+		//myFuncAccel16(size, dim, threshold, data0, data1, data2_hw);
 	//myFuncAccelGeneric(size, dim, threshold, data0, data1, data2_hw);
 
 	clock_gettime(CLOCK_REALTIME, &timerStop_hw);

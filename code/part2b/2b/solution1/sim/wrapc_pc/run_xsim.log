@@ -1,0 +1,477 @@
+
+Seed 0
+Size 10
+Dimension 4
+Threshold 100.000000
+
+Software execution time: 0.000011
+Hardware execution time: 0.026127
+
+no errors
+
+INFO: [XSIM 43-3496] Using init file passed via -initfile option "/run/media/epetrakos/60GB/Xilinx/Vivado/2019.1/data/xsim/ip/xsim_ip.ini".
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: /run/media/epetrakos/60GB/Xilinx/Vivado/2019.1/bin/unwrapped/lnx64.o/xelab xil_defaultlib.apatb_myFuncAccel4_top glbl -prj myFuncAccel4.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm --initfile /run/media/epetrakos/60GB/Xilinx/Vivado/2019.1/data/xsim/ip/xsim_ip.ini --lib ieee_proposed=./ieee_proposed -s myFuncAccel4 -debug wave 
+Multi-threading is on. Using 14 slave threads.
+Determining compilation order of HDL files.
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/2b/solution1/sim/verilog/glbl.v" into library work
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/2b/solution1/sim/verilog/myFuncAccel4_fpext_32ns_64_2_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myFuncAccel4_fpext_32ns_64_2_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/2b/solution1/sim/verilog/AESL_axi_s_output_r.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_axi_s_output_r
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/2b/solution1/sim/verilog/myFuncAccel4_fptrunc_64ns_32_2_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myFuncAccel4_fptrunc_64ns_32_2_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/2b/solution1/sim/verilog/myFuncAccel4_fadd_32ns_32ns_32_5_full_dsp_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myFuncAccel4_fadd_32ns_32ns_32_5_full_dsp_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/2b/solution1/sim/verilog/myFuncAccel4.autotb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module apatb_myFuncAccel4_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/2b/solution1/sim/verilog/AESL_fifo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fifo
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/2b/solution1/sim/verilog/myFuncAccel4_fmul_32ns_32ns_32_4_max_dsp_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myFuncAccel4_fmul_32ns_32ns_32_4_max_dsp_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/2b/solution1/sim/verilog/myFuncAccel4_fcmp_32ns_32ns_1_2_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myFuncAccel4_fcmp_32ns_32ns_1_2_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/2b/solution1/sim/verilog/AESL_axi_s_input_r.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_axi_s_input_r
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/2b/solution1/sim/verilog/myFuncAccel4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myFuncAccel4
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/2b/solution1/sim/verilog/ip/xil_defaultlib/myFuncAccel4_ap_fmul_2_max_dsp_32.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'myFuncAccel4_ap_fmul_2_max_dsp_32'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/2b/solution1/sim/verilog/ip/xil_defaultlib/myFuncAccel4_ap_fpext_0_no_dsp_32.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'myFuncAccel4_ap_fpext_0_no_dsp_32'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/2b/solution1/sim/verilog/ip/xil_defaultlib/myFuncAccel4_ap_fptrunc_0_no_dsp_64.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'myFuncAccel4_ap_fptrunc_0_no_dsp_64'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/2b/solution1/sim/verilog/ip/xil_defaultlib/myFuncAccel4_ap_fcmp_0_no_dsp_32.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'myFuncAccel4_ap_fcmp_0_no_dsp_32'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/2b/solution1/sim/verilog/ip/xil_defaultlib/myFuncAccel4_ap_fadd_3_full_dsp_32.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'myFuncAccel4_ap_fadd_3_full_dsp_32'
+Starting static elaboration
+WARNING: [VRFC 10-3499] library name 'floating_point_v7_1_8' of instantiated unit conflicts with visible identifier [ip/xil_defaultlib/myFuncAccel4_ap_fadd_3_full_dsp_32.vhd:201]
+WARNING: [VRFC 10-3499] library name 'floating_point_v7_1_8' of instantiated unit conflicts with visible identifier [ip/xil_defaultlib/myFuncAccel4_ap_fmul_2_max_dsp_32.vhd:201]
+WARNING: [VRFC 10-3499] library name 'floating_point_v7_1_8' of instantiated unit conflicts with visible identifier [ip/xil_defaultlib/myFuncAccel4_ap_fptrunc_0_no_dsp_64.vhd:190]
+WARNING: [VRFC 10-3499] library name 'floating_point_v7_1_8' of instantiated unit conflicts with visible identifier [ip/xil_defaultlib/myFuncAccel4_ap_fpext_0_no_dsp_32.vhd:190]
+WARNING: [VRFC 10-3499] library name 'floating_point_v7_1_8' of instantiated unit conflicts with visible identifier [ip/xil_defaultlib/myFuncAccel4_ap_fcmp_0_no_dsp_32.vhd:200]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package floating_point_v7_1_8.floating_point_v7_1_8_viv_comp
+Compiling package xbip_utils_v3_0_10.xbip_utils_v3_0_10_pkg
+Compiling package axi_utils_v2_0_6.axi_utils_v2_0_6_pkg
+Compiling package floating_point_v7_1_8.floating_point_v7_1_8_consts
+Compiling package ieee.math_real
+Compiling package floating_point_v7_1_8.floating_point_v7_1_8_exp_table_...
+Compiling package mult_gen_v12_0_15.mult_gen_v12_0_15_pkg
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_signed
+Compiling package floating_point_v7_1_8.floating_point_v7_1_8_pkg
+Compiling package floating_point_v7_1_8.flt_utils
+Compiling package xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv_comp
+Compiling package unisim.vcomponents
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling architecture muxcy_v of entity unisim.MUXCY [muxcy_default]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_8.delay [\delay(width=7,length=0)\]
+Compiling architecture struct of entity floating_point_v7_1_8.carry_chain [\carry_chain(c_xdevicefamily="zy...]
+Compiling architecture synth of entity floating_point_v7_1_8.compare_eq_im [\compare_eq_im(c_xdevicefamily="...]
+Compiling architecture xorcy_v of entity unisim.XORCY [xorcy_default]
+Compiling architecture struct of entity floating_point_v7_1_8.carry_chain [\carry_chain(c_xdevicefamily="zy...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_8.delay [\delay(length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_8.delay [\delay(width=24,length=0,fast_in...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_8.delay [\delay(width=16,length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_8.delay [\delay(width=4,length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_8.delay [\delay(width=48,length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_8.delay [\delay(width=24,length=0)\]
+Compiling architecture dsp48e1_v of entity unisim.DSP48E1 [\DSP48E1(acascreg=0,adreg=0,alum...]
+Compiling architecture rtl of entity floating_point_v7_1_8.dsp48e1_wrapper [\dsp48e1_wrapper(a_width=24,c_wi...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_8.delay [delay_default]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_8.delay [\delay(width=13,length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_8.delay [\delay(width=27,length=0)\]
+Compiling architecture synth of entity floating_point_v7_1_8.align_add_dsp48e1_sgl [\align_add_dsp48e1_sgl(c_xdevice...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="00000000000000001111...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="00000000000000000000...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_8.delay [\delay(width=5,length=0)\]
+Compiling architecture rtl of entity floating_point_v7_1_8.lead_zero_encode_shift [\lead_zero_encode_shift(ab_fw=24...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_8.delay [\delay(width=3,length=0)\]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11111110010101001011...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="00010001010111110000...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="11101110101000001111...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_8.delay [\delay(width=2)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_8.delay [\delay(width=25,length=0)\]
+Compiling architecture dsp48e1_v of entity unisim.DSP48E1 [\DSP48E1(adreg=0,alumodereg=0,ca...]
+Compiling architecture rtl of entity floating_point_v7_1_8.dsp48e1_wrapper [\dsp48e1_wrapper(a_width=24,c_wi...]
+Compiling architecture rtl of entity floating_point_v7_1_8.norm_and_round_dsp48e1_sgl [\norm_and_round_dsp48e1_sgl(c_mu...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="10011001100110011001...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="11111111000000001111...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_8.delay [\delay(width=9,length=0)\]
+Compiling architecture struct of entity floating_point_v7_1_8.carry_chain [\carry_chain(c_xdevicefamily="zy...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_8.delay [\delay(width=8,length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_8.delay [\delay(width=10)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_8.delay [\delay(width=4,length=0,fast_inp...]
+Compiling architecture fdre_v of entity unisim.FDRE [fdre_default]
+Compiling architecture fde_v of entity unisim.FDE [fde_default]
+Compiling architecture struct of entity floating_point_v7_1_8.carry_chain [\carry_chain(c_xdevicefamily="zy...]
+Compiling architecture synth of entity floating_point_v7_1_8.compare_eq_im [\compare_eq_im(c_xdevicefamily="...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_8.delay [\delay(fast_input=true)\]
+Compiling architecture rtl of entity floating_point_v7_1_8.special_detect [\special_detect(c_xdevicefamily=...]
+Compiling architecture struct of entity floating_point_v7_1_8.carry_chain [\carry_chain(c_xdevicefamily="zy...]
+Compiling architecture synth of entity floating_point_v7_1_8.compare_gt [\compare_gt(c_xdevicefamily="zyn...]
+Compiling architecture synth of entity floating_point_v7_1_8.compare [\compare(c_xdevicefamily="zynq",...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_8.delay [\delay(width=8)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_8.delay [\delay(width=9)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_8.delay [\delay(width=2,length=2,fast_inp...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_8.delay [\delay(length=2,fast_input=true)...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_8.delay [\delay(length=0,fast_input=true)...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_8.delay [\delay(width=2,length=0,fast_inp...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_8.delay [\delay(width=12,length=0)\]
+Compiling architecture rtl of entity floating_point_v7_1_8.flt_add_exp_sp [\flt_add_exp_sp(c_xdevicefamily=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_8.delay [\delay(width=23)\]
+Compiling architecture synth of entity floating_point_v7_1_8.flt_dec_op [\flt_dec_op(c_xdevicefamily="zyn...]
+Compiling architecture rtl of entity floating_point_v7_1_8.flt_add_dsp [\flt_add_dsp(c_xdevicefamily="zy...]
+Compiling architecture rtl of entity floating_point_v7_1_8.flt_add [\flt_add(c_xdevicefamily="zynq",...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_8.delay [\delay(width=32,length=0)\]
+Compiling architecture xilinx of entity floating_point_v7_1_8.floating_point_v7_1_8_viv [\floating_point_v7_1_8_viv(c_xde...]
+Compiling architecture xilinx of entity floating_point_v7_1_8.floating_point_v7_1_8 [\floating_point_v7_1_8(c_xdevice...]
+Compiling architecture myfuncaccel4_ap_fadd_3_full_dsp_32_arch of entity xil_defaultlib.myFuncAccel4_ap_fadd_3_full_dsp_32 [myfuncaccel4_ap_fadd_3_full_dsp_...]
+Compiling module xil_defaultlib.myFuncAccel4_fadd_32ns_32ns_32_5...
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_8.delay [\delay(width=17,length=0)\]
+Compiling architecture dsp48e1_v of entity unisim.DSP48E1 [\DSP48E1(acascreg=0,adreg=0,alum...]
+Compiling architecture rtl of entity floating_point_v7_1_8.dsp48e1_wrapper [\dsp48e1_wrapper(a_width=24,b_wi...]
+Compiling architecture dsp48e1_v of entity unisim.DSP48E1 [\DSP48E1(acascreg=0,adreg=0,alum...]
+Compiling architecture rtl of entity floating_point_v7_1_8.dsp48e1_wrapper [\dsp48e1_wrapper(a_width=24,b_wi...]
+Compiling architecture struct of entity floating_point_v7_1_8.fix_mult_dsp48e1_sgl [\fix_mult_dsp48e1_sgl(registers=...]
+Compiling architecture rtl of entity floating_point_v7_1_8.fix_mult [\fix_mult(c_xdevicefamily="zynq"...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_8.delay [\delay(width=8,length=0,fast_inp...]
+Compiling architecture struct of entity floating_point_v7_1_8.carry_chain [\carry_chain(c_xdevicefamily="zy...]
+Compiling architecture struct of entity floating_point_v7_1_8.carry_chain [\carry_chain(c_xdevicefamily="zy...]
+Compiling architecture synth of entity floating_point_v7_1_8.compare_eq_im [\compare_eq_im(c_xdevicefamily="...]
+Compiling architecture rtl of entity floating_point_v7_1_8.special_detect [\special_detect(c_xdevicefamily=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_8.delay [\delay(width=2,fast_input=true)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_8.delay [\delay(width=4,fast_input=true)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_8.delay [\delay(width=3,length=0,fast_inp...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_8.delay [\delay(width=14,length=0)\]
+Compiling architecture rtl of entity floating_point_v7_1_8.flt_mult_exp [\flt_mult_exp(c_xdevicefamily="z...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_8.delay [\delay(width=30,length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_8.delay [\delay(width=18,length=0)\]
+Compiling architecture dsp48e1_v of entity unisim.DSP48E1 [\DSP48E1(acascreg=0,adreg=0,alum...]
+Compiling architecture rtl of entity floating_point_v7_1_8.dsp48e1_wrapper [\dsp48e1_wrapper(a_width=30,b_wi...]
+Compiling architecture struct of entity floating_point_v7_1_8.flt_round_dsp_opt_full [\flt_round_dsp_opt_full(c_xdevic...]
+Compiling architecture rtl of entity floating_point_v7_1_8.flt_mult_round [\flt_mult_round(c_xdevicefamily=...]
+Compiling architecture synth of entity floating_point_v7_1_8.flt_dec_op_lat [\flt_dec_op_lat(c_xdevicefamily=...]
+Compiling architecture rtl of entity floating_point_v7_1_8.flt_mult [\flt_mult(c_xdevicefamily="zynq"...]
+Compiling architecture xilinx of entity floating_point_v7_1_8.floating_point_v7_1_8_viv [\floating_point_v7_1_8_viv(c_xde...]
+Compiling architecture xilinx of entity floating_point_v7_1_8.floating_point_v7_1_8 [\floating_point_v7_1_8(c_xdevice...]
+Compiling architecture myfuncaccel4_ap_fmul_2_max_dsp_32_arch of entity xil_defaultlib.myFuncAccel4_ap_fmul_2_max_dsp_32 [myfuncaccel4_ap_fmul_2_max_dsp_3...]
+Compiling module xil_defaultlib.myFuncAccel4_fmul_32ns_32ns_32_4...
+Compiling architecture struct of entity floating_point_v7_1_8.carry_chain [\carry_chain(c_xdevicefamily="zy...]
+Compiling architecture synth of entity floating_point_v7_1_8.compare_ne_im [\compare_ne_im(c_xdevicefamily="...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_8.delay [\delay(width=12,length=0,fast_in...]
+Compiling architecture struct of entity floating_point_v7_1_8.carry_chain [\carry_chain(c_xdevicefamily="zy...]
+Compiling architecture struct of entity floating_point_v7_1_8.carry_chain [\carry_chain(c_xdevicefamily="zy...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_8.delay [\delay(width=25,length=0,fast_in...]
+Compiling architecture struct of entity floating_point_v7_1_8.carry_chain [\carry_chain(c_xdevicefamily="zy...]
+Compiling architecture rtl of entity floating_point_v7_1_8.flt_round_bit [\flt_round_bit(c_xdevicefamily="...]
+Compiling architecture rtl of entity floating_point_v7_1_8.renorm_and_round_logic [\renorm_and_round_logic(c_xdevic...]
+Compiling architecture struct of entity floating_point_v7_1_8.carry_chain [\carry_chain(c_xdevicefamily="ki...]
+Compiling architecture synth of entity floating_point_v7_1_8.compare_eq_im [\compare_eq_im(c_xdevicefamily="...]
+Compiling architecture rtl of entity floating_point_v7_1_8.special_detect [\special_detect(a_w=64,a_fw=53,o...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_8.delay [\delay(width=2,length=0)\]
+Compiling architecture rtl of entity floating_point_v7_1_8.flt_to_flt_conv_exp [\flt_to_flt_conv_exp(a_w=64,a_ew...]
+Compiling architecture synth of entity floating_point_v7_1_8.flt_dec_op [\flt_dec_op(c_xdevicefamily="zyn...]
+Compiling architecture rtl of entity floating_point_v7_1_8.flt_to_flt_conv [\flt_to_flt_conv(c_xdevicefamily...]
+Compiling architecture xilinx of entity floating_point_v7_1_8.floating_point_v7_1_8_viv [\floating_point_v7_1_8_viv(c_xde...]
+Compiling architecture xilinx of entity floating_point_v7_1_8.floating_point_v7_1_8 [\floating_point_v7_1_8(c_xdevice...]
+Compiling architecture myfuncaccel4_ap_fptrunc_0_no_dsp_64_arch of entity xil_defaultlib.myFuncAccel4_ap_fptrunc_0_no_dsp_64 [myfuncaccel4_ap_fptrunc_0_no_dsp...]
+Compiling module xil_defaultlib.myFuncAccel4_fptrunc_64ns_32_2_1...
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_8.delay [\delay(width=23,length=0)\]
+Compiling architecture struct of entity floating_point_v7_1_8.carry_chain [\carry_chain(c_xdevicefamily="ki...]
+Compiling architecture synth of entity floating_point_v7_1_8.compare_eq_im [\compare_eq_im(c_xdevicefamily="...]
+Compiling architecture rtl of entity floating_point_v7_1_8.special_detect [\special_detect(a_fw=24,op_delay...]
+Compiling architecture rtl of entity floating_point_v7_1_8.flt_to_flt_conv_exp [\flt_to_flt_conv_exp(r_w=64,r_ew...]
+Compiling architecture synth of entity floating_point_v7_1_8.flt_dec_op [\flt_dec_op(c_xdevicefamily="zyn...]
+Compiling architecture rtl of entity floating_point_v7_1_8.flt_to_flt_conv [\flt_to_flt_conv(c_xdevicefamily...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_8.delay [\delay(width=64,length=0)\]
+Compiling architecture xilinx of entity floating_point_v7_1_8.floating_point_v7_1_8_viv [\floating_point_v7_1_8_viv(c_xde...]
+Compiling architecture xilinx of entity floating_point_v7_1_8.floating_point_v7_1_8 [\floating_point_v7_1_8(c_xdevice...]
+Compiling architecture myfuncaccel4_ap_fpext_0_no_dsp_32_arch of entity xil_defaultlib.myFuncAccel4_ap_fpext_0_no_dsp_32 [myfuncaccel4_ap_fpext_0_no_dsp_3...]
+Compiling module xil_defaultlib.myFuncAccel4_fpext_32ns_64_2_1(I...
+Compiling architecture struct of entity floating_point_v7_1_8.carry_chain [\carry_chain(c_xdevicefamily="zy...]
+Compiling architecture synth of entity floating_point_v7_1_8.compare_eq_im [\compare_eq_im(c_xdevicefamily="...]
+Compiling architecture synth of entity floating_point_v7_1_8.compare_ne_im [\compare_ne_im(c_xdevicefamily="...]
+Compiling architecture struct of entity floating_point_v7_1_8.carry_chain [\carry_chain(c_xdevicefamily="zy...]
+Compiling architecture synth of entity floating_point_v7_1_8.compare_eq_im [\compare_eq_im(c_xdevicefamily="...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_8.delay [\delay(width=11,length=0)\]
+Compiling architecture struct of entity floating_point_v7_1_8.carry_chain [\carry_chain(c_xdevicefamily="zy...]
+Compiling architecture synth of entity floating_point_v7_1_8.compare_eq [\compare_eq(c_xdevicefamily="zyn...]
+Compiling architecture struct of entity floating_point_v7_1_8.carry_chain [\carry_chain(c_xdevicefamily="zy...]
+Compiling architecture synth of entity floating_point_v7_1_8.compare_gt [\compare_gt(c_xdevicefamily="zyn...]
+Compiling architecture rtl of entity floating_point_v7_1_8.fp_cmp [\fp_cmp(c_xdevicefamily="zynq",c...]
+Compiling architecture xilinx of entity floating_point_v7_1_8.floating_point_v7_1_8_viv [\floating_point_v7_1_8_viv(c_xde...]
+Compiling architecture xilinx of entity floating_point_v7_1_8.floating_point_v7_1_8 [\floating_point_v7_1_8(c_xdevice...]
+Compiling architecture myfuncaccel4_ap_fcmp_0_no_dsp_32_arch of entity xil_defaultlib.myFuncAccel4_ap_fcmp_0_no_dsp_32 [myfuncaccel4_ap_fcmp_0_no_dsp_32...]
+Compiling module xil_defaultlib.myFuncAccel4_fcmp_32ns_32ns_1_2_...
+Compiling module xil_defaultlib.myFuncAccel4
+Compiling module xil_defaultlib.fifo(DEPTH=1000,WIDTH=32)
+Compiling module xil_defaultlib.AESL_axi_s_input_r
+Compiling module xil_defaultlib.AESL_axi_s_output_r
+Compiling module xil_defaultlib.apatb_myFuncAccel4_top
+Compiling module work.glbl
+Built simulation snapshot myFuncAccel4
+
+****** Webtalk v2019.1 (64-bit)
+  **** SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
+  **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source /home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/2b/solution1/sim/verilog/xsim.dir/myFuncAccel4/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Sun Nov 10 21:17:15 2019...
+
+****** xsim v2019.1 (64-bit)
+  **** SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
+  **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source xsim.dir/myFuncAccel4/xsim_script.tcl
+# xsim {myFuncAccel4} -autoloadwcfg -tclbatch {myFuncAccel4.tcl}
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source myFuncAccel4.tcl
+## log_wave -r /
+WARNING: [Simtcl 6-197] One or more HDL objects could not be logged because of object type or size limitations.  To see details please rerun the command with -verbose (-v).
+## set designtopgroup [add_wave_group "Design Top Signals"]
+## set coutputgroup [add_wave_group "C Outputs" -into $designtopgroup]
+## set data_out_group [add_wave_group data_out(axis) -into $coutputgroup]
+## add_wave /apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/output_r_TREADY -into $data_out_group -color #ffff00 -radix hex
+## add_wave /apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/output_r_TVALID -into $data_out_group -color #ffff00 -radix hex
+## add_wave /apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/output_r_TDATA -into $data_out_group -radix hex
+## set cinputgroup [add_wave_group "C Inputs" -into $designtopgroup]
+## set data1_group [add_wave_group data1(axis) -into $cinputgroup]
+## add_wave /apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/input_r_TREADY -into $data1_group -color #ffff00 -radix hex
+## add_wave /apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/input_r_TVALID -into $data1_group -color #ffff00 -radix hex
+## add_wave /apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/input_r_TDATA -into $data1_group -radix hex
+## set data0_group [add_wave_group data0(wire) -into $cinputgroup]
+## add_wave /apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/data0_15 -into $data0_group -radix hex
+## add_wave /apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/data0_14 -into $data0_group -radix hex
+## add_wave /apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/data0_13 -into $data0_group -radix hex
+## add_wave /apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/data0_12 -into $data0_group -radix hex
+## add_wave /apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/data0_11 -into $data0_group -radix hex
+## add_wave /apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/data0_10 -into $data0_group -radix hex
+## add_wave /apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/data0_9 -into $data0_group -radix hex
+## add_wave /apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/data0_8 -into $data0_group -radix hex
+## add_wave /apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/data0_7 -into $data0_group -radix hex
+## add_wave /apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/data0_6 -into $data0_group -radix hex
+## add_wave /apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/data0_5 -into $data0_group -radix hex
+## add_wave /apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/data0_4 -into $data0_group -radix hex
+## add_wave /apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/data0_3 -into $data0_group -radix hex
+## add_wave /apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/data0_2 -into $data0_group -radix hex
+## add_wave /apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/data0_1 -into $data0_group -radix hex
+## add_wave /apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/data0_0 -into $data0_group -radix hex
+## set threshold_group [add_wave_group threshold(wire) -into $cinputgroup]
+## add_wave /apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/threshold -into $threshold_group -radix hex
+## set dim_group [add_wave_group dim(wire) -into $cinputgroup]
+## add_wave /apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/dim -into $dim_group -radix hex
+## set size_group [add_wave_group size(wire) -into $cinputgroup]
+## add_wave /apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/size -into $size_group -radix hex
+## set blocksiggroup [add_wave_group "Block-level IO Handshake" -into $designtopgroup]
+## add_wave /apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/ap_start -into $blocksiggroup
+## add_wave /apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/ap_done -into $blocksiggroup
+## add_wave /apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/ap_idle -into $blocksiggroup
+## add_wave /apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/ap_ready -into $blocksiggroup
+## set resetgroup [add_wave_group "Reset" -into $designtopgroup]
+## add_wave /apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/ap_rst_n -into $resetgroup
+## set clockgroup [add_wave_group "Clock" -into $designtopgroup]
+## add_wave /apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/ap_clk -into $clockgroup
+## set testbenchgroup [add_wave_group "Test Bench Signals"]
+## set tbinternalsiggroup [add_wave_group "Internal Signals" -into $testbenchgroup]
+## set tb_simstatus_group [add_wave_group "Simulation Status" -into $tbinternalsiggroup]
+## set tb_portdepth_group [add_wave_group "Port Depth" -into $tbinternalsiggroup]
+## add_wave /apatb_myFuncAccel4_top/AUTOTB_TRANSACTION_NUM -into $tb_simstatus_group -radix hex
+## add_wave /apatb_myFuncAccel4_top/ready_cnt -into $tb_simstatus_group -radix hex
+## add_wave /apatb_myFuncAccel4_top/done_cnt -into $tb_simstatus_group -radix hex
+## add_wave /apatb_myFuncAccel4_top/LENGTH_size -into $tb_portdepth_group -radix hex
+## add_wave /apatb_myFuncAccel4_top/LENGTH_threshold -into $tb_portdepth_group -radix hex
+## add_wave /apatb_myFuncAccel4_top/LENGTH_data0_0 -into $tb_portdepth_group -radix hex
+## add_wave /apatb_myFuncAccel4_top/LENGTH_data0_1 -into $tb_portdepth_group -radix hex
+## add_wave /apatb_myFuncAccel4_top/LENGTH_data0_2 -into $tb_portdepth_group -radix hex
+## add_wave /apatb_myFuncAccel4_top/LENGTH_data0_3 -into $tb_portdepth_group -radix hex
+## add_wave /apatb_myFuncAccel4_top/LENGTH_data0_4 -into $tb_portdepth_group -radix hex
+## add_wave /apatb_myFuncAccel4_top/LENGTH_data0_5 -into $tb_portdepth_group -radix hex
+## add_wave /apatb_myFuncAccel4_top/LENGTH_data0_6 -into $tb_portdepth_group -radix hex
+## add_wave /apatb_myFuncAccel4_top/LENGTH_data0_7 -into $tb_portdepth_group -radix hex
+## add_wave /apatb_myFuncAccel4_top/LENGTH_data0_8 -into $tb_portdepth_group -radix hex
+## add_wave /apatb_myFuncAccel4_top/LENGTH_data0_9 -into $tb_portdepth_group -radix hex
+## add_wave /apatb_myFuncAccel4_top/LENGTH_data0_10 -into $tb_portdepth_group -radix hex
+## add_wave /apatb_myFuncAccel4_top/LENGTH_data0_11 -into $tb_portdepth_group -radix hex
+## add_wave /apatb_myFuncAccel4_top/LENGTH_data0_12 -into $tb_portdepth_group -radix hex
+## add_wave /apatb_myFuncAccel4_top/LENGTH_data0_13 -into $tb_portdepth_group -radix hex
+## add_wave /apatb_myFuncAccel4_top/LENGTH_data0_14 -into $tb_portdepth_group -radix hex
+## add_wave /apatb_myFuncAccel4_top/LENGTH_data0_15 -into $tb_portdepth_group -radix hex
+## add_wave /apatb_myFuncAccel4_top/LENGTH_input_r -into $tb_portdepth_group -radix hex
+## add_wave /apatb_myFuncAccel4_top/LENGTH_output_r -into $tb_portdepth_group -radix hex
+## set tbcoutputgroup [add_wave_group "C Outputs" -into $testbenchgroup]
+## set tb_data_out_group [add_wave_group data_out(axis) -into $tbcoutputgroup]
+## add_wave /apatb_myFuncAccel4_top/output_r_TREADY -into $tb_data_out_group -color #ffff00 -radix hex
+## add_wave /apatb_myFuncAccel4_top/output_r_TVALID -into $tb_data_out_group -color #ffff00 -radix hex
+## add_wave /apatb_myFuncAccel4_top/output_r_TDATA -into $tb_data_out_group -radix hex
+## set tbcinputgroup [add_wave_group "C Inputs" -into $testbenchgroup]
+## set tb_data1_group [add_wave_group data1(axis) -into $tbcinputgroup]
+## add_wave /apatb_myFuncAccel4_top/input_r_TREADY -into $tb_data1_group -color #ffff00 -radix hex
+## add_wave /apatb_myFuncAccel4_top/input_r_TVALID -into $tb_data1_group -color #ffff00 -radix hex
+## add_wave /apatb_myFuncAccel4_top/input_r_TDATA -into $tb_data1_group -radix hex
+## set tb_data0_group [add_wave_group data0(wire) -into $tbcinputgroup]
+## add_wave /apatb_myFuncAccel4_top/data0_15 -into $tb_data0_group -radix hex
+## add_wave /apatb_myFuncAccel4_top/data0_14 -into $tb_data0_group -radix hex
+## add_wave /apatb_myFuncAccel4_top/data0_13 -into $tb_data0_group -radix hex
+## add_wave /apatb_myFuncAccel4_top/data0_12 -into $tb_data0_group -radix hex
+## add_wave /apatb_myFuncAccel4_top/data0_11 -into $tb_data0_group -radix hex
+## add_wave /apatb_myFuncAccel4_top/data0_10 -into $tb_data0_group -radix hex
+## add_wave /apatb_myFuncAccel4_top/data0_9 -into $tb_data0_group -radix hex
+## add_wave /apatb_myFuncAccel4_top/data0_8 -into $tb_data0_group -radix hex
+## add_wave /apatb_myFuncAccel4_top/data0_7 -into $tb_data0_group -radix hex
+## add_wave /apatb_myFuncAccel4_top/data0_6 -into $tb_data0_group -radix hex
+## add_wave /apatb_myFuncAccel4_top/data0_5 -into $tb_data0_group -radix hex
+## add_wave /apatb_myFuncAccel4_top/data0_4 -into $tb_data0_group -radix hex
+## add_wave /apatb_myFuncAccel4_top/data0_3 -into $tb_data0_group -radix hex
+## add_wave /apatb_myFuncAccel4_top/data0_2 -into $tb_data0_group -radix hex
+## add_wave /apatb_myFuncAccel4_top/data0_1 -into $tb_data0_group -radix hex
+## add_wave /apatb_myFuncAccel4_top/data0_0 -into $tb_data0_group -radix hex
+## set tb_threshold_group [add_wave_group threshold(wire) -into $tbcinputgroup]
+## add_wave /apatb_myFuncAccel4_top/threshold -into $tb_threshold_group -radix hex
+## set tb_dim_group [add_wave_group dim(wire) -into $tbcinputgroup]
+## add_wave /apatb_myFuncAccel4_top/dim -into $tb_dim_group -radix hex
+## set tb_size_group [add_wave_group size(wire) -into $tbcinputgroup]
+## add_wave /apatb_myFuncAccel4_top/size -into $tb_size_group -radix hex
+## save_wave_config myFuncAccel4.wcfg
+## run all
+////////////////////////////////////////////////////////////////////////////////////
+// Inter-Transaction Progress: Completed Transaction / Total Transaction
+// Intra-Transaction Progress: Measured Latency / Latency Estimation * 100%
+//
+// RTL Simulation : "Inter-Transaction Progress" ["Intra-Transaction Progress"] @ "Simulation Time"
+////////////////////////////////////////////////////////////////////////////////////
+// RTL Simulation : 0 / 1 [0.00%] @ "125000"
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 165 ns  Iteration: 11  Process: /apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/myFuncAccel4_fadd_32ns_32ns_32_5_full_dsp_1_U1/myFuncAccel4_ap_fadd_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: /run/media/epetrakos/60GB/Xilinx/Vivado/2019.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 165 ns  Iteration: 11  Process: /apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/myFuncAccel4_fadd_32ns_32ns_32_5_full_dsp_1_U2/myFuncAccel4_ap_fadd_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: /run/media/epetrakos/60GB/Xilinx/Vivado/2019.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 165 ns  Iteration: 11  Process: /apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/myFuncAccel4_fadd_32ns_32ns_32_5_full_dsp_1_U3/myFuncAccel4_ap_fadd_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: /run/media/epetrakos/60GB/Xilinx/Vivado/2019.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 165 ns  Iteration: 11  Process: /apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/myFuncAccel4_fadd_32ns_32ns_32_5_full_dsp_1_U4/myFuncAccel4_ap_fadd_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: /run/media/epetrakos/60GB/Xilinx/Vivado/2019.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 215 ns  Iteration: 12  Process: /apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/myFuncAccel4_fadd_32ns_32ns_32_5_full_dsp_1_U1/myFuncAccel4_ap_fadd_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: /run/media/epetrakos/60GB/Xilinx/Vivado/2019.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 215 ns  Iteration: 12  Process: /apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/myFuncAccel4_fadd_32ns_32ns_32_5_full_dsp_1_U2/myFuncAccel4_ap_fadd_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: /run/media/epetrakos/60GB/Xilinx/Vivado/2019.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 215 ns  Iteration: 12  Process: /apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/myFuncAccel4_fadd_32ns_32ns_32_5_full_dsp_1_U3/myFuncAccel4_ap_fadd_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: /run/media/epetrakos/60GB/Xilinx/Vivado/2019.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 215 ns  Iteration: 12  Process: /apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/myFuncAccel4_fadd_32ns_32ns_32_5_full_dsp_1_U4/myFuncAccel4_ap_fadd_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: /run/media/epetrakos/60GB/Xilinx/Vivado/2019.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 265 ns  Iteration: 11  Process: /apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/myFuncAccel4_fadd_32ns_32ns_32_5_full_dsp_1_U1/myFuncAccel4_ap_fadd_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: /run/media/epetrakos/60GB/Xilinx/Vivado/2019.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 265 ns  Iteration: 11  Process: /apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/myFuncAccel4_fadd_32ns_32ns_32_5_full_dsp_1_U2/myFuncAccel4_ap_fadd_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: /run/media/epetrakos/60GB/Xilinx/Vivado/2019.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 265 ns  Iteration: 11  Process: /apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/myFuncAccel4_fadd_32ns_32ns_32_5_full_dsp_1_U3/myFuncAccel4_ap_fadd_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: /run/media/epetrakos/60GB/Xilinx/Vivado/2019.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 265 ns  Iteration: 11  Process: /apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/myFuncAccel4_fadd_32ns_32ns_32_5_full_dsp_1_U4/myFuncAccel4_ap_fadd_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: /run/media/epetrakos/60GB/Xilinx/Vivado/2019.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 315 ns  Iteration: 11  Process: /apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/myFuncAccel4_fadd_32ns_32ns_32_5_full_dsp_1_U1/myFuncAccel4_ap_fadd_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: /run/media/epetrakos/60GB/Xilinx/Vivado/2019.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 315 ns  Iteration: 11  Process: /apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/myFuncAccel4_fadd_32ns_32ns_32_5_full_dsp_1_U2/myFuncAccel4_ap_fadd_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: /run/media/epetrakos/60GB/Xilinx/Vivado/2019.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 315 ns  Iteration: 11  Process: /apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/myFuncAccel4_fadd_32ns_32ns_32_5_full_dsp_1_U3/myFuncAccel4_ap_fadd_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: /run/media/epetrakos/60GB/Xilinx/Vivado/2019.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 315 ns  Iteration: 11  Process: /apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/myFuncAccel4_fadd_32ns_32ns_32_5_full_dsp_1_U4/myFuncAccel4_ap_fadd_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: /run/media/epetrakos/60GB/Xilinx/Vivado/2019.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 605 ns  Iteration: 11  Process: /apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/myFuncAccel4_fadd_32ns_32ns_32_5_full_dsp_1_U1/myFuncAccel4_ap_fadd_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: /run/media/epetrakos/60GB/Xilinx/Vivado/2019.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 605 ns  Iteration: 11  Process: /apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/myFuncAccel4_fadd_32ns_32ns_32_5_full_dsp_1_U2/myFuncAccel4_ap_fadd_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: /run/media/epetrakos/60GB/Xilinx/Vivado/2019.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 605 ns  Iteration: 11  Process: /apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/myFuncAccel4_fadd_32ns_32ns_32_5_full_dsp_1_U3/myFuncAccel4_ap_fadd_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: /run/media/epetrakos/60GB/Xilinx/Vivado/2019.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 605 ns  Iteration: 11  Process: /apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/myFuncAccel4_fadd_32ns_32ns_32_5_full_dsp_1_U4/myFuncAccel4_ap_fadd_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: /run/media/epetrakos/60GB/Xilinx/Vivado/2019.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 645 ns  Iteration: 11  Process: /apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/myFuncAccel4_fadd_32ns_32ns_32_5_full_dsp_1_U1/myFuncAccel4_ap_fadd_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: /run/media/epetrakos/60GB/Xilinx/Vivado/2019.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 645 ns  Iteration: 11  Process: /apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/myFuncAccel4_fadd_32ns_32ns_32_5_full_dsp_1_U2/myFuncAccel4_ap_fadd_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: /run/media/epetrakos/60GB/Xilinx/Vivado/2019.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 645 ns  Iteration: 11  Process: /apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/myFuncAccel4_fadd_32ns_32ns_32_5_full_dsp_1_U3/myFuncAccel4_ap_fadd_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: /run/media/epetrakos/60GB/Xilinx/Vivado/2019.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 645 ns  Iteration: 11  Process: /apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/myFuncAccel4_fadd_32ns_32ns_32_5_full_dsp_1_U4/myFuncAccel4_ap_fadd_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: /run/media/epetrakos/60GB/Xilinx/Vivado/2019.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 685 ns  Iteration: 11  Process: /apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/myFuncAccel4_fadd_32ns_32ns_32_5_full_dsp_1_U1/myFuncAccel4_ap_fadd_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: /run/media/epetrakos/60GB/Xilinx/Vivado/2019.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 685 ns  Iteration: 11  Process: /apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/myFuncAccel4_fadd_32ns_32ns_32_5_full_dsp_1_U2/myFuncAccel4_ap_fadd_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: /run/media/epetrakos/60GB/Xilinx/Vivado/2019.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 685 ns  Iteration: 11  Process: /apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/myFuncAccel4_fadd_32ns_32ns_32_5_full_dsp_1_U3/myFuncAccel4_ap_fadd_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: /run/media/epetrakos/60GB/Xilinx/Vivado/2019.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 685 ns  Iteration: 11  Process: /apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/myFuncAccel4_fadd_32ns_32ns_32_5_full_dsp_1_U4/myFuncAccel4_ap_fadd_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: /run/media/epetrakos/60GB/Xilinx/Vivado/2019.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 725 ns  Iteration: 11  Process: /apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/myFuncAccel4_fadd_32ns_32ns_32_5_full_dsp_1_U1/myFuncAccel4_ap_fadd_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: /run/media/epetrakos/60GB/Xilinx/Vivado/2019.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 725 ns  Iteration: 11  Process: /apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/myFuncAccel4_fadd_32ns_32ns_32_5_full_dsp_1_U2/myFuncAccel4_ap_fadd_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: /run/media/epetrakos/60GB/Xilinx/Vivado/2019.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 725 ns  Iteration: 11  Process: /apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/myFuncAccel4_fadd_32ns_32ns_32_5_full_dsp_1_U3/myFuncAccel4_ap_fadd_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: /run/media/epetrakos/60GB/Xilinx/Vivado/2019.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 725 ns  Iteration: 11  Process: /apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/myFuncAccel4_fadd_32ns_32ns_32_5_full_dsp_1_U4/myFuncAccel4_ap_fadd_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: /run/media/epetrakos/60GB/Xilinx/Vivado/2019.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+// RTL Simulation : 1 / 1 [100.00%] @ "875000"
+////////////////////////////////////////////////////////////////////////////////////
+$finish called at time : 915 ns : File "/home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/2b/solution1/sim/verilog/myFuncAccel4.autotb.v" Line 1336
+## quit
+INFO: [Common 17-206] Exiting xsim at Sun Nov 10 21:17:29 2019...
+
+Seed 0
+Size 10
+Dimension 4
+Threshold 100.000000
+free(): invalid pointer
