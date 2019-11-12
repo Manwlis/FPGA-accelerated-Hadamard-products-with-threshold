@@ -190,7 +190,7 @@
 <InvalidType>0</InvalidType>
 </RtlPorts>
 <RtlPorts>
-<name>input_r</name>
+<name>my_input</name>
 <CType>
 <TypeName>float</TypeName>
 <TypeWidth>32</TypeWidth>
@@ -200,7 +200,7 @@
 <InvalidType>0</InvalidType>
 </RtlPorts>
 <RtlPorts>
-<name>output_r</name>
+<name>my_output</name>
 <CType>
 <TypeName>float</TypeName>
 <TypeWidth>32</TypeWidth>

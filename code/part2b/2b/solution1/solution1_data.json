@@ -56,7 +56,7 @@
         "kinds": ["pointer"],
         "dataType": "float",
         "dataWidth": "32",
-        "interfaceRef": "input_r",
+        "interfaceRef": "my_input",
         "portRef": "TDATA"
       }
     },
@@ -66,7 +66,7 @@
         "kinds": ["pointer"],
         "dataType": "float",
         "dataWidth": "32",
-        "interfaceRef": "output_r",
+        "interfaceRef": "my_output",
         "portRef": "TDATA"
       }
     }
@@ -85,9 +85,6 @@
   "Xdc": {
     "OocClocks": ["create_clock -name ap_clk -period 10.000 [get_ports ap_clk]"],
     "FalsePaths": [
-      "set_false_path -through [get_ports size[*]]",
-      "set_false_path -through [get_ports dim[*]]",
-      "set_false_path -through [get_ports threshold[*]]",
       "set_false_path -through [get_ports data0_0[*]]",
       "set_false_path -through [get_ports data0_1[*]]",
       "set_false_path -through [get_ports data0_2[*]]",
@@ -184,7 +181,7 @@
       "ctype": {"CLK": {"Type": "bool"}},
       "bundle_name": "ap_clk",
       "bundle_role": "default",
-      "buses": "input_r output_r",
+      "buses": "my_input my_output",
       "reset": "ap_rst_n"
     },
     "ap_ctrl": {
@@ -391,10 +388,10 @@
       "bundle_name": "dim",
       "bundle_role": "default"
     },
-    "input_r": {
+    "my_input": {
       "type": "axi4stream",
       "mode": "slave",
-      "port_prefix": "input_r",
+      "port_prefix": "my_input",
       "has_tready": "1",
       "ctype": {
         "TDATA": {
@@ -406,10 +403,10 @@
       },
       "port_width": {"TDATA": "32"}
     },
-    "output_r": {
+    "my_output": {
       "type": "axi4stream",
       "mode": "master",
-      "port_prefix": "output_r",
+      "port_prefix": "my_output",
       "has_tready": "1",
       "ctype": {
         "TDATA": {
@@ -545,27 +542,27 @@
       "dir": "in",
       "width": "32"
     },
-    "input_r_TDATA": {
+    "my_input_TDATA": {
       "dir": "in",
       "width": "32"
     },
-    "input_r_TVALID": {
+    "my_input_TVALID": {
       "dir": "in",
       "width": "1"
     },
-    "input_r_TREADY": {
+    "my_input_TREADY": {
       "dir": "out",
       "width": "1"
     },
-    "output_r_TDATA": {
+    "my_output_TDATA": {
       "dir": "out",
       "width": "32"
     },
-    "output_r_TVALID": {
+    "my_output_TVALID": {
       "dir": "out",
       "width": "1"
     },
-    "output_r_TREADY": {
+    "my_output_TREADY": {
       "dir": "in",
       "width": "1"
     }
@@ -603,8 +600,8 @@
         "Area": {
           "BRAM_18K": "0",
           "DSP48E": "20",
-          "FF": "4951",
-          "LUT": "4890",
+          "FF": "5049",
+          "LUT": "4922",
           "URAM": "0"
         }
       }}
@@ -619,7 +616,7 @@
   },
   "GenData": {
     "DataVersion": "0.2",
-    "Time": "2019-11-10 21:15:18 EET",
+    "Time": "2019-11-12 18:14:49 EET",
     "ToolName": "vivado_hls",
     "ToolVersion": "2019.1"
   }

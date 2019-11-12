@@ -2,12 +2,12 @@
 # Webtalk v2019.1 (64-bit)
 # SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
 # IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
-# Start of session at: Sun Nov 10 21:17:29 2019
-# Process ID: 8224
+# Start of session at: Tue Nov 12 18:19:24 2019
+# Process ID: 11737
 # Current directory: /home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/2b/solution1/sim/verilog
 # Command line: wbtcv -mode batch -source /home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/2b/solution1/sim/verilog/xsim.dir/myFuncAccel4/webtalk/xsim_webtalk.tcl -notrace
 # Log file: /home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/2b/solution1/sim/verilog/webtalk.log
 # Journal file: /home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/2b/solution1/sim/verilog/webtalk.jou
 #-----------------------------------------------------------
 source /home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/2b/solution1/sim/verilog/xsim.dir/myFuncAccel4/webtalk/xsim_webtalk.tcl -notrace
-INFO: [Common 17-206] Exiting Webtalk at Sun Nov 10 21:17:29 2019...
+INFO: [Common 17-206] Exiting Webtalk at Tue Nov 12 18:19:24 2019...

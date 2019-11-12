@@ -2,8 +2,8 @@
 # xsim v2019.1 (64-bit)
 # SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
 # IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
-# Start of session at: Sun Nov 10 21:17:17 2019
-# Process ID: 8124
+# Start of session at: Tue Nov 12 18:19:11 2019
+# Process ID: 11603
 # Current directory: /home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/2b/solution1/sim/verilog
 # Command line: xsim -mode tcl -source {xsim.dir/myFuncAccel4/xsim_script.tcl}
 # Log file: /home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/2b/solution1/sim/verilog/xsim.log
@@ -19,14 +19,14 @@ WARNING: [Simtcl 6-197] One or more HDL objects could not be logged because of o
 ## set designtopgroup [add_wave_group "Design Top Signals"]
 ## set coutputgroup [add_wave_group "C Outputs" -into $designtopgroup]
 ## set data_out_group [add_wave_group data_out(axis) -into $coutputgroup]
-## add_wave /apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/output_r_TREADY -into $data_out_group -color #ffff00 -radix hex
-## add_wave /apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/output_r_TVALID -into $data_out_group -color #ffff00 -radix hex
-## add_wave /apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/output_r_TDATA -into $data_out_group -radix hex
+## add_wave /apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/my_output_TREADY -into $data_out_group -color #ffff00 -radix hex
+## add_wave /apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/my_output_TVALID -into $data_out_group -color #ffff00 -radix hex
+## add_wave /apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/my_output_TDATA -into $data_out_group -radix hex
 ## set cinputgroup [add_wave_group "C Inputs" -into $designtopgroup]
 ## set data1_group [add_wave_group data1(axis) -into $cinputgroup]
-## add_wave /apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/input_r_TREADY -into $data1_group -color #ffff00 -radix hex
-## add_wave /apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/input_r_TVALID -into $data1_group -color #ffff00 -radix hex
-## add_wave /apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/input_r_TDATA -into $data1_group -radix hex
+## add_wave /apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/my_input_TREADY -into $data1_group -color #ffff00 -radix hex
+## add_wave /apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/my_input_TVALID -into $data1_group -color #ffff00 -radix hex
+## add_wave /apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/my_input_TDATA -into $data1_group -radix hex
 ## set data0_group [add_wave_group data0(wire) -into $cinputgroup]
 ## add_wave /apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/data0_15 -into $data0_group -radix hex
 ## add_wave /apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/data0_14 -into $data0_group -radix hex
@@ -84,18 +84,18 @@ WARNING: [Simtcl 6-197] One or more HDL objects could not be logged because of o
 ## add_wave /apatb_myFuncAccel4_top/LENGTH_data0_13 -into $tb_portdepth_group -radix hex
 ## add_wave /apatb_myFuncAccel4_top/LENGTH_data0_14 -into $tb_portdepth_group -radix hex
 ## add_wave /apatb_myFuncAccel4_top/LENGTH_data0_15 -into $tb_portdepth_group -radix hex
-## add_wave /apatb_myFuncAccel4_top/LENGTH_input_r -into $tb_portdepth_group -radix hex
-## add_wave /apatb_myFuncAccel4_top/LENGTH_output_r -into $tb_portdepth_group -radix hex
+## add_wave /apatb_myFuncAccel4_top/LENGTH_my_input -into $tb_portdepth_group -radix hex
+## add_wave /apatb_myFuncAccel4_top/LENGTH_my_output -into $tb_portdepth_group -radix hex
 ## set tbcoutputgroup [add_wave_group "C Outputs" -into $testbenchgroup]
 ## set tb_data_out_group [add_wave_group data_out(axis) -into $tbcoutputgroup]
-## add_wave /apatb_myFuncAccel4_top/output_r_TREADY -into $tb_data_out_group -color #ffff00 -radix hex
-## add_wave /apatb_myFuncAccel4_top/output_r_TVALID -into $tb_data_out_group -color #ffff00 -radix hex
-## add_wave /apatb_myFuncAccel4_top/output_r_TDATA -into $tb_data_out_group -radix hex
+## add_wave /apatb_myFuncAccel4_top/my_output_TREADY -into $tb_data_out_group -color #ffff00 -radix hex
+## add_wave /apatb_myFuncAccel4_top/my_output_TVALID -into $tb_data_out_group -color #ffff00 -radix hex
+## add_wave /apatb_myFuncAccel4_top/my_output_TDATA -into $tb_data_out_group -radix hex
 ## set tbcinputgroup [add_wave_group "C Inputs" -into $testbenchgroup]
 ## set tb_data1_group [add_wave_group data1(axis) -into $tbcinputgroup]
-## add_wave /apatb_myFuncAccel4_top/input_r_TREADY -into $tb_data1_group -color #ffff00 -radix hex
-## add_wave /apatb_myFuncAccel4_top/input_r_TVALID -into $tb_data1_group -color #ffff00 -radix hex
-## add_wave /apatb_myFuncAccel4_top/input_r_TDATA -into $tb_data1_group -radix hex
+## add_wave /apatb_myFuncAccel4_top/my_input_TREADY -into $tb_data1_group -color #ffff00 -radix hex
+## add_wave /apatb_myFuncAccel4_top/my_input_TVALID -into $tb_data1_group -color #ffff00 -radix hex
+## add_wave /apatb_myFuncAccel4_top/my_input_TDATA -into $tb_data1_group -radix hex
 ## set tb_data0_group [add_wave_group data0(wire) -into $tbcinputgroup]
 ## add_wave /apatb_myFuncAccel4_top/data0_15 -into $tb_data0_group -radix hex
 ## add_wave /apatb_myFuncAccel4_top/data0_14 -into $tb_data0_group -radix hex
@@ -196,4 +196,4 @@ Time: 725 ns  Iteration: 11  Process: /apatb_myFuncAccel4_top/AESL_inst_myFuncAc
 ////////////////////////////////////////////////////////////////////////////////////
 $finish called at time : 915 ns : File "/home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/2b/solution1/sim/verilog/myFuncAccel4.autotb.v" Line 1336
 ## quit
-INFO: [Common 17-206] Exiting xsim at Sun Nov 10 21:17:29 2019...
+INFO: [Common 17-206] Exiting xsim at Tue Nov 12 18:19:24 2019...

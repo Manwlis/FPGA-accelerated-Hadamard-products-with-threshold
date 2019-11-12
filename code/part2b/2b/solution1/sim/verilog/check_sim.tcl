@@ -98,9 +98,9 @@ proc check_tvin_file {} {
          "c.myFuncAccel4.autotvin_data0_13.dat"
          "c.myFuncAccel4.autotvin_data0_14.dat"
          "c.myFuncAccel4.autotvin_data0_15.dat"
-         "c.myFuncAccel4.autotvin_input_r.dat"
-         "c.myFuncAccel4.autotvin_output_r.dat"
-         "c.myFuncAccel4.autotvout_output_r.dat"
+         "c.myFuncAccel4.autotvin_my_input.dat"
+         "c.myFuncAccel4.autotvin_my_output.dat"
+         "c.myFuncAccel4.autotvout_my_output.dat"
     }
     foreach rtlfile $rtlfilelist {
         if {[file isfile $rtlfile]} {
@@ -125,7 +125,7 @@ proc check_tvout_file {} {
 		puts stdout "[debug_prompt arg check_sim.tcl] start...";
 	}
     set rtlfilelist {
-         "rtl.myFuncAccel4.autotvout_output_r.dat"
+         "rtl.myFuncAccel4.autotvout_my_output.dat"
     }
     foreach rtlfile $rtlfilelist {
         if {[file isfile $rtlfile]} {

@@ -1,5 +1,5 @@
 INFO: [HLS 200-10] Running '/run/media/epetrakos/60GB/Xilinx/Vivado/2019.1/bin/unwrapped/lnx64.o/vivado_hls'
-INFO: [HLS 200-10] For user 'epetrakos' on host 'tower-pc' (Linux_x86_64 version 5.2.21-1-MANJARO) on Sun Nov 10 21:15:35 EET 2019
+INFO: [HLS 200-10] For user 'epetrakos' on host 'tower-pc' (Linux_x86_64 version 5.2.21-1-MANJARO) on Tue Nov 12 18:17:27 EET 2019
 INFO: [HLS 200-10] On os "Manjaro Linux"
 INFO: [HLS 200-10] In directory '/home/epetrakos/Documents/GitHub/HRY591-project/code/part2b'
 Sourcing Tcl script '/home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/2b/solution1/cosim.tcl'
@@ -13,7 +13,7 @@ INFO: [COSIM 212-14] Instrumenting C test bench ...
    Compiling apatb_myFuncAccel4.cpp
    Compiling (apcc) main.c_pre.c.tb.c
 INFO: [HLS 200-10] Running '/run/media/epetrakos/60GB/Xilinx/Vivado/2019.1/bin/unwrapped/lnx64.o/apcc'
-INFO: [HLS 200-10] For user 'epetrakos' on host 'tower-pc' (Linux_x86_64 version 5.2.21-1-MANJARO) on Sun Nov 10 21:15:50 EET 2019
+INFO: [HLS 200-10] For user 'epetrakos' on host 'tower-pc' (Linux_x86_64 version 5.2.21-1-MANJARO) on Tue Nov 12 18:17:43 EET 2019
 INFO: [HLS 200-10] On os "Manjaro Linux"
 INFO: [HLS 200-10] In directory '/home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/2b/solution1/sim/wrapc'
 clang: warning: argument unused during compilation: '-fno-builtin-isinf'
@@ -23,16 +23,16 @@ In file included from /home/epetrakos/Documents/GitHub/HRY591-project/code/part2
  ((void) sizeof ((seed>=0) ? 1 : 0), __extension__ ({ if (seed>=0) ; else __assert_fail ("seed>=0", "/home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/main.c", 46, __extension__ __PRETTY_FUNCTION__); }));
                                                           ~~~~^ ~
 1 warning generated.
-INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_epetrakos/77461573413350903172
+INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_epetrakos/112151573575463434838
 INFO: [APCC 202-1] APCC is done.
    Compiling (apcc) myIP.c_pre.c.tb.c
 INFO: [HLS 200-10] Running '/run/media/epetrakos/60GB/Xilinx/Vivado/2019.1/bin/unwrapped/lnx64.o/apcc'
-INFO: [HLS 200-10] For user 'epetrakos' on host 'tower-pc' (Linux_x86_64 version 5.2.21-1-MANJARO) on Sun Nov 10 21:16:03 EET 2019
+INFO: [HLS 200-10] For user 'epetrakos' on host 'tower-pc' (Linux_x86_64 version 5.2.21-1-MANJARO) on Tue Nov 12 18:17:55 EET 2019
 INFO: [HLS 200-10] On os "Manjaro Linux"
 INFO: [HLS 200-10] In directory '/home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/2b/solution1/sim/wrapc'
 clang: warning: argument unused during compilation: '-fno-builtin-isinf'
 clang: warning: argument unused during compilation: '-fno-builtin-isnan'
-INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_epetrakos/78141573413363069970
+INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_epetrakos/112841573575475677287
 INFO: [APCC 202-1] APCC is done.
    Generating cosim.tv.exe
 INFO: [COSIM 212-302] Starting C TB testing ... 
@@ -42,8 +42,8 @@ Size 10
 Dimension 4
 Threshold 100.000000
 
-Software execution time: 0.000011
-Hardware execution time: 0.026127
+Software execution time: 0.000012
+Hardware execution time: 0.027036
 
 no errors
 
@@ -62,8 +62,8 @@ INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/epetrakos/Documents/Git
 INFO: [VRFC 10-311] analyzing module glbl
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/2b/solution1/sim/verilog/myFuncAccel4_fpext_32ns_64_2_1.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module myFuncAccel4_fpext_32ns_64_2_1
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/2b/solution1/sim/verilog/AESL_axi_s_output_r.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module AESL_axi_s_output_r
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/2b/solution1/sim/verilog/AESL_axi_s_my_output.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_axi_s_my_output
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/2b/solution1/sim/verilog/myFuncAccel4_fptrunc_64ns_32_2_1.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module myFuncAccel4_fptrunc_64ns_32_2_1
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/2b/solution1/sim/verilog/myFuncAccel4_fadd_32ns_32ns_32_5_full_dsp_1.v" into library xil_defaultlib
@@ -76,10 +76,10 @@ INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/epetrakos/Documents/Git
 INFO: [VRFC 10-311] analyzing module myFuncAccel4_fmul_32ns_32ns_32_4_max_dsp_1
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/2b/solution1/sim/verilog/myFuncAccel4_fcmp_32ns_32ns_1_2_1.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module myFuncAccel4_fcmp_32ns_32ns_1_2_1
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/2b/solution1/sim/verilog/AESL_axi_s_input_r.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module AESL_axi_s_input_r
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/2b/solution1/sim/verilog/myFuncAccel4.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module myFuncAccel4
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/2b/solution1/sim/verilog/AESL_axi_s_my_input.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_axi_s_my_input
 INFO: [VRFC 10-163] Analyzing VHDL file "/home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/2b/solution1/sim/verilog/ip/xil_defaultlib/myFuncAccel4_ap_fmul_2_max_dsp_32.vhd" into library xil_defaultlib
 INFO: [VRFC 10-3107] analyzing entity 'myFuncAccel4_ap_fmul_2_max_dsp_32'
 INFO: [VRFC 10-163] Analyzing VHDL file "/home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/2b/solution1/sim/verilog/ip/xil_defaultlib/myFuncAccel4_ap_fpext_0_no_dsp_32.vhd" into library xil_defaultlib
@@ -305,8 +305,8 @@ Compiling architecture myfuncaccel4_ap_fcmp_0_no_dsp_32_arch of entity xil_defau
 Compiling module xil_defaultlib.myFuncAccel4_fcmp_32ns_32ns_1_2_...
 Compiling module xil_defaultlib.myFuncAccel4
 Compiling module xil_defaultlib.fifo(DEPTH=1000,WIDTH=32)
-Compiling module xil_defaultlib.AESL_axi_s_input_r
-Compiling module xil_defaultlib.AESL_axi_s_output_r
+Compiling module xil_defaultlib.AESL_axi_s_my_input
+Compiling module xil_defaultlib.AESL_axi_s_my_output
 Compiling module xil_defaultlib.apatb_myFuncAccel4_top
 Compiling module work.glbl
 Built simulation snapshot myFuncAccel4
@@ -317,7 +317,7 @@ Built simulation snapshot myFuncAccel4
     ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 
 source /home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/2b/solution1/sim/verilog/xsim.dir/myFuncAccel4/webtalk/xsim_webtalk.tcl -notrace
-INFO: [Common 17-206] Exiting Webtalk at Sun Nov 10 21:17:15 2019...
+INFO: [Common 17-206] Exiting Webtalk at Tue Nov 12 18:19:10 2019...
 
 ****** xsim v2019.1 (64-bit)
   **** SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
@@ -334,14 +334,14 @@ WARNING: [Simtcl 6-197] One or more HDL objects could not be logged because of o
 ## set designtopgroup [add_wave_group "Design Top Signals"]
 ## set coutputgroup [add_wave_group "C Outputs" -into $designtopgroup]
 ## set data_out_group [add_wave_group data_out(axis) -into $coutputgroup]
-## add_wave /apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/output_r_TREADY -into $data_out_group -color #ffff00 -radix hex
-## add_wave /apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/output_r_TVALID -into $data_out_group -color #ffff00 -radix hex
-## add_wave /apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/output_r_TDATA -into $data_out_group -radix hex
+## add_wave /apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/my_output_TREADY -into $data_out_group -color #ffff00 -radix hex
+## add_wave /apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/my_output_TVALID -into $data_out_group -color #ffff00 -radix hex
+## add_wave /apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/my_output_TDATA -into $data_out_group -radix hex
 ## set cinputgroup [add_wave_group "C Inputs" -into $designtopgroup]
 ## set data1_group [add_wave_group data1(axis) -into $cinputgroup]
-## add_wave /apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/input_r_TREADY -into $data1_group -color #ffff00 -radix hex
-## add_wave /apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/input_r_TVALID -into $data1_group -color #ffff00 -radix hex
-## add_wave /apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/input_r_TDATA -into $data1_group -radix hex
+## add_wave /apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/my_input_TREADY -into $data1_group -color #ffff00 -radix hex
+## add_wave /apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/my_input_TVALID -into $data1_group -color #ffff00 -radix hex
+## add_wave /apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/my_input_TDATA -into $data1_group -radix hex
 ## set data0_group [add_wave_group data0(wire) -into $cinputgroup]
 ## add_wave /apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/data0_15 -into $data0_group -radix hex
 ## add_wave /apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/data0_14 -into $data0_group -radix hex
@@ -399,18 +399,18 @@ WARNING: [Simtcl 6-197] One or more HDL objects could not be logged because of o
 ## add_wave /apatb_myFuncAccel4_top/LENGTH_data0_13 -into $tb_portdepth_group -radix hex
 ## add_wave /apatb_myFuncAccel4_top/LENGTH_data0_14 -into $tb_portdepth_group -radix hex
 ## add_wave /apatb_myFuncAccel4_top/LENGTH_data0_15 -into $tb_portdepth_group -radix hex
-## add_wave /apatb_myFuncAccel4_top/LENGTH_input_r -into $tb_portdepth_group -radix hex
-## add_wave /apatb_myFuncAccel4_top/LENGTH_output_r -into $tb_portdepth_group -radix hex
+## add_wave /apatb_myFuncAccel4_top/LENGTH_my_input -into $tb_portdepth_group -radix hex
+## add_wave /apatb_myFuncAccel4_top/LENGTH_my_output -into $tb_portdepth_group -radix hex
 ## set tbcoutputgroup [add_wave_group "C Outputs" -into $testbenchgroup]
 ## set tb_data_out_group [add_wave_group data_out(axis) -into $tbcoutputgroup]
-## add_wave /apatb_myFuncAccel4_top/output_r_TREADY -into $tb_data_out_group -color #ffff00 -radix hex
-## add_wave /apatb_myFuncAccel4_top/output_r_TVALID -into $tb_data_out_group -color #ffff00 -radix hex
-## add_wave /apatb_myFuncAccel4_top/output_r_TDATA -into $tb_data_out_group -radix hex
+## add_wave /apatb_myFuncAccel4_top/my_output_TREADY -into $tb_data_out_group -color #ffff00 -radix hex
+## add_wave /apatb_myFuncAccel4_top/my_output_TVALID -into $tb_data_out_group -color #ffff00 -radix hex
+## add_wave /apatb_myFuncAccel4_top/my_output_TDATA -into $tb_data_out_group -radix hex
 ## set tbcinputgroup [add_wave_group "C Inputs" -into $testbenchgroup]
 ## set tb_data1_group [add_wave_group data1(axis) -into $tbcinputgroup]
-## add_wave /apatb_myFuncAccel4_top/input_r_TREADY -into $tb_data1_group -color #ffff00 -radix hex
-## add_wave /apatb_myFuncAccel4_top/input_r_TVALID -into $tb_data1_group -color #ffff00 -radix hex
-## add_wave /apatb_myFuncAccel4_top/input_r_TDATA -into $tb_data1_group -radix hex
+## add_wave /apatb_myFuncAccel4_top/my_input_TREADY -into $tb_data1_group -color #ffff00 -radix hex
+## add_wave /apatb_myFuncAccel4_top/my_input_TVALID -into $tb_data1_group -color #ffff00 -radix hex
+## add_wave /apatb_myFuncAccel4_top/my_input_TDATA -into $tb_data1_group -radix hex
 ## set tb_data0_group [add_wave_group data0(wire) -into $tbcinputgroup]
 ## add_wave /apatb_myFuncAccel4_top/data0_15 -into $tb_data0_group -radix hex
 ## add_wave /apatb_myFuncAccel4_top/data0_14 -into $tb_data0_group -radix hex
@@ -511,7 +511,7 @@ Time: 725 ns  Iteration: 11  Process: /apatb_myFuncAccel4_top/AESL_inst_myFuncAc
 ////////////////////////////////////////////////////////////////////////////////////
 $finish called at time : 915 ns : File "/home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/2b/solution1/sim/verilog/myFuncAccel4.autotb.v" Line 1336
 ## quit
-INFO: [Common 17-206] Exiting xsim at Sun Nov 10 21:17:29 2019...
+INFO: [Common 17-206] Exiting xsim at Tue Nov 12 18:19:24 2019...
 INFO: [COSIM 212-316] Starting C post checking ...
 
 Seed 0

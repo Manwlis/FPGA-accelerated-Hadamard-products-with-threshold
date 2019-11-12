@@ -3,16 +3,16 @@
 	<Message severity="INFO" prefix="[COSIM 212-47]" key="COSIM_TCL_47_1115" tag="" content="Using XSIM for RTL simulation."/>
 	<Message severity="INFO" prefix="[COSIM 212-14]" key="COSIM_TCL_14_1084" tag="" content="Instrumenting C test bench ..."/>
 	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1427" tag="" content="Running &apos;/run/media/epetrakos/60GB/Xilinx/Vivado/2019.1/bin/unwrapped/lnx64.o/apcc&apos;"/>
-	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1428" tag="" content="For user &apos;epetrakos&apos; on host &apos;tower-pc&apos; (Linux_x86_64 version 5.2.21-1-MANJARO) on Sun Nov 10 21:15:50 EET 2019"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1428" tag="" content="For user &apos;epetrakos&apos; on host &apos;tower-pc&apos; (Linux_x86_64 version 5.2.21-1-MANJARO) on Tue Nov 12 18:17:43 EET 2019"/>
 	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1429" tag="" content="On os &quot;Manjaro Linux&quot;"/>
 	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1430" tag="" content="In directory &apos;/home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/2b/solution1/sim/wrapc&apos;"/>
-	<Message severity="INFO" prefix="[APCC 202-3]" key="APCC_3_1610" tag="" content="Tmp directory is /tmp/apcc_db_epetrakos/77461573413350903172"/>
+	<Message severity="INFO" prefix="[APCC 202-3]" key="APCC_3_1610" tag="" content="Tmp directory is /tmp/apcc_db_epetrakos/112151573575463434838"/>
 	<Message severity="INFO" prefix="[APCC 202-1]" key="APCC_1_1611" tag="" content="APCC is done."/>
 	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1427" tag="" content="Running &apos;/run/media/epetrakos/60GB/Xilinx/Vivado/2019.1/bin/unwrapped/lnx64.o/apcc&apos;"/>
-	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1428" tag="" content="For user &apos;epetrakos&apos; on host &apos;tower-pc&apos; (Linux_x86_64 version 5.2.21-1-MANJARO) on Sun Nov 10 21:16:03 EET 2019"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1428" tag="" content="For user &apos;epetrakos&apos; on host &apos;tower-pc&apos; (Linux_x86_64 version 5.2.21-1-MANJARO) on Tue Nov 12 18:17:55 EET 2019"/>
 	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1429" tag="" content="On os &quot;Manjaro Linux&quot;"/>
 	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1430" tag="" content="In directory &apos;/home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/2b/solution1/sim/wrapc&apos;"/>
-	<Message severity="INFO" prefix="[APCC 202-3]" key="APCC_3_1610" tag="" content="Tmp directory is /tmp/apcc_db_epetrakos/78141573413363069970"/>
+	<Message severity="INFO" prefix="[APCC 202-3]" key="APCC_3_1610" tag="" content="Tmp directory is /tmp/apcc_db_epetrakos/112841573575475677287"/>
 	<Message severity="INFO" prefix="[APCC 202-1]" key="APCC_1_1611" tag="" content="APCC is done."/>
 	<Message severity="INFO" prefix="[COSIM 212-302]" key="COSIM_TCL_302_1177" tag="" content="Starting C TB testing ..."/>
 	<Message severity="INFO" prefix="[COSIM 212-333]" key="COSIM_TCL_333_1204" tag="" content="Generating C post check test bench ..."/>

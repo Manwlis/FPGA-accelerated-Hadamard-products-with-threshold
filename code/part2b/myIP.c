@@ -14,8 +14,8 @@ void myFuncAccel4 (unsigned int size, unsigned int dim, dataType_t threshold, da
 	#pragma HLS array_partition variable=data0 complete		// gia na mporw na prosbainw polles 8eseis tautoxrona
 
 	// interface gia pinakes agnwstou mege8ous
-	#pragma HLS INTERFACE axis port=data1 depth=1000 bundle=input
-	#pragma HLS INTERFACE axis port=data_out depth=1000 bundle=output
+	#pragma HLS INTERFACE axis port=data1 depth=1000 bundle=my_input
+	#pragma HLS INTERFACE axis port=data_out depth=1000 bundle=my_output
 
 	unsigned int i, k, l;
 	dataType_t temp_dim[4];

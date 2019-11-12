@@ -3,14 +3,14 @@ log_wave -r /
 set designtopgroup [add_wave_group "Design Top Signals"]
 set coutputgroup [add_wave_group "C Outputs" -into $designtopgroup]
 set data_out_group [add_wave_group data_out(axis) -into $coutputgroup]
-add_wave /apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/output_r_TREADY -into $data_out_group -color #ffff00 -radix hex
-add_wave /apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/output_r_TVALID -into $data_out_group -color #ffff00 -radix hex
-add_wave /apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/output_r_TDATA -into $data_out_group -radix hex
+add_wave /apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/my_output_TREADY -into $data_out_group -color #ffff00 -radix hex
+add_wave /apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/my_output_TVALID -into $data_out_group -color #ffff00 -radix hex
+add_wave /apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/my_output_TDATA -into $data_out_group -radix hex
 set cinputgroup [add_wave_group "C Inputs" -into $designtopgroup]
 set data1_group [add_wave_group data1(axis) -into $cinputgroup]
-add_wave /apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/input_r_TREADY -into $data1_group -color #ffff00 -radix hex
-add_wave /apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/input_r_TVALID -into $data1_group -color #ffff00 -radix hex
-add_wave /apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/input_r_TDATA -into $data1_group -radix hex
+add_wave /apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/my_input_TREADY -into $data1_group -color #ffff00 -radix hex
+add_wave /apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/my_input_TVALID -into $data1_group -color #ffff00 -radix hex
+add_wave /apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/my_input_TDATA -into $data1_group -radix hex
 set data0_group [add_wave_group data0(wire) -into $cinputgroup]
 add_wave /apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/data0_15 -into $data0_group -radix hex
 add_wave /apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/data0_14 -into $data0_group -radix hex
@@ -68,18 +68,18 @@ add_wave /apatb_myFuncAccel4_top/LENGTH_data0_12 -into $tb_portdepth_group -radi
 add_wave /apatb_myFuncAccel4_top/LENGTH_data0_13 -into $tb_portdepth_group -radix hex
 add_wave /apatb_myFuncAccel4_top/LENGTH_data0_14 -into $tb_portdepth_group -radix hex
 add_wave /apatb_myFuncAccel4_top/LENGTH_data0_15 -into $tb_portdepth_group -radix hex
-add_wave /apatb_myFuncAccel4_top/LENGTH_input_r -into $tb_portdepth_group -radix hex
-add_wave /apatb_myFuncAccel4_top/LENGTH_output_r -into $tb_portdepth_group -radix hex
+add_wave /apatb_myFuncAccel4_top/LENGTH_my_input -into $tb_portdepth_group -radix hex
+add_wave /apatb_myFuncAccel4_top/LENGTH_my_output -into $tb_portdepth_group -radix hex
 set tbcoutputgroup [add_wave_group "C Outputs" -into $testbenchgroup]
 set tb_data_out_group [add_wave_group data_out(axis) -into $tbcoutputgroup]
-add_wave /apatb_myFuncAccel4_top/output_r_TREADY -into $tb_data_out_group -color #ffff00 -radix hex
-add_wave /apatb_myFuncAccel4_top/output_r_TVALID -into $tb_data_out_group -color #ffff00 -radix hex
-add_wave /apatb_myFuncAccel4_top/output_r_TDATA -into $tb_data_out_group -radix hex
+add_wave /apatb_myFuncAccel4_top/my_output_TREADY -into $tb_data_out_group -color #ffff00 -radix hex
+add_wave /apatb_myFuncAccel4_top/my_output_TVALID -into $tb_data_out_group -color #ffff00 -radix hex
+add_wave /apatb_myFuncAccel4_top/my_output_TDATA -into $tb_data_out_group -radix hex
 set tbcinputgroup [add_wave_group "C Inputs" -into $testbenchgroup]
 set tb_data1_group [add_wave_group data1(axis) -into $tbcinputgroup]
-add_wave /apatb_myFuncAccel4_top/input_r_TREADY -into $tb_data1_group -color #ffff00 -radix hex
-add_wave /apatb_myFuncAccel4_top/input_r_TVALID -into $tb_data1_group -color #ffff00 -radix hex
-add_wave /apatb_myFuncAccel4_top/input_r_TDATA -into $tb_data1_group -radix hex
+add_wave /apatb_myFuncAccel4_top/my_input_TREADY -into $tb_data1_group -color #ffff00 -radix hex
+add_wave /apatb_myFuncAccel4_top/my_input_TVALID -into $tb_data1_group -color #ffff00 -radix hex
+add_wave /apatb_myFuncAccel4_top/my_input_TDATA -into $tb_data1_group -radix hex
 set tb_data0_group [add_wave_group data0(wire) -into $tbcinputgroup]
 add_wave /apatb_myFuncAccel4_top/data0_15 -into $tb_data0_group -radix hex
 add_wave /apatb_myFuncAccel4_top/data0_14 -into $tb_data0_group -radix hex

@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'myFuncAccel4'
 ================================================================
-* Date:           Sun Nov 10 21:15:16 2019
+* Date:           Tue Nov 12 18:14:46 2019
 
 * Version:        2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)
 * Project:        2b
@@ -59,9 +59,9 @@
 |Instance         |        -|     20|    1686|   3498|    -|
 |Memory           |        -|      -|       -|      -|    -|
 |Multiplexer      |        -|      -|       -|    575|    -|
-|Register         |        0|      -|    3265|    480|    -|
+|Register         |        0|      -|    3363|    512|    -|
 +-----------------+---------+-------+--------+-------+-----+
-|Total            |        0|     20|    4951|   4890|    0|
+|Total            |        0|     20|    5049|   4922|    0|
 +-----------------+---------+-------+--------+-------+-----+
 |Available        |      280|    220|  106400|  53200|    0|
 +-----------------+---------+-------+--------+-------+-----+
@@ -119,16 +119,16 @@
     |ap_block_state37_io               |    and   |      0|  0|   2|           1|           1|
     |ap_block_state3_pp0_stage1_iter0  |    and   |      0|  0|   2|           1|           1|
     |ap_condition_673                  |    and   |      0|  0|   2|           1|           1|
-    |ap_predicate_op304_write_state33  |    and   |      0|  0|   2|           1|           1|
-    |ap_predicate_op305_write_state33  |    and   |      0|  0|   2|           1|           1|
-    |ap_predicate_op318_write_state35  |    and   |      0|  0|   2|           1|           1|
-    |ap_predicate_op319_write_state35  |    and   |      0|  0|   2|           1|           1|
-    |ap_predicate_op321_write_state36  |    and   |      0|  0|   2|           1|           1|
-    |ap_predicate_op322_write_state36  |    and   |      0|  0|   2|           1|           1|
-    |input_r_0_load_A                  |    and   |      0|  0|   2|           1|           1|
-    |input_r_0_load_B                  |    and   |      0|  0|   2|           1|           1|
-    |output_r_1_load_A                 |    and   |      0|  0|   2|           1|           1|
-    |output_r_1_load_B                 |    and   |      0|  0|   2|           1|           1|
+    |ap_predicate_op298_write_state33  |    and   |      0|  0|   2|           1|           1|
+    |ap_predicate_op299_write_state33  |    and   |      0|  0|   2|           1|           1|
+    |ap_predicate_op312_write_state35  |    and   |      0|  0|   2|           1|           1|
+    |ap_predicate_op313_write_state35  |    and   |      0|  0|   2|           1|           1|
+    |ap_predicate_op315_write_state36  |    and   |      0|  0|   2|           1|           1|
+    |ap_predicate_op316_write_state36  |    and   |      0|  0|   2|           1|           1|
+    |my_input_0_load_A                 |    and   |      0|  0|   2|           1|           1|
+    |my_input_0_load_B                 |    and   |      0|  0|   2|           1|           1|
+    |my_output_1_load_A                |    and   |      0|  0|   2|           1|           1|
+    |my_output_1_load_B                |    and   |      0|  0|   2|           1|           1|
     |icmp_ln31_fu_351_p2               |   icmp   |      0|  0|  18|          32|          32|
     |icmp_ln50_1_fu_405_p2             |   icmp   |      0|  0|  18|          23|           1|
     |icmp_ln50_2_fu_371_p2             |   icmp   |      0|  0|  11|           8|           2|
@@ -141,8 +141,8 @@
     |icmp_ln50_9_fu_552_p2             |   icmp   |      0|  0|  18|          23|           1|
     |icmp_ln50_fu_399_p2               |   icmp   |      0|  0|  11|           8|           2|
     |icmp_ln52_fu_603_p2               |   icmp   |      0|  0|   9|           3|           4|
-    |input_r_0_state_cmp_full          |   icmp   |      0|  0|   8|           2|           1|
-    |output_r_1_state_cmp_full         |   icmp   |      0|  0|   8|           2|           1|
+    |my_input_0_state_cmp_full         |   icmp   |      0|  0|   8|           2|           1|
+    |my_output_1_state_cmp_full        |   icmp   |      0|  0|   8|           2|           1|
     |ap_block_pp0_stage0_11001         |    or    |      0|  0|   2|           1|           1|
     |ap_block_pp0_stage1_11001         |    or    |      0|  0|   2|           1|           1|
     |ap_block_pp0_stage2_11001         |    or    |      0|  0|   2|           1|           1|
@@ -187,13 +187,13 @@
     |grp_fu_325_p0                            |  15|          3|   32|         96|
     |grp_fu_328_p0                            |  27|          5|   32|        160|
     |i_0_reg_228                              |   9|          2|   32|         64|
-    |input_r_0_data_out                       |   9|          2|   32|         64|
-    |input_r_0_state                          |  15|          3|    2|          6|
-    |input_r_TDATA_blk_n                      |   9|          2|    1|          2|
-    |output_r_1_data_in                       |  33|          6|   32|        192|
-    |output_r_1_data_out                      |   9|          2|   32|         64|
-    |output_r_1_state                         |  15|          3|    2|          6|
-    |output_r_TDATA_blk_n                     |   9|          2|    1|          2|
+    |my_input_0_data_out                      |   9|          2|   32|         64|
+    |my_input_0_state                         |  15|          3|    2|          6|
+    |my_input_TDATA_blk_n                     |   9|          2|    1|          2|
+    |my_output_1_data_in                      |  33|          6|   32|        192|
+    |my_output_1_data_out                     |   9|          2|   32|         64|
+    |my_output_1_state                        |  15|          3|    2|          6|
+    |my_output_TDATA_blk_n                    |   9|          2|    1|          2|
     +-----------------------------------------+----+-----------+-----+-----------+
     |Total                                    | 575|        110|  808|       3225|
     +-----------------------------------------+----+-----------+-----+-----------+
@@ -229,76 +229,80 @@
     |ap_phi_reg_pp0_iter7_phi_ln56_1_reg_251  |  64|   0|   64|          0|
     |ap_phi_reg_pp0_iter7_phi_ln56_reg_239    |  64|   0|   64|          0|
     |ap_phi_reg_pp0_iter8_phi_ln56_1_reg_251  |  64|   0|   64|          0|
+    |bitcast_ln50_1_reg_619                   |  32|   0|   32|          0|
     |i_0_reg_228                              |  32|   0|   32|          0|
     |i_reg_633                                |  32|   0|   32|          0|
     |icmp_ln31_reg_629                        |   1|   0|    1|          0|
+    |icmp_ln50_3_reg_624                      |   1|   0|    1|          0|
     |icmp_ln52_reg_951                        |   1|   0|    1|          0|
     |icmp_ln52_reg_951_pp0_iter8_reg          |   1|   0|    1|          0|
-    |input_r_0_payload_A                      |  32|   0|   32|          0|
-    |input_r_0_payload_B                      |  32|   0|   32|          0|
-    |input_r_0_sel_rd                         |   1|   0|    1|          0|
-    |input_r_0_sel_wr                         |   1|   0|    1|          0|
-    |input_r_0_state                          |   2|   0|    2|          0|
-    |output_r_1_payload_A                     |  32|   0|   32|          0|
-    |output_r_1_payload_B                     |  32|   0|   32|          0|
-    |output_r_1_sel_rd                        |   1|   0|    1|          0|
-    |output_r_1_sel_wr                        |   1|   0|    1|          0|
-    |output_r_1_state                         |   2|   0|    2|          0|
+    |my_input_0_payload_A                     |  32|   0|   32|          0|
+    |my_input_0_payload_B                     |  32|   0|   32|          0|
+    |my_input_0_sel_rd                        |   1|   0|    1|          0|
+    |my_input_0_sel_wr                        |   1|   0|    1|          0|
+    |my_input_0_state                         |   2|   0|    2|          0|
+    |my_output_1_payload_A                    |  32|   0|   32|          0|
+    |my_output_1_payload_B                    |  32|   0|   32|          0|
+    |my_output_1_sel_rd                       |   1|   0|    1|          0|
+    |my_output_1_sel_wr                       |   1|   0|    1|          0|
+    |my_output_1_state                        |   2|   0|    2|          0|
+    |or_ln50_1_reg_651                        |   1|   0|    1|          0|
     |reg_332                                  |  32|   0|   32|          0|
-    |tmp_2_0_1_reg_778                        |  32|   0|   32|          0|
-    |tmp_2_0_2_reg_798                        |  32|   0|   32|          0|
-    |tmp_2_0_3_reg_818                        |  32|   0|   32|          0|
-    |tmp_2_1_1_reg_783                        |  32|   0|   32|          0|
-    |tmp_2_1_2_reg_803                        |  32|   0|   32|          0|
-    |tmp_2_1_3_reg_823                        |  32|   0|   32|          0|
-    |tmp_2_1_reg_748                          |  32|   0|   32|          0|
-    |tmp_2_2_1_reg_788                        |  32|   0|   32|          0|
-    |tmp_2_2_2_reg_808                        |  32|   0|   32|          0|
-    |tmp_2_2_3_reg_828                        |  32|   0|   32|          0|
-    |tmp_2_2_reg_758                          |  32|   0|   32|          0|
-    |tmp_2_3_1_reg_793                        |  32|   0|   32|          0|
-    |tmp_2_3_2_reg_813                        |  32|   0|   32|          0|
-    |tmp_2_3_3_reg_833                        |  32|   0|   32|          0|
-    |tmp_2_3_reg_768                          |  32|   0|   32|          0|
-    |tmp_2_reg_738                            |  32|   0|   32|          0|
-    |tmp_3_0_1_reg_858                        |  32|   0|   32|          0|
-    |tmp_3_0_2_reg_878                        |  32|   0|   32|          0|
-    |tmp_3_0_3_reg_898                        |  32|   0|   32|          0|
-    |tmp_3_1_1_reg_863                        |  32|   0|   32|          0|
-    |tmp_3_1_2_reg_883                        |  32|   0|   32|          0|
-    |tmp_3_1_3_reg_905                        |  32|   0|   32|          0|
-    |tmp_3_1_3_reg_905_pp0_iter6_reg          |  32|   0|   32|          0|
-    |tmp_3_1_reg_843                          |  32|   0|   32|          0|
-    |tmp_3_2_1_reg_868                        |  32|   0|   32|          0|
-    |tmp_3_2_2_reg_888                        |  32|   0|   32|          0|
-    |tmp_3_2_3_reg_912                        |  32|   0|   32|          0|
-    |tmp_3_2_reg_848                          |  32|   0|   32|          0|
-    |tmp_3_3_1_reg_873                        |  32|   0|   32|          0|
-    |tmp_3_3_2_reg_893                        |  32|   0|   32|          0|
-    |tmp_3_3_3_reg_919                        |  32|   0|   32|          0|
-    |tmp_3_3_3_reg_919_pp0_iter6_reg          |  32|   0|   32|          0|
-    |tmp_3_3_reg_853                          |  32|   0|   32|          0|
-    |tmp_3_reg_838                            |  32|   0|   32|          0|
-    |tmp_5_reg_926                            |   1|   0|    1|          0|
-    |tmp_8_reg_931                            |   1|   0|    1|          0|
-    |tmp_s_reg_936                            |   1|   0|    1|          0|
+    |tmp_1_0_1_reg_778                        |  32|   0|   32|          0|
+    |tmp_1_0_2_reg_798                        |  32|   0|   32|          0|
+    |tmp_1_0_3_reg_818                        |  32|   0|   32|          0|
+    |tmp_1_1_1_reg_783                        |  32|   0|   32|          0|
+    |tmp_1_1_2_reg_803                        |  32|   0|   32|          0|
+    |tmp_1_1_3_reg_823                        |  32|   0|   32|          0|
+    |tmp_1_1_reg_748                          |  32|   0|   32|          0|
+    |tmp_1_2_1_reg_788                        |  32|   0|   32|          0|
+    |tmp_1_2_2_reg_808                        |  32|   0|   32|          0|
+    |tmp_1_2_3_reg_828                        |  32|   0|   32|          0|
+    |tmp_1_2_reg_758                          |  32|   0|   32|          0|
+    |tmp_1_3_1_reg_793                        |  32|   0|   32|          0|
+    |tmp_1_3_2_reg_813                        |  32|   0|   32|          0|
+    |tmp_1_3_3_reg_833                        |  32|   0|   32|          0|
+    |tmp_1_3_reg_768                          |  32|   0|   32|          0|
+    |tmp_1_reg_838                            |  32|   0|   32|          0|
+    |tmp_2_0_1_reg_858                        |  32|   0|   32|          0|
+    |tmp_2_0_2_reg_878                        |  32|   0|   32|          0|
+    |tmp_2_0_3_reg_898                        |  32|   0|   32|          0|
+    |tmp_2_1_1_reg_863                        |  32|   0|   32|          0|
+    |tmp_2_1_2_reg_883                        |  32|   0|   32|          0|
+    |tmp_2_1_3_reg_905                        |  32|   0|   32|          0|
+    |tmp_2_1_3_reg_905_pp0_iter6_reg          |  32|   0|   32|          0|
+    |tmp_2_1_reg_843                          |  32|   0|   32|          0|
+    |tmp_2_2_1_reg_868                        |  32|   0|   32|          0|
+    |tmp_2_2_2_reg_888                        |  32|   0|   32|          0|
+    |tmp_2_2_3_reg_912                        |  32|   0|   32|          0|
+    |tmp_2_2_reg_848                          |  32|   0|   32|          0|
+    |tmp_2_3_1_reg_873                        |  32|   0|   32|          0|
+    |tmp_2_3_2_reg_893                        |  32|   0|   32|          0|
+    |tmp_2_3_3_reg_919                        |  32|   0|   32|          0|
+    |tmp_2_3_3_reg_919_pp0_iter6_reg          |  32|   0|   32|          0|
+    |tmp_2_3_reg_853                          |  32|   0|   32|          0|
+    |tmp_4_reg_926                            |   1|   0|    1|          0|
+    |tmp_7_reg_931                            |   1|   0|    1|          0|
+    |tmp_9_reg_936                            |   1|   0|    1|          0|
+    |tmp_s_reg_738                            |  32|   0|   32|          0|
     |icmp_ln31_reg_629                        |  64|  32|    1|          0|
-    |tmp_2_0_1_reg_778                        |  64|  32|   32|          0|
-    |tmp_2_0_2_reg_798                        |  64|  32|   32|          0|
-    |tmp_2_0_3_reg_818                        |  64|  32|   32|          0|
-    |tmp_2_1_1_reg_783                        |  64|  32|   32|          0|
-    |tmp_2_1_2_reg_803                        |  64|  32|   32|          0|
-    |tmp_2_1_3_reg_823                        |  64|  32|   32|          0|
-    |tmp_2_2_1_reg_788                        |  64|  32|   32|          0|
-    |tmp_2_2_2_reg_808                        |  64|  32|   32|          0|
-    |tmp_2_2_3_reg_828                        |  64|  32|   32|          0|
-    |tmp_2_3_1_reg_793                        |  64|  32|   32|          0|
-    |tmp_2_3_2_reg_813                        |  64|  32|   32|          0|
-    |tmp_2_3_3_reg_833                        |  64|  32|   32|          0|
-    |tmp_3_0_3_reg_898                        |  64|  32|   32|          0|
-    |tmp_3_2_3_reg_912                        |  64|  32|   32|          0|
+    |or_ln50_1_reg_651                        |  64|  32|    1|          0|
+    |tmp_1_0_1_reg_778                        |  64|  32|   32|          0|
+    |tmp_1_0_2_reg_798                        |  64|  32|   32|          0|
+    |tmp_1_0_3_reg_818                        |  64|  32|   32|          0|
+    |tmp_1_1_1_reg_783                        |  64|  32|   32|          0|
+    |tmp_1_1_2_reg_803                        |  64|  32|   32|          0|
+    |tmp_1_1_3_reg_823                        |  64|  32|   32|          0|
+    |tmp_1_2_1_reg_788                        |  64|  32|   32|          0|
+    |tmp_1_2_2_reg_808                        |  64|  32|   32|          0|
+    |tmp_1_2_3_reg_828                        |  64|  32|   32|          0|
+    |tmp_1_3_1_reg_793                        |  64|  32|   32|          0|
+    |tmp_1_3_2_reg_813                        |  64|  32|   32|          0|
+    |tmp_1_3_3_reg_833                        |  64|  32|   32|          0|
+    |tmp_2_0_3_reg_898                        |  64|  32|   32|          0|
+    |tmp_2_2_3_reg_912                        |  64|  32|   32|          0|
     +-----------------------------------------+----+----+-----+-----------+
-    |Total                                    |3265| 480| 2754|          0|
+    |Total                                    |3363| 512| 2789|          0|
     +-----------------------------------------+----+----+-----+-----------+
 
 
@@ -307,39 +311,39 @@
 == Interface
 ================================================================
 * Summary: 
-+-----------------+-----+-----+------------+--------------+--------------+
-|    RTL Ports    | Dir | Bits|  Protocol  | Source Object|    C Type    |
-+-----------------+-----+-----+------------+--------------+--------------+
-|ap_clk           |  in |    1| ap_ctrl_hs | myFuncAccel4 | return value |
-|ap_rst_n         |  in |    1| ap_ctrl_hs | myFuncAccel4 | return value |
-|ap_start         |  in |    1| ap_ctrl_hs | myFuncAccel4 | return value |
-|ap_done          | out |    1| ap_ctrl_hs | myFuncAccel4 | return value |
-|ap_idle          | out |    1| ap_ctrl_hs | myFuncAccel4 | return value |
-|ap_ready         | out |    1| ap_ctrl_hs | myFuncAccel4 | return value |
-|size             |  in |   32|  ap_stable |     size     |    scalar    |
-|dim              |  in |   32|  ap_stable |      dim     |    scalar    |
-|threshold        |  in |   32|  ap_stable |   threshold  |    scalar    |
-|data0_0          |  in |   32|  ap_stable |    data0_0   |    pointer   |
-|data0_1          |  in |   32|  ap_stable |    data0_1   |    pointer   |
-|data0_2          |  in |   32|  ap_stable |    data0_2   |    pointer   |
-|data0_3          |  in |   32|  ap_stable |    data0_3   |    pointer   |
-|data0_4          |  in |   32|  ap_stable |    data0_4   |    pointer   |
-|data0_5          |  in |   32|  ap_stable |    data0_5   |    pointer   |
-|data0_6          |  in |   32|  ap_stable |    data0_6   |    pointer   |
-|data0_7          |  in |   32|  ap_stable |    data0_7   |    pointer   |
-|data0_8          |  in |   32|  ap_stable |    data0_8   |    pointer   |
-|data0_9          |  in |   32|  ap_stable |    data0_9   |    pointer   |
-|data0_10         |  in |   32|  ap_stable |   data0_10   |    pointer   |
-|data0_11         |  in |   32|  ap_stable |   data0_11   |    pointer   |
-|data0_12         |  in |   32|  ap_stable |   data0_12   |    pointer   |
-|data0_13         |  in |   32|  ap_stable |   data0_13   |    pointer   |
-|data0_14         |  in |   32|  ap_stable |   data0_14   |    pointer   |
-|data0_15         |  in |   32|  ap_stable |   data0_15   |    pointer   |
-|input_r_TDATA    |  in |   32|    axis    |    input_r   |    pointer   |
-|input_r_TVALID   |  in |    1|    axis    |    input_r   |    pointer   |
-|input_r_TREADY   | out |    1|    axis    |    input_r   |    pointer   |
-|output_r_TDATA   | out |   32|    axis    |   output_r   |    pointer   |
-|output_r_TVALID  | out |    1|    axis    |   output_r   |    pointer   |
-|output_r_TREADY  |  in |    1|    axis    |   output_r   |    pointer   |
-+-----------------+-----+-----+------------+--------------+--------------+
++------------------+-----+-----+------------+--------------+--------------+
+|     RTL Ports    | Dir | Bits|  Protocol  | Source Object|    C Type    |
++------------------+-----+-----+------------+--------------+--------------+
+|ap_clk            |  in |    1| ap_ctrl_hs | myFuncAccel4 | return value |
+|ap_rst_n          |  in |    1| ap_ctrl_hs | myFuncAccel4 | return value |
+|ap_start          |  in |    1| ap_ctrl_hs | myFuncAccel4 | return value |
+|ap_done           | out |    1| ap_ctrl_hs | myFuncAccel4 | return value |
+|ap_idle           | out |    1| ap_ctrl_hs | myFuncAccel4 | return value |
+|ap_ready          | out |    1| ap_ctrl_hs | myFuncAccel4 | return value |
+|size              |  in |   32|   ap_none  |     size     |    scalar    |
+|dim               |  in |   32|   ap_none  |      dim     |    scalar    |
+|threshold         |  in |   32|   ap_none  |   threshold  |    scalar    |
+|data0_0           |  in |   32|  ap_stable |    data0_0   |    pointer   |
+|data0_1           |  in |   32|  ap_stable |    data0_1   |    pointer   |
+|data0_2           |  in |   32|  ap_stable |    data0_2   |    pointer   |
+|data0_3           |  in |   32|  ap_stable |    data0_3   |    pointer   |
+|data0_4           |  in |   32|  ap_stable |    data0_4   |    pointer   |
+|data0_5           |  in |   32|  ap_stable |    data0_5   |    pointer   |
+|data0_6           |  in |   32|  ap_stable |    data0_6   |    pointer   |
+|data0_7           |  in |   32|  ap_stable |    data0_7   |    pointer   |
+|data0_8           |  in |   32|  ap_stable |    data0_8   |    pointer   |
+|data0_9           |  in |   32|  ap_stable |    data0_9   |    pointer   |
+|data0_10          |  in |   32|  ap_stable |   data0_10   |    pointer   |
+|data0_11          |  in |   32|  ap_stable |   data0_11   |    pointer   |
+|data0_12          |  in |   32|  ap_stable |   data0_12   |    pointer   |
+|data0_13          |  in |   32|  ap_stable |   data0_13   |    pointer   |
+|data0_14          |  in |   32|  ap_stable |   data0_14   |    pointer   |
+|data0_15          |  in |   32|  ap_stable |   data0_15   |    pointer   |
+|my_input_TDATA    |  in |   32|    axis    |   my_input   |    pointer   |
+|my_input_TVALID   |  in |    1|    axis    |   my_input   |    pointer   |
+|my_input_TREADY   | out |    1|    axis    |   my_input   |    pointer   |
+|my_output_TDATA   | out |   32|    axis    |   my_output  |    pointer   |
+|my_output_TVALID  | out |    1|    axis    |   my_output  |    pointer   |
+|my_output_TREADY  |  in |    1|    axis    |   my_output  |    pointer   |
++------------------+-----+-----+------------+--------------+--------------+
 

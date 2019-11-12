@@ -2426,23 +2426,23 @@ void myFuncAccel4 (unsigned int size, unsigned int dim, dataType_t threshold, da
 _ssdm_SpecExprBalance(1, "");
 
 
-_ssdm_op_SpecInterface(size, "ap_stable", 0, 0, "", 0, 100, "", "", "", 0, 0, 0, 0, "", "");
-_ssdm_op_SpecInterface(dim, "ap_stable", 0, 0, "", 0, 100, "", "", "", 0, 0, 0, 0, "", "");
-_ssdm_op_SpecInterface(threshold, "ap_stable", 0, 0, "", 0, 100, "", "", "", 0, 0, 0, 0, "", "");
+
+
+
 
 _ssdm_op_SpecInterface(data0, "ap_stable", 0, 0, "", 0, 1000, "", "", "", 0, 0, 0, 0, "", "");
 _ssdm_SpecArrayPartition( data0, 1, "COMPLETE", 0, "");
 
 
-_ssdm_op_SpecInterface(data1, "axis", 1, 1, "both", 0, 1000, "input", "", "", 0, 0, 0, 0, "", "");
-_ssdm_op_SpecInterface(data_out, "axis", 1, 1, "both", 0, 1000, "output", "", "", 0, 0, 0, 0, "", "");
+_ssdm_op_SpecInterface(data1, "axis", 1, 1, "both", 0, 1000, "my_input", "", "", 0, 0, 0, 0, "", "");
+_ssdm_op_SpecInterface(data_out, "axis", 1, 1, "both", 0, 1000, "my_output", "", "", 0, 0, 0, 0, "", "");
 
  unsigned int i, k, l;
  dataType_t temp_dim[4];
-_ssdm_SpecArrayPartition( temp_dim, 1, "COMPLETE", 0, "");
+
 
  dataType_t temp_in[4];
-_ssdm_SpecArrayPartition( temp_in, 1, "COMPLETE", 0, "");
+
 
 
 

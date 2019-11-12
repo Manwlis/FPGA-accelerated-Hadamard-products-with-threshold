@@ -56,6 +56,7 @@ IFLAG += -D__SIM_FIR__
 IFLAG += -D__SIM_DDS__
 
 IFLAG += -D__DSP48E1__
+IFLAG += -Wno-unknown-pragmas 
 IFLAG += -g
 DFLAG += -DAUTOCC
 DFLAG += -D__xilinx_ip_top= -DAESL_TB
@@ -74,7 +75,7 @@ AUTOCC := apcc
 
 $(ObjDir)/main.o: ../../../../main.c $(ObjDir)/.dir
 	$(Echo) "   Compiling(apcc) ../../../../main.c in $(BuildMode) mode" $(AVE_DIR_DLOG)
-	$(Verb)  $(AUTOCC) -c -MMD  $(IFLAG) $(DFLAG) $< -o $@ ; \
+	$(Verb)  $(AUTOCC) -c -MMD -Wno-unknown-pragmas -Wno-unknown-pragmas  $(IFLAG) $(DFLAG) $< -o $@ ; \
 
 -include $(ObjDir)/main.d
 

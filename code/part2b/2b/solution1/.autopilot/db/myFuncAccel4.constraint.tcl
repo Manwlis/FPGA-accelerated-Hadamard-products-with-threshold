@@ -15,7 +15,7 @@ set one_path { \
     type single_source \
     source { \
             module myFuncAccel4 \
-            instance size \
+            instance data0_0 \
             bitWidth 32 \
             type port \
            } \
@@ -28,7 +28,7 @@ set one_path { \
     type single_source \
     source { \
             module myFuncAccel4 \
-            instance dim \
+            instance data0_1 \
             bitWidth 32 \
             type port \
            } \
@@ -41,7 +41,7 @@ set one_path { \
     type single_source \
     source { \
             module myFuncAccel4 \
-            instance threshold \
+            instance data0_2 \
             bitWidth 32 \
             type port \
            } \
@@ -54,7 +54,7 @@ set one_path { \
     type single_source \
     source { \
             module myFuncAccel4 \
-            instance data0_0 \
+            instance data0_3 \
             bitWidth 32 \
             type port \
            } \
@@ -67,7 +67,7 @@ set one_path { \
     type single_source \
     source { \
             module myFuncAccel4 \
-            instance data0_1 \
+            instance data0_4 \
             bitWidth 32 \
             type port \
            } \
@@ -80,7 +80,7 @@ set one_path { \
     type single_source \
     source { \
             module myFuncAccel4 \
-            instance data0_2 \
+            instance data0_5 \
             bitWidth 32 \
             type port \
            } \
@@ -93,7 +93,7 @@ set one_path { \
     type single_source \
     source { \
             module myFuncAccel4 \
-            instance data0_3 \
+            instance data0_6 \
             bitWidth 32 \
             type port \
            } \
@@ -106,7 +106,7 @@ set one_path { \
     type single_source \
     source { \
             module myFuncAccel4 \
-            instance data0_4 \
+            instance data0_7 \
             bitWidth 32 \
             type port \
            } \
@@ -119,7 +119,7 @@ set one_path { \
     type single_source \
     source { \
             module myFuncAccel4 \
-            instance data0_5 \
+            instance data0_8 \
             bitWidth 32 \
             type port \
            } \
@@ -132,7 +132,7 @@ set one_path { \
     type single_source \
     source { \
             module myFuncAccel4 \
-            instance data0_6 \
+            instance data0_9 \
             bitWidth 32 \
             type port \
            } \
@@ -145,7 +145,7 @@ set one_path { \
     type single_source \
     source { \
             module myFuncAccel4 \
-            instance data0_7 \
+            instance data0_10 \
             bitWidth 32 \
             type port \
            } \
@@ -158,7 +158,7 @@ set one_path { \
     type single_source \
     source { \
             module myFuncAccel4 \
-            instance data0_8 \
+            instance data0_11 \
             bitWidth 32 \
             type port \
            } \
@@ -171,7 +171,7 @@ set one_path { \
     type single_source \
     source { \
             module myFuncAccel4 \
-            instance data0_9 \
+            instance data0_12 \
             bitWidth 32 \
             type port \
            } \
@@ -184,7 +184,7 @@ set one_path { \
     type single_source \
     source { \
             module myFuncAccel4 \
-            instance data0_10 \
+            instance data0_13 \
             bitWidth 32 \
             type port \
            } \
@@ -197,7 +197,7 @@ set one_path { \
     type single_source \
     source { \
             module myFuncAccel4 \
-            instance data0_11 \
+            instance data0_14 \
             bitWidth 32 \
             type port \
            } \
@@ -210,50 +210,11 @@ set one_path { \
     type single_source \
     source { \
             module myFuncAccel4 \
-            instance data0_12 \
-            bitWidth 32 \
-            type port \
-           } \
-}
-lappend all_path $one_path
-lappend false_path conx_path_15
-
-set one_path { \
-    name conx_path_16 \
-    type single_source \
-    source { \
-            module myFuncAccel4 \
-            instance data0_13 \
-            bitWidth 32 \
-            type port \
-           } \
-}
-lappend all_path $one_path
-lappend false_path conx_path_16
-
-set one_path { \
-    name conx_path_17 \
-    type single_source \
-    source { \
-            module myFuncAccel4 \
-            instance data0_14 \
-            bitWidth 32 \
-            type port \
-           } \
-}
-lappend all_path $one_path
-lappend false_path conx_path_17
-
-set one_path { \
-    name conx_path_18 \
-    type single_source \
-    source { \
-            module myFuncAccel4 \
             instance data0_15 \
             bitWidth 32 \
             type port \
            } \
 }
 lappend all_path $one_path
-lappend false_path conx_path_18
+lappend false_path conx_path_15
 

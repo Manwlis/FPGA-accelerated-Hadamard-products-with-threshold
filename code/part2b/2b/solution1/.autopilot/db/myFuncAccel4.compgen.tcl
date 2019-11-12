@@ -453,16 +453,16 @@ if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::native_axis_add] == "::AESL_LIB_XILADAPTER::native_axis_add"} {
 eval "::AESL_LIB_XILADAPTER::native_axis_add { \
     id 35 \
-    name input_r \
+    name my_input \
     reset_level 0 \
     sync_rst true \
     corename {} \
     metadata {  } \
     op interface \
-    ports { input_r_TDATA { I 32 vector } input_r_TVALID { I 1 bit } input_r_TREADY { O 1 bit } } \
+    ports { my_input_TDATA { I 32 vector } my_input_TVALID { I 1 bit } my_input_TREADY { O 1 bit } } \
 } "
 } else {
-puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'input_r'"
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'my_input'"
 }
 }
 
@@ -472,16 +472,16 @@ if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::native_axis_add] == "::AESL_LIB_XILADAPTER::native_axis_add"} {
 eval "::AESL_LIB_XILADAPTER::native_axis_add { \
     id 36 \
-    name output_r \
+    name my_output \
     reset_level 0 \
     sync_rst true \
     corename {} \
     metadata {  } \
     op interface \
-    ports { output_r_TDATA { O 32 vector } output_r_TVALID { O 1 bit } output_r_TREADY { I 1 bit } } \
+    ports { my_output_TDATA { O 32 vector } my_output_TVALID { O 1 bit } my_output_TREADY { I 1 bit } } \
 } "
 } else {
-puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'output_r'"
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'my_output'"
 }
 }
 

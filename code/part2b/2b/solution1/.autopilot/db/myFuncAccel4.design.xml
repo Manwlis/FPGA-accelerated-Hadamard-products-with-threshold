@@ -36,8 +36,8 @@
 <Resources>
 <BRAM_18K>0</BRAM_18K>
 <DSP48E>20</DSP48E>
-<FF>4951</FF>
-<LUT>4890</LUT>
+<FF>5049</FF>
+<LUT>4922</LUT>
 <URAM>0</URAM>
 </Resources>
 </AreaEstimates>
@@ -113,7 +113,7 @@
 <Object>size</Object>
 <Type>scalar</Type>
 <Scope></Scope>
-<IOProtocol>ap_stable</IOProtocol>
+<IOProtocol>ap_none</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>in</Dir>
 <Bits>32</Bits>
@@ -125,7 +125,7 @@
 <Object>dim</Object>
 <Type>scalar</Type>
 <Scope></Scope>
-<IOProtocol>ap_stable</IOProtocol>
+<IOProtocol>ap_none</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>in</Dir>
 <Bits>32</Bits>
@@ -137,7 +137,7 @@
 <Object>threshold</Object>
 <Type>scalar</Type>
 <Scope></Scope>
-<IOProtocol>ap_stable</IOProtocol>
+<IOProtocol>ap_none</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>in</Dir>
 <Bits>32</Bits>
@@ -337,8 +337,8 @@
 <CType>float</CType>
 </RtlPorts>
 <RtlPorts>
-<name>input_r_TDATA</name>
-<Object>input_r</Object>
+<name>my_input_TDATA</name>
+<Object>my_input</Object>
 <Type>pointer</Type>
 <Scope></Scope>
 <IOProtocol>axis</IOProtocol>
@@ -349,8 +349,8 @@
 <CType>float</CType>
 </RtlPorts>
 <RtlPorts>
-<name>input_r_TVALID</name>
-<Object>input_r</Object>
+<name>my_input_TVALID</name>
+<Object>my_input</Object>
 <Type>pointer</Type>
 <Scope></Scope>
 <IOProtocol>axis</IOProtocol>
@@ -361,8 +361,8 @@
 <CType>float</CType>
 </RtlPorts>
 <RtlPorts>
-<name>input_r_TREADY</name>
-<Object>input_r</Object>
+<name>my_input_TREADY</name>
+<Object>my_input</Object>
 <Type>pointer</Type>
 <Scope></Scope>
 <IOProtocol>axis</IOProtocol>
@@ -373,8 +373,8 @@
 <CType>float</CType>
 </RtlPorts>
 <RtlPorts>
-<name>output_r_TDATA</name>
-<Object>output_r</Object>
+<name>my_output_TDATA</name>
+<Object>my_output</Object>
 <Type>pointer</Type>
 <Scope></Scope>
 <IOProtocol>axis</IOProtocol>
@@ -385,8 +385,8 @@
 <CType>float</CType>
 </RtlPorts>
 <RtlPorts>
-<name>output_r_TVALID</name>
-<Object>output_r</Object>
+<name>my_output_TVALID</name>
+<Object>my_output</Object>
 <Type>pointer</Type>
 <Scope></Scope>
 <IOProtocol>axis</IOProtocol>
@@ -397,8 +397,8 @@
 <CType>float</CType>
 </RtlPorts>
 <RtlPorts>
-<name>output_r_TREADY</name>
-<Object>output_r</Object>
+<name>my_output_TREADY</name>
+<Object>my_output</Object>
 <Type>pointer</Type>
 <Scope></Scope>
 <IOProtocol>axis</IOProtocol>

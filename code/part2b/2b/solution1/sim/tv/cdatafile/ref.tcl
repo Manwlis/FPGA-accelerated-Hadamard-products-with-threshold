@@ -17,7 +17,7 @@ set depth_list {
 {data0_13 1}
 {data0_14 1}
 {data0_15 1}
-{input_r 1000}
-{output_r 1000}
+{my_input 1000}
+{my_output 1000}
 }
 set trans_num 1

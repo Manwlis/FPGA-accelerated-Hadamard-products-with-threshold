@@ -14,9 +14,9 @@ set isEnableWaveformDebug 1
 set C_modelName {myFuncAccel4}
 set C_modelType { void 0 }
 set C_modelArgList {
-	{ size int 32 regular {ap_stable 0} }
-	{ dim int 32 unused {ap_stable 0} }
-	{ threshold float 32 regular {ap_stable 0} }
+	{ size int 32 regular  }
+	{ dim int 32 unused  }
+	{ threshold float 32 regular  }
 	{ data0_0 float 32 regular {pointer 0}  }
 	{ data0_1 float 32 regular {pointer 0}  }
 	{ data0_2 float 32 regular {pointer 0}  }
@@ -33,8 +33,8 @@ set C_modelArgList {
 	{ data0_13 float 32 regular {pointer 0}  }
 	{ data0_14 float 32 regular {pointer 0}  }
 	{ data0_15 float 32 regular {pointer 0}  }
-	{ input_r float 32 regular {axi_s 0 volatile  { input_r Data } }  }
-	{ output_r float 32 regular {axi_s 1 ""  { output_r Data } }  }
+	{ my_input float 32 regular {axi_s 0 volatile  { my_input Data } }  }
+	{ my_output float 32 regular {axi_s 1 ""  { my_output Data } }  }
 }
 set C_modelArgMapList {[ 
 	{ "Name" : "size", "interface" : "wire", "bitwidth" : 32, "direction" : "READONLY", "bitSlice":[{"low":0,"up":31,"cElement": [{"cName": "size","cData": "unsigned int","bit_use": { "low": 0,"up": 31},"cArray": [{"low" : 0,"up" : 0,"step" : 0}]}]}]} , 
@@ -56,8 +56,8 @@ set C_modelArgMapList {[
  	{ "Name" : "data0_13", "interface" : "wire", "bitwidth" : 32, "direction" : "READONLY", "bitSlice":[{"low":0,"up":31,"cElement": [{"cName": "data0","cData": "float","bit_use": { "low": 0,"up": 31},"cArray": [{"low" : 13,"up" : 13,"step" : 2}]}]}]} , 
  	{ "Name" : "data0_14", "interface" : "wire", "bitwidth" : 32, "direction" : "READONLY", "bitSlice":[{"low":0,"up":31,"cElement": [{"cName": "data0","cData": "float","bit_use": { "low": 0,"up": 31},"cArray": [{"low" : 14,"up" : 14,"step" : 2}]}]}]} , 
  	{ "Name" : "data0_15", "interface" : "wire", "bitwidth" : 32, "direction" : "READONLY", "bitSlice":[{"low":0,"up":31,"cElement": [{"cName": "data0","cData": "float","bit_use": { "low": 0,"up": 31},"cArray": [{"low" : 15,"up" : 15,"step" : 2}]}]}]} , 
- 	{ "Name" : "input_r", "interface" : "axis", "bitwidth" : 32, "direction" : "READONLY", "bitSlice":[{"low":0,"up":31,"cElement": [{"cName": "data1","cData": "float","bit_use": { "low": 0,"up": 31},"cArray": [{"low" : 0,"up" : 999,"step" : 1}]}]}]} , 
- 	{ "Name" : "output_r", "interface" : "axis", "bitwidth" : 32, "direction" : "WRITEONLY", "bitSlice":[{"low":0,"up":31,"cElement": [{"cName": "data_out","cData": "float","bit_use": { "low": 0,"up": 31},"cArray": [{"low" : 0,"up" : 999,"step" : 1}]}]}]} ]}
+ 	{ "Name" : "my_input", "interface" : "axis", "bitwidth" : 32, "direction" : "READONLY", "bitSlice":[{"low":0,"up":31,"cElement": [{"cName": "data1","cData": "float","bit_use": { "low": 0,"up": 31},"cArray": [{"low" : 0,"up" : 999,"step" : 1}]}]}]} , 
+ 	{ "Name" : "my_output", "interface" : "axis", "bitwidth" : 32, "direction" : "WRITEONLY", "bitSlice":[{"low":0,"up":31,"cElement": [{"cName": "data_out","cData": "float","bit_use": { "low": 0,"up": 31},"cArray": [{"low" : 0,"up" : 999,"step" : 1}]}]}]} ]}
 # RTL Port declarations: 
 set portNum 31
 set portList { 
@@ -86,12 +86,12 @@ set portList {
 	{ data0_13 sc_in sc_lv 32 signal 16 } 
 	{ data0_14 sc_in sc_lv 32 signal 17 } 
 	{ data0_15 sc_in sc_lv 32 signal 18 } 
-	{ input_r_TDATA sc_in sc_lv 32 signal 19 } 
-	{ input_r_TVALID sc_in sc_logic 1 invld 19 } 
-	{ input_r_TREADY sc_out sc_logic 1 inacc 19 } 
-	{ output_r_TDATA sc_out sc_lv 32 signal 20 } 
-	{ output_r_TVALID sc_out sc_logic 1 outvld 20 } 
-	{ output_r_TREADY sc_in sc_logic 1 outacc 20 } 
+	{ my_input_TDATA sc_in sc_lv 32 signal 19 } 
+	{ my_input_TVALID sc_in sc_logic 1 invld 19 } 
+	{ my_input_TREADY sc_out sc_logic 1 inacc 19 } 
+	{ my_output_TDATA sc_out sc_lv 32 signal 20 } 
+	{ my_output_TVALID sc_out sc_logic 1 outvld 20 } 
+	{ my_output_TREADY sc_in sc_logic 1 outacc 20 } 
 }
 set NewPortList {[ 
 	{ "name": "ap_clk", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "clock", "bundle":{"name": "ap_clk", "role": "default" }} , 
@@ -119,12 +119,12 @@ set NewPortList {[
  	{ "name": "data0_13", "direction": "in", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "data0_13", "role": "default" }} , 
  	{ "name": "data0_14", "direction": "in", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "data0_14", "role": "default" }} , 
  	{ "name": "data0_15", "direction": "in", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "data0_15", "role": "default" }} , 
- 	{ "name": "input_r_TDATA", "direction": "in", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "input_r", "role": "TDATA" }} , 
- 	{ "name": "input_r_TVALID", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "invld", "bundle":{"name": "input_r", "role": "TVALID" }} , 
- 	{ "name": "input_r_TREADY", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "inacc", "bundle":{"name": "input_r", "role": "TREADY" }} , 
- 	{ "name": "output_r_TDATA", "direction": "out", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "output_r", "role": "TDATA" }} , 
- 	{ "name": "output_r_TVALID", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "outvld", "bundle":{"name": "output_r", "role": "TVALID" }} , 
- 	{ "name": "output_r_TREADY", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "outacc", "bundle":{"name": "output_r", "role": "TREADY" }}  ]}
+ 	{ "name": "my_input_TDATA", "direction": "in", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "my_input", "role": "TDATA" }} , 
+ 	{ "name": "my_input_TVALID", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "invld", "bundle":{"name": "my_input", "role": "TVALID" }} , 
+ 	{ "name": "my_input_TREADY", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "inacc", "bundle":{"name": "my_input", "role": "TREADY" }} , 
+ 	{ "name": "my_output_TDATA", "direction": "out", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "my_output", "role": "TDATA" }} , 
+ 	{ "name": "my_output_TVALID", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "outvld", "bundle":{"name": "my_output", "role": "TVALID" }} , 
+ 	{ "name": "my_output_TREADY", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "outacc", "bundle":{"name": "my_output", "role": "TREADY" }}  ]}
 
 set RtlHierarchyInfo {[
 	{"ID" : "0", "Level" : "0", "Path" : "`AUTOTB_DUT_INST", "Parent" : "", "Child" : ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11"],
@@ -141,9 +141,9 @@ set RtlHierarchyInfo {[
 		"InDataflowNetwork" : "0",
 		"HasNonBlockingOperation" : "0",
 		"Port" : [
-			{"Name" : "size", "Type" : "Stable", "Direction" : "I"},
-			{"Name" : "dim", "Type" : "Stable", "Direction" : "I"},
-			{"Name" : "threshold", "Type" : "Stable", "Direction" : "I"},
+			{"Name" : "size", "Type" : "None", "Direction" : "I"},
+			{"Name" : "dim", "Type" : "None", "Direction" : "I"},
+			{"Name" : "threshold", "Type" : "None", "Direction" : "I"},
 			{"Name" : "data0_0", "Type" : "Stable", "Direction" : "I"},
 			{"Name" : "data0_1", "Type" : "Stable", "Direction" : "I"},
 			{"Name" : "data0_2", "Type" : "Stable", "Direction" : "I"},
@@ -160,12 +160,12 @@ set RtlHierarchyInfo {[
 			{"Name" : "data0_13", "Type" : "Stable", "Direction" : "I"},
 			{"Name" : "data0_14", "Type" : "Stable", "Direction" : "I"},
 			{"Name" : "data0_15", "Type" : "Stable", "Direction" : "I"},
-			{"Name" : "input_r", "Type" : "Axis", "Direction" : "I",
+			{"Name" : "my_input", "Type" : "Axis", "Direction" : "I",
 				"BlockSignal" : [
-					{"Name" : "input_r_TDATA_blk_n", "Type" : "RtlSignal"}]},
-			{"Name" : "output_r", "Type" : "Axis", "Direction" : "O",
+					{"Name" : "my_input_TDATA_blk_n", "Type" : "RtlSignal"}]},
+			{"Name" : "my_output", "Type" : "Axis", "Direction" : "O",
 				"BlockSignal" : [
-					{"Name" : "output_r_TDATA_blk_n", "Type" : "RtlSignal"}]}]},
+					{"Name" : "my_output_TDATA_blk_n", "Type" : "RtlSignal"}]}]},
 	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.myFuncAccel4_fadd_32ns_32ns_32_5_full_dsp_1_U1", "Parent" : "0"},
 	{"ID" : "2", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.myFuncAccel4_fadd_32ns_32ns_32_5_full_dsp_1_U2", "Parent" : "0"},
 	{"ID" : "3", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.myFuncAccel4_fadd_32ns_32ns_32_5_full_dsp_1_U3", "Parent" : "0"},
@@ -200,8 +200,8 @@ set ArgLastReadFirstWriteLatency {
 		data0_13 {Type I LastRead 2 FirstWrite -1}
 		data0_14 {Type I LastRead 3 FirstWrite -1}
 		data0_15 {Type I LastRead 4 FirstWrite -1}
-		input_r {Type I LastRead 4 FirstWrite -1}
-		output_r {Type O LastRead -1 FirstWrite 32}}}
+		my_input {Type I LastRead 4 FirstWrite -1}
+		my_output {Type O LastRead -1 FirstWrite 32}}}
 
 set hasDtUnsupportedChannel 0
 
@@ -215,9 +215,9 @@ set PipelineEnableSignalInfo {[
 ]}
 
 set Spec2ImplPortList { 
-	size { ap_stable {  { size in_data 0 32 } } }
-	dim { ap_stable {  { dim in_data 0 32 } } }
-	threshold { ap_stable {  { threshold in_data 0 32 } } }
+	size { ap_none {  { size in_data 0 32 } } }
+	dim { ap_none {  { dim in_data 0 32 } } }
+	threshold { ap_none {  { threshold in_data 0 32 } } }
 	data0_0 { ap_stable {  { data0_0 in_data 0 32 } } }
 	data0_1 { ap_stable {  { data0_1 in_data 0 32 } } }
 	data0_2 { ap_stable {  { data0_2 in_data 0 32 } } }
@@ -234,8 +234,8 @@ set Spec2ImplPortList {
 	data0_13 { ap_stable {  { data0_13 in_data 0 32 } } }
 	data0_14 { ap_stable {  { data0_14 in_data 0 32 } } }
 	data0_15 { ap_stable {  { data0_15 in_data 0 32 } } }
-	input_r { axis {  { input_r_TDATA in_data 0 32 }  { input_r_TVALID in_vld 0 1 }  { input_r_TREADY in_acc 1 1 } } }
-	output_r { axis {  { output_r_TDATA out_data 1 32 }  { output_r_TVALID out_vld 1 1 }  { output_r_TREADY out_acc 0 1 } } }
+	my_input { axis {  { my_input_TDATA in_data 0 32 }  { my_input_TVALID in_vld 0 1 }  { my_input_TREADY in_acc 1 1 } } }
+	my_output { axis {  { my_output_TDATA out_data 1 32 }  { my_output_TVALID out_vld 1 1 }  { my_output_TREADY out_acc 0 1 } } }
 }
 
 set busDeadlockParameterList { 

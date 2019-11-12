@@ -1,4 +1,4 @@
-INFO-FLOW: Workspace /home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/2b/solution1 opened at Sun Nov 10 21:14:59 EET 2019
+INFO-FLOW: Workspace /home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/2b/solution1 opened at Tue Nov 12 18:14:29 EET 2019
 Execute     config_clock -quiet -name default -period 10 -default=false 
 INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
 Execute     open_platform DefaultPlatform 
@@ -40,11 +40,11 @@ Execute         source /run/media/epetrakos/60GB/Xilinx/Vivado/2019.1/common/tec
 Execute         source /run/media/epetrakos/60GB/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/dds_compiler.gen 
 Execute         source /run/media/epetrakos/60GB/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/util.gen 
 Execute         source /run/media/epetrakos/60GB/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/xfft.gen 
-Command         ap_source done; 0.15 sec.
+Command         ap_source done; 0.13 sec.
 Execute         source /run/media/epetrakos/60GB/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/xfir.gen 
 Execute         source /run/media/epetrakos/60GB/Xilinx/Vivado/2019.1/common/technology/xilinx/common/dsp48.gen 
-Command       ap_source done; 0.2 sec.
-Command     ap_source done; 0.2 sec.
+Command       ap_source done; 0.17 sec.
+Command     ap_source done; 0.18 sec.
 Execute     open_platform DefaultPlatform 
 Execute     import_lib /run/media/epetrakos/60GB/Xilinx/Vivado/2019.1/common/technology/xilinx/zynq/zynq_fpv6 
 Execute       source /run/media/epetrakos/60GB/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx_fp.lib 
@@ -87,7 +87,7 @@ Execute     ap_part_info -name xc7z020-clg484-1 -data info
 Execute     config_chip_info -quiet -speed slow 
 Execute     config_export -format=ip_catalog 
 Execute     config_export -rtl=verilog 
-Command   open_solution done; 1 sec.
+Command   open_solution done; 0.98 sec.
 Execute   set_part xc7z020-clg484-1 -tool vivado 
 Execute     ap_part_info -name xc7z020-clg484-1 -data single -quiet 
 Execute     ap_part_info -name xc7z020-clg484-1 -data info 
@@ -106,7 +106,7 @@ Execute     add_library xilinx/zynq/zynq_fpv6
 Execute       get_default_platform 
 Execute     ap_part_info -name xc7z020-clg484-1 -data info 
 Execute     get_default_platform 
-Command   set_part done; 0.16 sec.
+Command   set_part done; 0.15 sec.
 Execute   create_clock -period 10 -name default 
 Execute     config_clock -quiet -name default -period 10 -default=false 
 INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
@@ -142,7 +142,7 @@ INFO-FLOW: exec /run/media/epetrakos/60GB/Xilinx/Vivado/2019.1/lnx64/tools/clang
 INFO-FLOW: Syntax Checking before pre-processing...
 Execute       clang -syntaxcheck -src /home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/2b/solution1/.autopilot/db/myIP.pp.0.c  -fno-limit-debug-info -gcc-toolchain "/run/media/epetrakos/60GB/Xilinx/Vivado/2019.1/lnx64/tools/gcc" -hls    -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -std=gnu89   -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "/run/media/epetrakos/60GB/Xilinx/Vivado/2019.1/common/technology/autopilot" -I "/run/media/epetrakos/60GB/Xilinx/Vivado/2019.1/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__  "/home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/2b/solution1/.autopilot/db/myIP.pp.0.c"  -o "/home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/2b/solution1/.autopilot/db/useless.bc"  
 INFO-FLOW: exec /run/media/epetrakos/60GB/Xilinx/Vivado/2019.1/lnx64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain /run/media/epetrakos/60GB/Xilinx/Vivado/2019.1/lnx64/tools/gcc -hls -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -std=gnu89 -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I /run/media/epetrakos/60GB/Xilinx/Vivado/2019.1/common/technology/autopilot -I /run/media/epetrakos/60GB/Xilinx/Vivado/2019.1/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ /home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/2b/solution1/.autopilot/db/myIP.pp.0.c -o /home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/2b/solution1/.autopilot/db/useless.bc
-Command       clang done; 3.18 sec.
+Command       clang done; 3.22 sec.
 INFO-FLOW: Done: GCC PP time: 6.4 seconds per iteration
 Execute       source /run/media/epetrakos/60GB/Xilinx/Vivado/2019.1/tps/tcl/tcllib1.11.1/yaml/huddle.tcl 
 Execute       source /run/media/epetrakos/60GB/Xilinx/Vivado/2019.1/tps/tcl/tcllib1.11.1/yaml/json2huddle.tcl 
@@ -169,28 +169,28 @@ Execute       ap_part_info -name xc7z020-clg484-1 -data info
 INFO-FLOW: Processing labels
 Execute       clang -src /home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/2b/solution1/.autopilot/db/myIP.pragma.2.c  -fno-limit-debug-info -gcc-toolchain /run/media/epetrakos/60GB/Xilinx/Vivado/2019.1/lnx64/tools/gcc -hls -hls-analyze-label -hls-analyze-pragma -fno-exceptions  -D__llvm__  -w  "/home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/2b/solution1/.autopilot/db/myIP.pragma.2.c"    -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -std=gnu89  -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "/run/media/epetrakos/60GB/Xilinx/Vivado/2019.1/common/technology/autopilot" -I "/run/media/epetrakos/60GB/Xilinx/Vivado/2019.1/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -g -o "/home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/2b/solution1/.autopilot/db/myIP.bc" 
 INFO-FLOW: exec /run/media/epetrakos/60GB/Xilinx/Vivado/2019.1/lnx64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain /run/media/epetrakos/60GB/Xilinx/Vivado/2019.1/lnx64/tools/gcc -hls -hls-analyze-label -hls-analyze-pragma -fno-exceptions -D__llvm__ -w /home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/2b/solution1/.autopilot/db/myIP.pragma.2.c -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -std=gnu89 -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I /run/media/epetrakos/60GB/Xilinx/Vivado/2019.1/common/technology/autopilot -I /run/media/epetrakos/60GB/Xilinx/Vivado/2019.1/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -g -o /home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/2b/solution1/.autopilot/db/myIP.bc
-Command       clang done; 3.17 sec.
+Command       clang done; 3.24 sec.
 INFO-FLOW: Linking Debug ...
 Execute       llvm-ld /home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/2b/solution1/.autopilot/db/myIP.g.bc -hls-opt -except-internalize myFuncAccel4 -L/run/media/epetrakos/60GB/Xilinx/Vivado/2019.1/lnx64/lib -lhlsm -lhlsmc++ -o /home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/2b/solution1/.autopilot/db/a.g 
-Command       llvm-ld done; 1.59 sec.
-INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 814.922 ; gain = 128.000 ; free physical = 1749 ; free virtual = 4345
-INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 814.922 ; gain = 128.000 ; free physical = 1749 ; free virtual = 4345
+Command       llvm-ld done; 1.61 sec.
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 814.922 ; gain = 128.000 ; free physical = 2161 ; free virtual = 4626
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 814.922 ; gain = 128.000 ; free physical = 2161 ; free virtual = 4626
 Execute       get_config_sdx -target 
 Execute       opt_and_import_c a -opt_level=2 -skip_syncheck=0 -ng=0 -keep_printf=0 
 Execute         cleanup_all_models 
 INFO: [HLS 200-10] Starting code transformations ...
 Execute         transform -promote-dbg-pointer /home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/2b/solution1/.autopilot/db/a.pp.bc -o /home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/2b/solution1/.autopilot/db/a.pp.0.bc -f 
 Execute         llvm-ld /home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/2b/solution1/.autopilot/db/a.pp.0.bc -disable-opt -L/run/media/epetrakos/60GB/Xilinx/Vivado/2019.1/lnx64/lib -lfloatconversion -o /home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/2b/solution1/.autopilot/db/a.g.0 
-Command         llvm-ld done; 1.58 sec.
+Command         llvm-ld done; 1.62 sec.
 INFO-FLOW: Running Standard Transforms...
 Execute         transform -hls -share-std-xform -demangle-name -inline-byval-memcpy -always-inline -promote-dbg-pointer -interface-preproc -mem2reg -scalarrepl -mem2reg -keep-read-access -instcombine -dce -promote-dbg-pointer -bitop-raise -loop-simplify -indvarspre -indvars -loop-simplify -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -basicaa -simplifycfg -mem2reg -globalopt -global-constprop -deadargelim -instcombine -simplifycfg -prune-eh -simplifycfg -scalarrepl -instcombine -reassociate -licm -simplifycfg -loop-simplify -indvars -instcombine -simplifycfg -mem2reg -loop-simplify -indvars -instcombine -gvn -gvn -instcombine -adce -break-crit-edges -simplifycfg -loop-delete -global-array-opt -dce -dse -adce -find-syn-modules -top myFuncAccel4 -deadargelim -mem2reg -instcombine -dce -presyn-prepare -auto-rom-infer -interface-preproc -syn-check -check-rec-only -find-region -simplifycfg -func-extr -function-inline -globaldce -mem2reg -instcombine -dce -gvn -globaldce -adce -adse -constprop -instcombine -bit-constprop -instcombine -dce -simplifycfg -bitop-raise -simplifycfg -dce -loop-delete -reassociate -globalopt -global-privatize -mem2reg -dce -global-constprop -pointer-simplify -constprop -dce -func-inst -deadargelim -auto-shift-reg-idiom -promote-dbg-pointer -norm-name /home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/2b/solution1/.autopilot/db/a.g.0.bc -o /home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/2b/solution1/.autopilot/db/a.g.1.bc -f -phase std-opt 
-INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 814.922 ; gain = 128.000 ; free physical = 1747 ; free virtual = 4344
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 814.922 ; gain = 128.000 ; free physical = 2163 ; free virtual = 4623
 INFO: [HLS 200-10] Checking synthesizability ...
 INFO-FLOW: Checking Synthesizability 1/2..
 Execute         transform -hls -syn-check -check-rec-only -disaggr -scalarrepl -norm-name -dce -mem2reg -instcombine -function-uniquify -directive-preproc -mem2reg -dse -dce -auto-rom-infer -dce -pag -array-normalize -instcombine -dce -warn-fifo-pointer -array-seg-normalize -instcombine -dce -array-flatten -instcombine -dce -array-burst -dce -deadargelim -promote-global-argument -simplifycfg -mem2reg -globaldce -dce -deadargelim -dce -instcombine -function-inline -globaldce -dce -doublePtrSimplify -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer -dce -scalarrepl -dse -adse -instcombine -ptrLegalization -simplifycfg -dce -instcombine -pointer-simplify -ptrArgReplace -dce -instcombine -resolve-double-ptr -disaggr -scalarrepl -norm-name -dce -mem2reg -instcombine -ptrLegalization -simplifycfg -deadargelim -instcombine -dce -inst-simplify -function-uniquify -directive-preproc -mem2reg -dse -dce -globaldce -check-dspbuiltin /home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/2b/solution1/.autopilot/db/a.g.1.bc -o /home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/2b/solution1/.autopilot/db/a.g.2.prechk.bc -f 
 INFO-FLOW: Checking Synthesizability 2/2..
 Execute         transform -syn-check /home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/2b/solution1/.autopilot/db/a.g.2.prechk.bc -o /home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/2b/solution1/.autopilot/db/a.g.2.bc -f -phase syn-check 
-INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 814.922 ; gain = 128.000 ; free physical = 1747 ; free virtual = 4344
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 814.922 ; gain = 128.000 ; free physical = 2163 ; free virtual = 4623
 INFO-FLOW: Compiler optimizing ...
 INFO-FLOW: Share syncheck's 1.bc for syn flow: copy /home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/2b/solution1/.autopilot/db/a.g.1.bc to /home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/2b/solution1/.autopilot/db/a.o.1.bc
 INFO-FLOW: Presyn 1...
@@ -200,21 +200,21 @@ INFO: [HLS 200-489] Unrolling loop 'Loop-1.1' (myIP.c:39) in function 'myFuncAcc
 INFO: [HLS 200-489] Unrolling loop 'Loop-1.2' (myIP.c:43) in function 'myFuncAccel4' completely with a factor of 4.
 INFO: [HLS 200-489] Unrolling loop 'Loop-1.2.1' (myIP.c:47) in function 'myFuncAccel4' completely with a factor of 4.
 INFO: [HLS 200-489] Unrolling loop 'Loop-1.3' (myIP.c:54) in function 'myFuncAccel4' completely with a factor of 4.
+INFO: [XFORM 203-102] Partitioning array 'temp_dim' (myIP.c:21) automatically.
+INFO: [XFORM 203-102] Partitioning array 'temp_in' (myIP.c:24) automatically.
 INFO: [XFORM 203-101] Partitioning array 'data0' (myIP.c:4) in dimension 1 completely.
-INFO: [XFORM 203-101] Partitioning array 'temp_dim' (myIP.c:21) in dimension 1 completely.
-INFO: [XFORM 203-101] Partitioning array 'temp_in' (myIP.c:24) in dimension 1 completely.
-Command         transform done; 0.18 sec.
+Command         transform done; 0.14 sec.
 INFO-FLOW: Presyn 2...
 Execute         transform -hls -keep-callgraph -scalarrepl -mem2reg -port-alignment -attach-range -dce -pipe-mux-gen -indvars -loop-bound -inst-simplify -instcombine -dce -merge-array-access -mem2reg -dce -clean-region -mergereturn -if-conv -instcombine -dce -constprop -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -scalarrepl -mem2reg -global-constprop -deadargelim -deadargelim -instcombine -dce -simplifycfg -ptrArgReplace -mem2reg -function-inline -globaldce -mem2reg -instcombine -dce -expr-balance -instcombine -dce -bitwidthmin -interface-preproc -directive-preproc -inst-rectify -instcombine -dce -functionattrs -constprop -instcombine -bit-constprop -simplify-global-access -globalopt -globaldce -inst-simplify -instcombine -elimdeaddata -dce -loop-delete -simplifycfg -loop-simplify -auto-burst -norm-name /home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/2b/solution1/.autopilot/db/a.o.1.tmp.bc -o /home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/2b/solution1/.autopilot/db/a.o.2.bc -f -phase presyn 
 INFO: [XFORM 203-11] Balancing expressions in function 'myFuncAccel4' (myIP.c:4)...3 expression(s) balanced.
-INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 814.922 ; gain = 128.000 ; free physical = 1726 ; free virtual = 4323
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 814.922 ; gain = 128.000 ; free physical = 2143 ; free virtual = 4603
 INFO-FLOW: Building ssdm...
 Execute         transform -hls -function-uniquify -auto-function-inline -globaldce -ptrArgReplace -mem2reg -dce -reset-lda -loop-simplify -indvars -licm -loop-dep -loop-bound -licm -loop-simplify -flattenloopnest -array-flatten -gvn -instcombine -dce -array-map -dce -func-legal -gvn -adce -instcombine -cfgopt -simplifycfg -loop-simplify -array-burst -promote-global-argument -dce -ptrLegalization -axi4-lower -array-seg-normalize -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -gvn -gvn -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -dse -adse -adce -licm -inst-simplify -dce -globaldce -instcombine -array-stream -eliminate-keepreads -instcombine -dce -deadargelim -doublePtrSimplify -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer -dce -scalarrepl -mem2reg -disaggr -norm-name -mem2reg -instcombine -dse -adse -adce -ptrLegalization -dce -auto-rom-infer -array-flatten -dce -instcombine -check-doubleptr -loop-rot -constprop -cfgopt -simplifycfg -loop-simplify -indvars -pointer-simplify -dce -loop-bound -loop-simplify -loop-preproc -constprop -global-constprop -gvn -mem2reg -instcombine -dce -loop-bound -loop-merge -dce -bitwidthmin -deadargelim -dce -canonicalize-dataflow -dce -scalar-propagation -deadargelim -globaldce -mem2reg -read-loop-dep -interface-preproc -directive-preproc -interface-gen -bram-byte-enable -deadargelim -inst-simplify -dce -gvn -mem2reg -instcombine -dce -adse -loop-bound -instcombine -cfgopt -simplifycfg -loop-simplify -clean-region -io-protocol -find-region -mem2reg -bitop-raise -complex-op-raise -inst-simplify -inst-rectify -instcombine -adce -deadargelim -loop-simplify -phi-opt -bitop-raise -cfgopt -simplifycfg -strip-dead-prototypes -interface-lower -bitop-lower -intrinsic-lower -auto-function-inline -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -inst-simplify -simplifycfg -loop-simplify -mergereturn -inst-simplify -inst-rectify -dce -load-elim -bitop-lower -loop-rewind -pointer-simplify -dce -cfgopt -dce -loop-bound -loop-dep -read-loop-dep -dce -check-stream -norm-name -legalize -validate-dataflow -inst-clarity -bitwidth -dump-loop-dep-to-ir -check-all-ssdm -cdfg-build /home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/2b/solution1/.autopilot/db/a.o.2.bc -o /home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/2b/solution1/.autopilot/db/a.o.3.bc -f -phase build-ssdm 
-Command         transform done; 0.21 sec.
-INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 814.922 ; gain = 128.000 ; free physical = 1726 ; free virtual = 4323
+Command         transform done; 0.2 sec.
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 814.922 ; gain = 128.000 ; free physical = 2145 ; free virtual = 4604
 INFO-FLOW: Finish building internal data model.
-Command       opt_and_import_c done; 2.14 sec.
-Command     elaborate done; 13.78 sec.
+Command       opt_and_import_c done; 2.1 sec.
+Command     elaborate done; 13.83 sec.
 Execute     autosyn -from_csynth_design=1 
 INFO: [HLS 200-10] Starting hardware synthesis ...
 INFO-FLOW: Synthesizing C/C++ design ...
@@ -232,8 +232,6 @@ INFO-FLOW: Preprocessing Module: myFuncAccel4 ...
 Execute       set_default_model myFuncAccel4 
 Execute       cdfg_preprocess -model myFuncAccel4 
 Execute       rtl_gen_preprocess myFuncAccel4 
-WARNING: [SYN 201-107] Renaming port name 'myFuncAccel4/input' to 'myFuncAccel4/input_r' to avoid the conflict with HDL keywords or other object names.
-WARNING: [SYN 201-107] Renaming port name 'myFuncAccel4/output' to 'myFuncAccel4/output_r' to avoid the conflict with HDL keywords or other object names.
 INFO-FLOW: Model list for synthesis: myFuncAccel4
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'myFuncAccel4' 
@@ -243,17 +241,17 @@ Execute       schedule -model myFuncAccel4
 INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-61] Pipelining loop 'Loop 1'.
 WARNING: [SCHED 204-68] The II Violation in module 'myFuncAccel4' (Loop: Loop 1): Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 1)
-   between axis read on port 'input_r' (myIP.c:40) and axis read on port 'input_r' (myIP.c:40).
+   between axis read on port 'my_input' (myIP.c:40) and axis read on port 'my_input' (myIP.c:40).
 WARNING: [SCHED 204-68] The II Violation in module 'myFuncAccel4' (Loop: Loop 1): Unable to enforce a carried dependence constraint (II = 2, distance = 1, offset = 1)
-   between axis read on port 'input_r' (myIP.c:40) and axis read on port 'input_r' (myIP.c:40).
+   between axis read on port 'my_input' (myIP.c:40) and axis read on port 'my_input' (myIP.c:40).
 WARNING: [SCHED 204-68] The II Violation in module 'myFuncAccel4' (Loop: Loop 1): Unable to enforce a carried dependence constraint (II = 3, distance = 1, offset = 1)
-   between axis read on port 'input_r' (myIP.c:40) and axis read on port 'input_r' (myIP.c:40).
+   between axis read on port 'my_input' (myIP.c:40) and axis read on port 'my_input' (myIP.c:40).
 INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 4, Depth = 36.
 INFO: [SCHED 204-11] Finished scheduling.
-Command       schedule done; 0.57 sec.
-INFO: [HLS 200-111]  Elapsed time: 15.85 seconds; current allocated memory: 77.852 MB.
+Command       schedule done; 0.59 sec.
+INFO: [HLS 200-111]  Elapsed time: 15.89 seconds; current allocated memory: 77.800 MB.
 Execute       syn_report -verbosereport -o /home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/2b/solution1/.autopilot/db/myFuncAccel4.verbose.sched.rpt 
-Command       syn_report done; 0.29 sec.
+Command       syn_report done; 0.28 sec.
 Execute       db_write -o /home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/2b/solution1/.autopilot/db/myFuncAccel4.sched.adb -f 
 INFO-FLOW: Finish scheduling myFuncAccel4.
 Execute       set_default_model myFuncAccel4 
@@ -265,9 +263,9 @@ INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
 Command       bind done; 0.13 sec.
-INFO: [HLS 200-111]  Elapsed time: 0.44 seconds; current allocated memory: 78.827 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.44 seconds; current allocated memory: 78.743 MB.
 Execute       syn_report -verbosereport -o /home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/2b/solution1/.autopilot/db/myFuncAccel4.verbose.bind.rpt 
-Command       syn_report done; 0.36 sec.
+Command       syn_report done; 0.37 sec.
 Execute       db_write -o /home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/2b/solution1/.autopilot/db/myFuncAccel4.bind.adb -f 
 INFO-FLOW: Finish binding myFuncAccel4.
 Execute       get_model_list myFuncAccel4 -filter all-wo-channel 
@@ -280,9 +278,9 @@ INFO: [HLS 200-10] -------------------------------------------------------------
 Execute       get_config_rtl -module_prefix 
 Execute       get_config_rtl -module_auto_prefix 
 Execute       create_rtl_model myFuncAccel4 -vendor xilinx -mg_file /home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/2b/solution1/.autopilot/db/myFuncAccel4.compgen.tcl 
-INFO: [RTGEN 206-500] Setting interface mode on port 'myFuncAccel4/size' to 'ap_stable'.
-INFO: [RTGEN 206-500] Setting interface mode on port 'myFuncAccel4/dim' to 'ap_stable'.
-INFO: [RTGEN 206-500] Setting interface mode on port 'myFuncAccel4/threshold' to 'ap_stable'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myFuncAccel4/size' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myFuncAccel4/dim' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myFuncAccel4/threshold' to 'ap_none'.
 INFO: [RTGEN 206-500] Setting interface mode on port 'myFuncAccel4/data0_0' to 'ap_stable'.
 INFO: [RTGEN 206-500] Setting interface mode on port 'myFuncAccel4/data0_1' to 'ap_stable'.
 INFO: [RTGEN 206-500] Setting interface mode on port 'myFuncAccel4/data0_2' to 'ap_stable'.
@@ -299,8 +297,8 @@ INFO: [RTGEN 206-500] Setting interface mode on port 'myFuncAccel4/data0_12' to 
 INFO: [RTGEN 206-500] Setting interface mode on port 'myFuncAccel4/data0_13' to 'ap_stable'.
 INFO: [RTGEN 206-500] Setting interface mode on port 'myFuncAccel4/data0_14' to 'ap_stable'.
 INFO: [RTGEN 206-500] Setting interface mode on port 'myFuncAccel4/data0_15' to 'ap_stable'.
-INFO: [RTGEN 206-500] Setting interface mode on port 'myFuncAccel4/input_r' to 'axis' (register, both mode).
-INFO: [RTGEN 206-500] Setting interface mode on port 'myFuncAccel4/output_r' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'myFuncAccel4/my_input' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'myFuncAccel4/my_output' to 'axis' (register, both mode).
 INFO: [RTGEN 206-500] Setting interface mode on function 'myFuncAccel4' to 'ap_ctrl_hs'.
 WARNING: [RTGEN 206-101] Port 'myFuncAccel4/dim' has no fanin or fanout and is left dangling.
                Please use C simulation to confirm this function argument can be read from or written to.
@@ -310,11 +308,12 @@ INFO: [RTGEN 206-100] Generating core module 'myFuncAccel4_fmul_32ns_32ns_32_4_m
 INFO: [RTGEN 206-100] Generating core module 'myFuncAccel4_fpext_32ns_64_2_1': 1 instance(s).
 INFO: [RTGEN 206-100] Generating core module 'myFuncAccel4_fptrunc_64ns_32_2_1': 1 instance(s).
 INFO: [RTGEN 206-100] Finished creating RTL model for 'myFuncAccel4'.
-INFO: [HLS 200-111]  Elapsed time: 0.5 seconds; current allocated memory: 80.597 MB.
+Command       create_rtl_model done; 0.17 sec.
+INFO: [HLS 200-111]  Elapsed time: 0.57 seconds; current allocated memory: 80.527 MB.
 Execute       source /home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/2b/solution1/.autopilot/db/myFuncAccel4.rtl_wrap.cfg.tcl 
 Execute       gen_rtl myFuncAccel4 -istop -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o /home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/2b/solution1/syn/systemc/myFuncAccel4 -synmodules myFuncAccel4 
 Execute       gen_rtl myFuncAccel4 -istop -style xilinx -f -lang vhdl -o /home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/2b/solution1/syn/vhdl/myFuncAccel4 
-Command       gen_rtl done; 0.21 sec.
+Command       gen_rtl done; 0.22 sec.
 Execute       gen_rtl myFuncAccel4 -istop -style xilinx -f -lang vlog -o /home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/2b/solution1/syn/verilog/myFuncAccel4 
 Command       gen_rtl done; 0.11 sec.
 Execute       syn_report -csynth -model myFuncAccel4 -o /home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/2b/solution1/syn/report/myFuncAccel4_csynth.rpt 
@@ -328,7 +327,7 @@ Command       db_write done; 0.17 sec.
 Execute       gen_tb_info myFuncAccel4 -p /home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/2b/solution1/.autopilot/db -o /home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/2b/solution1/.autopilot/db/myFuncAccel4 
 Execute       export_constraint_db -f -tool general -o /home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/2b/solution1/.autopilot/db/myFuncAccel4.constraint.tcl 
 Execute       syn_report -designview -model myFuncAccel4 -o /home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/2b/solution1/.autopilot/db/myFuncAccel4.design.xml 
-Command       syn_report done; 0.2 sec.
+Command       syn_report done; 0.21 sec.
 Execute       get_config_rtl -disable_wave_debug 
 Execute       syn_report -wcfg -model myFuncAccel4 -o /home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/2b/solution1/.autopilot/db/myFuncAccel4_dataflow_ana.wcfg 
 Execute       syn_report -protoinst -model myFuncAccel4 -o /home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/2b/solution1/.autopilot/db/myFuncAccel4.protoinst 
@@ -412,7 +411,7 @@ Execute         ap_part_info -name xc7z020-clg484-1 -data names -quiet
 Execute         ap_part_info -name xc7z020-clg484-1 -data info -quiet 
 Execute         ap_part_info -name xc7z020-clg484-1 -data names -quiet 
 Execute         ap_part_info -name xc7z020-clg484-1 -data info -quiet 
-Command       ap_source done; 0.21 sec.
+Command       ap_source done; 0.22 sec.
 INFO-FLOW: DBG:CMD:     auto_generate -export -impltomg_flag -rtl both -tool Vivado -pcore_version 1.00.a -phase csynth_design -d /home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/2b/solution1
 Execute       source /home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/2b/solution1/.autopilot/db/global.setting.tcl 
 INFO-FLOW: DBG:CMD: read_platform_lib /home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/2b/solution1/.autopilot/db/global.setting.tcl
@@ -435,11 +434,11 @@ Execute           source /run/media/epetrakos/60GB/Xilinx/Vivado/2019.1/common/t
 Execute           source /run/media/epetrakos/60GB/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/dds_compiler.gen 
 Execute           source /run/media/epetrakos/60GB/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/util.gen 
 Execute           source /run/media/epetrakos/60GB/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/xfft.gen 
-Command           ap_source done; 0.13 sec.
+Command           ap_source done; 0.11 sec.
 Execute           source /run/media/epetrakos/60GB/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/xfir.gen 
 Execute           source /run/media/epetrakos/60GB/Xilinx/Vivado/2019.1/common/technology/xilinx/common/dsp48.gen 
-Command         ap_source done; 0.17 sec.
-Command       ap_source done; 0.17 sec.
+Command         ap_source done; 0.16 sec.
+Command       ap_source done; 0.16 sec.
 Execute       source /run/media/epetrakos/60GB/Xilinx/Vivado/2019.1/common/technology/xilinx/zynq/zynq_fpv6.gen 
 Execute         source /run/media/epetrakos/60GB/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx_fp.gen 
 INFO-FLOW: DBG:CMD:       initCTypeInfo top_module=myFuncAccel4 xml_exists=0
@@ -462,7 +461,7 @@ Execute         ap_part_info -name xc7z020-clg484-1 -data names -quiet
 Execute         ap_part_info -name xc7z020-clg484-1 -data info -quiet 
 Execute         ap_part_info -name xc7z020-clg484-1 -data names -quiet 
 Execute         ap_part_info -name xc7z020-clg484-1 -data info -quiet 
-Command       ap_source done; 0.16 sec.
+Command       ap_source done; 0.14 sec.
 INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=1 expOnly=1 dstVlogDir=impl/.pcores/verilog
 Execute       source /home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/2b/solution1/.autopilot/db/global.setting.tcl 
 Execute       source /home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/2b/solution1/.autopilot/db/myFuncAccel4.compgen.tcl 
@@ -566,14 +565,14 @@ Execute       get_config_rtl -stall_sig_gen
 Execute       get_config_rtl -profile 
 INFO-FLOW: DBG:CMD: add_json_sdx_info kernel file does not exist, skipping opencl info: /home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/2b/solution1/.autopilot/db/kernel.internal.xml
 INFO-FLOW: DBG:CMD:       delete-temp-dirs (skipped for debug)
-INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 814.922 ; gain = 128.000 ; free physical = 1713 ; free virtual = 4313
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 814.922 ; gain = 128.000 ; free physical = 2064 ; free virtual = 4560
 INFO: [VHDL 208-304] Generating VHDL RTL for myFuncAccel4.
 INFO: [VLOG 209-307] Generating Verilog RTL for myFuncAccel4.
-Command     autosyn done; 4.22 sec.
-Command   csynth_design done; 18.01 sec.
-Command ap_source done; 19.18 sec.
+Command     autosyn done; 4.35 sec.
+Command   csynth_design done; 18.19 sec.
+Command ap_source done; 19.33 sec.
 Execute cleanup_all 
-INFO-FLOW: Workspace /home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/2b/solution1 opened at Sun Nov 10 21:15:35 EET 2019
+INFO-FLOW: Workspace /home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/2b/solution1 opened at Tue Nov 12 18:17:27 EET 2019
 Execute     config_clock -quiet -name default -period 10 -default=false 
 INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
 Execute     open_platform DefaultPlatform 
@@ -615,11 +614,11 @@ Execute         source /run/media/epetrakos/60GB/Xilinx/Vivado/2019.1/common/tec
 Execute         source /run/media/epetrakos/60GB/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/dds_compiler.gen 
 Execute         source /run/media/epetrakos/60GB/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/util.gen 
 Execute         source /run/media/epetrakos/60GB/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/xfft.gen 
-Command         ap_source done; 0.11 sec.
+Command         ap_source done; 0.13 sec.
 Execute         source /run/media/epetrakos/60GB/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/xfir.gen 
 Execute         source /run/media/epetrakos/60GB/Xilinx/Vivado/2019.1/common/technology/xilinx/common/dsp48.gen 
-Command       ap_source done; 0.16 sec.
-Command     ap_source done; 0.16 sec.
+Command       ap_source done; 0.17 sec.
+Command     ap_source done; 0.17 sec.
 Execute     open_platform DefaultPlatform 
 Execute     import_lib /run/media/epetrakos/60GB/Xilinx/Vivado/2019.1/common/technology/xilinx/zynq/zynq_fpv6 
 Execute       source /run/media/epetrakos/60GB/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx_fp.lib 
@@ -634,7 +633,7 @@ Execute     source /run/media/epetrakos/60GB/Xilinx/Vivado/2019.1/common/technol
 Execute       source /run/media/epetrakos/60GB/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx_fp.gen 
 Execute     set_part xc7z020-clg484-1 
 Execute       ap_part_info -name xc7z020-clg484-1 -data single -quiet 
-Command       ap_part_info done; 0.54 sec.
+Command       ap_part_info done; 0.6 sec.
 Execute       ap_part_info -name xc7z020-clg484-1 -data info 
 Execute       add_library xilinx/zynq/zynq:xc7z020:-clg484:-1 
 Execute         get_default_platform 
@@ -652,7 +651,7 @@ Execute         get_default_platform
 INFO: [HLS 200-10] Setting target device to 'xc7z020-clg484-1'
 Execute       ap_part_info -name xc7z020-clg484-1 -data info 
 Execute       get_default_platform 
-Command     set_part done; 0.7 sec.
+Command     set_part done; 0.77 sec.
 Execute     ap_part_info -data single -name xc7z020-clg484-1 
 Execute     ap_part_info -name xc7z020-clg484-1 -data resources 
 Execute     ap_part_info -name xc7z020-clg484-1 -data info 
@@ -662,7 +661,7 @@ Execute     ap_part_info -name xc7z020-clg484-1 -data info
 Execute     config_chip_info -quiet -speed slow 
 Execute     config_export -format=ip_catalog 
 Execute     config_export -rtl=verilog 
-Command   open_solution done; 0.92 sec.
+Command   open_solution done; 1.01 sec.
 Execute   cosim_design -trace_level all -argv 0 10 4 100 
 Execute     source /home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/2b/solution1/.autopilot/db/global.setting.tcl 
 Execute     source /home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/2b/solution1/.autopilot/db/global.setting.tcl 
@@ -729,7 +728,7 @@ Execute     ap_part_info -name xc7z020-clg484-1 -data info
 Execute     source /home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/2b/solution1/.autopilot/db/myFuncAccel4.rtl_wrap.cfg.tcl 
 Execute     source .run_sim.tcl 
 INFO: [COSIM 212-302] Starting C TB testing ... 
-Command     ap_source done; 0.32 sec.
+Command     ap_source done; 0.37 sec.
 INFO: [COSIM 212-333] Generating C post check test bench ...
 Execute     ap_part_info -name xc7z020-clg484-1 -data info 
 Execute     source /home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/2b/solution1/.autopilot/db/myFuncAccel4.rtl_wrap.cfg.tcl 
@@ -778,9 +777,9 @@ INFO: [COSIM 212-323] Starting verilog simulation.
 INFO: [COSIM 212-15] Starting XSIM ...
 INFO: [COSIM 212-316] Starting C post checking ...
 ERROR: [COSIM 212-362] Aborting co-simulation: C TB post check failed.
-Command     ap_source done; error code: 1; 41.97 sec.
+Command     ap_source done; error code: 1; 43.72 sec.
 ERROR: [COSIM 212-4] *** C/RTL co-simulation finished: FAIL ***
 INFO: [COSIM 212-211] II is measurable only when transaction number is greater than 1 in RTL simulation. Otherwise, they will be marked as all NA. If user wants to calculate them, please make sure there are at least 2 transactions in RTL simulation.
-Command   cosim_design done; error code: 2; 113.97 sec.
-Command ap_source done; error code: 1; 114.89 sec.
+Command   cosim_design done; error code: 2; 117.51 sec.
+Command ap_source done; error code: 1; 118.52 sec.
 Execute cleanup_all 

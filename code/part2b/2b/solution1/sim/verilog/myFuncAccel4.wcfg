@@ -24,21 +24,21 @@
          <wvobject type="group" fp_name="group3">
             <obj_property name="label">data_out(axis)</obj_property>
             <obj_property name="DisplayName">label</obj_property>
-            <wvobject type="logic" fp_name="/apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/output_r_TREADY">
-               <obj_property name="ElementShortName">output_r_TREADY</obj_property>
-               <obj_property name="ObjectShortName">output_r_TREADY</obj_property>
+            <wvobject type="logic" fp_name="/apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/my_output_TREADY">
+               <obj_property name="ElementShortName">my_output_TREADY</obj_property>
+               <obj_property name="ObjectShortName">my_output_TREADY</obj_property>
                <obj_property name="CustomSignalColor">#ffff00</obj_property>
                <obj_property name="UseCustomSignalColor">true</obj_property>
             </wvobject>
-            <wvobject type="logic" fp_name="/apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/output_r_TVALID">
-               <obj_property name="ElementShortName">output_r_TVALID</obj_property>
-               <obj_property name="ObjectShortName">output_r_TVALID</obj_property>
+            <wvobject type="logic" fp_name="/apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/my_output_TVALID">
+               <obj_property name="ElementShortName">my_output_TVALID</obj_property>
+               <obj_property name="ObjectShortName">my_output_TVALID</obj_property>
                <obj_property name="CustomSignalColor">#ffff00</obj_property>
                <obj_property name="UseCustomSignalColor">true</obj_property>
             </wvobject>
-            <wvobject type="array" fp_name="/apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/output_r_TDATA">
-               <obj_property name="ElementShortName">output_r_TDATA[31:0]</obj_property>
-               <obj_property name="ObjectShortName">output_r_TDATA[31:0]</obj_property>
+            <wvobject type="array" fp_name="/apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/my_output_TDATA">
+               <obj_property name="ElementShortName">my_output_TDATA[31:0]</obj_property>
+               <obj_property name="ObjectShortName">my_output_TDATA[31:0]</obj_property>
                <obj_property name="Radix">HEXRADIX</obj_property>
             </wvobject>
          </wvobject>
@@ -49,21 +49,21 @@
          <wvobject type="group" fp_name="group8">
             <obj_property name="label">data1(axis)</obj_property>
             <obj_property name="DisplayName">label</obj_property>
-            <wvobject type="logic" fp_name="/apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/input_r_TREADY">
-               <obj_property name="ElementShortName">input_r_TREADY</obj_property>
-               <obj_property name="ObjectShortName">input_r_TREADY</obj_property>
+            <wvobject type="logic" fp_name="/apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/my_input_TREADY">
+               <obj_property name="ElementShortName">my_input_TREADY</obj_property>
+               <obj_property name="ObjectShortName">my_input_TREADY</obj_property>
                <obj_property name="CustomSignalColor">#ffff00</obj_property>
                <obj_property name="UseCustomSignalColor">true</obj_property>
             </wvobject>
-            <wvobject type="logic" fp_name="/apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/input_r_TVALID">
-               <obj_property name="ElementShortName">input_r_TVALID</obj_property>
-               <obj_property name="ObjectShortName">input_r_TVALID</obj_property>
+            <wvobject type="logic" fp_name="/apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/my_input_TVALID">
+               <obj_property name="ElementShortName">my_input_TVALID</obj_property>
+               <obj_property name="ObjectShortName">my_input_TVALID</obj_property>
                <obj_property name="CustomSignalColor">#ffff00</obj_property>
                <obj_property name="UseCustomSignalColor">true</obj_property>
             </wvobject>
-            <wvobject type="array" fp_name="/apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/input_r_TDATA">
-               <obj_property name="ElementShortName">input_r_TDATA[31:0]</obj_property>
-               <obj_property name="ObjectShortName">input_r_TDATA[31:0]</obj_property>
+            <wvobject type="array" fp_name="/apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/my_input_TDATA">
+               <obj_property name="ElementShortName">my_input_TDATA[31:0]</obj_property>
+               <obj_property name="ObjectShortName">my_input_TDATA[31:0]</obj_property>
                <obj_property name="Radix">HEXRADIX</obj_property>
             </wvobject>
          </wvobject>
@@ -334,14 +334,14 @@
                <obj_property name="ObjectShortName">LENGTH_data0_15[31:0]</obj_property>
                <obj_property name="Radix">HEXRADIX</obj_property>
             </wvobject>
-            <wvobject type="array" fp_name="/apatb_myFuncAccel4_top/LENGTH_input_r">
-               <obj_property name="ElementShortName">LENGTH_input_r[31:0]</obj_property>
-               <obj_property name="ObjectShortName">LENGTH_input_r[31:0]</obj_property>
+            <wvobject type="array" fp_name="/apatb_myFuncAccel4_top/LENGTH_my_input">
+               <obj_property name="ElementShortName">LENGTH_my_input[31:0]</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_my_input[31:0]</obj_property>
                <obj_property name="Radix">HEXRADIX</obj_property>
             </wvobject>
-            <wvobject type="array" fp_name="/apatb_myFuncAccel4_top/LENGTH_output_r">
-               <obj_property name="ElementShortName">LENGTH_output_r[31:0]</obj_property>
-               <obj_property name="ObjectShortName">LENGTH_output_r[31:0]</obj_property>
+            <wvobject type="array" fp_name="/apatb_myFuncAccel4_top/LENGTH_my_output">
+               <obj_property name="ElementShortName">LENGTH_my_output[31:0]</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_my_output[31:0]</obj_property>
                <obj_property name="Radix">HEXRADIX</obj_property>
             </wvobject>
          </wvobject>
@@ -352,21 +352,21 @@
          <wvobject type="group" fp_name="group72">
             <obj_property name="label">data_out(axis)</obj_property>
             <obj_property name="DisplayName">label</obj_property>
-            <wvobject type="logic" fp_name="/apatb_myFuncAccel4_top/output_r_TREADY">
-               <obj_property name="ElementShortName">output_r_TREADY</obj_property>
-               <obj_property name="ObjectShortName">output_r_TREADY</obj_property>
+            <wvobject type="logic" fp_name="/apatb_myFuncAccel4_top/my_output_TREADY">
+               <obj_property name="ElementShortName">my_output_TREADY</obj_property>
+               <obj_property name="ObjectShortName">my_output_TREADY</obj_property>
                <obj_property name="CustomSignalColor">#ffff00</obj_property>
                <obj_property name="UseCustomSignalColor">true</obj_property>
             </wvobject>
-            <wvobject type="logic" fp_name="/apatb_myFuncAccel4_top/output_r_TVALID">
-               <obj_property name="ElementShortName">output_r_TVALID</obj_property>
-               <obj_property name="ObjectShortName">output_r_TVALID</obj_property>
+            <wvobject type="logic" fp_name="/apatb_myFuncAccel4_top/my_output_TVALID">
+               <obj_property name="ElementShortName">my_output_TVALID</obj_property>
+               <obj_property name="ObjectShortName">my_output_TVALID</obj_property>
                <obj_property name="CustomSignalColor">#ffff00</obj_property>
                <obj_property name="UseCustomSignalColor">true</obj_property>
             </wvobject>
-            <wvobject type="array" fp_name="/apatb_myFuncAccel4_top/output_r_TDATA">
-               <obj_property name="ElementShortName">output_r_TDATA[31:0]</obj_property>
-               <obj_property name="ObjectShortName">output_r_TDATA[31:0]</obj_property>
+            <wvobject type="array" fp_name="/apatb_myFuncAccel4_top/my_output_TDATA">
+               <obj_property name="ElementShortName">my_output_TDATA[31:0]</obj_property>
+               <obj_property name="ObjectShortName">my_output_TDATA[31:0]</obj_property>
                <obj_property name="Radix">HEXRADIX</obj_property>
             </wvobject>
          </wvobject>
@@ -377,21 +377,21 @@
          <wvobject type="group" fp_name="group77">
             <obj_property name="label">data1(axis)</obj_property>
             <obj_property name="DisplayName">label</obj_property>
-            <wvobject type="logic" fp_name="/apatb_myFuncAccel4_top/input_r_TREADY">
-               <obj_property name="ElementShortName">input_r_TREADY</obj_property>
-               <obj_property name="ObjectShortName">input_r_TREADY</obj_property>
+            <wvobject type="logic" fp_name="/apatb_myFuncAccel4_top/my_input_TREADY">
+               <obj_property name="ElementShortName">my_input_TREADY</obj_property>
+               <obj_property name="ObjectShortName">my_input_TREADY</obj_property>
                <obj_property name="CustomSignalColor">#ffff00</obj_property>
                <obj_property name="UseCustomSignalColor">true</obj_property>
             </wvobject>
-            <wvobject type="logic" fp_name="/apatb_myFuncAccel4_top/input_r_TVALID">
-               <obj_property name="ElementShortName">input_r_TVALID</obj_property>
-               <obj_property name="ObjectShortName">input_r_TVALID</obj_property>
+            <wvobject type="logic" fp_name="/apatb_myFuncAccel4_top/my_input_TVALID">
+               <obj_property name="ElementShortName">my_input_TVALID</obj_property>
+               <obj_property name="ObjectShortName">my_input_TVALID</obj_property>
                <obj_property name="CustomSignalColor">#ffff00</obj_property>
                <obj_property name="UseCustomSignalColor">true</obj_property>
             </wvobject>
-            <wvobject type="array" fp_name="/apatb_myFuncAccel4_top/input_r_TDATA">
-               <obj_property name="ElementShortName">input_r_TDATA[31:0]</obj_property>
-               <obj_property name="ObjectShortName">input_r_TDATA[31:0]</obj_property>
+            <wvobject type="array" fp_name="/apatb_myFuncAccel4_top/my_input_TDATA">
+               <obj_property name="ElementShortName">my_input_TDATA[31:0]</obj_property>
+               <obj_property name="ObjectShortName">my_input_TDATA[31:0]</obj_property>
                <obj_property name="Radix">HEXRADIX</obj_property>
             </wvobject>
          </wvobject>

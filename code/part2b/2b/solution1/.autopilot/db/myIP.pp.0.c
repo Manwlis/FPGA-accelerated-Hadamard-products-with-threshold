@@ -2426,23 +2426,23 @@ void myFuncAccel4 (unsigned int size, unsigned int dim, dataType_t threshold, da
 #pragma HLS expression_balance
 
 
-#pragma HLS INTERFACE ap_stable depth=100 port=&size
-#pragma HLS INTERFACE ap_stable depth=100 port=&dim
-#pragma HLS INTERFACE ap_stable depth=100 port=&threshold
+
+
+
 
 #pragma HLS INTERFACE ap_stable depth=1000 port=&data0
 #pragma HLS array_partition variable=&data0 complete
 
 
-#pragma HLS INTERFACE axis port=&data1 depth=1000 bundle=input
-#pragma HLS INTERFACE axis port=&data_out depth=1000 bundle=output
+#pragma HLS INTERFACE axis port=&data1 depth=1000 bundle=my_input
+#pragma HLS INTERFACE axis port=&data_out depth=1000 bundle=my_output
 
  unsigned int i, k, l;
  dataType_t temp_dim[4];
-#pragma HLS array_partition variable=&temp_dim complete
+
 
  dataType_t temp_in[4];
-#pragma HLS array_partition variable=&temp_in complete
+
 
 
 

@@ -2449,10 +2449,10 @@ int main(int argc, char ** argv)
   printf("no errors\n\n");
 
 
-
-
-
-
+ free(data0);
+ free(data1);
+ free(data2_sw);
+ free(data2_hw);
 
  return 0;
 }

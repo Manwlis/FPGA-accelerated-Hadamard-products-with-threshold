@@ -2466,10 +2466,10 @@ myFuncAccel4(size, dim, threshold, data0, data1, data2_hw);
   printf("no errors\n\n");
 
 
-
-
-
-
+ free(data0);
+ free(data1);
+ free(data2_sw);
+ free(data2_hw);
 
  return 0;
 }
