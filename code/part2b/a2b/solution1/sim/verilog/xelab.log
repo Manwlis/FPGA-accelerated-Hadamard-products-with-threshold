@@ -1,0 +1,50 @@
+INFO: [XSIM 43-3496] Using init file passed via -initfile option "/run/media/epetrakos/60GB/Xilinx/Vivado/2019.1/data/xsim/ip/xsim_ip.ini".
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: /run/media/epetrakos/60GB/Xilinx/Vivado/2019.1/bin/unwrapped/lnx64.o/xelab xil_defaultlib.apatb_myFuncAccel4_top glbl -prj myFuncAccel4.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm --initfile /run/media/epetrakos/60GB/Xilinx/Vivado/2019.1/data/xsim/ip/xsim_ip.ini --lib ieee_proposed=./ieee_proposed -s myFuncAccel4 -debug wave 
+Multi-threading is on. Using 14 slave threads.
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/a2b/solution1/sim/verilog/glbl.v" into library work
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/a2b/solution1/sim/verilog/myFuncAccel4_mul_mul_17ns_17ns_34_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myFuncAccel4_mul_mul_17ns_17ns_34_1_1_DSP48_0
+INFO: [VRFC 10-311] analyzing module myFuncAccel4_mul_mul_17ns_17ns_34_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/a2b/solution1/sim/verilog/myFuncAccel4_mac_muladd_17ns_17ns_36ns_36_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myFuncAccel4_mac_muladd_17ns_17ns_36ns_36_1_1_DSP48_3
+INFO: [VRFC 10-311] analyzing module myFuncAccel4_mac_muladd_17ns_17ns_36ns_36_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/a2b/solution1/sim/verilog/myFuncAccel4.autotb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module apatb_myFuncAccel4_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/a2b/solution1/sim/verilog/AESL_fifo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fifo
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/a2b/solution1/sim/verilog/myFuncAccel4_mac_muladd_17ns_17ns_35ns_36_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myFuncAccel4_mac_muladd_17ns_17ns_35ns_36_1_1_DSP48_2
+INFO: [VRFC 10-311] analyzing module myFuncAccel4_mac_muladd_17ns_17ns_35ns_36_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/a2b/solution1/sim/verilog/AESL_axi_s_my_output_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_axi_s_my_output_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/a2b/solution1/sim/verilog/AESL_axi_s_my_input1_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_axi_s_my_input1_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/a2b/solution1/sim/verilog/myFuncAccel4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myFuncAccel4
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/a2b/solution1/sim/verilog/myFuncAccel4_mac_muladd_17ns_17ns_34ns_35_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myFuncAccel4_mac_muladd_17ns_17ns_34ns_35_1_1_DSP48_1
+INFO: [VRFC 10-311] analyzing module myFuncAccel4_mac_muladd_17ns_17ns_34ns_35_1_1
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.myFuncAccel4_mul_mul_17ns_17ns_3...
+Compiling module xil_defaultlib.myFuncAccel4_mul_mul_17ns_17ns_3...
+Compiling module xil_defaultlib.myFuncAccel4_mac_muladd_17ns_17n...
+Compiling module xil_defaultlib.myFuncAccel4_mac_muladd_17ns_17n...
+Compiling module xil_defaultlib.myFuncAccel4_mac_muladd_17ns_17n...
+Compiling module xil_defaultlib.myFuncAccel4_mac_muladd_17ns_17n...
+Compiling module xil_defaultlib.myFuncAccel4_mac_muladd_17ns_17n...
+Compiling module xil_defaultlib.myFuncAccel4_mac_muladd_17ns_17n...
+Compiling module xil_defaultlib.myFuncAccel4
+Compiling module xil_defaultlib.fifo(DEPTH=40,WIDTH=24)
+Compiling module xil_defaultlib.AESL_axi_s_my_input1_V
+Compiling module xil_defaultlib.fifo(DEPTH=40,WIDTH=40)
+Compiling module xil_defaultlib.AESL_axi_s_my_output_V
+Compiling module xil_defaultlib.apatb_myFuncAccel4_top
+Compiling module work.glbl
+Built simulation snapshot myFuncAccel4

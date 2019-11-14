@@ -1,0 +1,1 @@
+set ::AESL_AUTOSIM::gTopFileName /home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/prin_c++/2b/solution1/./sim/autowrap/testbench/myIP.c_pre.c.tb.c

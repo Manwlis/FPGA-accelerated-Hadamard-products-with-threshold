@@ -1,0 +1,26 @@
+   Build using "/run/media/epetrakos/60GB/Xilinx/Vivado/2019.1/tps/lnx64/gcc-6.2.0/bin/g++"
+   Compiling apatb_myFuncAccel4.cpp
+   Compiling (apcc) main.c_pre.c.tb.c
+INFO: [HLS 200-10] Running '/run/media/epetrakos/60GB/Xilinx/Vivado/2019.1/bin/unwrapped/lnx64.o/apcc'
+INFO: [HLS 200-10] For user 'epetrakos' on host 'tower-pc' (Linux_x86_64 version 5.2.21-1-MANJARO) on Thu Nov 14 23:13:58 EET 2019
+INFO: [HLS 200-10] On os "Manjaro Linux"
+INFO: [HLS 200-10] In directory '/home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/prin_c++/2b/solution1/sim/wrapc'
+clang: warning: argument unused during compilation: '-fno-builtin-isinf'
+clang: warning: argument unused during compilation: '-fno-builtin-isnan'
+In file included from /home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/prin_c++/main.c:1:
+/home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/prin_c++/main.c:45:63: warning: comparison of unsigned expression >= 0 is always true [-Wtautological-compare]
+ ((void) sizeof ((seed>=0) ? 1 : 0), __extension__ ({ if (seed>=0) ; else __assert_fail ("seed>=0", "/home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/prin_c++/main.c", 45, __extension__ __PRETTY_FUNCTION__); }));
+                                                          ~~~~^ ~
+1 warning generated.
+INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_epetrakos/231851573766038774093
+INFO: [APCC 202-1] APCC is done.
+   Compiling (apcc) myIP.c_pre.c.tb.c
+INFO: [HLS 200-10] Running '/run/media/epetrakos/60GB/Xilinx/Vivado/2019.1/bin/unwrapped/lnx64.o/apcc'
+INFO: [HLS 200-10] For user 'epetrakos' on host 'tower-pc' (Linux_x86_64 version 5.2.21-1-MANJARO) on Thu Nov 14 23:14:10 EET 2019
+INFO: [HLS 200-10] On os "Manjaro Linux"
+INFO: [HLS 200-10] In directory '/home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/prin_c++/2b/solution1/sim/wrapc'
+clang: warning: argument unused during compilation: '-fno-builtin-isinf'
+clang: warning: argument unused during compilation: '-fno-builtin-isnan'
+INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_epetrakos/232891573766050537802
+INFO: [APCC 202-1] APCC is done.
+   Generating cosim.tv.exe

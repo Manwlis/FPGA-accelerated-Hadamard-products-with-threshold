@@ -1,0 +1,635 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="myFuncAccel4.wdb" id="1">
+         <top_modules>
+            <top_module name="apatb_myFuncAccel4_top" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+   </zoom_setting>
+   <column_width_setting>
+   </column_width_setting>
+   <WVObjectSize size="2" />
+   <wvobject type="group" fp_name="group1">
+      <obj_property name="label">Design Top Signals</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject type="group" fp_name="group2">
+         <obj_property name="label">C Outputs</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="group" fp_name="group3">
+            <obj_property name="label">data_out(bus)</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="array" fp_name="/apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/data_out_size">
+               <obj_property name="ElementShortName">data_out_size[31:0]</obj_property>
+               <obj_property name="ObjectShortName">data_out_size[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/data_out_dataout">
+               <obj_property name="ElementShortName">data_out_dataout[31:0]</obj_property>
+               <obj_property name="ObjectShortName">data_out_dataout[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/data_out_datain">
+               <obj_property name="ElementShortName">data_out_datain[31:0]</obj_property>
+               <obj_property name="ObjectShortName">data_out_datain[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/data_out_address">
+               <obj_property name="ElementShortName">data_out_address[31:0]</obj_property>
+               <obj_property name="ObjectShortName">data_out_address[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/data_out_rsp_read">
+               <obj_property name="ElementShortName">data_out_rsp_read</obj_property>
+               <obj_property name="ObjectShortName">data_out_rsp_read</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/data_out_rsp_empty_n">
+               <obj_property name="ElementShortName">data_out_rsp_empty_n</obj_property>
+               <obj_property name="ObjectShortName">data_out_rsp_empty_n</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/data_out_req_write">
+               <obj_property name="ElementShortName">data_out_req_write</obj_property>
+               <obj_property name="ObjectShortName">data_out_req_write</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/data_out_req_full_n">
+               <obj_property name="ElementShortName">data_out_req_full_n</obj_property>
+               <obj_property name="ObjectShortName">data_out_req_full_n</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/data_out_req_din">
+               <obj_property name="ElementShortName">data_out_req_din</obj_property>
+               <obj_property name="ObjectShortName">data_out_req_din</obj_property>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="group13">
+         <obj_property name="label">C Inputs</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="group" fp_name="group14">
+            <obj_property name="label">data1(bus)</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="array" fp_name="/apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/data1_size">
+               <obj_property name="ElementShortName">data1_size[31:0]</obj_property>
+               <obj_property name="ObjectShortName">data1_size[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/data1_dataout">
+               <obj_property name="ElementShortName">data1_dataout[31:0]</obj_property>
+               <obj_property name="ObjectShortName">data1_dataout[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/data1_datain">
+               <obj_property name="ElementShortName">data1_datain[31:0]</obj_property>
+               <obj_property name="ObjectShortName">data1_datain[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/data1_address">
+               <obj_property name="ElementShortName">data1_address[31:0]</obj_property>
+               <obj_property name="ObjectShortName">data1_address[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/data1_rsp_read">
+               <obj_property name="ElementShortName">data1_rsp_read</obj_property>
+               <obj_property name="ObjectShortName">data1_rsp_read</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/data1_rsp_empty_n">
+               <obj_property name="ElementShortName">data1_rsp_empty_n</obj_property>
+               <obj_property name="ObjectShortName">data1_rsp_empty_n</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/data1_req_write">
+               <obj_property name="ElementShortName">data1_req_write</obj_property>
+               <obj_property name="ObjectShortName">data1_req_write</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/data1_req_full_n">
+               <obj_property name="ElementShortName">data1_req_full_n</obj_property>
+               <obj_property name="ObjectShortName">data1_req_full_n</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/data1_req_din">
+               <obj_property name="ElementShortName">data1_req_din</obj_property>
+               <obj_property name="ObjectShortName">data1_req_din</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="group24">
+            <obj_property name="label">data0(wire)</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="array" fp_name="/apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/data0_15">
+               <obj_property name="ElementShortName">data0_15[31:0]</obj_property>
+               <obj_property name="ObjectShortName">data0_15[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/data0_14">
+               <obj_property name="ElementShortName">data0_14[31:0]</obj_property>
+               <obj_property name="ObjectShortName">data0_14[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/data0_13">
+               <obj_property name="ElementShortName">data0_13[31:0]</obj_property>
+               <obj_property name="ObjectShortName">data0_13[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/data0_12">
+               <obj_property name="ElementShortName">data0_12[31:0]</obj_property>
+               <obj_property name="ObjectShortName">data0_12[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/data0_11">
+               <obj_property name="ElementShortName">data0_11[31:0]</obj_property>
+               <obj_property name="ObjectShortName">data0_11[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/data0_10">
+               <obj_property name="ElementShortName">data0_10[31:0]</obj_property>
+               <obj_property name="ObjectShortName">data0_10[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/data0_9">
+               <obj_property name="ElementShortName">data0_9[31:0]</obj_property>
+               <obj_property name="ObjectShortName">data0_9[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/data0_8">
+               <obj_property name="ElementShortName">data0_8[31:0]</obj_property>
+               <obj_property name="ObjectShortName">data0_8[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/data0_7">
+               <obj_property name="ElementShortName">data0_7[31:0]</obj_property>
+               <obj_property name="ObjectShortName">data0_7[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/data0_6">
+               <obj_property name="ElementShortName">data0_6[31:0]</obj_property>
+               <obj_property name="ObjectShortName">data0_6[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/data0_5">
+               <obj_property name="ElementShortName">data0_5[31:0]</obj_property>
+               <obj_property name="ObjectShortName">data0_5[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/data0_4">
+               <obj_property name="ElementShortName">data0_4[31:0]</obj_property>
+               <obj_property name="ObjectShortName">data0_4[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/data0_3">
+               <obj_property name="ElementShortName">data0_3[31:0]</obj_property>
+               <obj_property name="ObjectShortName">data0_3[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/data0_2">
+               <obj_property name="ElementShortName">data0_2[31:0]</obj_property>
+               <obj_property name="ObjectShortName">data0_2[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/data0_1">
+               <obj_property name="ElementShortName">data0_1[31:0]</obj_property>
+               <obj_property name="ObjectShortName">data0_1[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/data0_0">
+               <obj_property name="ElementShortName">data0_0[31:0]</obj_property>
+               <obj_property name="ObjectShortName">data0_0[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="group41">
+            <obj_property name="label">threshold(wire)</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="array" fp_name="/apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/threshold">
+               <obj_property name="ElementShortName">threshold[31:0]</obj_property>
+               <obj_property name="ObjectShortName">threshold[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="group43">
+            <obj_property name="label">dim(wire)</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="array" fp_name="/apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/dim">
+               <obj_property name="ElementShortName">dim[31:0]</obj_property>
+               <obj_property name="ObjectShortName">dim[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="group45">
+            <obj_property name="label">size(wire)</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="array" fp_name="/apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/size">
+               <obj_property name="ElementShortName">size[31:0]</obj_property>
+               <obj_property name="ObjectShortName">size[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="group47">
+         <obj_property name="label">Block-level IO Handshake</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="logic" fp_name="/apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/ap_start">
+            <obj_property name="ElementShortName">ap_start</obj_property>
+            <obj_property name="ObjectShortName">ap_start</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/ap_done">
+            <obj_property name="ElementShortName">ap_done</obj_property>
+            <obj_property name="ObjectShortName">ap_done</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/ap_idle">
+            <obj_property name="ElementShortName">ap_idle</obj_property>
+            <obj_property name="ObjectShortName">ap_idle</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/ap_ready">
+            <obj_property name="ElementShortName">ap_ready</obj_property>
+            <obj_property name="ObjectShortName">ap_ready</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="group52">
+         <obj_property name="label">Reset</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="logic" fp_name="/apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/ap_rst">
+            <obj_property name="ElementShortName">ap_rst</obj_property>
+            <obj_property name="ObjectShortName">ap_rst</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="group54">
+         <obj_property name="label">Clock</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="logic" fp_name="/apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/ap_clk">
+            <obj_property name="ElementShortName">ap_clk</obj_property>
+            <obj_property name="ObjectShortName">ap_clk</obj_property>
+         </wvobject>
+      </wvobject>
+   </wvobject>
+   <wvobject type="group" fp_name="group56">
+      <obj_property name="label">Test Bench Signals</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject type="group" fp_name="group57">
+         <obj_property name="label">Internal Signals</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="group" fp_name="group58">
+            <obj_property name="label">Simulation Status</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="array" fp_name="/apatb_myFuncAccel4_top/AUTOTB_TRANSACTION_NUM">
+               <obj_property name="ElementShortName">AUTOTB_TRANSACTION_NUM[31:0]</obj_property>
+               <obj_property name="ObjectShortName">AUTOTB_TRANSACTION_NUM[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_myFuncAccel4_top/ready_cnt">
+               <obj_property name="ElementShortName">ready_cnt[31:0]</obj_property>
+               <obj_property name="ObjectShortName">ready_cnt[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_myFuncAccel4_top/done_cnt">
+               <obj_property name="ElementShortName">done_cnt[31:0]</obj_property>
+               <obj_property name="ObjectShortName">done_cnt[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="group59">
+            <obj_property name="label">Port Depth</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="array" fp_name="/apatb_myFuncAccel4_top/LENGTH_size">
+               <obj_property name="ElementShortName">LENGTH_size[31:0]</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_size[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_myFuncAccel4_top/LENGTH_threshold">
+               <obj_property name="ElementShortName">LENGTH_threshold[31:0]</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_threshold[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_myFuncAccel4_top/LENGTH_data0_0">
+               <obj_property name="ElementShortName">LENGTH_data0_0[31:0]</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_data0_0[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_myFuncAccel4_top/LENGTH_data0_1">
+               <obj_property name="ElementShortName">LENGTH_data0_1[31:0]</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_data0_1[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_myFuncAccel4_top/LENGTH_data0_2">
+               <obj_property name="ElementShortName">LENGTH_data0_2[31:0]</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_data0_2[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_myFuncAccel4_top/LENGTH_data0_3">
+               <obj_property name="ElementShortName">LENGTH_data0_3[31:0]</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_data0_3[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_myFuncAccel4_top/LENGTH_data0_4">
+               <obj_property name="ElementShortName">LENGTH_data0_4[31:0]</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_data0_4[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_myFuncAccel4_top/LENGTH_data0_5">
+               <obj_property name="ElementShortName">LENGTH_data0_5[31:0]</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_data0_5[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_myFuncAccel4_top/LENGTH_data0_6">
+               <obj_property name="ElementShortName">LENGTH_data0_6[31:0]</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_data0_6[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_myFuncAccel4_top/LENGTH_data0_7">
+               <obj_property name="ElementShortName">LENGTH_data0_7[31:0]</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_data0_7[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_myFuncAccel4_top/LENGTH_data0_8">
+               <obj_property name="ElementShortName">LENGTH_data0_8[31:0]</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_data0_8[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_myFuncAccel4_top/LENGTH_data0_9">
+               <obj_property name="ElementShortName">LENGTH_data0_9[31:0]</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_data0_9[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_myFuncAccel4_top/LENGTH_data0_10">
+               <obj_property name="ElementShortName">LENGTH_data0_10[31:0]</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_data0_10[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_myFuncAccel4_top/LENGTH_data0_11">
+               <obj_property name="ElementShortName">LENGTH_data0_11[31:0]</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_data0_11[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_myFuncAccel4_top/LENGTH_data0_12">
+               <obj_property name="ElementShortName">LENGTH_data0_12[31:0]</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_data0_12[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_myFuncAccel4_top/LENGTH_data0_13">
+               <obj_property name="ElementShortName">LENGTH_data0_13[31:0]</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_data0_13[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_myFuncAccel4_top/LENGTH_data0_14">
+               <obj_property name="ElementShortName">LENGTH_data0_14[31:0]</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_data0_14[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_myFuncAccel4_top/LENGTH_data0_15">
+               <obj_property name="ElementShortName">LENGTH_data0_15[31:0]</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_data0_15[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_myFuncAccel4_top/LENGTH_data1">
+               <obj_property name="ElementShortName">LENGTH_data1[31:0]</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_data1[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_myFuncAccel4_top/LENGTH_data_out">
+               <obj_property name="ElementShortName">LENGTH_data_out[31:0]</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_data_out[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="group83">
+         <obj_property name="label">C Outputs</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="group" fp_name="group84">
+            <obj_property name="label">data_out(bus)</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="array" fp_name="/apatb_myFuncAccel4_top/data_out_size">
+               <obj_property name="ElementShortName">data_out_size[31:0]</obj_property>
+               <obj_property name="ObjectShortName">data_out_size[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_myFuncAccel4_top/data_out_dataout">
+               <obj_property name="ElementShortName">data_out_dataout[31:0]</obj_property>
+               <obj_property name="ObjectShortName">data_out_dataout[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_myFuncAccel4_top/data_out_datain">
+               <obj_property name="ElementShortName">data_out_datain[31:0]</obj_property>
+               <obj_property name="ObjectShortName">data_out_datain[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_myFuncAccel4_top/data_out_address">
+               <obj_property name="ElementShortName">data_out_address[31:0]</obj_property>
+               <obj_property name="ObjectShortName">data_out_address[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_myFuncAccel4_top/data_out_rsp_read">
+               <obj_property name="ElementShortName">data_out_rsp_read</obj_property>
+               <obj_property name="ObjectShortName">data_out_rsp_read</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_myFuncAccel4_top/data_out_rsp_empty_n">
+               <obj_property name="ElementShortName">data_out_rsp_empty_n</obj_property>
+               <obj_property name="ObjectShortName">data_out_rsp_empty_n</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_myFuncAccel4_top/data_out_req_write">
+               <obj_property name="ElementShortName">data_out_req_write</obj_property>
+               <obj_property name="ObjectShortName">data_out_req_write</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_myFuncAccel4_top/data_out_req_full_n">
+               <obj_property name="ElementShortName">data_out_req_full_n</obj_property>
+               <obj_property name="ObjectShortName">data_out_req_full_n</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_myFuncAccel4_top/data_out_req_din">
+               <obj_property name="ElementShortName">data_out_req_din</obj_property>
+               <obj_property name="ObjectShortName">data_out_req_din</obj_property>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="group94">
+         <obj_property name="label">C Inputs</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="group" fp_name="group95">
+            <obj_property name="label">data1(bus)</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="array" fp_name="/apatb_myFuncAccel4_top/data1_size">
+               <obj_property name="ElementShortName">data1_size[31:0]</obj_property>
+               <obj_property name="ObjectShortName">data1_size[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_myFuncAccel4_top/data1_dataout">
+               <obj_property name="ElementShortName">data1_dataout[31:0]</obj_property>
+               <obj_property name="ObjectShortName">data1_dataout[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_myFuncAccel4_top/data1_datain">
+               <obj_property name="ElementShortName">data1_datain[31:0]</obj_property>
+               <obj_property name="ObjectShortName">data1_datain[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_myFuncAccel4_top/data1_address">
+               <obj_property name="ElementShortName">data1_address[31:0]</obj_property>
+               <obj_property name="ObjectShortName">data1_address[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_myFuncAccel4_top/data1_rsp_read">
+               <obj_property name="ElementShortName">data1_rsp_read</obj_property>
+               <obj_property name="ObjectShortName">data1_rsp_read</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_myFuncAccel4_top/data1_rsp_empty_n">
+               <obj_property name="ElementShortName">data1_rsp_empty_n</obj_property>
+               <obj_property name="ObjectShortName">data1_rsp_empty_n</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_myFuncAccel4_top/data1_req_write">
+               <obj_property name="ElementShortName">data1_req_write</obj_property>
+               <obj_property name="ObjectShortName">data1_req_write</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_myFuncAccel4_top/data1_req_full_n">
+               <obj_property name="ElementShortName">data1_req_full_n</obj_property>
+               <obj_property name="ObjectShortName">data1_req_full_n</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_myFuncAccel4_top/data1_req_din">
+               <obj_property name="ElementShortName">data1_req_din</obj_property>
+               <obj_property name="ObjectShortName">data1_req_din</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="group105">
+            <obj_property name="label">data0(wire)</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="array" fp_name="/apatb_myFuncAccel4_top/data0_15">
+               <obj_property name="ElementShortName">data0_15[31:0]</obj_property>
+               <obj_property name="ObjectShortName">data0_15[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_myFuncAccel4_top/data0_14">
+               <obj_property name="ElementShortName">data0_14[31:0]</obj_property>
+               <obj_property name="ObjectShortName">data0_14[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_myFuncAccel4_top/data0_13">
+               <obj_property name="ElementShortName">data0_13[31:0]</obj_property>
+               <obj_property name="ObjectShortName">data0_13[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_myFuncAccel4_top/data0_12">
+               <obj_property name="ElementShortName">data0_12[31:0]</obj_property>
+               <obj_property name="ObjectShortName">data0_12[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_myFuncAccel4_top/data0_11">
+               <obj_property name="ElementShortName">data0_11[31:0]</obj_property>
+               <obj_property name="ObjectShortName">data0_11[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_myFuncAccel4_top/data0_10">
+               <obj_property name="ElementShortName">data0_10[31:0]</obj_property>
+               <obj_property name="ObjectShortName">data0_10[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_myFuncAccel4_top/data0_9">
+               <obj_property name="ElementShortName">data0_9[31:0]</obj_property>
+               <obj_property name="ObjectShortName">data0_9[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_myFuncAccel4_top/data0_8">
+               <obj_property name="ElementShortName">data0_8[31:0]</obj_property>
+               <obj_property name="ObjectShortName">data0_8[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_myFuncAccel4_top/data0_7">
+               <obj_property name="ElementShortName">data0_7[31:0]</obj_property>
+               <obj_property name="ObjectShortName">data0_7[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_myFuncAccel4_top/data0_6">
+               <obj_property name="ElementShortName">data0_6[31:0]</obj_property>
+               <obj_property name="ObjectShortName">data0_6[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_myFuncAccel4_top/data0_5">
+               <obj_property name="ElementShortName">data0_5[31:0]</obj_property>
+               <obj_property name="ObjectShortName">data0_5[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_myFuncAccel4_top/data0_4">
+               <obj_property name="ElementShortName">data0_4[31:0]</obj_property>
+               <obj_property name="ObjectShortName">data0_4[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_myFuncAccel4_top/data0_3">
+               <obj_property name="ElementShortName">data0_3[31:0]</obj_property>
+               <obj_property name="ObjectShortName">data0_3[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_myFuncAccel4_top/data0_2">
+               <obj_property name="ElementShortName">data0_2[31:0]</obj_property>
+               <obj_property name="ObjectShortName">data0_2[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_myFuncAccel4_top/data0_1">
+               <obj_property name="ElementShortName">data0_1[31:0]</obj_property>
+               <obj_property name="ObjectShortName">data0_1[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_myFuncAccel4_top/data0_0">
+               <obj_property name="ElementShortName">data0_0[31:0]</obj_property>
+               <obj_property name="ObjectShortName">data0_0[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="group122">
+            <obj_property name="label">threshold(wire)</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="array" fp_name="/apatb_myFuncAccel4_top/threshold">
+               <obj_property name="ElementShortName">threshold[31:0]</obj_property>
+               <obj_property name="ObjectShortName">threshold[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="group124">
+            <obj_property name="label">dim(wire)</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="array" fp_name="/apatb_myFuncAccel4_top/dim">
+               <obj_property name="ElementShortName">dim[31:0]</obj_property>
+               <obj_property name="ObjectShortName">dim[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="group126">
+            <obj_property name="label">size(wire)</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="array" fp_name="/apatb_myFuncAccel4_top/size">
+               <obj_property name="ElementShortName">size[31:0]</obj_property>
+               <obj_property name="ObjectShortName">size[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+   </wvobject>
+</wave_config>

@@ -1,6 +1,16 @@
-dhmiourgia project kai allagh tou linking gia auto
-pragmas gia inputs
-pragmas gia unroll kai pipeline
-pragmas gia mnhmh
-generic 
+dhmiourgia project kai allagh tou linking gia auto	ok
+pragmas gia inputs									ok
+pragmas gia unroll kai pipeline						ok
+pragmas gia mnhmh									~
+ap_fixed											ok
+generic
 elenxos epidwsewn
+
+						Clock	uncertenty	latency		interval	dsp%	ff%		LUT
+fixed/axis 		la8os	8.868	1.25		6			4			7		0		0
+
+fixed/ap_bus	swsta	8.868	1.25		13			4			7		0		0
+
+float/axis		swsta	7.974	1.25		34			4			9		4		8
+
+float/ap_bus	swsta	8.750	1.25		36			4			9		3		8
