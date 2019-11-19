@@ -1,10 +1,31 @@
 dhmiourgia project kai allagh tou linking gia auto	ok
-pragmas gia inputs									ok
-pragmas gia unroll kai pipeline						ok
+pragmas inputs										ok
+unroll kai pipeline									ok
 pragmas gia mnhmh									~
-ap_fixed											ok
-generic
-elenxos epidwsewn
+ap_fixed											~
+	axis
+	critical path
+r/flag optimization
+
+unroll to size loop ( pi8anotata dn ginetai )
+
+
+
+accel 4/16
+tsekarisma 4/16
+
+
+
+
+
+allages sto 2a
+	diavasma eisodwn								ok
+	an allaksw to r/flag sto 2b na ginei sto 2a
+
+
+
+accel4
+exw bgalei kai ta reports
 
 						Clock	uncertenty	latency		interval	dsp%	ff%		LUT
 fixed/axis 		la8os	8.868	1.25		6			4			7		0		0

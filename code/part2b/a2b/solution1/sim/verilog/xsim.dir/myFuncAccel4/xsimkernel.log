@@ -1,7 +1,0 @@
-Running: xsim.dir/myFuncAccel4/xsimk -simmode gui -wdb myFuncAccel4.wdb -simrunnum 0 -socket 43519
-Design successfully loaded
-Design Loading Memory Usage: 33716 KB (Peak: 33716 KB)
-Design Loading CPU Usage: 0 ms
-Simulation completed
-Simulation Memory Usage: 128140 KB (Peak: 172984 KB)
-Simulation CPU Usage: 50 ms

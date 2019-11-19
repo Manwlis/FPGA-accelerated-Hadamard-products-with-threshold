@@ -55,7 +55,7 @@ int main(int argc, char ** argv)
 	assert( dim==4 || dim==16 );
 
 	dataType_t threshold = (dataType_t)atof(argv[4]);
-	assert(threshold>=0.0);
+	assert(threshold>=0.0f);
 
 	printf("\nSeed %u\nSize %u\nDimension %u\nThreshold %f\n", seed, size, dim, threshold);
 	fflush(stdout);	
