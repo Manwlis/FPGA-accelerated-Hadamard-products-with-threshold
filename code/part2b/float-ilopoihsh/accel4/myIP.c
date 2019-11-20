@@ -12,8 +12,8 @@ void myFuncAccel4 (unsigned int size, unsigned int dim, dataType_t threshold, da
 	#pragma HLS array_partition variable=data0 complete		// gia na mporw na prosbainw polles 8eseis tautoxrona
 
 	// interface gia pinakes agnwstou mege8ous
-#pragma HLS INTERFACE axis port=data1 depth=40 bundle=my_input1
-#pragma HLS INTERFACE axis port=data_out depth=40 bundle=my_output
+#pragma HLS INTERFACE axis port=data1 depth=4000 bundle=my_input1
+#pragma HLS INTERFACE axis port=data_out depth=4000 bundle=my_output
 //#pragma HLS INTERFACE ap_bus port=data1 depth=40 bundle=my_input1
 //#pragma HLS INTERFACE ap_bus port=data_out depth=40 bundle=my_output
 
@@ -52,10 +52,9 @@ void myFuncAccel4 (unsigned int size, unsigned int dim, dataType_t threshold, da
 			}
 			r += ( temp_dim[ k ] > threshold );
 		}
-		int flag = ( r == 4 );
 
 		for ( l = 0 ; l < 4 ; l ++ ) {
-			data_out[ i*4 + l ] = flag ? 0.0f : temp_dim[ l ];
+			data_out[ i*4 + l ] = ( r == 4 ) ? 0.0f : temp_dim[ l ];
 		}
 	}
 }

@@ -51,7 +51,7 @@ void myFuncAccel4 (unsigned int size, unsigned int dim, dataType_fixed_l thresho
 			}
 			r += ( temp_dim[ k ] > local_thres );
 		}
-		int flag = ( r == 4 );
+		unsigned int flag = ( r == 4 );
 
 		for ( l = 0 ; l < 4 ; l ++ ) {
 			data_out[ i*4 + l ] = flag ? (dataType_fixed_l) 0.0f : temp_dim[ l ];

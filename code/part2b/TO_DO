@@ -1,18 +1,17 @@
 dhmiourgia project kai allagh tou linking gia auto	ok
 pragmas inputs										ok
 unroll kai pipeline									ok
-pragmas gia mnhmh									~
-ap_fixed											~
-	axis
-	critical path
-r/flag optimization
+pragmas gia mnhmh									ok
+ap_fixed											ok
+	axis											X
+	critical path									X	
+r/flag optimization									ok
 
-unroll to size loop ( pi8anotata dn ginetai )
+unroll to size loop ( pi8anotata dn ginetai )		X
 
 
 
-accel 4/16
-tsekarisma 4/16
+accel 4/16 aplous									ok
 
 
 
@@ -20,23 +19,30 @@ tsekarisma 4/16
 
 allages sto 2a
 	diavasma eisodwn								ok
-	an allaksw to r/flag sto 2b na ginei sto 2a
+	an allaksw to r/flag sto 2b na ginei sto 2a		X
 
 
 
-accel4
-exw bgalei kai ta reports
 
-2a
-generic na fugei kai tou petaw kana sxolio oti htan xali
-allagh sthn eisodo twn dedomenwn kai sxolio
+2a				
+generic na fugei kai tou petaw kana sxolio oti htan xali	ok
+allagh sthn eisodo twn dedomenwn kai sxolio			ok
+
+
+
 
 
 						Clock	uncertenty	latency		interval	dsp%	ff%		LUT
-fixed/axis 		la8os	8.868	1.25		6			4			7		0		0
 
 fixed/ap_bus	swsta	8.868	1.25		13			4			7		0		0
 
 float/axis		swsta	7.974	1.25		34			4			9		4		8
 
 float/ap_bus	swsta	8.750	1.25		36			4			9		3		8
+
+
+
+
+ap_uint reports
+ap_uint ka8arisma kwdika kai sxolia
+ap_uint 16

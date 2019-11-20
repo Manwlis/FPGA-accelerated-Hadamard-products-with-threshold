@@ -329,7 +329,7 @@ struct myFuncAccel4 : public sc_module {
     sc_signal< sc_lv<3> > zext_ln53_2_fu_541_p1;
     sc_signal< sc_lv<3> > zext_ln53_1_fu_538_p1;
     sc_signal< sc_lv<3> > add_ln53_2_fu_544_p2;
-    sc_signal< sc_lv<1> > icmp_ln55_fu_550_p2;
+    sc_signal< sc_lv<1> > icmp_ln57_fu_550_p2;
     sc_signal< sc_logic > grp_fu_240_ce;
     sc_signal< sc_logic > grp_fu_245_ce;
     sc_signal< sc_logic > grp_fu_250_ce;
@@ -512,7 +512,7 @@ struct myFuncAccel4 : public sc_module {
     void thread_icmp_ln53_8_fu_493_p2();
     void thread_icmp_ln53_9_fu_499_p2();
     void thread_icmp_ln53_fu_346_p2();
-    void thread_icmp_ln55_fu_550_p2();
+    void thread_icmp_ln57_fu_550_p2();
     void thread_my_input1_0_ack_in();
     void thread_my_input1_0_ack_out();
     void thread_my_input1_0_data_out();

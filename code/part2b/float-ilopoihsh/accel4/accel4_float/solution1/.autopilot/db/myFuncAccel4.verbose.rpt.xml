@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'myFuncAccel4'" level="0">
-<item name = "Date">Mon Nov 18 16:49:06 2019
+<item name = "Date">Wed Nov 20 15:27:09 2019
 </item>
 <item name = "Version">2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)</item>
 <item name = "Project">accel4_float</item>
@@ -124,7 +124,7 @@
 <column name="icmp_ln53_8_fu_493_p2">icmp, 0, 0, 11, 8, 2</column>
 <column name="icmp_ln53_9_fu_499_p2">icmp, 0, 0, 18, 23, 1</column>
 <column name="icmp_ln53_fu_346_p2">icmp, 0, 0, 11, 8, 2</column>
-<column name="icmp_ln55_fu_550_p2">icmp, 0, 0, 9, 3, 4</column>
+<column name="icmp_ln57_fu_550_p2">icmp, 0, 0, 9, 3, 4</column>
 <column name="my_input1_0_state_cmp_full">icmp, 0, 0, 8, 2, 1</column>
 <column name="my_output_1_state_cmp_full">icmp, 0, 0, 8, 2, 1</column>
 <column name="ap_block_pp0_stage0_11001">or, 0, 0, 2, 1, 1</column>

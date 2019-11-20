@@ -67,16 +67,16 @@ using namespace sc_dt;
 #define AUTOTB_TVIN_data0_14_V  "../tv/cdatafile/c.myFuncAccel4.autotvin_data0_14_V.dat"
 // wrapc file define: "data0_15_V"
 #define AUTOTB_TVIN_data0_15_V  "../tv/cdatafile/c.myFuncAccel4.autotvin_data0_15_V.dat"
-// wrapc file define: "my_input1_V"
-#define AUTOTB_TVIN_my_input1_V  "../tv/cdatafile/c.myFuncAccel4.autotvin_my_input1_V.dat"
-// wrapc file define: "my_output_V"
-#define AUTOTB_TVOUT_my_output_V  "../tv/cdatafile/c.myFuncAccel4.autotvout_my_output_V.dat"
-#define AUTOTB_TVIN_my_output_V  "../tv/cdatafile/c.myFuncAccel4.autotvin_my_output_V.dat"
+// wrapc file define: "data1_V"
+#define AUTOTB_TVIN_data1_V  "../tv/cdatafile/c.myFuncAccel4.autotvin_data1_V.dat"
+// wrapc file define: "data_out_V"
+#define AUTOTB_TVOUT_data_out_V  "../tv/cdatafile/c.myFuncAccel4.autotvout_data_out_V.dat"
+#define AUTOTB_TVIN_data_out_V  "../tv/cdatafile/c.myFuncAccel4.autotvin_data_out_V.dat"
 
 #define INTER_TCL  "../tv/cdatafile/ref.tcl"
 
-// tvout file define: "my_output_V"
-#define AUTOTB_TVOUT_PC_my_output_V  "../tv/rtldatafile/rtl.myFuncAccel4.autotvout_my_output_V.dat"
+// tvout file define: "data_out_V"
+#define AUTOTB_TVOUT_PC_data_out_V  "../tv/rtldatafile/rtl.myFuncAccel4.autotvout_data_out_V.dat"
 
 class INTER_TCL_FILE {
 	public:
@@ -100,8 +100,8 @@ class INTER_TCL_FILE {
 			data0_13_V_depth = 0;
 			data0_14_V_depth = 0;
 			data0_15_V_depth = 0;
-			my_input1_V_depth = 0;
-			my_output_V_depth = 0;
+			data1_V_depth = 0;
+			data_out_V_depth = 0;
 			trans_num =0;
 		}
 
@@ -139,8 +139,8 @@ class INTER_TCL_FILE {
 			total_list << "{data0_13_V " << data0_13_V_depth << "}\n";
 			total_list << "{data0_14_V " << data0_14_V_depth << "}\n";
 			total_list << "{data0_15_V " << data0_15_V_depth << "}\n";
-			total_list << "{my_input1_V " << my_input1_V_depth << "}\n";
-			total_list << "{my_output_V " << my_output_V_depth << "}\n";
+			total_list << "{data1_V " << data1_V_depth << "}\n";
+			total_list << "{data_out_V " << data_out_V_depth << "}\n";
 			return total_list.str();
 		}
 
@@ -166,8 +166,8 @@ class INTER_TCL_FILE {
 		int data0_13_V_depth;
 		int data0_14_V_depth;
 		int data0_15_V_depth;
-		int my_input1_V_depth;
-		int my_output_V_depth;
+		int data1_V_depth;
+		int data_out_V_depth;
 		int trans_num;
 
 	private:
@@ -204,19 +204,19 @@ ap_ufixed<34, 10, (ap_q_mode) 5, (ap_o_mode)3, 0>* data_out)
 		static AESL_FILE_HANDLER aesl_fh;
 
 
-		// output port post check: "my_output_V"
-		aesl_fh.read(AUTOTB_TVOUT_PC_my_output_V, AESL_token); // [[transaction]]
+		// output port post check: "data_out_V"
+		aesl_fh.read(AUTOTB_TVOUT_PC_data_out_V, AESL_token); // [[transaction]]
 		if (AESL_token != "[[transaction]]")
 		{
 			exit(1);
 		}
-		aesl_fh.read(AUTOTB_TVOUT_PC_my_output_V, AESL_num); // transaction number
+		aesl_fh.read(AUTOTB_TVOUT_PC_data_out_V, AESL_num); // transaction number
 
 		if (atoi(AESL_num.c_str()) == AESL_transaction_pc)
 		{
-			aesl_fh.read(AUTOTB_TVOUT_PC_my_output_V, AESL_token); // data
+			aesl_fh.read(AUTOTB_TVOUT_PC_data_out_V, AESL_token); // data
 
-			sc_bv<40> *my_output_V_pc_buffer = new sc_bv<40>[40];
+			sc_bv<34> *data_out_V_pc_buffer = new sc_bv<34>[40];
 			int i = 0;
 
 			while (AESL_token != "[[/transaction]]")
@@ -232,7 +232,7 @@ ap_ufixed<34, 10, (ap_q_mode) 5, (ap_o_mode)3, 0>* data_out)
 					{
 						if (!err)
 						{
-							cerr << "WARNING: [SIM 212-201] RTL produces unknown value 'X' on port 'my_output_V', possible cause: There are uninitialized variables in the C design." << endl;
+							cerr << "WARNING: [SIM 212-201] RTL produces unknown value 'X' on port 'data_out_V', possible cause: There are uninitialized variables in the C design." << endl;
 							err = true;
 						}
 						AESL_token.replace(x_found, 1, "0");
@@ -254,7 +254,7 @@ ap_ufixed<34, 10, (ap_q_mode) 5, (ap_o_mode)3, 0>* data_out)
 					{
 						if (!err)
 						{
-							cerr << "WARNING: [SIM 212-201] RTL produces unknown value 'X' on port 'my_output_V', possible cause: There are uninitialized variables in the C design." << endl;
+							cerr << "WARNING: [SIM 212-201] RTL produces unknown value 'X' on port 'data_out_V', possible cause: There are uninitialized variables in the C design." << endl;
 							err = true;
 						}
 						AESL_token.replace(x_found, 1, "0");
@@ -268,13 +268,13 @@ ap_ufixed<34, 10, (ap_q_mode) 5, (ap_o_mode)3, 0>* data_out)
 				// push token into output port buffer
 				if (AESL_token != "")
 				{
-					my_output_V_pc_buffer[i] = AESL_token.c_str();
+					data_out_V_pc_buffer[i] = AESL_token.c_str();
 					i++;
 				}
 
-				aesl_fh.read(AUTOTB_TVOUT_PC_my_output_V, AESL_token); // data or [[/transaction]]
+				aesl_fh.read(AUTOTB_TVOUT_PC_data_out_V, AESL_token); // data or [[/transaction]]
 
-				if (AESL_token == "[[[/runtime]]]" || aesl_fh.eof(AUTOTB_TVOUT_PC_my_output_V))
+				if (AESL_token == "[[[/runtime]]]" || aesl_fh.eof(AUTOTB_TVOUT_PC_data_out_V))
 				{
 					exit(1);
 				}
@@ -283,7 +283,7 @@ ap_ufixed<34, 10, (ap_q_mode) 5, (ap_o_mode)3, 0>* data_out)
 			// ***********************************
 			if (i > 0)
 			{
-				// RTL Name: my_output_V
+				// RTL Name: data_out_V
 				{
 					// bitslice(33, 0)
 					// {
@@ -303,7 +303,7 @@ ap_ufixed<34, 10, (ap_q_mode) 5, (ap_o_mode)3, 0>* data_out)
 							{
 								if (&(data_out[0]) != NULL) // check the null address if the c port is array or others
 								{
-									data_out_V_lv0_0_39_1[hls_map_index].range(33, 0) = sc_bv<34>(my_output_V_pc_buffer[hls_map_index].range(33, 0));
+									data_out_V_lv0_0_39_1[hls_map_index].range(33, 0) = sc_bv<34>(data_out_V_pc_buffer[hls_map_index].range(33, 0));
 									hls_map_index++;
 								}
 							}
@@ -336,7 +336,7 @@ ap_ufixed<34, 10, (ap_q_mode) 5, (ap_o_mode)3, 0>* data_out)
 			}
 
 			// release memory allocation
-			delete [] my_output_V_pc_buffer;
+			delete [] data_out_V_pc_buffer;
 		}
 
 		AESL_transaction_pc++;
@@ -420,15 +420,15 @@ ap_ufixed<34, 10, (ap_q_mode) 5, (ap_o_mode)3, 0>* data_out)
 		char* tvin_data0_15_V = new char[50];
 		aesl_fh.touch(AUTOTB_TVIN_data0_15_V);
 
-		// "my_input1_V"
-		char* tvin_my_input1_V = new char[50];
-		aesl_fh.touch(AUTOTB_TVIN_my_input1_V);
+		// "data1_V"
+		char* tvin_data1_V = new char[50];
+		aesl_fh.touch(AUTOTB_TVIN_data1_V);
 
-		// "my_output_V"
-		char* tvin_my_output_V = new char[50];
-		aesl_fh.touch(AUTOTB_TVIN_my_output_V);
-		char* tvout_my_output_V = new char[50];
-		aesl_fh.touch(AUTOTB_TVOUT_my_output_V);
+		// "data_out_V"
+		char* tvin_data_out_V = new char[50];
+		aesl_fh.touch(AUTOTB_TVIN_data_out_V);
+		char* tvout_data_out_V = new char[50];
+		aesl_fh.touch(AUTOTB_TVOUT_data_out_V);
 
 		CodeState = DUMP_INPUTS;
 		static INTER_TCL_FILE tcl_file(INTER_TCL);
@@ -1287,12 +1287,12 @@ ap_ufixed<34, 10, (ap_q_mode) 5, (ap_o_mode)3, 0>* data_out)
 		delete [] data0_15_V_tvin_wrapc_buffer;
 
 		// [[transaction]]
-		sprintf(tvin_my_input1_V, "[[transaction]] %d\n", AESL_transaction);
-		aesl_fh.write(AUTOTB_TVIN_my_input1_V, tvin_my_input1_V);
+		sprintf(tvin_data1_V, "[[transaction]] %d\n", AESL_transaction);
+		aesl_fh.write(AUTOTB_TVIN_data1_V, tvin_data1_V);
 
-		sc_bv<24>* my_input1_V_tvin_wrapc_buffer = new sc_bv<24>[40];
+		sc_bv<17>* data1_V_tvin_wrapc_buffer = new sc_bv<17>[40];
 
-		// RTL Name: my_input1_V
+		// RTL Name: data1_V
 		{
 			// bitslice(16, 0)
 			{
@@ -1312,7 +1312,7 @@ ap_ufixed<34, 10, (ap_q_mode) 5, (ap_o_mode)3, 0>* data_out)
 						{
 							sc_lv<17> data1_V_tmp_mem;
 							data1_V_tmp_mem = (data1[i_0]).range().to_string(SC_BIN).c_str();
-							my_input1_V_tvin_wrapc_buffer[hls_map_index].range(16, 0) = data1_V_tmp_mem.range(16, 0);
+							data1_V_tvin_wrapc_buffer[hls_map_index].range(16, 0) = data1_V_tmp_mem.range(16, 0);
                                  	       hls_map_index++;
 						}
 					}
@@ -1323,24 +1323,24 @@ ap_ufixed<34, 10, (ap_q_mode) 5, (ap_o_mode)3, 0>* data_out)
 		// dump tv to file
 		for (int i = 0; i < 40; i++)
 		{
-			sprintf(tvin_my_input1_V, "%s\n", (my_input1_V_tvin_wrapc_buffer[i]).to_string(SC_HEX).c_str());
-			aesl_fh.write(AUTOTB_TVIN_my_input1_V, tvin_my_input1_V);
+			sprintf(tvin_data1_V, "%s\n", (data1_V_tvin_wrapc_buffer[i]).to_string(SC_HEX).c_str());
+			aesl_fh.write(AUTOTB_TVIN_data1_V, tvin_data1_V);
 		}
 
-		tcl_file.set_num(40, &tcl_file.my_input1_V_depth);
-		sprintf(tvin_my_input1_V, "[[/transaction]] \n");
-		aesl_fh.write(AUTOTB_TVIN_my_input1_V, tvin_my_input1_V);
+		tcl_file.set_num(40, &tcl_file.data1_V_depth);
+		sprintf(tvin_data1_V, "[[/transaction]] \n");
+		aesl_fh.write(AUTOTB_TVIN_data1_V, tvin_data1_V);
 
 		// release memory allocation
-		delete [] my_input1_V_tvin_wrapc_buffer;
+		delete [] data1_V_tvin_wrapc_buffer;
 
 		// [[transaction]]
-		sprintf(tvin_my_output_V, "[[transaction]] %d\n", AESL_transaction);
-		aesl_fh.write(AUTOTB_TVIN_my_output_V, tvin_my_output_V);
+		sprintf(tvin_data_out_V, "[[transaction]] %d\n", AESL_transaction);
+		aesl_fh.write(AUTOTB_TVIN_data_out_V, tvin_data_out_V);
 
-		sc_bv<40>* my_output_V_tvin_wrapc_buffer = new sc_bv<40>[40];
+		sc_bv<34>* data_out_V_tvin_wrapc_buffer = new sc_bv<34>[40];
 
-		// RTL Name: my_output_V
+		// RTL Name: data_out_V
 		{
 			// bitslice(33, 0)
 			{
@@ -1360,7 +1360,7 @@ ap_ufixed<34, 10, (ap_q_mode) 5, (ap_o_mode)3, 0>* data_out)
 						{
 							sc_lv<34> data_out_V_tmp_mem;
 							data_out_V_tmp_mem = (data_out[i_0]).range().to_string(SC_BIN).c_str();
-							my_output_V_tvin_wrapc_buffer[hls_map_index].range(33, 0) = data_out_V_tmp_mem.range(33, 0);
+							data_out_V_tvin_wrapc_buffer[hls_map_index].range(33, 0) = data_out_V_tmp_mem.range(33, 0);
                                  	       hls_map_index++;
 						}
 					}
@@ -1371,16 +1371,16 @@ ap_ufixed<34, 10, (ap_q_mode) 5, (ap_o_mode)3, 0>* data_out)
 		// dump tv to file
 		for (int i = 0; i < 40; i++)
 		{
-			sprintf(tvin_my_output_V, "%s\n", (my_output_V_tvin_wrapc_buffer[i]).to_string(SC_HEX).c_str());
-			aesl_fh.write(AUTOTB_TVIN_my_output_V, tvin_my_output_V);
+			sprintf(tvin_data_out_V, "%s\n", (data_out_V_tvin_wrapc_buffer[i]).to_string(SC_HEX).c_str());
+			aesl_fh.write(AUTOTB_TVIN_data_out_V, tvin_data_out_V);
 		}
 
-		tcl_file.set_num(40, &tcl_file.my_output_V_depth);
-		sprintf(tvin_my_output_V, "[[/transaction]] \n");
-		aesl_fh.write(AUTOTB_TVIN_my_output_V, tvin_my_output_V);
+		tcl_file.set_num(40, &tcl_file.data_out_V_depth);
+		sprintf(tvin_data_out_V, "[[/transaction]] \n");
+		aesl_fh.write(AUTOTB_TVIN_data_out_V, tvin_data_out_V);
 
 		// release memory allocation
-		delete [] my_output_V_tvin_wrapc_buffer;
+		delete [] data_out_V_tvin_wrapc_buffer;
 
 // [call_c_dut] ---------->
 
@@ -1390,12 +1390,12 @@ ap_ufixed<34, 10, (ap_q_mode) 5, (ap_o_mode)3, 0>* data_out)
 		CodeState = DUMP_OUTPUTS;
 
 		// [[transaction]]
-		sprintf(tvout_my_output_V, "[[transaction]] %d\n", AESL_transaction);
-		aesl_fh.write(AUTOTB_TVOUT_my_output_V, tvout_my_output_V);
+		sprintf(tvout_data_out_V, "[[transaction]] %d\n", AESL_transaction);
+		aesl_fh.write(AUTOTB_TVOUT_data_out_V, tvout_data_out_V);
 
-		sc_bv<40>* my_output_V_tvout_wrapc_buffer = new sc_bv<40>[40];
+		sc_bv<34>* data_out_V_tvout_wrapc_buffer = new sc_bv<34>[40];
 
-		// RTL Name: my_output_V
+		// RTL Name: data_out_V
 		{
 			// bitslice(33, 0)
 			{
@@ -1415,7 +1415,7 @@ ap_ufixed<34, 10, (ap_q_mode) 5, (ap_o_mode)3, 0>* data_out)
 						{
 							sc_lv<34> data_out_V_tmp_mem;
 							data_out_V_tmp_mem = (data_out[i_0]).range().to_string(SC_BIN).c_str();
-							my_output_V_tvout_wrapc_buffer[hls_map_index].range(33, 0) = data_out_V_tmp_mem.range(33, 0);
+							data_out_V_tvout_wrapc_buffer[hls_map_index].range(33, 0) = data_out_V_tmp_mem.range(33, 0);
                                  	       hls_map_index++;
 						}
 					}
@@ -1426,16 +1426,16 @@ ap_ufixed<34, 10, (ap_q_mode) 5, (ap_o_mode)3, 0>* data_out)
 		// dump tv to file
 		for (int i = 0; i < 40; i++)
 		{
-			sprintf(tvout_my_output_V, "%s\n", (my_output_V_tvout_wrapc_buffer[i]).to_string(SC_HEX).c_str());
-			aesl_fh.write(AUTOTB_TVOUT_my_output_V, tvout_my_output_V);
+			sprintf(tvout_data_out_V, "%s\n", (data_out_V_tvout_wrapc_buffer[i]).to_string(SC_HEX).c_str());
+			aesl_fh.write(AUTOTB_TVOUT_data_out_V, tvout_data_out_V);
 		}
 
-		tcl_file.set_num(40, &tcl_file.my_output_V_depth);
-		sprintf(tvout_my_output_V, "[[/transaction]] \n");
-		aesl_fh.write(AUTOTB_TVOUT_my_output_V, tvout_my_output_V);
+		tcl_file.set_num(40, &tcl_file.data_out_V_depth);
+		sprintf(tvout_data_out_V, "[[/transaction]] \n");
+		aesl_fh.write(AUTOTB_TVOUT_data_out_V, tvout_data_out_V);
 
 		// release memory allocation
-		delete [] my_output_V_tvout_wrapc_buffer;
+		delete [] data_out_V_tvout_wrapc_buffer;
 
 		CodeState = DELETE_CHAR_BUFFERS;
 		// release memory allocation: "size"
@@ -1474,11 +1474,11 @@ ap_ufixed<34, 10, (ap_q_mode) 5, (ap_o_mode)3, 0>* data_out)
 		delete [] tvin_data0_14_V;
 		// release memory allocation: "data0_15_V"
 		delete [] tvin_data0_15_V;
-		// release memory allocation: "my_input1_V"
-		delete [] tvin_my_input1_V;
-		// release memory allocation: "my_output_V"
-		delete [] tvout_my_output_V;
-		delete [] tvin_my_output_V;
+		// release memory allocation: "data1_V"
+		delete [] tvin_data1_V;
+		// release memory allocation: "data_out_V"
+		delete [] tvout_data_out_V;
+		delete [] tvin_data_out_V;
 
 		AESL_transaction++;
 

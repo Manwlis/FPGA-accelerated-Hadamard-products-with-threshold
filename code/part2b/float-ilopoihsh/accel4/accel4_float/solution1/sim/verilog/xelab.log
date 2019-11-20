@@ -205,7 +205,7 @@ Compiling architecture xilinx of entity floating_point_v7_1_8.floating_point_v7_
 Compiling architecture myfuncaccel4_ap_fcmp_0_no_dsp_32_arch of entity xil_defaultlib.myFuncAccel4_ap_fcmp_0_no_dsp_32 [myfuncaccel4_ap_fcmp_0_no_dsp_32...]
 Compiling module xil_defaultlib.myFuncAccel4_fcmp_32ns_32ns_1_2_...
 Compiling module xil_defaultlib.myFuncAccel4
-Compiling module xil_defaultlib.fifo(DEPTH=40,WIDTH=32)
+Compiling module xil_defaultlib.fifo(DEPTH=4000,WIDTH=32)
 Compiling module xil_defaultlib.AESL_axi_s_my_input1
 Compiling module xil_defaultlib.AESL_axi_s_my_output
 Compiling module xil_defaultlib.apatb_myFuncAccel4_top

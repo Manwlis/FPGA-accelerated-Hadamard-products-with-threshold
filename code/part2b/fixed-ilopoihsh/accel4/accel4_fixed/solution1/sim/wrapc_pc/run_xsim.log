@@ -4,8 +4,8 @@ Size 10
 Dimension 4
 Threshold 100.000000
 
-Software execution time: 0.000002
-Hardware execution time: 0.002501
+Software execution time: 0.000003
+Hardware execution time: 0.002847
 
 no errors
 
@@ -22,6 +22,8 @@ INFO: [VRFC 10-311] analyzing module myFuncAccel4_mul_mul_17ns_17ns_34_1_1
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/fixed-ilopoihsh/accel4/accel4_fixed/solution1/sim/verilog/myFuncAccel4_mac_muladd_17ns_17ns_36ns_36_1_1.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module myFuncAccel4_mac_muladd_17ns_17ns_36ns_36_1_1_DSP48_3
 INFO: [VRFC 10-311] analyzing module myFuncAccel4_mac_muladd_17ns_17ns_36ns_36_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/fixed-ilopoihsh/accel4/accel4_fixed/solution1/sim/verilog/AESL_autobus_data_out_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_autobus_data_out_V
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/fixed-ilopoihsh/accel4/accel4_fixed/solution1/sim/verilog/myFuncAccel4.autotb.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module apatb_myFuncAccel4_top
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/fixed-ilopoihsh/accel4/accel4_fixed/solution1/sim/verilog/AESL_fifo.v" into library xil_defaultlib
@@ -29,10 +31,8 @@ INFO: [VRFC 10-311] analyzing module fifo
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/fixed-ilopoihsh/accel4/accel4_fixed/solution1/sim/verilog/myFuncAccel4_mac_muladd_17ns_17ns_35ns_36_1_1.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module myFuncAccel4_mac_muladd_17ns_17ns_35ns_36_1_1_DSP48_2
 INFO: [VRFC 10-311] analyzing module myFuncAccel4_mac_muladd_17ns_17ns_35ns_36_1_1
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/fixed-ilopoihsh/accel4/accel4_fixed/solution1/sim/verilog/AESL_axi_s_my_output_V.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module AESL_axi_s_my_output_V
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/fixed-ilopoihsh/accel4/accel4_fixed/solution1/sim/verilog/AESL_axi_s_my_input1_V.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module AESL_axi_s_my_input1_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/fixed-ilopoihsh/accel4/accel4_fixed/solution1/sim/verilog/AESL_autobus_data1_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_autobus_data1_V
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/fixed-ilopoihsh/accel4/accel4_fixed/solution1/sim/verilog/myFuncAccel4.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module myFuncAccel4
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/fixed-ilopoihsh/accel4/accel4_fixed/solution1/sim/verilog/myFuncAccel4_mac_muladd_17ns_17ns_34ns_35_1_1.v" into library xil_defaultlib
@@ -52,10 +52,12 @@ Compiling module xil_defaultlib.myFuncAccel4_mac_muladd_17ns_17n...
 Compiling module xil_defaultlib.myFuncAccel4_mac_muladd_17ns_17n...
 Compiling module xil_defaultlib.myFuncAccel4_mac_muladd_17ns_17n...
 Compiling module xil_defaultlib.myFuncAccel4
-Compiling module xil_defaultlib.fifo(DEPTH=40,WIDTH=24)
-Compiling module xil_defaultlib.AESL_axi_s_my_input1_V
-Compiling module xil_defaultlib.fifo(DEPTH=40,WIDTH=40)
-Compiling module xil_defaultlib.AESL_axi_s_my_output_V
+Compiling module xil_defaultlib.fifo(DEPTH=32'b0100000,WIDTH=32'...
+Compiling module xil_defaultlib.fifo(DEPTH=32'b0101000,WIDTH=32'...
+Compiling module xil_defaultlib.AESL_autobus_data1_V
+Compiling module xil_defaultlib.fifo(DEPTH=32'b0100000,WIDTH=32'...
+Compiling module xil_defaultlib.fifo(DEPTH=32'b0101000,WIDTH=32'...
+Compiling module xil_defaultlib.AESL_autobus_data_out_V
 Compiling module xil_defaultlib.apatb_myFuncAccel4_top
 Compiling module work.glbl
 Built simulation snapshot myFuncAccel4
@@ -66,7 +68,7 @@ Built simulation snapshot myFuncAccel4
     ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 
 source /home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/fixed-ilopoihsh/accel4/accel4_fixed/solution1/sim/verilog/xsim.dir/myFuncAccel4/webtalk/xsim_webtalk.tcl -notrace
-INFO: [Common 17-206] Exiting Webtalk at Mon Nov 18 16:36:36 2019...
+INFO: [Common 17-206] Exiting Webtalk at Wed Nov 20 15:18:19 2019...
 
 ****** xsim v2019.1 (64-bit)
   **** SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
@@ -82,15 +84,27 @@ source myFuncAccel4.tcl
 WARNING: [Simtcl 6-197] One or more HDL objects could not be logged because of object type or size limitations.  To see details please rerun the command with -verbose (-v).
 ## set designtopgroup [add_wave_group "Design Top Signals"]
 ## set coutputgroup [add_wave_group "C Outputs" -into $designtopgroup]
-## set data_out_group [add_wave_group data_out(axis) -into $coutputgroup]
-## add_wave /apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/my_output_V_TREADY -into $data_out_group -color #ffff00 -radix hex
-## add_wave /apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/my_output_V_TVALID -into $data_out_group -color #ffff00 -radix hex
-## add_wave /apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/my_output_V_TDATA -into $data_out_group -radix hex
+## set data_out_group [add_wave_group data_out(bus) -into $coutputgroup]
+## add_wave /apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/data_out_V_size -into $data_out_group -radix hex
+## add_wave /apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/data_out_V_dataout -into $data_out_group -radix hex
+## add_wave /apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/data_out_V_datain -into $data_out_group -radix hex
+## add_wave /apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/data_out_V_address -into $data_out_group -radix hex
+## add_wave /apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/data_out_V_rsp_read -into $data_out_group -color #ffff00 -radix hex
+## add_wave /apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/data_out_V_rsp_empty_n -into $data_out_group -color #ffff00 -radix hex
+## add_wave /apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/data_out_V_req_write -into $data_out_group -color #ffff00 -radix hex
+## add_wave /apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/data_out_V_req_full_n -into $data_out_group -color #ffff00 -radix hex
+## add_wave /apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/data_out_V_req_din -into $data_out_group -radix hex
 ## set cinputgroup [add_wave_group "C Inputs" -into $designtopgroup]
-## set data1_group [add_wave_group data1(axis) -into $cinputgroup]
-## add_wave /apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/my_input1_V_TREADY -into $data1_group -color #ffff00 -radix hex
-## add_wave /apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/my_input1_V_TVALID -into $data1_group -color #ffff00 -radix hex
-## add_wave /apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/my_input1_V_TDATA -into $data1_group -radix hex
+## set data1_group [add_wave_group data1(bus) -into $cinputgroup]
+## add_wave /apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/data1_V_size -into $data1_group -radix hex
+## add_wave /apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/data1_V_dataout -into $data1_group -radix hex
+## add_wave /apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/data1_V_datain -into $data1_group -radix hex
+## add_wave /apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/data1_V_address -into $data1_group -radix hex
+## add_wave /apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/data1_V_rsp_read -into $data1_group -color #ffff00 -radix hex
+## add_wave /apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/data1_V_rsp_empty_n -into $data1_group -color #ffff00 -radix hex
+## add_wave /apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/data1_V_req_write -into $data1_group -color #ffff00 -radix hex
+## add_wave /apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/data1_V_req_full_n -into $data1_group -color #ffff00 -radix hex
+## add_wave /apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/data1_V_req_din -into $data1_group -radix hex
 ## set data0_group [add_wave_group data0(wire) -into $cinputgroup]
 ## add_wave /apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/data0_15_V -into $data0_group -radix hex
 ## add_wave /apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/data0_14_V -into $data0_group -radix hex
@@ -120,7 +134,7 @@ WARNING: [Simtcl 6-197] One or more HDL objects could not be logged because of o
 ## add_wave /apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/ap_idle -into $blocksiggroup
 ## add_wave /apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/ap_ready -into $blocksiggroup
 ## set resetgroup [add_wave_group "Reset" -into $designtopgroup]
-## add_wave /apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/ap_rst_n -into $resetgroup
+## add_wave /apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/ap_rst -into $resetgroup
 ## set clockgroup [add_wave_group "Clock" -into $designtopgroup]
 ## add_wave /apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/ap_clk -into $clockgroup
 ## set testbenchgroup [add_wave_group "Test Bench Signals"]
@@ -148,18 +162,30 @@ WARNING: [Simtcl 6-197] One or more HDL objects could not be logged because of o
 ## add_wave /apatb_myFuncAccel4_top/LENGTH_data0_13_V -into $tb_portdepth_group -radix hex
 ## add_wave /apatb_myFuncAccel4_top/LENGTH_data0_14_V -into $tb_portdepth_group -radix hex
 ## add_wave /apatb_myFuncAccel4_top/LENGTH_data0_15_V -into $tb_portdepth_group -radix hex
-## add_wave /apatb_myFuncAccel4_top/LENGTH_my_input1_V -into $tb_portdepth_group -radix hex
-## add_wave /apatb_myFuncAccel4_top/LENGTH_my_output_V -into $tb_portdepth_group -radix hex
+## add_wave /apatb_myFuncAccel4_top/LENGTH_data1_V -into $tb_portdepth_group -radix hex
+## add_wave /apatb_myFuncAccel4_top/LENGTH_data_out_V -into $tb_portdepth_group -radix hex
 ## set tbcoutputgroup [add_wave_group "C Outputs" -into $testbenchgroup]
-## set tb_data_out_group [add_wave_group data_out(axis) -into $tbcoutputgroup]
-## add_wave /apatb_myFuncAccel4_top/my_output_V_TREADY -into $tb_data_out_group -color #ffff00 -radix hex
-## add_wave /apatb_myFuncAccel4_top/my_output_V_TVALID -into $tb_data_out_group -color #ffff00 -radix hex
-## add_wave /apatb_myFuncAccel4_top/my_output_V_TDATA -into $tb_data_out_group -radix hex
+## set tb_data_out_group [add_wave_group data_out(bus) -into $tbcoutputgroup]
+## add_wave /apatb_myFuncAccel4_top/data_out_V_size -into $tb_data_out_group -radix hex
+## add_wave /apatb_myFuncAccel4_top/data_out_V_dataout -into $tb_data_out_group -radix hex
+## add_wave /apatb_myFuncAccel4_top/data_out_V_datain -into $tb_data_out_group -radix hex
+## add_wave /apatb_myFuncAccel4_top/data_out_V_address -into $tb_data_out_group -radix hex
+## add_wave /apatb_myFuncAccel4_top/data_out_V_rsp_read -into $tb_data_out_group -color #ffff00 -radix hex
+## add_wave /apatb_myFuncAccel4_top/data_out_V_rsp_empty_n -into $tb_data_out_group -color #ffff00 -radix hex
+## add_wave /apatb_myFuncAccel4_top/data_out_V_req_write -into $tb_data_out_group -color #ffff00 -radix hex
+## add_wave /apatb_myFuncAccel4_top/data_out_V_req_full_n -into $tb_data_out_group -color #ffff00 -radix hex
+## add_wave /apatb_myFuncAccel4_top/data_out_V_req_din -into $tb_data_out_group -radix hex
 ## set tbcinputgroup [add_wave_group "C Inputs" -into $testbenchgroup]
-## set tb_data1_group [add_wave_group data1(axis) -into $tbcinputgroup]
-## add_wave /apatb_myFuncAccel4_top/my_input1_V_TREADY -into $tb_data1_group -color #ffff00 -radix hex
-## add_wave /apatb_myFuncAccel4_top/my_input1_V_TVALID -into $tb_data1_group -color #ffff00 -radix hex
-## add_wave /apatb_myFuncAccel4_top/my_input1_V_TDATA -into $tb_data1_group -radix hex
+## set tb_data1_group [add_wave_group data1(bus) -into $tbcinputgroup]
+## add_wave /apatb_myFuncAccel4_top/data1_V_size -into $tb_data1_group -radix hex
+## add_wave /apatb_myFuncAccel4_top/data1_V_dataout -into $tb_data1_group -radix hex
+## add_wave /apatb_myFuncAccel4_top/data1_V_datain -into $tb_data1_group -radix hex
+## add_wave /apatb_myFuncAccel4_top/data1_V_address -into $tb_data1_group -radix hex
+## add_wave /apatb_myFuncAccel4_top/data1_V_rsp_read -into $tb_data1_group -color #ffff00 -radix hex
+## add_wave /apatb_myFuncAccel4_top/data1_V_rsp_empty_n -into $tb_data1_group -color #ffff00 -radix hex
+## add_wave /apatb_myFuncAccel4_top/data1_V_req_write -into $tb_data1_group -color #ffff00 -radix hex
+## add_wave /apatb_myFuncAccel4_top/data1_V_req_full_n -into $tb_data1_group -color #ffff00 -radix hex
+## add_wave /apatb_myFuncAccel4_top/data1_V_req_din -into $tb_data1_group -radix hex
 ## set tb_data0_group [add_wave_group data0(wire) -into $tbcinputgroup]
 ## add_wave /apatb_myFuncAccel4_top/data0_15_V -into $tb_data0_group -radix hex
 ## add_wave /apatb_myFuncAccel4_top/data0_14_V -into $tb_data0_group -radix hex
@@ -192,11 +218,11 @@ WARNING: [Simtcl 6-197] One or more HDL objects could not be logged because of o
 // RTL Simulation : "Inter-Transaction Progress" ["Intra-Transaction Progress"] @ "Simulation Time"
 ////////////////////////////////////////////////////////////////////////////////////
 // RTL Simulation : 0 / 1 [0.00%] @ "125000"
-// RTL Simulation : 1 / 1 [100.00%] @ "575000"
+// RTL Simulation : 1 / 1 [100.00%] @ "635000"
 ////////////////////////////////////////////////////////////////////////////////////
-$finish called at time : 615 ns : File "/home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/fixed-ilopoihsh/accel4/accel4_fixed/solution1/sim/verilog/myFuncAccel4.autotb.v" Line 1336
+$finish called at time : 675 ns : File "/home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/fixed-ilopoihsh/accel4/accel4_fixed/solution1/sim/verilog/myFuncAccel4.autotb.v" Line 1435
 ## quit
-INFO: [Common 17-206] Exiting xsim at Mon Nov 18 16:36:50 2019...
+INFO: [Common 17-206] Exiting xsim at Wed Nov 20 15:18:36 2019...
 
 Seed 0
 Size 10
@@ -204,45 +230,7 @@ Dimension 4
 Threshold 100.000000
 
 Software execution time: 0.000002
-Hardware execution time: 0.000637
+Hardware execution time: 0.000762
 
-error pos 0: hw = 65.95, sw =  102.87
-error pos 1: hw = 135.50, sw =  59.23
-error pos 2: hw = 83.74, sw =  42.86
-error pos 3: hw = 102.52, sw =  65.95
-error pos 4: hw = 98.02, sw =  116.26
-error pos 5: hw = 76.41, sw =  124.23
-error pos 6: hw = 122.76, sw =  85.34
-error pos 7: hw = 150.04, sw =  135.50
-error pos 8: hw = 106.13, sw =  87.56
-error pos 9: hw = 108.68, sw =  78.80
-error pos 10: hw = 0.00, sw =  63.93
-error pos 11: hw = 0.00, sw =  83.74
-error pos 12: hw = 0.00, sw =  101.34
-error pos 13: hw = 0.00, sw =  56.54
-error pos 14: hw = 0.00, sw =  64.09
-error pos 15: hw = 0.00, sw =  102.52
-error pos 16: hw = 0.00, sw =  116.00
-error pos 17: hw = 0.00, sw =  97.31
-error pos 18: hw = 0.00, sw =  64.05
-error pos 19: hw = 0.00, sw =  98.02
-error pos 20: hw = 0.00, sw =  78.25
-error pos 21: hw = 0.00, sw =  50.20
-error pos 22: hw = 0.00, sw =  45.34
-error pos 23: hw = 0.00, sw =  76.41
-error pos 24: hw = 0.00, sw =  127.70
-error pos 25: hw = 0.00, sw =  108.06
-error pos 26: hw = 0.00, sw =  61.97
-error pos 27: hw = 0.00, sw =  122.76
-error pos 28: hw = 0.00, sw =  113.48
-error pos 29: hw = 0.00, sw =  89.23
-error pos 30: hw = 0.00, sw =  93.06
-error pos 31: hw = 0.00, sw =  150.04
-error pos 32: hw = 0.00, sw =  107.77
-error pos 33: hw = 0.00, sw =  95.07
-error pos 34: hw = 0.00, sw =  63.62
-error pos 35: hw = 0.00, sw =  106.13
-error pos 36: hw = 0.00, sw =  120.88
-error pos 37: hw = 0.00, sw =  99.89
-error pos 38: hw = 0.00, sw =  56.48
-error pos 39: hw = 0.00, sw =  108.68
+no errors
+

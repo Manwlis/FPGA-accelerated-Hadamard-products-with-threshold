@@ -4,7 +4,7 @@ INFO: [COSIM-14] Instrumenting C test bench ...
    Compiling apatb_myFuncAccel4.cpp
    Compiling (apcc) main.c_pre.c.tb.c
 INFO: [HLS 200-10] Running '/run/media/epetrakos/60GB/Xilinx/Vivado/2019.1/bin/unwrapped/lnx64.o/apcc'
-INFO: [HLS 200-10] For user 'epetrakos' on host 'tower-pc' (Linux_x86_64 version 5.2.21-1-MANJARO) on Mon Nov 18 16:50:37 EET 2019
+INFO: [HLS 200-10] For user 'epetrakos' on host 'tower-pc' (Linux_x86_64 version 5.2.21-1-MANJARO) on Wed Nov 20 15:27:49 EET 2019
 INFO: [HLS 200-10] On os "Manjaro Linux"
 INFO: [HLS 200-10] In directory '/home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/float-ilopoihsh/accel4/accel4_float/solution1/sim/wrapc'
 clang: warning: argument unused during compilation: '-fno-builtin-isinf'
@@ -14,16 +14,16 @@ In file included from /home/epetrakos/Documents/GitHub/HRY591-project/code/part2
  ((void) sizeof ((seed>=0) ? 1 : 0), __extension__ ({ if (seed>=0) ; else __assert_fail ("seed>=0", "/home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/float-ilopoihsh/accel4/main.c", 45, __extension__ __PRETTY_FUNCTION__); }));
                                                           ~~~~^ ~
 1 warning generated.
-INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_epetrakos/144881574088637662973
+INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_epetrakos/149481574256469581426
 INFO: [APCC 202-1] APCC is done.
    Compiling (apcc) myIP.c_pre.c.tb.c
 INFO: [HLS 200-10] Running '/run/media/epetrakos/60GB/Xilinx/Vivado/2019.1/bin/unwrapped/lnx64.o/apcc'
-INFO: [HLS 200-10] For user 'epetrakos' on host 'tower-pc' (Linux_x86_64 version 5.2.21-1-MANJARO) on Mon Nov 18 16:50:49 EET 2019
+INFO: [HLS 200-10] For user 'epetrakos' on host 'tower-pc' (Linux_x86_64 version 5.2.21-1-MANJARO) on Wed Nov 20 15:28:01 EET 2019
 INFO: [HLS 200-10] On os "Manjaro Linux"
 INFO: [HLS 200-10] In directory '/home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/float-ilopoihsh/accel4/accel4_float/solution1/sim/wrapc'
 clang: warning: argument unused during compilation: '-fno-builtin-isinf'
 clang: warning: argument unused during compilation: '-fno-builtin-isnan'
-INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_epetrakos/145801574088649853331
+INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_epetrakos/150541574256481667603
 INFO: [APCC 202-1] APCC is done.
    Generating cosim.tv.exe
 INFO: [COSIM-302] Starting C TB testing ... 
@@ -35,12 +35,12 @@ INFO: [COSIM-15] Starting XSIM ...
 INFO: [COSIM-316] Starting C post checking ...
 
 Seed 0
-Size 10
+Size 1000
 Dimension 4
 Threshold 100.000000
 
-Software execution time: 0.000012
-Hardware execution time: 0.002111
+Software execution time: 0.000715
+Hardware execution time: 0.108770
 
 no errors
 
@@ -251,7 +251,7 @@ Compiling architecture xilinx of entity floating_point_v7_1_8.floating_point_v7_
 Compiling architecture myfuncaccel4_ap_fcmp_0_no_dsp_32_arch of entity xil_defaultlib.myFuncAccel4_ap_fcmp_0_no_dsp_32 [myfuncaccel4_ap_fcmp_0_no_dsp_32...]
 Compiling module xil_defaultlib.myFuncAccel4_fcmp_32ns_32ns_1_2_...
 Compiling module xil_defaultlib.myFuncAccel4
-Compiling module xil_defaultlib.fifo(DEPTH=40,WIDTH=32)
+Compiling module xil_defaultlib.fifo(DEPTH=4000,WIDTH=32)
 Compiling module xil_defaultlib.AESL_axi_s_my_input1
 Compiling module xil_defaultlib.AESL_axi_s_my_output
 Compiling module xil_defaultlib.apatb_myFuncAccel4_top
@@ -264,7 +264,7 @@ Built simulation snapshot myFuncAccel4
     ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 
 source /home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/float-ilopoihsh/accel4/accel4_float/solution1/sim/verilog/xsim.dir/myFuncAccel4/webtalk/xsim_webtalk.tcl -notrace
-INFO: [Common 17-206] Exiting Webtalk at Mon Nov 18 16:51:52 2019...
+INFO: [Common 17-206] Exiting Webtalk at Wed Nov 20 15:29:03 2019...
 
 ****** xsim v2019.1 (64-bit)
   **** SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
@@ -423,50 +423,51 @@ Time: 315 ns  Iteration: 11  Process: /apatb_myFuncAccel4_top/AESL_inst_myFuncAc
 Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
 Time: 315 ns  Iteration: 11  Process: /apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/myFuncAccel4_fadd_32ns_32ns_32_5_full_dsp_1_U4/myFuncAccel4_ap_fadd_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: /run/media/epetrakos/60GB/Xilinx/Vivado/2019.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
 Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
-Time: 605 ns  Iteration: 11  Process: /apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/myFuncAccel4_fadd_32ns_32ns_32_5_full_dsp_1_U1/myFuncAccel4_ap_fadd_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: /run/media/epetrakos/60GB/Xilinx/Vivado/2019.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Time: 40205 ns  Iteration: 11  Process: /apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/myFuncAccel4_fadd_32ns_32ns_32_5_full_dsp_1_U1/myFuncAccel4_ap_fadd_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: /run/media/epetrakos/60GB/Xilinx/Vivado/2019.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
 Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
-Time: 605 ns  Iteration: 11  Process: /apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/myFuncAccel4_fadd_32ns_32ns_32_5_full_dsp_1_U2/myFuncAccel4_ap_fadd_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: /run/media/epetrakos/60GB/Xilinx/Vivado/2019.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Time: 40205 ns  Iteration: 11  Process: /apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/myFuncAccel4_fadd_32ns_32ns_32_5_full_dsp_1_U2/myFuncAccel4_ap_fadd_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: /run/media/epetrakos/60GB/Xilinx/Vivado/2019.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
 Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
-Time: 605 ns  Iteration: 11  Process: /apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/myFuncAccel4_fadd_32ns_32ns_32_5_full_dsp_1_U3/myFuncAccel4_ap_fadd_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: /run/media/epetrakos/60GB/Xilinx/Vivado/2019.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Time: 40205 ns  Iteration: 11  Process: /apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/myFuncAccel4_fadd_32ns_32ns_32_5_full_dsp_1_U3/myFuncAccel4_ap_fadd_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: /run/media/epetrakos/60GB/Xilinx/Vivado/2019.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
 Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
-Time: 605 ns  Iteration: 11  Process: /apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/myFuncAccel4_fadd_32ns_32ns_32_5_full_dsp_1_U4/myFuncAccel4_ap_fadd_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: /run/media/epetrakos/60GB/Xilinx/Vivado/2019.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Time: 40205 ns  Iteration: 11  Process: /apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/myFuncAccel4_fadd_32ns_32ns_32_5_full_dsp_1_U4/myFuncAccel4_ap_fadd_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: /run/media/epetrakos/60GB/Xilinx/Vivado/2019.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
 Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
-Time: 645 ns  Iteration: 11  Process: /apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/myFuncAccel4_fadd_32ns_32ns_32_5_full_dsp_1_U1/myFuncAccel4_ap_fadd_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: /run/media/epetrakos/60GB/Xilinx/Vivado/2019.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Time: 40245 ns  Iteration: 11  Process: /apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/myFuncAccel4_fadd_32ns_32ns_32_5_full_dsp_1_U1/myFuncAccel4_ap_fadd_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: /run/media/epetrakos/60GB/Xilinx/Vivado/2019.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
 Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
-Time: 645 ns  Iteration: 11  Process: /apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/myFuncAccel4_fadd_32ns_32ns_32_5_full_dsp_1_U2/myFuncAccel4_ap_fadd_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: /run/media/epetrakos/60GB/Xilinx/Vivado/2019.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Time: 40245 ns  Iteration: 11  Process: /apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/myFuncAccel4_fadd_32ns_32ns_32_5_full_dsp_1_U2/myFuncAccel4_ap_fadd_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: /run/media/epetrakos/60GB/Xilinx/Vivado/2019.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
 Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
-Time: 645 ns  Iteration: 11  Process: /apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/myFuncAccel4_fadd_32ns_32ns_32_5_full_dsp_1_U3/myFuncAccel4_ap_fadd_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: /run/media/epetrakos/60GB/Xilinx/Vivado/2019.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Time: 40245 ns  Iteration: 11  Process: /apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/myFuncAccel4_fadd_32ns_32ns_32_5_full_dsp_1_U3/myFuncAccel4_ap_fadd_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: /run/media/epetrakos/60GB/Xilinx/Vivado/2019.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
 Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
-Time: 645 ns  Iteration: 11  Process: /apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/myFuncAccel4_fadd_32ns_32ns_32_5_full_dsp_1_U4/myFuncAccel4_ap_fadd_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: /run/media/epetrakos/60GB/Xilinx/Vivado/2019.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Time: 40245 ns  Iteration: 11  Process: /apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/myFuncAccel4_fadd_32ns_32ns_32_5_full_dsp_1_U4/myFuncAccel4_ap_fadd_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: /run/media/epetrakos/60GB/Xilinx/Vivado/2019.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
 Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
-Time: 685 ns  Iteration: 11  Process: /apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/myFuncAccel4_fadd_32ns_32ns_32_5_full_dsp_1_U1/myFuncAccel4_ap_fadd_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: /run/media/epetrakos/60GB/Xilinx/Vivado/2019.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Time: 40285 ns  Iteration: 11  Process: /apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/myFuncAccel4_fadd_32ns_32ns_32_5_full_dsp_1_U1/myFuncAccel4_ap_fadd_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: /run/media/epetrakos/60GB/Xilinx/Vivado/2019.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
 Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
-Time: 685 ns  Iteration: 11  Process: /apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/myFuncAccel4_fadd_32ns_32ns_32_5_full_dsp_1_U2/myFuncAccel4_ap_fadd_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: /run/media/epetrakos/60GB/Xilinx/Vivado/2019.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Time: 40285 ns  Iteration: 11  Process: /apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/myFuncAccel4_fadd_32ns_32ns_32_5_full_dsp_1_U2/myFuncAccel4_ap_fadd_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: /run/media/epetrakos/60GB/Xilinx/Vivado/2019.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
 Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
-Time: 685 ns  Iteration: 11  Process: /apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/myFuncAccel4_fadd_32ns_32ns_32_5_full_dsp_1_U3/myFuncAccel4_ap_fadd_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: /run/media/epetrakos/60GB/Xilinx/Vivado/2019.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Time: 40285 ns  Iteration: 11  Process: /apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/myFuncAccel4_fadd_32ns_32ns_32_5_full_dsp_1_U3/myFuncAccel4_ap_fadd_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: /run/media/epetrakos/60GB/Xilinx/Vivado/2019.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
 Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
-Time: 685 ns  Iteration: 11  Process: /apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/myFuncAccel4_fadd_32ns_32ns_32_5_full_dsp_1_U4/myFuncAccel4_ap_fadd_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: /run/media/epetrakos/60GB/Xilinx/Vivado/2019.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Time: 40285 ns  Iteration: 11  Process: /apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/myFuncAccel4_fadd_32ns_32ns_32_5_full_dsp_1_U4/myFuncAccel4_ap_fadd_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: /run/media/epetrakos/60GB/Xilinx/Vivado/2019.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
 Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
-Time: 725 ns  Iteration: 11  Process: /apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/myFuncAccel4_fadd_32ns_32ns_32_5_full_dsp_1_U1/myFuncAccel4_ap_fadd_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: /run/media/epetrakos/60GB/Xilinx/Vivado/2019.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Time: 40325 ns  Iteration: 11  Process: /apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/myFuncAccel4_fadd_32ns_32ns_32_5_full_dsp_1_U1/myFuncAccel4_ap_fadd_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: /run/media/epetrakos/60GB/Xilinx/Vivado/2019.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
 Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
-Time: 725 ns  Iteration: 11  Process: /apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/myFuncAccel4_fadd_32ns_32ns_32_5_full_dsp_1_U2/myFuncAccel4_ap_fadd_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: /run/media/epetrakos/60GB/Xilinx/Vivado/2019.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Time: 40325 ns  Iteration: 11  Process: /apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/myFuncAccel4_fadd_32ns_32ns_32_5_full_dsp_1_U2/myFuncAccel4_ap_fadd_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: /run/media/epetrakos/60GB/Xilinx/Vivado/2019.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
 Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
-Time: 725 ns  Iteration: 11  Process: /apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/myFuncAccel4_fadd_32ns_32ns_32_5_full_dsp_1_U3/myFuncAccel4_ap_fadd_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: /run/media/epetrakos/60GB/Xilinx/Vivado/2019.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Time: 40325 ns  Iteration: 11  Process: /apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/myFuncAccel4_fadd_32ns_32ns_32_5_full_dsp_1_U3/myFuncAccel4_ap_fadd_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: /run/media/epetrakos/60GB/Xilinx/Vivado/2019.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
 Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
-Time: 725 ns  Iteration: 11  Process: /apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/myFuncAccel4_fadd_32ns_32ns_32_5_full_dsp_1_U4/myFuncAccel4_ap_fadd_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: /run/media/epetrakos/60GB/Xilinx/Vivado/2019.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
-// RTL Simulation : 1 / 1 [100.00%] @ "855000"
+Time: 40325 ns  Iteration: 11  Process: /apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/myFuncAccel4_fadd_32ns_32ns_32_5_full_dsp_1_U4/myFuncAccel4_ap_fadd_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: /run/media/epetrakos/60GB/Xilinx/Vivado/2019.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+// RTL Simulation : 1 / 1 [100.00%] @ "40455000"
 ////////////////////////////////////////////////////////////////////////////////////
-$finish called at time : 895 ns : File "/home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/float-ilopoihsh/accel4/accel4_float/solution1/sim/verilog/myFuncAccel4.autotb.v" Line 1336
+$finish called at time : 40495 ns : File "/home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/float-ilopoihsh/accel4/accel4_float/solution1/sim/verilog/myFuncAccel4.autotb.v" Line 1336
+run: Time (s): cpu = 00:00:00.75 ; elapsed = 00:00:15 . Memory (MB): peak = 1476.051 ; gain = 72.004 ; free physical = 1092 ; free virtual = 3958
 ## quit
-INFO: [Common 17-206] Exiting xsim at Mon Nov 18 16:52:06 2019...
+INFO: [Common 17-206] Exiting xsim at Wed Nov 20 15:29:32 2019...
 
 Seed 0
-Size 10
+Size 1000
 Dimension 4
 Threshold 100.000000
 
-Software execution time: 0.000011
-Hardware execution time: 0.000544
+Software execution time: 0.000705
+Hardware execution time: 0.036015
 
 no errors
 

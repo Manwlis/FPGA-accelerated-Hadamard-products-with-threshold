@@ -6,9 +6,9 @@
 open_project accel4_fixed
 set_top myFuncAccel4
 add_files myIP.cpp
-add_files -tb main.cpp
+add_files -tb main.cpp -cflags "-Wno-unknown-pragmas" -csimflags "-Wno-unknown-pragmas"
 open_solution "solution1"
-set_part {xc7z020clg484-1} -tool vivado
+set_part {xc7z020-clg484-1} -tool vivado
 create_clock -period 10 -name default
 #source "./accel4_fixed/solution1/directives.tcl"
 csim_design -argv {0 10 4 100}

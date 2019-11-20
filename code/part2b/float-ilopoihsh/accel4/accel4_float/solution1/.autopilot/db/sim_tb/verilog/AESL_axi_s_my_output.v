@@ -27,7 +27,7 @@ module AESL_axi_s_my_output (
     reg my_output_TDATA_read_en;
     wire [32 - 1:0] my_output_TDATA_read_data;
     
-    fifo #(40, 32) fifo_my_output_TDATA (
+    fifo #(4000, 32) fifo_my_output_TDATA (
         .reset(1'b0),
         .write_clock(clk),
         .write_en(my_output_TDATA_write_en),

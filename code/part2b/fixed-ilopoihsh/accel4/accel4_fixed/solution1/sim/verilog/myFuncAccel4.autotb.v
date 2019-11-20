@@ -33,8 +33,10 @@
 `define AESL_DEPTH_data0_13_V 1
 `define AESL_DEPTH_data0_14_V 1
 `define AESL_DEPTH_data0_15_V 1
-`define AESL_DEPTH_my_input1_V 1
-`define AESL_DEPTH_my_output_V 1
+`define AESL_BUS_data1_V AESL_autobus_data1_V
+`define AESL_BUS_INST_data1_V bus_inst_data1_V
+`define AESL_BUS_data_out_V AESL_autobus_data_out_V
+`define AESL_BUS_INST_data_out_V bus_inst_data_out_V
 `define AUTOTB_TVIN_size  "../tv/cdatafile/c.myFuncAccel4.autotvin_size.dat"
 `define AUTOTB_TVIN_threshold_V  "../tv/cdatafile/c.myFuncAccel4.autotvin_threshold_V.dat"
 `define AUTOTB_TVIN_data0_0_V  "../tv/cdatafile/c.myFuncAccel4.autotvin_data0_0_V.dat"
@@ -53,8 +55,8 @@
 `define AUTOTB_TVIN_data0_13_V  "../tv/cdatafile/c.myFuncAccel4.autotvin_data0_13_V.dat"
 `define AUTOTB_TVIN_data0_14_V  "../tv/cdatafile/c.myFuncAccel4.autotvin_data0_14_V.dat"
 `define AUTOTB_TVIN_data0_15_V  "../tv/cdatafile/c.myFuncAccel4.autotvin_data0_15_V.dat"
-`define AUTOTB_TVIN_my_input1_V  "../tv/cdatafile/c.myFuncAccel4.autotvin_my_input1_V.dat"
-`define AUTOTB_TVIN_my_output_V  "../tv/cdatafile/c.myFuncAccel4.autotvin_my_output_V.dat"
+`define AUTOTB_TVIN_data1_V  "../tv/cdatafile/c.myFuncAccel4.autotvin_data1_V.dat"
+`define AUTOTB_TVIN_data_out_V  "../tv/cdatafile/c.myFuncAccel4.autotvin_data_out_V.dat"
 `define AUTOTB_TVIN_size_out_wrapc  "../tv/rtldatafile/rtl.myFuncAccel4.autotvin_size.dat"
 `define AUTOTB_TVIN_threshold_V_out_wrapc  "../tv/rtldatafile/rtl.myFuncAccel4.autotvin_threshold_V.dat"
 `define AUTOTB_TVIN_data0_0_V_out_wrapc  "../tv/rtldatafile/rtl.myFuncAccel4.autotvin_data0_0_V.dat"
@@ -73,15 +75,15 @@
 `define AUTOTB_TVIN_data0_13_V_out_wrapc  "../tv/rtldatafile/rtl.myFuncAccel4.autotvin_data0_13_V.dat"
 `define AUTOTB_TVIN_data0_14_V_out_wrapc  "../tv/rtldatafile/rtl.myFuncAccel4.autotvin_data0_14_V.dat"
 `define AUTOTB_TVIN_data0_15_V_out_wrapc  "../tv/rtldatafile/rtl.myFuncAccel4.autotvin_data0_15_V.dat"
-`define AUTOTB_TVIN_my_input1_V_out_wrapc  "../tv/rtldatafile/rtl.myFuncAccel4.autotvin_my_input1_V.dat"
-`define AUTOTB_TVIN_my_output_V_out_wrapc  "../tv/rtldatafile/rtl.myFuncAccel4.autotvin_my_output_V.dat"
-`define AUTOTB_TVOUT_my_output_V  "../tv/cdatafile/c.myFuncAccel4.autotvout_my_output_V.dat"
-`define AUTOTB_TVOUT_my_output_V_out_wrapc  "../tv/rtldatafile/rtl.myFuncAccel4.autotvout_my_output_V.dat"
+`define AUTOTB_TVIN_data1_V_out_wrapc  "../tv/rtldatafile/rtl.myFuncAccel4.autotvin_data1_V.dat"
+`define AUTOTB_TVIN_data_out_V_out_wrapc  "../tv/rtldatafile/rtl.myFuncAccel4.autotvin_data_out_V.dat"
+`define AUTOTB_TVOUT_data_out_V  "../tv/cdatafile/c.myFuncAccel4.autotvout_data_out_V.dat"
+`define AUTOTB_TVOUT_data_out_V_out_wrapc  "../tv/rtldatafile/rtl.myFuncAccel4.autotvout_data_out_V.dat"
 module `AUTOTB_TOP;
 
 parameter AUTOTB_TRANSACTION_NUM = 1;
 parameter PROGRESS_TIMEOUT = 10000000;
-parameter LATENCY_ESTIMATION = 403;
+parameter LATENCY_ESTIMATION = 409;
 parameter LENGTH_size = 1;
 parameter LENGTH_threshold_V = 1;
 parameter LENGTH_data0_0_V = 1;
@@ -100,12 +102,12 @@ parameter LENGTH_data0_12_V = 1;
 parameter LENGTH_data0_13_V = 1;
 parameter LENGTH_data0_14_V = 1;
 parameter LENGTH_data0_15_V = 1;
-parameter LENGTH_my_input1_V = 40;
-parameter LENGTH_my_output_V = 40;
+parameter LENGTH_data1_V = 40;
+parameter LENGTH_data_out_V = 40;
 
 task read_token;
     input integer fp;
-    output reg [167 : 0] token;
+    output reg [199 : 0] token;
     integer ret;
     begin
         token = "";
@@ -154,12 +156,24 @@ wire [16 : 0] data0_12_V;
 wire [16 : 0] data0_13_V;
 wire [16 : 0] data0_14_V;
 wire [16 : 0] data0_15_V;
-wire [23 : 0] my_input1_V_TDATA;
-wire  my_input1_V_TVALID;
-wire  my_input1_V_TREADY;
-wire [39 : 0] my_output_V_TDATA;
-wire  my_output_V_TVALID;
-wire  my_output_V_TREADY;
+wire  data1_V_req_din;
+wire  data1_V_req_full_n;
+wire  data1_V_req_write;
+wire  data1_V_rsp_empty_n;
+wire  data1_V_rsp_read;
+wire [31 : 0] data1_V_address;
+wire [16 : 0] data1_V_datain;
+wire [16 : 0] data1_V_dataout;
+wire [31 : 0] data1_V_size;
+wire  data_out_V_req_din;
+wire  data_out_V_req_full_n;
+wire  data_out_V_req_write;
+wire  data_out_V_rsp_empty_n;
+wire  data_out_V_rsp_read;
+wire [31 : 0] data_out_V_address;
+wire [33 : 0] data_out_V_datain;
+wire [33 : 0] data_out_V_dataout;
+wire [31 : 0] data_out_V_size;
 integer done_cnt = 0;
 integer AESL_ready_cnt = 0;
 integer ready_cnt = 0;
@@ -171,12 +185,12 @@ reg done_delay_last_n;
 reg interface_done = 0;
 
 wire ap_clk;
+wire ap_rst;
 wire ap_rst_n;
-wire ap_rst_n_n;
 
 `AUTOTB_DUT `AUTOTB_DUT_INST(
     .ap_clk(ap_clk),
-    .ap_rst_n(ap_rst_n),
+    .ap_rst(ap_rst),
     .ap_start(ap_start),
     .ap_done(ap_done),
     .ap_idle(ap_idle),
@@ -200,17 +214,29 @@ wire ap_rst_n_n;
     .data0_13_V(data0_13_V),
     .data0_14_V(data0_14_V),
     .data0_15_V(data0_15_V),
-    .my_input1_V_TDATA(my_input1_V_TDATA),
-    .my_input1_V_TVALID(my_input1_V_TVALID),
-    .my_input1_V_TREADY(my_input1_V_TREADY),
-    .my_output_V_TDATA(my_output_V_TDATA),
-    .my_output_V_TVALID(my_output_V_TVALID),
-    .my_output_V_TREADY(my_output_V_TREADY));
+    .data1_V_req_din(data1_V_req_din),
+    .data1_V_req_full_n(data1_V_req_full_n),
+    .data1_V_req_write(data1_V_req_write),
+    .data1_V_rsp_empty_n(data1_V_rsp_empty_n),
+    .data1_V_rsp_read(data1_V_rsp_read),
+    .data1_V_address(data1_V_address),
+    .data1_V_datain(data1_V_datain),
+    .data1_V_dataout(data1_V_dataout),
+    .data1_V_size(data1_V_size),
+    .data_out_V_req_din(data_out_V_req_din),
+    .data_out_V_req_full_n(data_out_V_req_full_n),
+    .data_out_V_req_write(data_out_V_req_write),
+    .data_out_V_rsp_empty_n(data_out_V_rsp_empty_n),
+    .data_out_V_rsp_read(data_out_V_rsp_read),
+    .data_out_V_address(data_out_V_address),
+    .data_out_V_datain(data_out_V_datain),
+    .data_out_V_dataout(data_out_V_dataout),
+    .data_out_V_size(data_out_V_size));
 
 // Assignment for control signal
 assign ap_clk = AESL_clock;
-assign ap_rst_n = AESL_reset;
-assign ap_rst_n_n = ~AESL_reset;
+assign ap_rst = AESL_reset;
+assign ap_rst_n = ~AESL_reset;
 assign AESL_reset = rst;
 assign ap_start = AESL_start;
 assign AESL_start = start;
@@ -220,7 +246,7 @@ assign AESL_ready = ap_ready;
 assign AESL_ce = ce;
 assign AESL_continue = tb_continue;
     always @(posedge AESL_clock) begin
-        if (AESL_reset === 0) begin
+        if (AESL_reset) begin
         end else begin
             if (AESL_done !== 1 && AESL_done !== 0) begin
                 $display("ERROR: Control signal AESL_done is invalid!");
@@ -229,7 +255,7 @@ assign AESL_continue = tb_continue;
         end
     end
     always @(posedge AESL_clock) begin
-        if (AESL_reset === 0) begin
+        if (AESL_reset) begin
         end else begin
             if (AESL_ready !== 1 && AESL_ready !== 0) begin
                 $display("ERROR: Control signal AESL_ready is invalid!");
@@ -245,12 +271,12 @@ initial begin : read_file_process_size
     integer err;
     integer ret;
     integer proc_rand;
-    reg [167  : 0] token;
+    reg [199  : 0] token;
     integer i;
     reg transaction_finish;
     integer transaction_idx;
     transaction_idx = 0;
-    wait(AESL_reset === 1);
+    wait(AESL_reset === 0);
     fp = $fopen(`AUTOTB_TVIN_size,"r");
     if(fp == 0) begin       // Failed to open file
         $display("Failed to open file \"%s\"!", `AUTOTB_TVIN_size);
@@ -303,12 +329,12 @@ initial begin : read_file_process_threshold_V
     integer err;
     integer ret;
     integer proc_rand;
-    reg [167  : 0] token;
+    reg [199  : 0] token;
     integer i;
     reg transaction_finish;
     integer transaction_idx;
     transaction_idx = 0;
-    wait(AESL_reset === 1);
+    wait(AESL_reset === 0);
     fp = $fopen(`AUTOTB_TVIN_threshold_V,"r");
     if(fp == 0) begin       // Failed to open file
         $display("Failed to open file \"%s\"!", `AUTOTB_TVIN_threshold_V);
@@ -357,12 +383,12 @@ initial begin : read_file_process_data0_0_V
     integer err;
     integer ret;
     integer proc_rand;
-    reg [167  : 0] token;
+    reg [199  : 0] token;
     integer i;
     reg transaction_finish;
     integer transaction_idx;
     transaction_idx = 0;
-    wait(AESL_reset === 1);
+    wait(AESL_reset === 0);
     fp = $fopen(`AUTOTB_TVIN_data0_0_V,"r");
     if(fp == 0) begin       // Failed to open file
         $display("Failed to open file \"%s\"!", `AUTOTB_TVIN_data0_0_V);
@@ -411,12 +437,12 @@ initial begin : read_file_process_data0_1_V
     integer err;
     integer ret;
     integer proc_rand;
-    reg [167  : 0] token;
+    reg [199  : 0] token;
     integer i;
     reg transaction_finish;
     integer transaction_idx;
     transaction_idx = 0;
-    wait(AESL_reset === 1);
+    wait(AESL_reset === 0);
     fp = $fopen(`AUTOTB_TVIN_data0_1_V,"r");
     if(fp == 0) begin       // Failed to open file
         $display("Failed to open file \"%s\"!", `AUTOTB_TVIN_data0_1_V);
@@ -465,12 +491,12 @@ initial begin : read_file_process_data0_2_V
     integer err;
     integer ret;
     integer proc_rand;
-    reg [167  : 0] token;
+    reg [199  : 0] token;
     integer i;
     reg transaction_finish;
     integer transaction_idx;
     transaction_idx = 0;
-    wait(AESL_reset === 1);
+    wait(AESL_reset === 0);
     fp = $fopen(`AUTOTB_TVIN_data0_2_V,"r");
     if(fp == 0) begin       // Failed to open file
         $display("Failed to open file \"%s\"!", `AUTOTB_TVIN_data0_2_V);
@@ -519,12 +545,12 @@ initial begin : read_file_process_data0_3_V
     integer err;
     integer ret;
     integer proc_rand;
-    reg [167  : 0] token;
+    reg [199  : 0] token;
     integer i;
     reg transaction_finish;
     integer transaction_idx;
     transaction_idx = 0;
-    wait(AESL_reset === 1);
+    wait(AESL_reset === 0);
     fp = $fopen(`AUTOTB_TVIN_data0_3_V,"r");
     if(fp == 0) begin       // Failed to open file
         $display("Failed to open file \"%s\"!", `AUTOTB_TVIN_data0_3_V);
@@ -573,12 +599,12 @@ initial begin : read_file_process_data0_4_V
     integer err;
     integer ret;
     integer proc_rand;
-    reg [167  : 0] token;
+    reg [199  : 0] token;
     integer i;
     reg transaction_finish;
     integer transaction_idx;
     transaction_idx = 0;
-    wait(AESL_reset === 1);
+    wait(AESL_reset === 0);
     fp = $fopen(`AUTOTB_TVIN_data0_4_V,"r");
     if(fp == 0) begin       // Failed to open file
         $display("Failed to open file \"%s\"!", `AUTOTB_TVIN_data0_4_V);
@@ -627,12 +653,12 @@ initial begin : read_file_process_data0_5_V
     integer err;
     integer ret;
     integer proc_rand;
-    reg [167  : 0] token;
+    reg [199  : 0] token;
     integer i;
     reg transaction_finish;
     integer transaction_idx;
     transaction_idx = 0;
-    wait(AESL_reset === 1);
+    wait(AESL_reset === 0);
     fp = $fopen(`AUTOTB_TVIN_data0_5_V,"r");
     if(fp == 0) begin       // Failed to open file
         $display("Failed to open file \"%s\"!", `AUTOTB_TVIN_data0_5_V);
@@ -681,12 +707,12 @@ initial begin : read_file_process_data0_6_V
     integer err;
     integer ret;
     integer proc_rand;
-    reg [167  : 0] token;
+    reg [199  : 0] token;
     integer i;
     reg transaction_finish;
     integer transaction_idx;
     transaction_idx = 0;
-    wait(AESL_reset === 1);
+    wait(AESL_reset === 0);
     fp = $fopen(`AUTOTB_TVIN_data0_6_V,"r");
     if(fp == 0) begin       // Failed to open file
         $display("Failed to open file \"%s\"!", `AUTOTB_TVIN_data0_6_V);
@@ -735,12 +761,12 @@ initial begin : read_file_process_data0_7_V
     integer err;
     integer ret;
     integer proc_rand;
-    reg [167  : 0] token;
+    reg [199  : 0] token;
     integer i;
     reg transaction_finish;
     integer transaction_idx;
     transaction_idx = 0;
-    wait(AESL_reset === 1);
+    wait(AESL_reset === 0);
     fp = $fopen(`AUTOTB_TVIN_data0_7_V,"r");
     if(fp == 0) begin       // Failed to open file
         $display("Failed to open file \"%s\"!", `AUTOTB_TVIN_data0_7_V);
@@ -789,12 +815,12 @@ initial begin : read_file_process_data0_8_V
     integer err;
     integer ret;
     integer proc_rand;
-    reg [167  : 0] token;
+    reg [199  : 0] token;
     integer i;
     reg transaction_finish;
     integer transaction_idx;
     transaction_idx = 0;
-    wait(AESL_reset === 1);
+    wait(AESL_reset === 0);
     fp = $fopen(`AUTOTB_TVIN_data0_8_V,"r");
     if(fp == 0) begin       // Failed to open file
         $display("Failed to open file \"%s\"!", `AUTOTB_TVIN_data0_8_V);
@@ -843,12 +869,12 @@ initial begin : read_file_process_data0_9_V
     integer err;
     integer ret;
     integer proc_rand;
-    reg [167  : 0] token;
+    reg [199  : 0] token;
     integer i;
     reg transaction_finish;
     integer transaction_idx;
     transaction_idx = 0;
-    wait(AESL_reset === 1);
+    wait(AESL_reset === 0);
     fp = $fopen(`AUTOTB_TVIN_data0_9_V,"r");
     if(fp == 0) begin       // Failed to open file
         $display("Failed to open file \"%s\"!", `AUTOTB_TVIN_data0_9_V);
@@ -897,12 +923,12 @@ initial begin : read_file_process_data0_10_V
     integer err;
     integer ret;
     integer proc_rand;
-    reg [167  : 0] token;
+    reg [199  : 0] token;
     integer i;
     reg transaction_finish;
     integer transaction_idx;
     transaction_idx = 0;
-    wait(AESL_reset === 1);
+    wait(AESL_reset === 0);
     fp = $fopen(`AUTOTB_TVIN_data0_10_V,"r");
     if(fp == 0) begin       // Failed to open file
         $display("Failed to open file \"%s\"!", `AUTOTB_TVIN_data0_10_V);
@@ -951,12 +977,12 @@ initial begin : read_file_process_data0_11_V
     integer err;
     integer ret;
     integer proc_rand;
-    reg [167  : 0] token;
+    reg [199  : 0] token;
     integer i;
     reg transaction_finish;
     integer transaction_idx;
     transaction_idx = 0;
-    wait(AESL_reset === 1);
+    wait(AESL_reset === 0);
     fp = $fopen(`AUTOTB_TVIN_data0_11_V,"r");
     if(fp == 0) begin       // Failed to open file
         $display("Failed to open file \"%s\"!", `AUTOTB_TVIN_data0_11_V);
@@ -1005,12 +1031,12 @@ initial begin : read_file_process_data0_12_V
     integer err;
     integer ret;
     integer proc_rand;
-    reg [167  : 0] token;
+    reg [199  : 0] token;
     integer i;
     reg transaction_finish;
     integer transaction_idx;
     transaction_idx = 0;
-    wait(AESL_reset === 1);
+    wait(AESL_reset === 0);
     fp = $fopen(`AUTOTB_TVIN_data0_12_V,"r");
     if(fp == 0) begin       // Failed to open file
         $display("Failed to open file \"%s\"!", `AUTOTB_TVIN_data0_12_V);
@@ -1059,12 +1085,12 @@ initial begin : read_file_process_data0_13_V
     integer err;
     integer ret;
     integer proc_rand;
-    reg [167  : 0] token;
+    reg [199  : 0] token;
     integer i;
     reg transaction_finish;
     integer transaction_idx;
     transaction_idx = 0;
-    wait(AESL_reset === 1);
+    wait(AESL_reset === 0);
     fp = $fopen(`AUTOTB_TVIN_data0_13_V,"r");
     if(fp == 0) begin       // Failed to open file
         $display("Failed to open file \"%s\"!", `AUTOTB_TVIN_data0_13_V);
@@ -1113,12 +1139,12 @@ initial begin : read_file_process_data0_14_V
     integer err;
     integer ret;
     integer proc_rand;
-    reg [167  : 0] token;
+    reg [199  : 0] token;
     integer i;
     reg transaction_finish;
     integer transaction_idx;
     transaction_idx = 0;
-    wait(AESL_reset === 1);
+    wait(AESL_reset === 0);
     fp = $fopen(`AUTOTB_TVIN_data0_14_V,"r");
     if(fp == 0) begin       // Failed to open file
         $display("Failed to open file \"%s\"!", `AUTOTB_TVIN_data0_14_V);
@@ -1167,12 +1193,12 @@ initial begin : read_file_process_data0_15_V
     integer err;
     integer ret;
     integer proc_rand;
-    reg [167  : 0] token;
+    reg [199  : 0] token;
     integer i;
     reg transaction_finish;
     integer transaction_idx;
     transaction_idx = 0;
-    wait(AESL_reset === 1);
+    wait(AESL_reset === 0);
     fp = $fopen(`AUTOTB_TVIN_data0_15_V,"r");
     if(fp == 0) begin       // Failed to open file
         $display("Failed to open file \"%s\"!", `AUTOTB_TVIN_data0_15_V);
@@ -1214,75 +1240,148 @@ end
 
 
 
+// bus interface "data1_V"
+wire bus_data1_V_req_RW;
+wire bus_data1_V_req_full_n;
+wire bus_data1_V_req_RW_en;
+wire bus_data1_V_rsp_empty_n;
+wire bus_data1_V_rsp_read;
+wire [32 - 1:0] bus_data1_V_address;
+wire [17 - 1:0] bus_data1_V_din;
+wire [17 - 1:0] bus_data1_V_dout;
+wire [32 - 1:0] bus_data1_V_size;
+wire bus_data1_V_ready;
+wire bus_data1_V_done;
+wire bus_data1_V_finish;
 
-reg [31:0] ap_c_n_tvin_trans_num_my_input1_V;
-
-reg my_input1_V_ready_reg; // for self-sync
-
-wire my_input1_V_ready;
-wire my_input1_V_done;
-wire [31:0] my_input1_V_transaction;
-wire axi_s_my_input1_V_TVALID;
-wire axi_s_my_input1_V_TREADY;
-
-AESL_axi_s_my_input1_V AESL_AXI_S_my_input1_V(
+`AESL_BUS_data1_V `AESL_BUS_INST_data1_V (
     .clk(AESL_clock),
-    .reset(AESL_reset),
-    .TRAN_my_input1_V_TDATA(my_input1_V_TDATA),
-    .TRAN_my_input1_V_TVALID(axi_s_my_input1_V_TVALID),
-    .TRAN_my_input1_V_TREADY(axi_s_my_input1_V_TREADY),
-    .ready(my_input1_V_ready),
-    .done(my_input1_V_done),
-    .transaction(my_input1_V_transaction));
+    .rst(AESL_reset),
+    .bus_req_RW(bus_data1_V_req_RW),
+    .bus_req_full_n(bus_data1_V_req_full_n),
+    .bus_req_RW_en(bus_data1_V_req_RW_en),
+    .bus_rsp_empty_n(bus_data1_V_rsp_empty_n),
+    .bus_rsp_read(bus_data1_V_rsp_read),
+    .bus_address(bus_data1_V_address),
+    .bus_din(bus_data1_V_din),
+    .bus_dout(bus_data1_V_dout),
+    .bus_size(bus_data1_V_size),
+    .ready(bus_data1_V_ready),
+    .done(bus_data1_V_done),
+    .finish(bus_data1_V_finish));
 
-assign my_input1_V_ready = ready;
-assign my_input1_V_done = 0;
+assign bus_data1_V_req_RW    = data1_V_req_din;
+assign bus_data1_V_req_RW_en = data1_V_req_write & data1_V_req_full_n;
+assign bus_data1_V_rsp_read  = data1_V_rsp_read & data1_V_rsp_empty_n;
+assign bus_data1_V_address   = data1_V_address;
+assign bus_data1_V_din       = data1_V_dataout;
+assign bus_data1_V_size      = data1_V_size;
+assign data1_V_datain          = bus_data1_V_dout;
+assign bus_data1_V_ready     = ready;
+assign bus_data1_V_done      = AESL_done;
 
-assign my_input1_V_TVALID = axi_s_my_input1_V_TVALID;
+reg reg_bus_data1_V_req_full_n;
 
-assign axi_s_my_input1_V_TREADY = my_input1_V_TREADY;
-reg [31:0] ap_c_n_tvin_trans_num_my_output_V;
-
-reg my_output_V_ready_reg; // for self-sync
-
-wire my_output_V_ready;
-wire my_output_V_done;
-wire [31:0] my_output_V_transaction;
-wire axi_s_my_output_V_TVALID;
-wire axi_s_my_output_V_TREADY;
-
-AESL_axi_s_my_output_V AESL_AXI_S_my_output_V(
-    .clk(AESL_clock),
-    .reset(AESL_reset),
-    .TRAN_my_output_V_TDATA(my_output_V_TDATA),
-    .TRAN_my_output_V_TVALID(axi_s_my_output_V_TVALID),
-    .TRAN_my_output_V_TREADY(axi_s_my_output_V_TREADY),
-    .ready(my_output_V_ready),
-    .done(my_output_V_done),
-    .transaction(my_output_V_transaction));
-
-assign my_output_V_ready = 0;
-assign my_output_V_done = AESL_done;
-
-assign axi_s_my_output_V_TVALID = my_output_V_TVALID;
-
-reg reg_my_output_V_TREADY;
-initial begin : gen_reg_my_output_V_TREADY_process
+initial begin : gen_reg_bus_data1_V_req_full_n_process
     integer proc_rand;
-    reg_my_output_V_TREADY = axi_s_my_output_V_TREADY;
-    while(1)
-    begin
-        @(axi_s_my_output_V_TREADY);
-        reg_my_output_V_TREADY = axi_s_my_output_V_TREADY;
+    reg_bus_data1_V_req_full_n = bus_data1_V_req_full_n;
+    while (1) begin
+        @ (bus_data1_V_req_full_n);
+        reg_bus_data1_V_req_full_n = bus_data1_V_req_full_n;
     end
 end
 
 
-assign my_output_V_TREADY = reg_my_output_V_TREADY;
+assign data1_V_req_full_n = reg_bus_data1_V_req_full_n;
+
+reg reg_bus_data1_V_rsp_empty_n;
+
+initial begin : gen_reg_bus_data1_V_rsp_empty_n_process
+    integer proc_rand;
+    reg_bus_data1_V_rsp_empty_n = bus_data1_V_rsp_empty_n;
+    while (1) begin
+        @ (bus_data1_V_rsp_empty_n);
+        reg_bus_data1_V_rsp_empty_n = bus_data1_V_rsp_empty_n;
+    end
+end
+
+
+assign data1_V_rsp_empty_n = reg_bus_data1_V_rsp_empty_n;
+
+
+
+// bus interface "data_out_V"
+wire bus_data_out_V_req_RW;
+wire bus_data_out_V_req_full_n;
+wire bus_data_out_V_req_RW_en;
+wire bus_data_out_V_rsp_empty_n;
+wire bus_data_out_V_rsp_read;
+wire [32 - 1:0] bus_data_out_V_address;
+wire [34 - 1:0] bus_data_out_V_din;
+wire [34 - 1:0] bus_data_out_V_dout;
+wire [32 - 1:0] bus_data_out_V_size;
+wire bus_data_out_V_ready;
+wire bus_data_out_V_done;
+wire bus_data_out_V_finish;
+
+`AESL_BUS_data_out_V `AESL_BUS_INST_data_out_V (
+    .clk(AESL_clock),
+    .rst(AESL_reset),
+    .bus_req_RW(bus_data_out_V_req_RW),
+    .bus_req_full_n(bus_data_out_V_req_full_n),
+    .bus_req_RW_en(bus_data_out_V_req_RW_en),
+    .bus_rsp_empty_n(bus_data_out_V_rsp_empty_n),
+    .bus_rsp_read(bus_data_out_V_rsp_read),
+    .bus_address(bus_data_out_V_address),
+    .bus_din(bus_data_out_V_din),
+    .bus_dout(bus_data_out_V_dout),
+    .bus_size(bus_data_out_V_size),
+    .ready(bus_data_out_V_ready),
+    .done(bus_data_out_V_done),
+    .finish(bus_data_out_V_finish));
+
+assign bus_data_out_V_req_RW    = data_out_V_req_din;
+assign bus_data_out_V_req_RW_en = data_out_V_req_write & data_out_V_req_full_n;
+assign bus_data_out_V_rsp_read  = data_out_V_rsp_read & data_out_V_rsp_empty_n;
+assign bus_data_out_V_address   = data_out_V_address;
+assign bus_data_out_V_din       = data_out_V_dataout;
+assign bus_data_out_V_size      = data_out_V_size;
+assign data_out_V_datain          = bus_data_out_V_dout;
+assign bus_data_out_V_ready     = ready;
+assign bus_data_out_V_done      = AESL_done;
+
+reg reg_bus_data_out_V_req_full_n;
+
+initial begin : gen_reg_bus_data_out_V_req_full_n_process
+    integer proc_rand;
+    reg_bus_data_out_V_req_full_n = bus_data_out_V_req_full_n;
+    while (1) begin
+        @ (bus_data_out_V_req_full_n);
+        reg_bus_data_out_V_req_full_n = bus_data_out_V_req_full_n;
+    end
+end
+
+
+assign data_out_V_req_full_n = reg_bus_data_out_V_req_full_n;
+
+reg reg_bus_data_out_V_rsp_empty_n;
+
+initial begin : gen_reg_bus_data_out_V_rsp_empty_n_process
+    integer proc_rand;
+    reg_bus_data_out_V_rsp_empty_n = bus_data_out_V_rsp_empty_n;
+    while (1) begin
+        @ (bus_data_out_V_rsp_empty_n);
+        reg_bus_data_out_V_rsp_empty_n = bus_data_out_V_rsp_empty_n;
+    end
+end
+
+
+assign data_out_V_rsp_empty_n = reg_bus_data_out_V_rsp_empty_n;
+
 
 initial begin : generate_AESL_ready_cnt_proc
     AESL_ready_cnt = 0;
-    wait(AESL_reset === 1);
+    wait(AESL_reset === 0);
     while(AESL_ready_cnt != AUTOTB_TRANSACTION_NUM) begin
         while(AESL_ready !== 1) begin
             @(posedge AESL_clock);
@@ -1299,7 +1398,7 @@ end
     
     initial begin : gen_ready_cnt
         ready_cnt = 0;
-        wait (AESL_reset === 1);
+        wait (AESL_reset === 0);
         forever begin
             @ (posedge AESL_clock);
             if (ready == 1) begin
@@ -1315,7 +1414,7 @@ end
     
     // done_cnt
     always @ (posedge AESL_clock) begin
-        if (~AESL_reset) begin
+        if (AESL_reset) begin
             done_cnt <= 0;
         end else begin
             if (AESL_done == 1) begin
@@ -1396,19 +1495,19 @@ reg [31:0] size_data0_14_V_backup;
 reg end_data0_15_V;
 reg [31:0] size_data0_15_V;
 reg [31:0] size_data0_15_V_backup;
-reg end_my_input1_V;
-reg [31:0] size_my_input1_V;
-reg [31:0] size_my_input1_V_backup;
-reg end_my_output_V;
-reg [31:0] size_my_output_V;
-reg [31:0] size_my_output_V_backup;
+reg end_data1_V;
+reg [31:0] size_data1_V;
+reg [31:0] size_data1_V_backup;
+reg end_data_out_V;
+reg [31:0] size_data_out_V;
+reg [31:0] size_data_out_V_backup;
 
 initial begin : initial_process
     integer proc_rand;
-    rst = 0;
+    rst = 1;
     # 100;
     repeat(3) @ (posedge AESL_clock);
-    rst = 1;
+    rst = 0;
 end
 initial begin : start_process
     integer proc_rand;
@@ -1416,7 +1515,7 @@ initial begin : start_process
     ce = 1;
     start = 0;
     start_cnt = 0;
-    wait (AESL_reset === 1);
+    wait (AESL_reset === 0);
     @ (posedge AESL_clock);
     #0 start = 1;
     start_cnt = start_cnt + 1;
@@ -1447,7 +1546,7 @@ end
 
 always @(posedge AESL_clock)
 begin
-    if(AESL_reset === 0)
+    if(AESL_reset)
       AESL_ready_delay = 0;
   else
       AESL_ready_delay = AESL_ready;
@@ -1461,7 +1560,7 @@ end
 
 always @(posedge AESL_clock)
 begin
-    if(AESL_reset === 0)
+    if(AESL_reset)
       ready_delay_last_n = 0;
   else
       ready_delay_last_n <= ready_last_n;
@@ -1478,7 +1577,7 @@ end
 
 always @(posedge AESL_clock)
 begin
-    if(AESL_reset === 0)
+    if(AESL_reset)
   begin
       AESL_done_delay <= 0;
       AESL_done_delay2 <= 0;
@@ -1490,7 +1589,7 @@ begin
 end
 always @(posedge AESL_clock)
 begin
-    if(AESL_reset === 0)
+    if(AESL_reset)
       interface_done = 0;
   else begin
       # 0.01;
@@ -1502,96 +1601,15 @@ begin
           interface_done = 0;
   end
 end
-    
-    initial begin : proc_gen_axis_internal_ready_my_input1_V
-        my_input1_V_ready_reg = 0;
-        @ (posedge ready_initial);
-        forever begin
-            @ (ap_c_n_tvin_trans_num_my_input1_V or my_input1_V_transaction);
-            if (ap_c_n_tvin_trans_num_my_input1_V > my_input1_V_transaction) begin
-                my_input1_V_ready_reg = 1;
-            end else begin
-                my_input1_V_ready_reg = 0;
-            end
-        end
-    end
-    
-    `define STREAM_SIZE_IN_my_input1_V "../tv/stream_size/stream_size_in_my_input1_V.dat"
-    
-    initial begin : gen_ap_c_n_tvin_trans_num_my_input1_V
-        integer fp_my_input1_V;
-        reg [127:0] token_my_input1_V;
-        integer ret;
-        
-        ap_c_n_tvin_trans_num_my_input1_V = 0;
-        end_my_input1_V = 0;
-        wait (AESL_reset === 1);
-        
-        fp_my_input1_V = $fopen(`AUTOTB_TVIN_my_input1_V, "r");
-        if(fp_my_input1_V == 0) begin
-            $display("Failed to open file \"%s\"!", `AUTOTB_TVIN_my_input1_V);
-            $finish;
-        end
-        read_token(fp_my_input1_V, token_my_input1_V); // should be [[[runtime]]]
-        if (token_my_input1_V != "[[[runtime]]]") begin
-            $display("ERROR: token_my_input1_V != \"[[[runtime]]]\"");
-            $finish;
-        end
-        ap_c_n_tvin_trans_num_my_input1_V = ap_c_n_tvin_trans_num_my_input1_V + 1;
-        read_token(fp_my_input1_V, token_my_input1_V); // should be [[transaction]] or [[[/runtime]]]
-        if (token_my_input1_V == "[[[/runtime]]]") begin
-            $fclose(fp_my_input1_V);
-            end_my_input1_V = 1;
-        end else begin
-            end_my_input1_V = 0;
-            read_token(fp_my_input1_V, token_my_input1_V); // should be transaction number
-            read_token(fp_my_input1_V, token_my_input1_V);
-        end
-        while (token_my_input1_V == "[[/transaction]]" && end_my_input1_V == 0) begin
-            ap_c_n_tvin_trans_num_my_input1_V = ap_c_n_tvin_trans_num_my_input1_V + 1;
-            read_token(fp_my_input1_V, token_my_input1_V); // should be [[transaction]] or [[[/runtime]]]
-            if (token_my_input1_V == "[[[/runtime]]]") begin
-                $fclose(fp_my_input1_V);
-                end_my_input1_V = 1;
-            end else begin
-                end_my_input1_V = 0;
-                read_token(fp_my_input1_V, token_my_input1_V); // should be transaction number
-                read_token(fp_my_input1_V, token_my_input1_V);
-            end
-        end
-        forever begin
-            @ (posedge AESL_clock);
-            if (end_my_input1_V == 0) begin
-                if ((my_input1_V_TREADY & my_input1_V_TVALID) == 1) begin
-                    read_token(fp_my_input1_V, token_my_input1_V);
-                    while (token_my_input1_V == "[[/transaction]]" && end_my_input1_V == 0) begin
-                        ap_c_n_tvin_trans_num_my_input1_V = ap_c_n_tvin_trans_num_my_input1_V + 1;
-                        read_token(fp_my_input1_V, token_my_input1_V); // should be [[transaction]] or [[[/runtime]]]
-                        if (token_my_input1_V == "[[[/runtime]]]") begin
-                            $fclose(fp_my_input1_V);
-                            end_my_input1_V = 1;
-                        end else begin
-                            end_my_input1_V = 0;
-                            read_token(fp_my_input1_V, token_my_input1_V); // should be transaction number
-                            read_token(fp_my_input1_V, token_my_input1_V);
-                        end
-                    end
-                end
-            end else begin
-                ap_c_n_tvin_trans_num_my_input1_V = ap_c_n_tvin_trans_num_my_input1_V + 1;
-            end
-        end
-    end
-    
 
-reg dump_tvout_finish_my_output_V;
+reg dump_tvout_finish_data_out_V;
 
-initial begin : dump_tvout_runtime_sign_my_output_V
+initial begin : dump_tvout_runtime_sign_data_out_V
     integer fp;
-    dump_tvout_finish_my_output_V = 0;
-    fp = $fopen(`AUTOTB_TVOUT_my_output_V_out_wrapc, "w");
+    dump_tvout_finish_data_out_V = 0;
+    fp = $fopen(`AUTOTB_TVOUT_data_out_V_out_wrapc, "w");
     if (fp == 0) begin
-        $display("Failed to open file \"%s\"!", `AUTOTB_TVOUT_my_output_V_out_wrapc);
+        $display("Failed to open file \"%s\"!", `AUTOTB_TVOUT_data_out_V_out_wrapc);
         $display("ERROR: Simulation using HLS TB failed.");
         $finish;
     end
@@ -1602,15 +1620,15 @@ initial begin : dump_tvout_runtime_sign_my_output_V
     @ (posedge AESL_clock);
     @ (posedge AESL_clock);
     @ (posedge AESL_clock);
-    fp = $fopen(`AUTOTB_TVOUT_my_output_V_out_wrapc, "a");
+    fp = $fopen(`AUTOTB_TVOUT_data_out_V_out_wrapc, "a");
     if (fp == 0) begin
-        $display("Failed to open file \"%s\"!", `AUTOTB_TVOUT_my_output_V_out_wrapc);
+        $display("Failed to open file \"%s\"!", `AUTOTB_TVOUT_data_out_V_out_wrapc);
         $display("ERROR: Simulation using HLS TB failed.");
         $finish;
     end
     $fdisplay(fp,"[[[/runtime]]]");
     $fclose(fp);
-    dump_tvout_finish_my_output_V = 1;
+    dump_tvout_finish_data_out_V = 1;
 end
 
 
@@ -1646,7 +1664,7 @@ initial begin
     start_cnt = 0;
     finish_cnt = 0;
     ap_ready_cnt = 0;
-    wait (AESL_reset == 1);
+    wait (AESL_reset == 0);
     wait_start();
     start_timestamp[start_cnt] = clk_cnt;
     start_cnt = start_cnt + 1;
@@ -1683,7 +1701,7 @@ reg [31:0] progress_timeout;
 
 initial begin : simulation_progress
     real intra_progress;
-    wait (AESL_reset == 1);
+    wait (AESL_reset == 0);
     progress_timeout = PROGRESS_TIMEOUT;
     $display("////////////////////////////////////////////////////////////////////////////////////");
     $display("// Inter-Transaction Progress: Completed Transaction / Total Transaction");

@@ -100,8 +100,8 @@ parameter LENGTH_data0_12 = 1;
 parameter LENGTH_data0_13 = 1;
 parameter LENGTH_data0_14 = 1;
 parameter LENGTH_data0_15 = 1;
-parameter LENGTH_my_input1 = 40;
-parameter LENGTH_my_output = 40;
+parameter LENGTH_my_input1 = 4000;
+parameter LENGTH_my_output = 4000;
 
 task read_token;
     input integer fp;

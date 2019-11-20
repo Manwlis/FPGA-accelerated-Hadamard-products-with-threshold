@@ -2432,8 +2432,8 @@ _ssdm_op_SpecInterface(data0, "ap_stable", 0, 0, "", 0, 0, "my_input0", "", "", 
 _ssdm_SpecArrayPartition( data0, 1, "COMPLETE", 0, "");
 
 
-_ssdm_op_SpecInterface(data1, "axis", 1, 1, "both", 0, 40, "my_input1", "", "", 0, 0, 0, 0, "", "");
-_ssdm_op_SpecInterface(data_out, "axis", 1, 1, "both", 0, 40, "my_output", "", "", 0, 0, 0, 0, "", "");
+_ssdm_op_SpecInterface(data1, "axis", 1, 1, "both", 0, 4000, "my_input1", "", "", 0, 0, 0, 0, "", "");
+_ssdm_op_SpecInterface(data_out, "axis", 1, 1, "both", 0, 4000, "my_output", "", "", 0, 0, 0, 0, "", "");
 
 
 
@@ -2472,10 +2472,9 @@ _ssdm_SpecExprBalance(1, "");
    }
    r += ( temp_dim[ k ] > threshold );
   }
-  int flag = ( r == 4 );
 
   for ( l = 0 ; l < 4 ; l ++ ) {
-   data_out[ i*4 + l ] = flag ? 0.0f : temp_dim[ l ];
+   data_out[ i*4 + l ] = ( r == 4 ) ? 0.0f : temp_dim[ l ];
   }
  }
 }

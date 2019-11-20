@@ -1,0 +1,17 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch GCC as the compiler.
+   Compiling ../../../../myIP.cpp in debug mode
+   Generating csim.exe
+
+Seed 0
+Size 10
+Dimension 4
+Threshold 100.000000
+
+Software execution time: 0.000004
+Hardware execution time: 0.000059
+
+no errors
+
+INFO: [SIM 1] CSim done with 0 errors.
+INFO: [SIM 3] *************** CSIM finish ***************

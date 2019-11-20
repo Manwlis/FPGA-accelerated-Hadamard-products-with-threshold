@@ -1,5 +1,0 @@
-myFuncAccel4_mul_mul_17ns_17ns_34_1_1
-myFuncAccel4_mac_muladd_17ns_17ns_34ns_35_1_1
-myFuncAccel4_mac_muladd_17ns_17ns_35ns_36_1_1
-myFuncAccel4_mac_muladd_17ns_17ns_36ns_36_1_1
-myFuncAccel4

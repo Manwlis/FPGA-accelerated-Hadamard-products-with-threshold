@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'myFuncAccel4'
 ================================================================
-* Date:           Mon Nov 18 16:49:06 2019
+* Date:           Wed Nov 20 15:27:09 2019
 
 * Version:        2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)
 * Project:        accel4_float
@@ -136,7 +136,7 @@
     |icmp_ln53_8_fu_493_p2             |   icmp   |      0|  0|  11|           8|           2|
     |icmp_ln53_9_fu_499_p2             |   icmp   |      0|  0|  18|          23|           1|
     |icmp_ln53_fu_346_p2               |   icmp   |      0|  0|  11|           8|           2|
-    |icmp_ln55_fu_550_p2               |   icmp   |      0|  0|   9|           3|           4|
+    |icmp_ln57_fu_550_p2               |   icmp   |      0|  0|   9|           3|           4|
     |my_input1_0_state_cmp_full        |   icmp   |      0|  0|   8|           2|           1|
     |my_output_1_state_cmp_full        |   icmp   |      0|  0|   8|           2|           1|
     |ap_block_pp0_stage0_11001         |    or    |      0|  0|   2|           1|           1|
@@ -423,8 +423,8 @@ ST_1 : Operation 61 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInte
 ST_1 : Operation 62 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i32 %dim, [10 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i32 0, [8 x i8]* @p_str2, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind" [myIP.c:8]   --->   Operation 62 'specinterface' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 63 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(float %threshold, [10 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i32 0, [8 x i8]* @p_str2, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind" [myIP.c:9]   --->   Operation 63 'specinterface' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 64 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(float* %data0_0, float* %data0_1, float* %data0_2, float* %data0_3, float* %data0_4, float* %data0_5, float* %data0_6, float* %data0_7, float* %data0_8, float* %data0_9, float* %data0_10, float* %data0_11, float* %data0_12, float* %data0_13, float* %data0_14, float* %data0_15, [10 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i32 0, [10 x i8]* @p_str3, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind" [myIP.c:11]   --->   Operation 64 'specinterface' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 65 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(float* %my_input1, [5 x i8]* @p_str5, i32 1, i32 1, [5 x i8]* @p_str6, i32 0, i32 40, [10 x i8]* @p_str7, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind" [myIP.c:15]   --->   Operation 65 'specinterface' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 66 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(float* %my_output, [5 x i8]* @p_str5, i32 1, i32 1, [5 x i8]* @p_str6, i32 0, i32 40, [10 x i8]* @p_str8, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind" [myIP.c:16]   --->   Operation 66 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 65 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(float* %my_input1, [5 x i8]* @p_str5, i32 1, i32 1, [5 x i8]* @p_str6, i32 0, i32 4000, [10 x i8]* @p_str7, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind" [myIP.c:15]   --->   Operation 65 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 66 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(float* %my_output, [5 x i8]* @p_str5, i32 1, i32 1, [5 x i8]* @p_str6, i32 0, i32 4000, [10 x i8]* @p_str8, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind" [myIP.c:16]   --->   Operation 66 'specinterface' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 67 [1/1] (0.00ns)   --->   "%data0_0_read = call float @_ssdm_op_Read.ap_stable.floatP(float* %data0_0)" [myIP.c:31]   --->   Operation 67 'read' 'data0_0_read' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 68 [1/1] (0.00ns)   --->   "%data0_1_read = call float @_ssdm_op_Read.ap_stable.floatP(float* %data0_1)" [myIP.c:31]   --->   Operation 68 'read' 'data0_1_read' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 69 [1/1] (0.00ns)   --->   "%data0_2_read = call float @_ssdm_op_Read.ap_stable.floatP(float* %data0_2)" [myIP.c:31]   --->   Operation 69 'read' 'data0_2_read' <Predicate = true> <Delay = 0.00>
@@ -444,10 +444,10 @@ ST_1 : Operation 82 [1/1] (0.00ns)   --->   "%data0_15_read = call float @_ssdm_
 ST_1 : Operation 83 [1/1] (0.00ns)   --->   "%bitcast_ln53_1 = bitcast float %threshold_read to i32" [myIP.c:53]   --->   Operation 83 'bitcast' 'bitcast_ln53_1' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 84 [1/1] (0.00ns)   --->   "%trunc_ln53 = trunc i32 %bitcast_ln53_1 to i23" [myIP.c:53]   --->   Operation 84 'trunc' 'trunc_ln53' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 85 [1/1] (2.44ns)   --->   "%icmp_ln53_3 = icmp eq i23 %trunc_ln53, 0" [myIP.c:53]   --->   Operation 85 'icmp' 'icmp_ln53_3' <Predicate = true> <Delay = 2.44> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 0.95> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
-ST_1 : Operation 86 [1/1] (1.76ns)   --->   "br label %.preheader1" [myIP.c:34]   --->   Operation 86 'br' <Predicate = true> <Delay = 1.76>
+ST_1 : Operation 86 [1/1] (1.76ns)   --->   "br label %.preheader2" [myIP.c:34]   --->   Operation 86 'br' <Predicate = true> <Delay = 1.76>
 
 State 2 <SV = 1> <Delay = 5.70>
-ST_2 : Operation 87 [1/1] (0.00ns)   --->   "%i_1 = phi i32 [ %i, %hls_label_1 ], [ 0, %.preheader1.preheader ]"   --->   Operation 87 'phi' 'i_1' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 87 [1/1] (0.00ns)   --->   "%i_1 = phi i32 [ %i, %hls_label_1 ], [ 0, %.preheader2.preheader ]"   --->   Operation 87 'phi' 'i_1' <Predicate = true> <Delay = 0.00>
 ST_2 : Operation 88 [1/1] (2.47ns)   --->   "%icmp_ln34 = icmp eq i32 %i_1, %size_read" [myIP.c:34]   --->   Operation 88 'icmp' 'icmp_ln34' <Predicate = true> <Delay = 2.47> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 0.95> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
 ST_2 : Operation 89 [1/1] (2.55ns)   --->   "%i = add i32 %i_1, 1" [myIP.c:34]   --->   Operation 89 'add' 'i' <Predicate = true> <Delay = 2.55> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
 ST_2 : Operation 90 [1/1] (0.00ns)   --->   "br i1 %icmp_ln34, label %0, label %hls_label_1" [myIP.c:34]   --->   Operation 90 'br' <Predicate = true> <Delay = 0.00>
@@ -709,35 +709,35 @@ State 31 <SV = 30> <Delay = 3.39>
 ST_31 : Operation 288 [1/1] (0.00ns)   --->   "%zext_ln53_1 = zext i2 %add_ln53 to i3" [myIP.c:53]   --->   Operation 288 'zext' 'zext_ln53_1' <Predicate = (!icmp_ln34)> <Delay = 0.00>
 ST_31 : Operation 289 [1/1] (0.00ns)   --->   "%zext_ln53_2 = zext i2 %add_ln53_1 to i3" [myIP.c:53]   --->   Operation 289 'zext' 'zext_ln53_2' <Predicate = (!icmp_ln34)> <Delay = 0.00>
 ST_31 : Operation 290 [1/1] (1.56ns)   --->   "%add_ln53_2 = add i3 %zext_ln53_2, %zext_ln53_1" [myIP.c:53]   --->   Operation 290 'add' 'add_ln53_2' <Predicate = (!icmp_ln34)> <Delay = 1.56> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_31 : Operation 291 [1/1] (1.13ns)   --->   "%icmp_ln55 = icmp eq i3 %add_ln53_2, -4" [myIP.c:55]   --->   Operation 291 'icmp' 'icmp_ln55' <Predicate = (!icmp_ln34)> <Delay = 1.13> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 0.95> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
-ST_31 : Operation 292 [1/1] (0.69ns)   --->   "%p_tmp_3_0_3 = select i1 %icmp_ln55, float 0.000000e+00, float %tmp_3_0_3" [myIP.c:55]   --->   Operation 292 'select' 'p_tmp_3_0_3' <Predicate = (!icmp_ln34)> <Delay = 0.69> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.69> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
-ST_31 : Operation 293 [1/1] (0.69ns)   --->   "%p_tmp_3_1_3 = select i1 %icmp_ln55, float 0.000000e+00, float %tmp_3_1_3" [myIP.c:55]   --->   Operation 293 'select' 'p_tmp_3_1_3' <Predicate = (!icmp_ln34)> <Delay = 0.69> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.69> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
-ST_31 : Operation 294 [2/2] (0.00ns)   --->   "call void @_ssdm_op_Write.axis.floatP(float* %my_output, float %p_tmp_3_0_3)" [myIP.c:58]   --->   Operation 294 'write' <Predicate = (!icmp_ln34)> <Delay = 0.00> <Core = "AXI4Stream">   --->   Core 5 'AXI4Stream' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
-ST_31 : Operation 295 [1/1] (0.69ns)   --->   "%p_tmp_3_2_3 = select i1 %icmp_ln55, float 0.000000e+00, float %tmp_3_2_3" [myIP.c:55]   --->   Operation 295 'select' 'p_tmp_3_2_3' <Predicate = (!icmp_ln34)> <Delay = 0.69> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.69> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
-ST_31 : Operation 296 [1/1] (0.69ns)   --->   "%p_tmp_3_3_3 = select i1 %icmp_ln55, float 0.000000e+00, float %tmp_3_3_3" [myIP.c:55]   --->   Operation 296 'select' 'p_tmp_3_3_3' <Predicate = (!icmp_ln34)> <Delay = 0.69> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.69> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_31 : Operation 291 [1/1] (1.13ns)   --->   "%icmp_ln57 = icmp eq i3 %add_ln53_2, -4" [myIP.c:57]   --->   Operation 291 'icmp' 'icmp_ln57' <Predicate = (!icmp_ln34)> <Delay = 1.13> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 0.95> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_31 : Operation 292 [1/1] (0.69ns)   --->   "%p_tmp_3_0_3 = select i1 %icmp_ln57, float 0.000000e+00, float %tmp_3_0_3" [myIP.c:57]   --->   Operation 292 'select' 'p_tmp_3_0_3' <Predicate = (!icmp_ln34)> <Delay = 0.69> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.69> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_31 : Operation 293 [1/1] (0.69ns)   --->   "%p_tmp_3_1_3 = select i1 %icmp_ln57, float 0.000000e+00, float %tmp_3_1_3" [myIP.c:57]   --->   Operation 293 'select' 'p_tmp_3_1_3' <Predicate = (!icmp_ln34)> <Delay = 0.69> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.69> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_31 : Operation 294 [2/2] (0.00ns)   --->   "call void @_ssdm_op_Write.axis.floatP(float* %my_output, float %p_tmp_3_0_3)" [myIP.c:57]   --->   Operation 294 'write' <Predicate = (!icmp_ln34)> <Delay = 0.00> <Core = "AXI4Stream">   --->   Core 5 'AXI4Stream' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+ST_31 : Operation 295 [1/1] (0.69ns)   --->   "%p_tmp_3_2_3 = select i1 %icmp_ln57, float 0.000000e+00, float %tmp_3_2_3" [myIP.c:57]   --->   Operation 295 'select' 'p_tmp_3_2_3' <Predicate = (!icmp_ln34)> <Delay = 0.69> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.69> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_31 : Operation 296 [1/1] (0.69ns)   --->   "%p_tmp_3_3_3 = select i1 %icmp_ln57, float 0.000000e+00, float %tmp_3_3_3" [myIP.c:57]   --->   Operation 296 'select' 'p_tmp_3_3_3' <Predicate = (!icmp_ln34)> <Delay = 0.69> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.69> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
 
 State 32 <SV = 31> <Delay = 0.00>
-ST_32 : Operation 297 [1/2] (0.00ns)   --->   "call void @_ssdm_op_Write.axis.floatP(float* %my_output, float %p_tmp_3_0_3)" [myIP.c:58]   --->   Operation 297 'write' <Predicate = (!icmp_ln34)> <Delay = 0.00> <Core = "AXI4Stream">   --->   Core 5 'AXI4Stream' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
-ST_32 : Operation 298 [2/2] (0.00ns)   --->   "call void @_ssdm_op_Write.axis.floatP(float* %my_output, float %p_tmp_3_1_3)" [myIP.c:58]   --->   Operation 298 'write' <Predicate = (!icmp_ln34)> <Delay = 0.00> <Core = "AXI4Stream">   --->   Core 5 'AXI4Stream' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+ST_32 : Operation 297 [1/2] (0.00ns)   --->   "call void @_ssdm_op_Write.axis.floatP(float* %my_output, float %p_tmp_3_0_3)" [myIP.c:57]   --->   Operation 297 'write' <Predicate = (!icmp_ln34)> <Delay = 0.00> <Core = "AXI4Stream">   --->   Core 5 'AXI4Stream' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+ST_32 : Operation 298 [2/2] (0.00ns)   --->   "call void @_ssdm_op_Write.axis.floatP(float* %my_output, float %p_tmp_3_1_3)" [myIP.c:57]   --->   Operation 298 'write' <Predicate = (!icmp_ln34)> <Delay = 0.00> <Core = "AXI4Stream">   --->   Core 5 'AXI4Stream' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
 
 State 33 <SV = 32> <Delay = 0.00>
-ST_33 : Operation 299 [1/2] (0.00ns)   --->   "call void @_ssdm_op_Write.axis.floatP(float* %my_output, float %p_tmp_3_1_3)" [myIP.c:58]   --->   Operation 299 'write' <Predicate = (!icmp_ln34)> <Delay = 0.00> <Core = "AXI4Stream">   --->   Core 5 'AXI4Stream' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
-ST_33 : Operation 300 [2/2] (0.00ns)   --->   "call void @_ssdm_op_Write.axis.floatP(float* %my_output, float %p_tmp_3_2_3)" [myIP.c:58]   --->   Operation 300 'write' <Predicate = (!icmp_ln34)> <Delay = 0.00> <Core = "AXI4Stream">   --->   Core 5 'AXI4Stream' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+ST_33 : Operation 299 [1/2] (0.00ns)   --->   "call void @_ssdm_op_Write.axis.floatP(float* %my_output, float %p_tmp_3_1_3)" [myIP.c:57]   --->   Operation 299 'write' <Predicate = (!icmp_ln34)> <Delay = 0.00> <Core = "AXI4Stream">   --->   Core 5 'AXI4Stream' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+ST_33 : Operation 300 [2/2] (0.00ns)   --->   "call void @_ssdm_op_Write.axis.floatP(float* %my_output, float %p_tmp_3_2_3)" [myIP.c:57]   --->   Operation 300 'write' <Predicate = (!icmp_ln34)> <Delay = 0.00> <Core = "AXI4Stream">   --->   Core 5 'AXI4Stream' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
 
 State 34 <SV = 33> <Delay = 0.00>
-ST_34 : Operation 301 [1/2] (0.00ns)   --->   "call void @_ssdm_op_Write.axis.floatP(float* %my_output, float %p_tmp_3_2_3)" [myIP.c:58]   --->   Operation 301 'write' <Predicate = (!icmp_ln34)> <Delay = 0.00> <Core = "AXI4Stream">   --->   Core 5 'AXI4Stream' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
-ST_34 : Operation 302 [2/2] (0.00ns)   --->   "call void @_ssdm_op_Write.axis.floatP(float* %my_output, float %p_tmp_3_3_3)" [myIP.c:58]   --->   Operation 302 'write' <Predicate = (!icmp_ln34)> <Delay = 0.00> <Core = "AXI4Stream">   --->   Core 5 'AXI4Stream' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+ST_34 : Operation 301 [1/2] (0.00ns)   --->   "call void @_ssdm_op_Write.axis.floatP(float* %my_output, float %p_tmp_3_2_3)" [myIP.c:57]   --->   Operation 301 'write' <Predicate = (!icmp_ln34)> <Delay = 0.00> <Core = "AXI4Stream">   --->   Core 5 'AXI4Stream' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+ST_34 : Operation 302 [2/2] (0.00ns)   --->   "call void @_ssdm_op_Write.axis.floatP(float* %my_output, float %p_tmp_3_3_3)" [myIP.c:57]   --->   Operation 302 'write' <Predicate = (!icmp_ln34)> <Delay = 0.00> <Core = "AXI4Stream">   --->   Core 5 'AXI4Stream' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
 
 State 35 <SV = 34> <Delay = 0.00>
 ST_35 : Operation 303 [1/1] (0.00ns)   --->   "%tmp = call i32 (...)* @_ssdm_op_SpecRegionBegin([12 x i8]* @p_str10) nounwind" [myIP.c:34]   --->   Operation 303 'specregionbegin' 'tmp' <Predicate = (!icmp_ln34)> <Delay = 0.00>
 ST_35 : Operation 304 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecLoopTripCount(i32 100, i32 100, i32 100, [1 x i8]* @p_str1) nounwind" [myIP.c:35]   --->   Operation 304 'speclooptripcount' <Predicate = (!icmp_ln34)> <Delay = 0.00>
 ST_35 : Operation 305 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecPipeline(i32 1, i32 1, i32 1, i32 0, [1 x i8]* @p_str1) nounwind" [myIP.c:37]   --->   Operation 305 'specpipeline' <Predicate = (!icmp_ln34)> <Delay = 0.00>
-ST_35 : Operation 306 [1/2] (0.00ns)   --->   "call void @_ssdm_op_Write.axis.floatP(float* %my_output, float %p_tmp_3_3_3)" [myIP.c:58]   --->   Operation 306 'write' <Predicate = (!icmp_ln34)> <Delay = 0.00> <Core = "AXI4Stream">   --->   Core 5 'AXI4Stream' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
-ST_35 : Operation 307 [1/1] (0.00ns)   --->   "%empty = call i32 (...)* @_ssdm_op_SpecRegionEnd([12 x i8]* @p_str10, i32 %tmp) nounwind" [myIP.c:60]   --->   Operation 307 'specregionend' 'empty' <Predicate = (!icmp_ln34)> <Delay = 0.00>
-ST_35 : Operation 308 [1/1] (0.00ns)   --->   "br label %.preheader1" [myIP.c:34]   --->   Operation 308 'br' <Predicate = (!icmp_ln34)> <Delay = 0.00>
+ST_35 : Operation 306 [1/2] (0.00ns)   --->   "call void @_ssdm_op_Write.axis.floatP(float* %my_output, float %p_tmp_3_3_3)" [myIP.c:57]   --->   Operation 306 'write' <Predicate = (!icmp_ln34)> <Delay = 0.00> <Core = "AXI4Stream">   --->   Core 5 'AXI4Stream' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+ST_35 : Operation 307 [1/1] (0.00ns)   --->   "%empty = call i32 (...)* @_ssdm_op_SpecRegionEnd([12 x i8]* @p_str10, i32 %tmp) nounwind" [myIP.c:59]   --->   Operation 307 'specregionend' 'empty' <Predicate = (!icmp_ln34)> <Delay = 0.00>
+ST_35 : Operation 308 [1/1] (0.00ns)   --->   "br label %.preheader2" [myIP.c:34]   --->   Operation 308 'br' <Predicate = (!icmp_ln34)> <Delay = 0.00>
 
 State 36 <SV = 2> <Delay = 0.00>
-ST_36 : Operation 309 [1/1] (0.00ns)   --->   "ret void" [myIP.c:61]   --->   Operation 309 'ret' <Predicate = true> <Delay = 0.00>
+ST_36 : Operation 309 [1/1] (0.00ns)   --->   "ret void" [myIP.c:60]   --->   Operation 309 'ret' <Predicate = true> <Delay = 0.00>
 
 
 ============================================================
@@ -916,21 +916,21 @@ add_ln53_1             (add              ) [ 00010000000000000000000000000001000
 zext_ln53_1            (zext             ) [ 0000000000000000000000000000000000000]
 zext_ln53_2            (zext             ) [ 0000000000000000000000000000000000000]
 add_ln53_2             (add              ) [ 0000000000000000000000000000000000000]
-icmp_ln55              (icmp             ) [ 0000000000000000000000000000000000000]
+icmp_ln57              (icmp             ) [ 0000000000000000000000000000000000000]
 p_tmp_3_0_3            (select           ) [ 0000100000000000000000000000000010000]
 p_tmp_3_1_3            (select           ) [ 0000110000000000000000000000000011000]
 p_tmp_3_2_3            (select           ) [ 0010110000000000000000000000000011100]
 p_tmp_3_3_3            (select           ) [ 0011110000000000000000000000000011110]
-write_ln58             (write            ) [ 0000000000000000000000000000000000000]
-write_ln58             (write            ) [ 0000000000000000000000000000000000000]
-write_ln58             (write            ) [ 0000000000000000000000000000000000000]
+write_ln57             (write            ) [ 0000000000000000000000000000000000000]
+write_ln57             (write            ) [ 0000000000000000000000000000000000000]
+write_ln57             (write            ) [ 0000000000000000000000000000000000000]
 tmp                    (specregionbegin  ) [ 0000000000000000000000000000000000000]
 speclooptripcount_ln35 (speclooptripcount) [ 0000000000000000000000000000000000000]
 specpipeline_ln37      (specpipeline     ) [ 0000000000000000000000000000000000000]
-write_ln58             (write            ) [ 0000000000000000000000000000000000000]
+write_ln57             (write            ) [ 0000000000000000000000000000000000000]
 empty                  (specregionend    ) [ 0000000000000000000000000000000000000]
 br_ln34                (br               ) [ 0111111111111111111111111111111111110]
-ret_ln61               (ret              ) [ 0000000000000000000000000000000000000]
+ret_ln60               (ret              ) [ 0000000000000000000000000000000000000]
 </LifeTime>
 
 <model>
@@ -1659,7 +1659,7 @@ ret_ln61               (ret              ) [ 00000000000000000000000000000000000
 </pin_list>
 <bind>
 <opcode="write(1151) " fcode="write"/>
-<opset="write_ln58/31 write_ln58/32 write_ln58/33 write_ln58/34 "/>
+<opset="write_ln57/31 write_ln57/32 write_ln57/33 write_ln57/34 "/>
 </bind>
 </comp>
 
@@ -2377,7 +2377,7 @@ ret_ln61               (ret              ) [ 00000000000000000000000000000000000
 </bind>
 </comp>
 
-<comp id="550" class="1004" name="icmp_ln55_fu_550">
+<comp id="550" class="1004" name="icmp_ln57_fu_550">
 <pin_list>
 <pin id="551" dir="0" index="0" bw="3" slack="0"/>
 <pin id="552" dir="0" index="1" bw="3" slack="0"/>
@@ -2385,7 +2385,7 @@ ret_ln61               (ret              ) [ 00000000000000000000000000000000000
 </pin_list>
 <bind>
 <opcode="icmp(45) " fcode="icmp"/>
-<opset="icmp_ln55/31 "/>
+<opset="icmp_ln57/31 "/>
 </bind>
 </comp>
 
@@ -3816,10 +3816,10 @@ ret_ln61               (ret              ) [ 00000000000000000000000000000000000
 		add_ln53_1 : 4
 	State 31
 		add_ln53_2 : 1
-		icmp_ln55 : 2
+		icmp_ln57 : 2
 		p_tmp_3_0_3 : 3
 		p_tmp_3_1_3 : 3
-		write_ln58 : 4
+		write_ln57 : 4
 		p_tmp_3_2_3 : 3
 		p_tmp_3_3_3 : 3
 	State 32
@@ -3861,7 +3861,7 @@ ret_ln61               (ret              ) [ 00000000000000000000000000000000000
 |          |     icmp_ln53_7_fu_450     |    0    |    0    |    18   |
 |          |     icmp_ln53_8_fu_493     |    0    |    0    |    11   |
 |          |     icmp_ln53_9_fu_499     |    0    |    0    |    18   |
-|          |      icmp_ln55_fu_550      |    0    |    0    |    9    |
+|          |      icmp_ln57_fu_550      |    0    |    0    |    9    |
 |----------|----------------------------|---------|---------|---------|
 |          |     p_tmp_3_0_3_fu_556     |    0    |    0    |    32   |
 |  select  |     p_tmp_3_1_3_fu_564     |    0    |    0    |    32   |

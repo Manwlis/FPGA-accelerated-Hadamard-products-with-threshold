@@ -342,7 +342,7 @@ architecture behav of myFuncAccel4 is
     signal zext_ln53_2_fu_541_p1 : STD_LOGIC_VECTOR (2 downto 0);
     signal zext_ln53_1_fu_538_p1 : STD_LOGIC_VECTOR (2 downto 0);
     signal add_ln53_2_fu_544_p2 : STD_LOGIC_VECTOR (2 downto 0);
-    signal icmp_ln55_fu_550_p2 : STD_LOGIC_VECTOR (0 downto 0);
+    signal icmp_ln57_fu_550_p2 : STD_LOGIC_VECTOR (0 downto 0);
     signal grp_fu_240_ce : STD_LOGIC;
     signal grp_fu_245_ce : STD_LOGIC;
     signal grp_fu_250_ce : STD_LOGIC;
@@ -1727,7 +1727,7 @@ begin
     icmp_ln53_8_fu_493_p2 <= "0" when (tmp_7_fu_479_p4 = ap_const_lv8_FF) else "1";
     icmp_ln53_9_fu_499_p2 <= "1" when (trunc_ln53_4_fu_489_p1 = ap_const_lv23_0) else "0";
     icmp_ln53_fu_346_p2 <= "0" when (tmp_1_fu_332_p4 = ap_const_lv8_FF) else "1";
-    icmp_ln55_fu_550_p2 <= "1" when (add_ln53_2_fu_544_p2 = ap_const_lv3_4) else "0";
+    icmp_ln57_fu_550_p2 <= "1" when (add_ln53_2_fu_544_p2 = ap_const_lv3_4) else "0";
     my_input1_0_ack_in <= my_input1_0_state(1);
 
     my_input1_0_ack_out_assign_proc : process(ap_CS_fsm_pp0_stage0, ap_enable_reg_pp0_iter0, icmp_ln34_fu_298_p2, ap_CS_fsm_pp0_stage1, icmp_ln34_reg_685, ap_CS_fsm_pp0_stage2, ap_CS_fsm_pp0_stage3, ap_block_pp0_stage0_11001, ap_block_pp0_stage1_11001, ap_block_pp0_stage2_11001, ap_block_pp0_stage3_11001)
@@ -1831,16 +1831,16 @@ begin
     or_ln53_4_fu_505_p2 <= (icmp_ln53_9_fu_499_p2 or icmp_ln53_8_fu_493_p2);
     or_ln53_fu_358_p2 <= (icmp_ln53_fu_346_p2 or icmp_ln53_1_fu_352_p2);
     p_tmp_3_0_3_fu_556_p3 <= 
-        ap_const_lv32_0 when (icmp_ln55_fu_550_p2(0) = '1') else 
+        ap_const_lv32_0 when (icmp_ln57_fu_550_p2(0) = '1') else 
         tmp_3_0_3_reg_874_pp0_iter6_reg;
     p_tmp_3_1_3_fu_564_p3 <= 
-        ap_const_lv32_0 when (icmp_ln55_fu_550_p2(0) = '1') else 
+        ap_const_lv32_0 when (icmp_ln57_fu_550_p2(0) = '1') else 
         tmp_3_1_3_reg_881_pp0_iter6_reg;
     p_tmp_3_2_3_fu_571_p3 <= 
-        ap_const_lv32_0 when (icmp_ln55_fu_550_p2(0) = '1') else 
+        ap_const_lv32_0 when (icmp_ln57_fu_550_p2(0) = '1') else 
         tmp_3_2_3_reg_888_pp0_iter6_reg;
     p_tmp_3_3_3_fu_578_p3 <= 
-        ap_const_lv32_0 when (icmp_ln55_fu_550_p2(0) = '1') else 
+        ap_const_lv32_0 when (icmp_ln57_fu_550_p2(0) = '1') else 
         tmp_3_3_3_reg_895_pp0_iter6_reg;
     tmp_1_fu_332_p4 <= bitcast_ln53_fu_329_p1(30 downto 23);
     tmp_4_fu_309_p4 <= bitcast_ln53_1_fu_284_p1(30 downto 23);

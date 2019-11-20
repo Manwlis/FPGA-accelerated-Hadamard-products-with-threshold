@@ -2,7 +2,7 @@
    Compiling apatb_myFuncAccel4.cpp
    Compiling (apcc) main.c_pre.c.tb.c
 INFO: [HLS 200-10] Running '/run/media/epetrakos/60GB/Xilinx/Vivado/2019.1/bin/unwrapped/lnx64.o/apcc'
-INFO: [HLS 200-10] For user 'epetrakos' on host 'tower-pc' (Linux_x86_64 version 5.2.21-1-MANJARO) on Mon Nov 18 16:50:37 EET 2019
+INFO: [HLS 200-10] For user 'epetrakos' on host 'tower-pc' (Linux_x86_64 version 5.2.21-1-MANJARO) on Wed Nov 20 15:27:49 EET 2019
 INFO: [HLS 200-10] On os "Manjaro Linux"
 INFO: [HLS 200-10] In directory '/home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/float-ilopoihsh/accel4/accel4_float/solution1/sim/wrapc'
 clang: warning: argument unused during compilation: '-fno-builtin-isinf'
@@ -12,15 +12,15 @@ In file included from /home/epetrakos/Documents/GitHub/HRY591-project/code/part2
  ((void) sizeof ((seed>=0) ? 1 : 0), __extension__ ({ if (seed>=0) ; else __assert_fail ("seed>=0", "/home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/float-ilopoihsh/accel4/main.c", 45, __extension__ __PRETTY_FUNCTION__); }));
                                                           ~~~~^ ~
 1 warning generated.
-INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_epetrakos/144881574088637662973
+INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_epetrakos/149481574256469581426
 INFO: [APCC 202-1] APCC is done.
    Compiling (apcc) myIP.c_pre.c.tb.c
 INFO: [HLS 200-10] Running '/run/media/epetrakos/60GB/Xilinx/Vivado/2019.1/bin/unwrapped/lnx64.o/apcc'
-INFO: [HLS 200-10] For user 'epetrakos' on host 'tower-pc' (Linux_x86_64 version 5.2.21-1-MANJARO) on Mon Nov 18 16:50:49 EET 2019
+INFO: [HLS 200-10] For user 'epetrakos' on host 'tower-pc' (Linux_x86_64 version 5.2.21-1-MANJARO) on Wed Nov 20 15:28:01 EET 2019
 INFO: [HLS 200-10] On os "Manjaro Linux"
 INFO: [HLS 200-10] In directory '/home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/float-ilopoihsh/accel4/accel4_float/solution1/sim/wrapc'
 clang: warning: argument unused during compilation: '-fno-builtin-isinf'
 clang: warning: argument unused during compilation: '-fno-builtin-isnan'
-INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_epetrakos/145801574088649853331
+INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_epetrakos/150541574256481667603
 INFO: [APCC 202-1] APCC is done.
    Generating cosim.tv.exe

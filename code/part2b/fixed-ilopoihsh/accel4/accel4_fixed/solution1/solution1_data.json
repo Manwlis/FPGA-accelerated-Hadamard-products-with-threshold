@@ -4,7 +4,7 @@
   "RtlPrefix": "",
   "SourceLanguage": "cpp",
   "ResetStyle": "control",
-  "GenerateBdFiles": "1",
+  "GenerateBdFiles": "0",
   "HostMachineBits": "64",
   "Target": {
     "Family": "zynq",
@@ -52,14 +52,38 @@
       "index": "4",
       "type": {
         "kinds": ["pointer"],
-        "dataType": "ap_ufixed"
+        "dataType": "ap_ufixed",
+        "dataWidth": "17",
+        "multiInterfaceRef": [
+          "data1_V_address",
+          "data1_V_datain",
+          "data1_V_dataout",
+          "data1_V_req_din",
+          "data1_V_req_full_n",
+          "data1_V_req_write",
+          "data1_V_rsp_empty_n",
+          "data1_V_rsp_read",
+          "data1_V_size"
+        ]
       }
     },
     "data_out": {
       "index": "5",
       "type": {
         "kinds": ["pointer"],
-        "dataType": "ap_ufixed"
+        "dataType": "ap_ufixed",
+        "dataWidth": "34",
+        "multiInterfaceRef": [
+          "data_out_V_address",
+          "data_out_V_datain",
+          "data_out_V_dataout",
+          "data_out_V_req_din",
+          "data_out_V_req_full_n",
+          "data_out_V_req_write",
+          "data_out_V_rsp_empty_n",
+          "data_out_V_rsp_read",
+          "data_out_V_size"
+        ]
       }
     }
   },
@@ -71,7 +95,7 @@
     "ClockPeriod": "10",
     "IsCombLogic": "0",
     "II": "x",
-    "Latency": "403",
+    "Latency": "409",
     "Uncertainty": "1.25"
   },
   "Xdc": {
@@ -141,8 +165,7 @@
       "ctype": {"CLK": {"Type": "bool"}},
       "bundle_name": "ap_clk",
       "bundle_role": "default",
-      "buses": "my_input1_V my_output_V",
-      "reset": "ap_rst_n"
+      "reset": "ap_rst"
     },
     "ap_ctrl": {
       "type": "ap_ctrl",
@@ -154,11 +177,11 @@
         "ready": {"Type": "bool"}
       }
     },
-    "ap_rst_n": {
+    "ap_rst": {
       "type": "reset",
-      "polarity": "ACTIVE_LOW",
+      "polarity": "ACTIVE_HIGH",
       "ctype": {"RST": {"Type": "bool"}},
-      "bundle_name": "ap_rst_n",
+      "bundle_name": "ap_rst",
       "bundle_role": "default"
     },
     "data0_0_V": {
@@ -337,6 +360,204 @@
       "bundle_name": "data0_15_V",
       "bundle_role": "default"
     },
+    "data1_V_address": {
+      "type": "data",
+      "dir": "out",
+      "width": "32",
+      "ctype": {"DATA": {
+          "Type": "integer unsigned",
+          "Width": "32"
+        }},
+      "bundle_name": "data1_V",
+      "bundle_role": "address"
+    },
+    "data1_V_datain": {
+      "type": "data",
+      "dir": "in",
+      "width": "17",
+      "ctype": {"DATA": {
+          "Type": "real fixed unsigned 13",
+          "Width": "17"
+        }},
+      "bundle_name": "data1_V",
+      "bundle_role": "datain"
+    },
+    "data1_V_dataout": {
+      "type": "data",
+      "dir": "out",
+      "width": "17",
+      "ctype": {"DATA": {
+          "Type": "real fixed unsigned 13",
+          "Width": "17"
+        }},
+      "bundle_name": "data1_V",
+      "bundle_role": "dataout"
+    },
+    "data1_V_req_din": {
+      "type": "data",
+      "dir": "out",
+      "width": "1",
+      "ctype": {"DATA": {
+          "Type": "null",
+          "Width": "1"
+        }},
+      "bundle_name": "data1_V",
+      "bundle_role": "req_din"
+    },
+    "data1_V_req_full_n": {
+      "type": "data",
+      "dir": "in",
+      "width": "1",
+      "ctype": {"DATA": {
+          "Type": "null",
+          "Width": "1"
+        }},
+      "bundle_name": "data1_V",
+      "bundle_role": "req_full_n"
+    },
+    "data1_V_req_write": {
+      "type": "data",
+      "dir": "out",
+      "width": "1",
+      "ctype": {"DATA": {
+          "Type": "null",
+          "Width": "1"
+        }},
+      "bundle_name": "data1_V",
+      "bundle_role": "req_write"
+    },
+    "data1_V_rsp_empty_n": {
+      "type": "data",
+      "dir": "in",
+      "width": "1",
+      "ctype": {"DATA": {
+          "Type": "null",
+          "Width": "1"
+        }},
+      "bundle_name": "data1_V",
+      "bundle_role": "rsp_empty_n"
+    },
+    "data1_V_rsp_read": {
+      "type": "data",
+      "dir": "out",
+      "width": "1",
+      "ctype": {"DATA": {
+          "Type": "null",
+          "Width": "1"
+        }},
+      "bundle_name": "data1_V",
+      "bundle_role": "rsp_read"
+    },
+    "data1_V_size": {
+      "type": "data",
+      "dir": "out",
+      "width": "32",
+      "ctype": {"DATA": {
+          "Type": "integer unsigned",
+          "Width": "32"
+        }},
+      "bundle_name": "data1_V",
+      "bundle_role": "size"
+    },
+    "data_out_V_address": {
+      "type": "data",
+      "dir": "out",
+      "width": "32",
+      "ctype": {"DATA": {
+          "Type": "integer unsigned",
+          "Width": "32"
+        }},
+      "bundle_name": "data_out_V",
+      "bundle_role": "address"
+    },
+    "data_out_V_datain": {
+      "type": "data",
+      "dir": "in",
+      "width": "34",
+      "ctype": {"DATA": {
+          "Type": "real fixed unsigned 24",
+          "Width": "34"
+        }},
+      "bundle_name": "data_out_V",
+      "bundle_role": "datain"
+    },
+    "data_out_V_dataout": {
+      "type": "data",
+      "dir": "out",
+      "width": "34",
+      "ctype": {"DATA": {
+          "Type": "real fixed unsigned 24",
+          "Width": "34"
+        }},
+      "bundle_name": "data_out_V",
+      "bundle_role": "dataout"
+    },
+    "data_out_V_req_din": {
+      "type": "data",
+      "dir": "out",
+      "width": "1",
+      "ctype": {"DATA": {
+          "Type": "null",
+          "Width": "1"
+        }},
+      "bundle_name": "data_out_V",
+      "bundle_role": "req_din"
+    },
+    "data_out_V_req_full_n": {
+      "type": "data",
+      "dir": "in",
+      "width": "1",
+      "ctype": {"DATA": {
+          "Type": "null",
+          "Width": "1"
+        }},
+      "bundle_name": "data_out_V",
+      "bundle_role": "req_full_n"
+    },
+    "data_out_V_req_write": {
+      "type": "data",
+      "dir": "out",
+      "width": "1",
+      "ctype": {"DATA": {
+          "Type": "null",
+          "Width": "1"
+        }},
+      "bundle_name": "data_out_V",
+      "bundle_role": "req_write"
+    },
+    "data_out_V_rsp_empty_n": {
+      "type": "data",
+      "dir": "in",
+      "width": "1",
+      "ctype": {"DATA": {
+          "Type": "null",
+          "Width": "1"
+        }},
+      "bundle_name": "data_out_V",
+      "bundle_role": "rsp_empty_n"
+    },
+    "data_out_V_rsp_read": {
+      "type": "data",
+      "dir": "out",
+      "width": "1",
+      "ctype": {"DATA": {
+          "Type": "null",
+          "Width": "1"
+        }},
+      "bundle_name": "data_out_V",
+      "bundle_role": "rsp_read"
+    },
+    "data_out_V_size": {
+      "type": "data",
+      "dir": "out",
+      "width": "32",
+      "ctype": {"DATA": {
+          "Type": "integer unsigned",
+          "Width": "32"
+        }},
+      "bundle_name": "data_out_V",
+      "bundle_role": "size"
+    },
     "dim": {
       "type": "data",
       "dir": "in",
@@ -347,38 +568,6 @@
         }},
       "bundle_name": "dim",
       "bundle_role": "default"
-    },
-    "my_input1_V": {
-      "type": "axi4stream",
-      "mode": "slave",
-      "port_prefix": "my_input1_V",
-      "has_tready": "1",
-      "ctype": {
-        "TDATA": {
-          "Type": "real fixed unsigned 13",
-          "Width": "17",
-          "Bits": "24"
-        },
-        "TVALID": {"Type": "bool"},
-        "TREADY": {"Type": "bool"}
-      },
-      "port_width": {"TDATA": "24"}
-    },
-    "my_output_V": {
-      "type": "axi4stream",
-      "mode": "master",
-      "port_prefix": "my_output_V",
-      "has_tready": "1",
-      "ctype": {
-        "TDATA": {
-          "Type": "real fixed unsigned 24",
-          "Width": "34",
-          "Bits": "40"
-        },
-        "TVALID": {"Type": "bool"},
-        "TREADY": {"Type": "bool"}
-      },
-      "port_width": {"TDATA": "40"}
     },
     "size": {
       "type": "data",
@@ -408,7 +597,7 @@
       "dir": "in",
       "width": "1"
     },
-    "ap_rst_n": {
+    "ap_rst": {
       "dir": "in",
       "width": "1"
     },
@@ -504,29 +693,77 @@
       "dir": "in",
       "width": "17"
     },
-    "my_input1_V_TDATA": {
-      "dir": "in",
-      "width": "24"
-    },
-    "my_input1_V_TVALID": {
-      "dir": "in",
-      "width": "1"
-    },
-    "my_input1_V_TREADY": {
+    "data1_V_req_din": {
       "dir": "out",
       "width": "1"
     },
-    "my_output_V_TDATA": {
-      "dir": "out",
-      "width": "40"
-    },
-    "my_output_V_TVALID": {
-      "dir": "out",
-      "width": "1"
-    },
-    "my_output_V_TREADY": {
+    "data1_V_req_full_n": {
       "dir": "in",
       "width": "1"
+    },
+    "data1_V_req_write": {
+      "dir": "out",
+      "width": "1"
+    },
+    "data1_V_rsp_empty_n": {
+      "dir": "in",
+      "width": "1"
+    },
+    "data1_V_rsp_read": {
+      "dir": "out",
+      "width": "1"
+    },
+    "data1_V_address": {
+      "dir": "out",
+      "width": "32"
+    },
+    "data1_V_datain": {
+      "dir": "in",
+      "width": "17"
+    },
+    "data1_V_dataout": {
+      "dir": "out",
+      "width": "17"
+    },
+    "data1_V_size": {
+      "dir": "out",
+      "width": "32"
+    },
+    "data_out_V_req_din": {
+      "dir": "out",
+      "width": "1"
+    },
+    "data_out_V_req_full_n": {
+      "dir": "in",
+      "width": "1"
+    },
+    "data_out_V_req_write": {
+      "dir": "out",
+      "width": "1"
+    },
+    "data_out_V_rsp_empty_n": {
+      "dir": "in",
+      "width": "1"
+    },
+    "data_out_V_rsp_read": {
+      "dir": "out",
+      "width": "1"
+    },
+    "data_out_V_address": {
+      "dir": "out",
+      "width": "32"
+    },
+    "data_out_V_datain": {
+      "dir": "in",
+      "width": "34"
+    },
+    "data_out_V_dataout": {
+      "dir": "out",
+      "width": "34"
+    },
+    "data_out_V_size": {
+      "dir": "out",
+      "width": "32"
     }
   },
   "ModuleInfo": {
@@ -540,30 +777,30 @@
       }},
     "Metrics": {"myFuncAccel4": {
         "Latency": {
-          "LatencyBest": "403",
-          "LatencyAvg": "403",
-          "LatencyWorst": "403",
-          "PipelineII": "404",
+          "LatencyBest": "409",
+          "LatencyAvg": "409",
+          "LatencyWorst": "409",
+          "PipelineII": "410",
           "PipelineDepth": "",
           "PipelineType": "none"
         },
         "Timing": {
           "Target": "10.00",
           "Uncertainty": "1.25",
-          "Estimate": "8.868"
+          "Estimate": "10.760"
         },
         "Loops": [{
             "Name": "Loop 1",
             "TripCount": "100",
-            "Latency": "401",
+            "Latency": "407",
             "PipelineII": "4",
-            "PipelineDepth": "6"
+            "PipelineDepth": "12"
           }],
         "Area": {
-          "DSP48E": "16",
-          "FF": "644",
-          "LUT": "391",
           "BRAM_18K": "0",
+          "DSP48E": "16",
+          "FF": "811",
+          "LUT": "463",
           "URAM": "0"
         }
       }}
@@ -578,7 +815,7 @@
   },
   "GenData": {
     "DataVersion": "0.2",
-    "Time": "2019-11-18 16:35:35 EET",
+    "Time": "2019-11-20 15:16:19 EET",
     "ToolName": "vivado_hls",
     "ToolVersion": "2019.1"
   }

@@ -68404,10 +68404,10 @@ void myFuncAccel4 (unsigned int size, unsigned int dim, dataType_fixed_l thresho
 #pragma HLS array_partition variable=data0 complete
 
 
+#pragma HLS INTERFACE ap_bus port=data1 depth=40 bundle=my_input1
+#pragma HLS INTERFACE ap_bus port=data_out depth=40 bundle=my_output
 
 
-#pragma HLS INTERFACE axis port=data1 depth=40 bundle=my_input1
-#pragma HLS INTERFACE axis port=data_out depth=40 bundle=my_output
 
  dataType_fixed_l local_thres = threshold;
  unsigned int i, k, l;
@@ -68427,7 +68427,7 @@ void myFuncAccel4 (unsigned int size, unsigned int dim, dataType_fixed_l thresho
 
 #pragma HLS PIPELINE II=1
 
-  unsigned int r = 0 ;
+  unsigned int r = 1 ;
 
   for ( l = 0 ; l < 4 ; l ++ ) {
    temp1[ l ] = data1[ i*4 + l ];
@@ -68441,12 +68441,12 @@ void myFuncAccel4 (unsigned int size, unsigned int dim, dataType_fixed_l thresho
 #pragma HLS expression_balance
     temp_dim[ k ] += temp0[ k*4 + l ] * temp1[ l ];
    }
-   r += ( temp_dim[ k ] > local_thres );
+   r = r and ( temp_dim[ k ] > local_thres );
   }
-  int flag = ( r == 4 );
+
 
   for ( l = 0 ; l < 4 ; l ++ ) {
-   data_out[ i*4 + l ] = flag ? (dataType_fixed_l) 0.0f : temp_dim[ l ];
+   data_out[ i*4 + l ] = r ? (dataType_fixed_l) 0.0f : temp_dim[ l ];
   }
  }
 }

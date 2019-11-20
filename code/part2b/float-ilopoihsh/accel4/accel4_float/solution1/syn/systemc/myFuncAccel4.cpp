@@ -841,7 +841,7 @@ myFuncAccel4::myFuncAccel4(sc_module_name name) : sc_module(name), mVcdFile(0) {
     sensitive << ( icmp_ln34_reg_685_pp0_iter6_reg );
     sensitive << ( tmp_1_fu_332_p4 );
 
-    SC_METHOD(thread_icmp_ln55_fu_550_p2);
+    SC_METHOD(thread_icmp_ln57_fu_550_p2);
     sensitive << ( ap_CS_fsm_pp0_stage1 );
     sensitive << ( ap_enable_reg_pp0_iter7 );
     sensitive << ( icmp_ln34_reg_685_pp0_iter7_reg );
@@ -1001,19 +1001,19 @@ myFuncAccel4::myFuncAccel4(sc_module_name name) : sc_module(name), mVcdFile(0) {
 
     SC_METHOD(thread_p_tmp_3_0_3_fu_556_p3);
     sensitive << ( tmp_3_0_3_reg_874_pp0_iter6_reg );
-    sensitive << ( icmp_ln55_fu_550_p2 );
+    sensitive << ( icmp_ln57_fu_550_p2 );
 
     SC_METHOD(thread_p_tmp_3_1_3_fu_564_p3);
     sensitive << ( tmp_3_1_3_reg_881_pp0_iter6_reg );
-    sensitive << ( icmp_ln55_fu_550_p2 );
+    sensitive << ( icmp_ln57_fu_550_p2 );
 
     SC_METHOD(thread_p_tmp_3_2_3_fu_571_p3);
     sensitive << ( tmp_3_2_3_reg_888_pp0_iter6_reg );
-    sensitive << ( icmp_ln55_fu_550_p2 );
+    sensitive << ( icmp_ln57_fu_550_p2 );
 
     SC_METHOD(thread_p_tmp_3_3_3_fu_578_p3);
     sensitive << ( tmp_3_3_3_reg_895_pp0_iter6_reg );
-    sensitive << ( icmp_ln55_fu_550_p2 );
+    sensitive << ( icmp_ln57_fu_550_p2 );
 
     SC_METHOD(thread_tmp_1_fu_332_p4);
     sensitive << ( bitcast_ln53_fu_329_p1 );
@@ -1400,7 +1400,7 @@ myFuncAccel4::myFuncAccel4(sc_module_name name) : sc_module(name), mVcdFile(0) {
     sc_trace(mVcdFile, zext_ln53_2_fu_541_p1, "zext_ln53_2_fu_541_p1");
     sc_trace(mVcdFile, zext_ln53_1_fu_538_p1, "zext_ln53_1_fu_538_p1");
     sc_trace(mVcdFile, add_ln53_2_fu_544_p2, "add_ln53_2_fu_544_p2");
-    sc_trace(mVcdFile, icmp_ln55_fu_550_p2, "icmp_ln55_fu_550_p2");
+    sc_trace(mVcdFile, icmp_ln57_fu_550_p2, "icmp_ln57_fu_550_p2");
     sc_trace(mVcdFile, grp_fu_240_ce, "grp_fu_240_ce");
     sc_trace(mVcdFile, grp_fu_245_ce, "grp_fu_245_ce");
     sc_trace(mVcdFile, grp_fu_250_ce, "grp_fu_250_ce");
@@ -2676,8 +2676,8 @@ void myFuncAccel4::thread_icmp_ln53_fu_346_p2() {
     icmp_ln53_fu_346_p2 = (!tmp_1_fu_332_p4.read().is_01() || !ap_const_lv8_FF.is_01())? sc_lv<1>(): sc_lv<1>(tmp_1_fu_332_p4.read() != ap_const_lv8_FF);
 }
 
-void myFuncAccel4::thread_icmp_ln55_fu_550_p2() {
-    icmp_ln55_fu_550_p2 = (!add_ln53_2_fu_544_p2.read().is_01() || !ap_const_lv3_4.is_01())? sc_lv<1>(): sc_lv<1>(add_ln53_2_fu_544_p2.read() == ap_const_lv3_4);
+void myFuncAccel4::thread_icmp_ln57_fu_550_p2() {
+    icmp_ln57_fu_550_p2 = (!add_ln53_2_fu_544_p2.read().is_01() || !ap_const_lv3_4.is_01())? sc_lv<1>(): sc_lv<1>(add_ln53_2_fu_544_p2.read() == ap_const_lv3_4);
 }
 
 void myFuncAccel4::thread_my_input1_0_ack_in() {
@@ -2899,19 +2899,19 @@ void myFuncAccel4::thread_or_ln53_fu_358_p2() {
 }
 
 void myFuncAccel4::thread_p_tmp_3_0_3_fu_556_p3() {
-    p_tmp_3_0_3_fu_556_p3 = (!icmp_ln55_fu_550_p2.read()[0].is_01())? sc_lv<32>(): ((icmp_ln55_fu_550_p2.read()[0].to_bool())? ap_const_lv32_0: tmp_3_0_3_reg_874_pp0_iter6_reg.read());
+    p_tmp_3_0_3_fu_556_p3 = (!icmp_ln57_fu_550_p2.read()[0].is_01())? sc_lv<32>(): ((icmp_ln57_fu_550_p2.read()[0].to_bool())? ap_const_lv32_0: tmp_3_0_3_reg_874_pp0_iter6_reg.read());
 }
 
 void myFuncAccel4::thread_p_tmp_3_1_3_fu_564_p3() {
-    p_tmp_3_1_3_fu_564_p3 = (!icmp_ln55_fu_550_p2.read()[0].is_01())? sc_lv<32>(): ((icmp_ln55_fu_550_p2.read()[0].to_bool())? ap_const_lv32_0: tmp_3_1_3_reg_881_pp0_iter6_reg.read());
+    p_tmp_3_1_3_fu_564_p3 = (!icmp_ln57_fu_550_p2.read()[0].is_01())? sc_lv<32>(): ((icmp_ln57_fu_550_p2.read()[0].to_bool())? ap_const_lv32_0: tmp_3_1_3_reg_881_pp0_iter6_reg.read());
 }
 
 void myFuncAccel4::thread_p_tmp_3_2_3_fu_571_p3() {
-    p_tmp_3_2_3_fu_571_p3 = (!icmp_ln55_fu_550_p2.read()[0].is_01())? sc_lv<32>(): ((icmp_ln55_fu_550_p2.read()[0].to_bool())? ap_const_lv32_0: tmp_3_2_3_reg_888_pp0_iter6_reg.read());
+    p_tmp_3_2_3_fu_571_p3 = (!icmp_ln57_fu_550_p2.read()[0].is_01())? sc_lv<32>(): ((icmp_ln57_fu_550_p2.read()[0].to_bool())? ap_const_lv32_0: tmp_3_2_3_reg_888_pp0_iter6_reg.read());
 }
 
 void myFuncAccel4::thread_p_tmp_3_3_3_fu_578_p3() {
-    p_tmp_3_3_3_fu_578_p3 = (!icmp_ln55_fu_550_p2.read()[0].is_01())? sc_lv<32>(): ((icmp_ln55_fu_550_p2.read()[0].to_bool())? ap_const_lv32_0: tmp_3_3_3_reg_895_pp0_iter6_reg.read());
+    p_tmp_3_3_3_fu_578_p3 = (!icmp_ln57_fu_550_p2.read()[0].is_01())? sc_lv<32>(): ((icmp_ln57_fu_550_p2.read()[0].to_bool())? ap_const_lv32_0: tmp_3_3_3_reg_895_pp0_iter6_reg.read());
 }
 
 void myFuncAccel4::thread_tmp_1_fu_332_p4() {

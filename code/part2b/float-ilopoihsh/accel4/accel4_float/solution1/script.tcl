@@ -13,5 +13,5 @@ create_clock -period 10 -name default
 #source "./accel4_float/solution1/directives.tcl"
 csim_design -argv {0 10 4 100}
 csynth_design
-cosim_design -trace_level all -argv {0 10 4 100}
+cosim_design -trace_level all -argv {0 1000 4 100}
 export_design -format ip_catalog

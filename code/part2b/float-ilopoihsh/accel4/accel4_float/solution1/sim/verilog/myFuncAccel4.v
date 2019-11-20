@@ -343,7 +343,7 @@ wire   [1:0] zext_ln53_fu_522_p1;
 wire   [2:0] zext_ln53_2_fu_541_p1;
 wire   [2:0] zext_ln53_1_fu_538_p1;
 wire   [2:0] add_ln53_2_fu_544_p2;
-wire   [0:0] icmp_ln55_fu_550_p2;
+wire   [0:0] icmp_ln57_fu_550_p2;
 reg    grp_fu_240_ce;
 reg    grp_fu_245_ce;
 reg    grp_fu_250_ce;
@@ -1602,7 +1602,7 @@ assign icmp_ln53_9_fu_499_p2 = ((trunc_ln53_4_fu_489_p1 == 23'd0) ? 1'b1 : 1'b0)
 
 assign icmp_ln53_fu_346_p2 = ((tmp_1_fu_332_p4 != 8'd255) ? 1'b1 : 1'b0);
 
-assign icmp_ln55_fu_550_p2 = ((add_ln53_2_fu_544_p2 == 3'd4) ? 1'b1 : 1'b0);
+assign icmp_ln57_fu_550_p2 = ((add_ln53_2_fu_544_p2 == 3'd4) ? 1'b1 : 1'b0);
 
 assign my_input1_0_ack_in = my_input1_0_state[1'd1];
 
@@ -1648,13 +1648,13 @@ assign or_ln53_4_fu_505_p2 = (icmp_ln53_9_fu_499_p2 | icmp_ln53_8_fu_493_p2);
 
 assign or_ln53_fu_358_p2 = (icmp_ln53_fu_346_p2 | icmp_ln53_1_fu_352_p2);
 
-assign p_tmp_3_0_3_fu_556_p3 = ((icmp_ln55_fu_550_p2[0:0] === 1'b1) ? 32'd0 : tmp_3_0_3_reg_874_pp0_iter6_reg);
+assign p_tmp_3_0_3_fu_556_p3 = ((icmp_ln57_fu_550_p2[0:0] === 1'b1) ? 32'd0 : tmp_3_0_3_reg_874_pp0_iter6_reg);
 
-assign p_tmp_3_1_3_fu_564_p3 = ((icmp_ln55_fu_550_p2[0:0] === 1'b1) ? 32'd0 : tmp_3_1_3_reg_881_pp0_iter6_reg);
+assign p_tmp_3_1_3_fu_564_p3 = ((icmp_ln57_fu_550_p2[0:0] === 1'b1) ? 32'd0 : tmp_3_1_3_reg_881_pp0_iter6_reg);
 
-assign p_tmp_3_2_3_fu_571_p3 = ((icmp_ln55_fu_550_p2[0:0] === 1'b1) ? 32'd0 : tmp_3_2_3_reg_888_pp0_iter6_reg);
+assign p_tmp_3_2_3_fu_571_p3 = ((icmp_ln57_fu_550_p2[0:0] === 1'b1) ? 32'd0 : tmp_3_2_3_reg_888_pp0_iter6_reg);
 
-assign p_tmp_3_3_3_fu_578_p3 = ((icmp_ln55_fu_550_p2[0:0] === 1'b1) ? 32'd0 : tmp_3_3_3_reg_895_pp0_iter6_reg);
+assign p_tmp_3_3_3_fu_578_p3 = ((icmp_ln57_fu_550_p2[0:0] === 1'b1) ? 32'd0 : tmp_3_3_3_reg_895_pp0_iter6_reg);
 
 assign tmp_1_fu_332_p4 = {{bitcast_ln53_fu_329_p1[30:23]}};
 
