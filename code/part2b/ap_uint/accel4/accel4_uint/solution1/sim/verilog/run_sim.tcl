@@ -11,7 +11,7 @@ set ::env(LD_LIBRARY_PATH) /run/media/epetrakos/60GB/Xilinx/Vivado/2019.1/lnx64/
 
 source check_sim.tcl
 
-set ap_argv "0 1000 4 100"
+set ap_argv "0 1000 4 80"
 # --> test vector generation
 
 ::AP::printMsg INFO COSIM 302 COSIM_302_998
@@ -25,7 +25,7 @@ if {![file exists cosim.tv.exe]} {
 	return -code error -errorcode $::errorCode
 }
 
-set ret [catch {eval exec ./cosim.tv.exe 0 1000 4 100 | tee temp0.log >&@ stdout} err]
+set ret [catch {eval exec ./cosim.tv.exe 0 1000 4 80 | tee temp0.log >&@ stdout} err]
 
 if {$ret == 1} {
 	::AP::printMsg ERR COSIM 320 COSIM_320_1000
@@ -86,6 +86,6 @@ if {![file exists cosim.pc.exe]} {
     return -code error -errorcode $::errorCode
 }
 
-set ret [catch {eval exec ./cosim.pc.exe 0 1000 4 100 | tee temp0.log >&@ stdout} err]
+set ret [catch {eval exec ./cosim.pc.exe 0 1000 4 80 | tee temp0.log >&@ stdout} err]
 
 sc_sim_check $ret $err "temp3.log"

@@ -9196,10 +9196,11 @@ inline bool operator!=(
 
 
 
+
 typedef float dataType_t;
 
 
-typedef ap_uint<128> dataType_bus;
+typedef ap_uint<(128)> dataType_bus;
 
 
 typedef union { float fpval; unsigned int uintval;} fconvert;
@@ -9209,9 +9210,9 @@ void myFuncAccel4 (unsigned int size, unsigned int dim, dataType_t threshold, da
 # 2 "myIP.cpp" 2
 
 
+
 void myFuncAccel4 (unsigned int size, unsigned int dim, dataType_t threshold, dataType_t data0[16], dataType_bus * data1, dataType_bus * data_out)
 {_ssdm_SpecArrayDimSize(data0, 16);
-_ssdm_SpecExprBalance(1, "");
 
 _ssdm_op_SpecInterface(size, "ap_stable", 0, 0, "", 0, 0, "control", "", "", 0, 0, 0, 0, "", "");
 _ssdm_op_SpecInterface(dim, "ap_stable", 0, 0, "", 0, 0, "control", "", "", 0, 0, 0, 0, "", "");
@@ -9222,14 +9223,13 @@ _ssdm_SpecArrayPartition( data0, 1, "COMPLETE", 0, "");
 
 
 
-
-
 _ssdm_op_SpecInterface(data1, "axis", 1, 1, "both", 0, 1000, "", "", "", 0, 0, 0, 0, "", "");
 _ssdm_op_SpecInterface(data_out, "axis", 1, 1, "both", 0, 1000, "", "", "", 0, 0, 0, 0, "", "");
 
 
  unsigned int i, k, l;
  dataType_t temp_dim[4];
+_ssdm_SpecArrayPartition( temp_dim, 1, "COMPLETE", 0, "");
 
 
 
@@ -9240,6 +9240,8 @@ _ssdm_op_SpecInterface(data_out, "axis", 1, 1, "both", 0, 1000, "", "", "", 0, 0
 
 
  dataType_t temp1[4];
+_ssdm_SpecArrayPartition( temp1, 1, "COMPLETE", 0, "");
+
 
  dataType_t temp0[16];
  for ( i = 0 ; i < 16 ; i ++ )
@@ -9247,7 +9249,6 @@ _ssdm_op_SpecInterface(data_out, "axis", 1, 1, "both", 0, 1000, "", "", "", 0, 0
 _ssdm_Unroll(0,0,0, "");
  temp0[ i ] = data0[ i ];
  }
-
 
 
  for ( i = 0 ; i < size ; i ++ )
@@ -9272,8 +9273,11 @@ _ssdm_op_SpecPipeline(1, 1, 1, 0, "");
 
    for ( l = 0 ; l < 4 ; l ++ )
    {
-    temp_dim[ k ] += temp0[ k*4 + l ] * temp1[ l ];
+_ssdm_SpecExprBalance(1, "");
+ temp_dim[ k ] += temp0[ k*4 + l ] * temp1[ l ];
    }
+
+
    r += ( temp_dim[ k ] > threshold );
   }
 
@@ -9284,7 +9288,7 @@ _ssdm_op_SpecPipeline(1, 1, 1, 0, "");
    temp_data_out.range( l*32 + 31 , l*32 ) = fi.uintval;
 
   }
-  data_out[i] = temp_data_out;
 
+  data_out[i] = temp_data_out;
  }
 }

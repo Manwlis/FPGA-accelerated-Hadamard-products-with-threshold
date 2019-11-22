@@ -4,12 +4,12 @@ INFO: [SIM 4] CSIM will launch GCC as the compiler.
    Generating csim.exe
 
 Seed 0
-Size 10
+Size 1000
 Dimension 4
-Threshold 100.000000
+Threshold 80.000000
 
-Software execution time: 0.000004
-Hardware execution time: 0.000059
+Software execution time: 0.000329
+Hardware execution time: 0.005595
 
 no errors
 

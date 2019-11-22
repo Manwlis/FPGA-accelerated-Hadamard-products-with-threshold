@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'myFuncAccel4'
 ================================================================
-* Date:           Thu Nov 21 00:00:21 2019
+* Date:           Fri Nov 22 23:20:06 2019
 
 * Version:        2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)
 * Project:        accel4_uint
@@ -126,18 +126,18 @@
     +----------------------------------+----------+-------+---+----+------------+------------+
     |           Variable Name          | Operation| DSP48E| FF| LUT| Bitwidth P0| Bitwidth P1|
     +----------------------------------+----------+-------+---+----+------------+------------+
-    |add_ln69_1_fu_710_p2              |     +    |      0|  0|  10|           2|           2|
-    |add_ln69_2_fu_722_p2              |     +    |      0|  0|  12|           3|           3|
-    |add_ln69_fu_704_p2                |     +    |      0|  0|  10|           2|           2|
+    |add_ln72_1_fu_710_p2              |     +    |      0|  0|  10|           2|           2|
+    |add_ln72_2_fu_722_p2              |     +    |      0|  0|  12|           3|           3|
+    |add_ln72_fu_704_p2                |     +    |      0|  0|  10|           2|           2|
     |i_fu_415_p2                       |     +    |      0|  0|  39|          32|           1|
-    |and_ln69_1_fu_544_p2              |    and   |      0|  0|   2|           1|           1|
-    |and_ln69_2_fu_589_p2              |    and   |      0|  0|   2|           1|           1|
-    |and_ln69_3_fu_594_p2              |    and   |      0|  0|   2|           1|           1|
-    |and_ln69_4_fu_639_p2              |    and   |      0|  0|   2|           1|           1|
-    |and_ln69_5_fu_644_p2              |    and   |      0|  0|   2|           1|           1|
-    |and_ln69_6_fu_689_p2              |    and   |      0|  0|   2|           1|           1|
-    |and_ln69_7_fu_694_p2              |    and   |      0|  0|   2|           1|           1|
-    |and_ln69_fu_539_p2                |    and   |      0|  0|   2|           1|           1|
+    |and_ln72_1_fu_544_p2              |    and   |      0|  0|   2|           1|           1|
+    |and_ln72_2_fu_589_p2              |    and   |      0|  0|   2|           1|           1|
+    |and_ln72_3_fu_594_p2              |    and   |      0|  0|   2|           1|           1|
+    |and_ln72_4_fu_639_p2              |    and   |      0|  0|   2|           1|           1|
+    |and_ln72_5_fu_644_p2              |    and   |      0|  0|   2|           1|           1|
+    |and_ln72_6_fu_689_p2              |    and   |      0|  0|   2|           1|           1|
+    |and_ln72_7_fu_694_p2              |    and   |      0|  0|   2|           1|           1|
+    |and_ln72_fu_539_p2                |    and   |      0|  0|   2|           1|           1|
     |ap_block_pp0_stage0_00001         |    and   |      0|  0|   2|           1|           1|
     |ap_block_state28_io               |    and   |      0|  0|   2|           1|           1|
     |ap_block_state29_io               |    and   |      0|  0|   2|           1|           1|
@@ -149,28 +149,28 @@
     |data1_V_0_state_cmp_full          |   icmp   |      0|  0|   8|           2|           1|
     |data_out_V_1_state_cmp_full       |   icmp   |      0|  0|   8|           2|           1|
     |icmp_ln45_fu_410_p2               |   icmp   |      0|  0|  18|          32|          32|
-    |icmp_ln69_1_fu_527_p2             |   icmp   |      0|  0|  18|          23|           1|
-    |icmp_ln69_2_fu_472_p2             |   icmp   |      0|  0|  11|           8|           2|
-    |icmp_ln69_3_fu_404_p2             |   icmp   |      0|  0|  18|          23|           1|
-    |icmp_ln69_4_fu_571_p2             |   icmp   |      0|  0|  11|           8|           2|
-    |icmp_ln69_5_fu_577_p2             |   icmp   |      0|  0|  18|          23|           1|
-    |icmp_ln69_6_fu_621_p2             |   icmp   |      0|  0|  11|           8|           2|
-    |icmp_ln69_7_fu_627_p2             |   icmp   |      0|  0|  18|          23|           1|
-    |icmp_ln69_8_fu_671_p2             |   icmp   |      0|  0|  11|           8|           2|
-    |icmp_ln69_9_fu_677_p2             |   icmp   |      0|  0|  18|          23|           1|
-    |icmp_ln69_fu_521_p2               |   icmp   |      0|  0|  11|           8|           2|
-    |icmp_ln75_fu_728_p2               |   icmp   |      0|  0|   9|           3|           4|
+    |icmp_ln72_1_fu_527_p2             |   icmp   |      0|  0|  18|          23|           1|
+    |icmp_ln72_2_fu_472_p2             |   icmp   |      0|  0|  11|           8|           2|
+    |icmp_ln72_3_fu_404_p2             |   icmp   |      0|  0|  18|          23|           1|
+    |icmp_ln72_4_fu_571_p2             |   icmp   |      0|  0|  11|           8|           2|
+    |icmp_ln72_5_fu_577_p2             |   icmp   |      0|  0|  18|          23|           1|
+    |icmp_ln72_6_fu_621_p2             |   icmp   |      0|  0|  11|           8|           2|
+    |icmp_ln72_7_fu_627_p2             |   icmp   |      0|  0|  18|          23|           1|
+    |icmp_ln72_8_fu_671_p2             |   icmp   |      0|  0|  11|           8|           2|
+    |icmp_ln72_9_fu_677_p2             |   icmp   |      0|  0|  18|          23|           1|
+    |icmp_ln72_fu_521_p2               |   icmp   |      0|  0|  11|           8|           2|
+    |icmp_ln78_fu_728_p2               |   icmp   |      0|  0|   9|           3|           4|
     |ap_block_pp0_stage0_11001         |    or    |      0|  0|   2|           1|           1|
     |ap_block_state30                  |    or    |      0|  0|   2|           1|           1|
-    |or_ln69_1_fu_478_p2               |    or    |      0|  0|   2|           1|           1|
-    |or_ln69_2_fu_583_p2               |    or    |      0|  0|   2|           1|           1|
-    |or_ln69_3_fu_633_p2               |    or    |      0|  0|   2|           1|           1|
-    |or_ln69_4_fu_683_p2               |    or    |      0|  0|   2|           1|           1|
-    |or_ln69_fu_533_p2                 |    or    |      0|  0|   2|           1|           1|
-    |select_ln76_1_fu_741_p3           |  select  |      0|  0|  32|           1|           1|
-    |select_ln76_2_fu_748_p3           |  select  |      0|  0|  32|           1|           1|
-    |select_ln76_3_fu_755_p3           |  select  |      0|  0|  32|           1|           1|
-    |select_ln76_fu_734_p3             |  select  |      0|  0|  32|           1|           1|
+    |or_ln72_1_fu_478_p2               |    or    |      0|  0|   2|           1|           1|
+    |or_ln72_2_fu_583_p2               |    or    |      0|  0|   2|           1|           1|
+    |or_ln72_3_fu_633_p2               |    or    |      0|  0|   2|           1|           1|
+    |or_ln72_4_fu_683_p2               |    or    |      0|  0|   2|           1|           1|
+    |or_ln72_fu_533_p2                 |    or    |      0|  0|   2|           1|           1|
+    |select_ln79_1_fu_741_p3           |  select  |      0|  0|  32|           1|           1|
+    |select_ln79_2_fu_748_p3           |  select  |      0|  0|  32|           1|           1|
+    |select_ln79_3_fu_755_p3           |  select  |      0|  0|  32|           1|           1|
+    |select_ln79_fu_734_p3             |  select  |      0|  0|  32|           1|           1|
     |ap_enable_pp0                     |    xor   |      0|  0|   2|           1|           2|
     |ap_enable_reg_pp0_iter1           |    xor   |      0|  0|   2|           2|           1|
     +----------------------------------+----------+-------+---+----+------------+------------+
@@ -199,8 +199,8 @@
     +-----------------------------------+-----+----+-----+-----------+
     |                Name               |  FF | LUT| Bits| Const Bits|
     +-----------------------------------+-----+----+-----+-----------+
-    |add_ln69_1_reg_1131                |    2|   0|    2|          0|
-    |add_ln69_reg_1126                  |    2|   0|    2|          0|
+    |add_ln72_1_reg_1131                |    2|   0|    2|          0|
+    |add_ln72_reg_1126                  |    2|   0|    2|          0|
     |ap_CS_fsm                          |    3|   0|    3|          0|
     |ap_enable_reg_pp0_iter0            |    1|   0|    1|          0|
     |ap_enable_reg_pp0_iter1            |    1|   0|    1|          0|
@@ -230,10 +230,10 @@
     |ap_enable_reg_pp0_iter7            |    1|   0|    1|          0|
     |ap_enable_reg_pp0_iter8            |    1|   0|    1|          0|
     |ap_enable_reg_pp0_iter9            |    1|   0|    1|          0|
-    |bitcast_ln69_2_reg_1111            |   32|   0|   32|          0|
-    |bitcast_ln69_3_reg_1116            |   32|   0|   32|          0|
-    |bitcast_ln69_4_reg_1121            |   32|   0|   32|          0|
-    |bitcast_ln69_reg_1106              |   32|   0|   32|          0|
+    |bitcast_ln72_2_reg_1111            |   32|   0|   32|          0|
+    |bitcast_ln72_3_reg_1116            |   32|   0|   32|          0|
+    |bitcast_ln72_4_reg_1121            |   32|   0|   32|          0|
+    |bitcast_ln72_reg_1106              |   32|   0|   32|          0|
     |data1_V_0_payload_A                |  128|   0|  128|          0|
     |data1_V_0_payload_B                |  128|   0|  128|          0|
     |data1_V_0_sel_rd                   |    1|   0|    1|          0|

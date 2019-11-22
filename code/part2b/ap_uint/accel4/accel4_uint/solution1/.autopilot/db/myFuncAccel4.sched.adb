@@ -610,7 +610,7 @@
 						<name>threshold_read</name>
 						<fileName>myIP.cpp</fileName>
 						<fileDirectory>/home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/ap_uint/accel4</fileDirectory>
-						<lineNumber>4</lineNumber>
+						<lineNumber>5</lineNumber>
 						<contextFuncName>myFuncAccel4</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -625,7 +625,7 @@
 											<first>myIP.cpp</first>
 											<second>myFuncAccel4</second>
 										</first>
-										<second>4</second>
+										<second>5</second>
 									</item>
 								</second>
 							</item>
@@ -659,7 +659,7 @@
 						<name>size_read</name>
 						<fileName>myIP.cpp</fileName>
 						<fileDirectory>/home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/ap_uint/accel4</fileDirectory>
-						<lineNumber>4</lineNumber>
+						<lineNumber>5</lineNumber>
 						<contextFuncName>myFuncAccel4</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -674,7 +674,7 @@
 											<first>myIP.cpp</first>
 											<second>myFuncAccel4</second>
 										</first>
-										<second>4</second>
+										<second>5</second>
 									</item>
 								</second>
 							</item>
@@ -708,7 +708,7 @@
 						<name>data0_0_read</name>
 						<fileName>myIP.cpp</fileName>
 						<fileDirectory>/home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/ap_uint/accel4</fileDirectory>
-						<lineNumber>40</lineNumber>
+						<lineNumber>41</lineNumber>
 						<contextFuncName>myFuncAccel4</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -723,7 +723,7 @@
 											<first>myIP.cpp</first>
 											<second>myFuncAccel4</second>
 										</first>
-										<second>40</second>
+										<second>41</second>
 									</item>
 								</second>
 							</item>
@@ -757,7 +757,7 @@
 						<name>data0_1_read</name>
 						<fileName>myIP.cpp</fileName>
 						<fileDirectory>/home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/ap_uint/accel4</fileDirectory>
-						<lineNumber>40</lineNumber>
+						<lineNumber>41</lineNumber>
 						<contextFuncName>myFuncAccel4</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -772,7 +772,7 @@
 											<first>myIP.cpp</first>
 											<second>myFuncAccel4</second>
 										</first>
-										<second>40</second>
+										<second>41</second>
 									</item>
 								</second>
 							</item>
@@ -806,7 +806,7 @@
 						<name>data0_2_read</name>
 						<fileName>myIP.cpp</fileName>
 						<fileDirectory>/home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/ap_uint/accel4</fileDirectory>
-						<lineNumber>40</lineNumber>
+						<lineNumber>41</lineNumber>
 						<contextFuncName>myFuncAccel4</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -821,7 +821,7 @@
 											<first>myIP.cpp</first>
 											<second>myFuncAccel4</second>
 										</first>
-										<second>40</second>
+										<second>41</second>
 									</item>
 								</second>
 							</item>
@@ -855,7 +855,7 @@
 						<name>data0_3_read</name>
 						<fileName>myIP.cpp</fileName>
 						<fileDirectory>/home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/ap_uint/accel4</fileDirectory>
-						<lineNumber>40</lineNumber>
+						<lineNumber>41</lineNumber>
 						<contextFuncName>myFuncAccel4</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -870,7 +870,7 @@
 											<first>myIP.cpp</first>
 											<second>myFuncAccel4</second>
 										</first>
-										<second>40</second>
+										<second>41</second>
 									</item>
 								</second>
 							</item>
@@ -904,7 +904,7 @@
 						<name>data0_4_read</name>
 						<fileName>myIP.cpp</fileName>
 						<fileDirectory>/home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/ap_uint/accel4</fileDirectory>
-						<lineNumber>40</lineNumber>
+						<lineNumber>41</lineNumber>
 						<contextFuncName>myFuncAccel4</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -919,7 +919,7 @@
 											<first>myIP.cpp</first>
 											<second>myFuncAccel4</second>
 										</first>
-										<second>40</second>
+										<second>41</second>
 									</item>
 								</second>
 							</item>
@@ -953,7 +953,7 @@
 						<name>data0_5_read</name>
 						<fileName>myIP.cpp</fileName>
 						<fileDirectory>/home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/ap_uint/accel4</fileDirectory>
-						<lineNumber>40</lineNumber>
+						<lineNumber>41</lineNumber>
 						<contextFuncName>myFuncAccel4</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -968,7 +968,7 @@
 											<first>myIP.cpp</first>
 											<second>myFuncAccel4</second>
 										</first>
-										<second>40</second>
+										<second>41</second>
 									</item>
 								</second>
 							</item>
@@ -1002,7 +1002,7 @@
 						<name>data0_6_read</name>
 						<fileName>myIP.cpp</fileName>
 						<fileDirectory>/home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/ap_uint/accel4</fileDirectory>
-						<lineNumber>40</lineNumber>
+						<lineNumber>41</lineNumber>
 						<contextFuncName>myFuncAccel4</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1017,7 +1017,7 @@
 											<first>myIP.cpp</first>
 											<second>myFuncAccel4</second>
 										</first>
-										<second>40</second>
+										<second>41</second>
 									</item>
 								</second>
 							</item>
@@ -1051,7 +1051,7 @@
 						<name>data0_7_read</name>
 						<fileName>myIP.cpp</fileName>
 						<fileDirectory>/home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/ap_uint/accel4</fileDirectory>
-						<lineNumber>40</lineNumber>
+						<lineNumber>41</lineNumber>
 						<contextFuncName>myFuncAccel4</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1066,7 +1066,7 @@
 											<first>myIP.cpp</first>
 											<second>myFuncAccel4</second>
 										</first>
-										<second>40</second>
+										<second>41</second>
 									</item>
 								</second>
 							</item>
@@ -1100,7 +1100,7 @@
 						<name>data0_8_read</name>
 						<fileName>myIP.cpp</fileName>
 						<fileDirectory>/home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/ap_uint/accel4</fileDirectory>
-						<lineNumber>40</lineNumber>
+						<lineNumber>41</lineNumber>
 						<contextFuncName>myFuncAccel4</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1115,7 +1115,7 @@
 											<first>myIP.cpp</first>
 											<second>myFuncAccel4</second>
 										</first>
-										<second>40</second>
+										<second>41</second>
 									</item>
 								</second>
 							</item>
@@ -1149,7 +1149,7 @@
 						<name>data0_9_read</name>
 						<fileName>myIP.cpp</fileName>
 						<fileDirectory>/home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/ap_uint/accel4</fileDirectory>
-						<lineNumber>40</lineNumber>
+						<lineNumber>41</lineNumber>
 						<contextFuncName>myFuncAccel4</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1164,7 +1164,7 @@
 											<first>myIP.cpp</first>
 											<second>myFuncAccel4</second>
 										</first>
-										<second>40</second>
+										<second>41</second>
 									</item>
 								</second>
 							</item>
@@ -1198,7 +1198,7 @@
 						<name>data0_10_read</name>
 						<fileName>myIP.cpp</fileName>
 						<fileDirectory>/home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/ap_uint/accel4</fileDirectory>
-						<lineNumber>40</lineNumber>
+						<lineNumber>41</lineNumber>
 						<contextFuncName>myFuncAccel4</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1213,7 +1213,7 @@
 											<first>myIP.cpp</first>
 											<second>myFuncAccel4</second>
 										</first>
-										<second>40</second>
+										<second>41</second>
 									</item>
 								</second>
 							</item>
@@ -1247,7 +1247,7 @@
 						<name>data0_11_read</name>
 						<fileName>myIP.cpp</fileName>
 						<fileDirectory>/home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/ap_uint/accel4</fileDirectory>
-						<lineNumber>40</lineNumber>
+						<lineNumber>41</lineNumber>
 						<contextFuncName>myFuncAccel4</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1262,7 +1262,7 @@
 											<first>myIP.cpp</first>
 											<second>myFuncAccel4</second>
 										</first>
-										<second>40</second>
+										<second>41</second>
 									</item>
 								</second>
 							</item>
@@ -1296,7 +1296,7 @@
 						<name>data0_12_read</name>
 						<fileName>myIP.cpp</fileName>
 						<fileDirectory>/home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/ap_uint/accel4</fileDirectory>
-						<lineNumber>40</lineNumber>
+						<lineNumber>41</lineNumber>
 						<contextFuncName>myFuncAccel4</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1311,7 +1311,7 @@
 											<first>myIP.cpp</first>
 											<second>myFuncAccel4</second>
 										</first>
-										<second>40</second>
+										<second>41</second>
 									</item>
 								</second>
 							</item>
@@ -1345,7 +1345,7 @@
 						<name>data0_13_read</name>
 						<fileName>myIP.cpp</fileName>
 						<fileDirectory>/home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/ap_uint/accel4</fileDirectory>
-						<lineNumber>40</lineNumber>
+						<lineNumber>41</lineNumber>
 						<contextFuncName>myFuncAccel4</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1360,7 +1360,7 @@
 											<first>myIP.cpp</first>
 											<second>myFuncAccel4</second>
 										</first>
-										<second>40</second>
+										<second>41</second>
 									</item>
 								</second>
 							</item>
@@ -1394,7 +1394,7 @@
 						<name>data0_14_read</name>
 						<fileName>myIP.cpp</fileName>
 						<fileDirectory>/home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/ap_uint/accel4</fileDirectory>
-						<lineNumber>40</lineNumber>
+						<lineNumber>41</lineNumber>
 						<contextFuncName>myFuncAccel4</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1409,7 +1409,7 @@
 											<first>myIP.cpp</first>
 											<second>myFuncAccel4</second>
 										</first>
-										<second>40</second>
+										<second>41</second>
 									</item>
 								</second>
 							</item>
@@ -1443,7 +1443,7 @@
 						<name>data0_15_read</name>
 						<fileName>myIP.cpp</fileName>
 						<fileDirectory>/home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/ap_uint/accel4</fileDirectory>
-						<lineNumber>40</lineNumber>
+						<lineNumber>41</lineNumber>
 						<contextFuncName>myFuncAccel4</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1458,7 +1458,7 @@
 											<first>myIP.cpp</first>
 											<second>myFuncAccel4</second>
 										</first>
-										<second>40</second>
+										<second>41</second>
 									</item>
 								</second>
 							</item>
@@ -1489,10 +1489,10 @@
 					<Obj>
 						<type>0</type>
 						<id>68</id>
-						<name>bitcast_ln69_1</name>
+						<name>bitcast_ln72_1</name>
 						<fileName>myIP.cpp</fileName>
 						<fileDirectory>/home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/ap_uint/accel4</fileDirectory>
-						<lineNumber>69</lineNumber>
+						<lineNumber>72</lineNumber>
 						<contextFuncName>myFuncAccel4</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1507,7 +1507,7 @@
 											<first>myIP.cpp</first>
 											<second>myFuncAccel4</second>
 										</first>
-										<second>69</second>
+										<second>72</second>
 									</item>
 								</second>
 							</item>
@@ -1537,10 +1537,10 @@
 					<Obj>
 						<type>0</type>
 						<id>69</id>
-						<name>trunc_ln69</name>
+						<name>trunc_ln72</name>
 						<fileName>myIP.cpp</fileName>
 						<fileDirectory>/home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/ap_uint/accel4</fileDirectory>
-						<lineNumber>69</lineNumber>
+						<lineNumber>72</lineNumber>
 						<contextFuncName>myFuncAccel4</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1555,7 +1555,7 @@
 											<first>myIP.cpp</first>
 											<second>myFuncAccel4</second>
 										</first>
-										<second>69</second>
+										<second>72</second>
 									</item>
 								</second>
 							</item>
@@ -1585,10 +1585,10 @@
 					<Obj>
 						<type>0</type>
 						<id>70</id>
-						<name>icmp_ln69_3</name>
+						<name>icmp_ln72_3</name>
 						<fileName>myIP.cpp</fileName>
 						<fileDirectory>/home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/ap_uint/accel4</fileDirectory>
-						<lineNumber>69</lineNumber>
+						<lineNumber>72</lineNumber>
 						<contextFuncName>myFuncAccel4</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1603,7 +1603,7 @@
 											<first>myIP.cpp</first>
 											<second>myFuncAccel4</second>
 										</first>
-										<second>69</second>
+										<second>72</second>
 									</item>
 								</second>
 							</item>
@@ -2312,7 +2312,7 @@
 						<name>tmp_2</name>
 						<fileName>myIP.cpp</fileName>
 						<fileDirectory>/home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/ap_uint/accel4</fileDirectory>
-						<lineNumber>67</lineNumber>
+						<lineNumber>68</lineNumber>
 						<contextFuncName>myFuncAccel4</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2327,7 +2327,7 @@
 											<first>myIP.cpp</first>
 											<second>myFuncAccel4</second>
 										</first>
-										<second>67</second>
+										<second>68</second>
 									</item>
 								</second>
 							</item>
@@ -2361,7 +2361,7 @@
 						<name>tmp_3</name>
 						<fileName>myIP.cpp</fileName>
 						<fileDirectory>/home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/ap_uint/accel4</fileDirectory>
-						<lineNumber>67</lineNumber>
+						<lineNumber>68</lineNumber>
 						<contextFuncName>myFuncAccel4</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2376,7 +2376,7 @@
 											<first>myIP.cpp</first>
 											<second>myFuncAccel4</second>
 										</first>
-										<second>67</second>
+										<second>68</second>
 									</item>
 								</second>
 							</item>
@@ -2410,7 +2410,7 @@
 						<name>tmp_2_0_1</name>
 						<fileName>myIP.cpp</fileName>
 						<fileDirectory>/home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/ap_uint/accel4</fileDirectory>
-						<lineNumber>67</lineNumber>
+						<lineNumber>68</lineNumber>
 						<contextFuncName>myFuncAccel4</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2425,7 +2425,7 @@
 											<first>myIP.cpp</first>
 											<second>myFuncAccel4</second>
 										</first>
-										<second>67</second>
+										<second>68</second>
 									</item>
 								</second>
 							</item>
@@ -2459,7 +2459,7 @@
 						<name>tmp_3_0_1</name>
 						<fileName>myIP.cpp</fileName>
 						<fileDirectory>/home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/ap_uint/accel4</fileDirectory>
-						<lineNumber>67</lineNumber>
+						<lineNumber>68</lineNumber>
 						<contextFuncName>myFuncAccel4</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2474,7 +2474,7 @@
 											<first>myIP.cpp</first>
 											<second>myFuncAccel4</second>
 										</first>
-										<second>67</second>
+										<second>68</second>
 									</item>
 								</second>
 							</item>
@@ -2508,7 +2508,7 @@
 						<name>tmp_2_0_2</name>
 						<fileName>myIP.cpp</fileName>
 						<fileDirectory>/home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/ap_uint/accel4</fileDirectory>
-						<lineNumber>67</lineNumber>
+						<lineNumber>68</lineNumber>
 						<contextFuncName>myFuncAccel4</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2523,7 +2523,7 @@
 											<first>myIP.cpp</first>
 											<second>myFuncAccel4</second>
 										</first>
-										<second>67</second>
+										<second>68</second>
 									</item>
 								</second>
 							</item>
@@ -2557,7 +2557,7 @@
 						<name>tmp_3_0_2</name>
 						<fileName>myIP.cpp</fileName>
 						<fileDirectory>/home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/ap_uint/accel4</fileDirectory>
-						<lineNumber>67</lineNumber>
+						<lineNumber>68</lineNumber>
 						<contextFuncName>myFuncAccel4</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2572,7 +2572,7 @@
 											<first>myIP.cpp</first>
 											<second>myFuncAccel4</second>
 										</first>
-										<second>67</second>
+										<second>68</second>
 									</item>
 								</second>
 							</item>
@@ -2606,7 +2606,7 @@
 						<name>tmp_2_0_3</name>
 						<fileName>myIP.cpp</fileName>
 						<fileDirectory>/home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/ap_uint/accel4</fileDirectory>
-						<lineNumber>67</lineNumber>
+						<lineNumber>68</lineNumber>
 						<contextFuncName>myFuncAccel4</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2621,7 +2621,7 @@
 											<first>myIP.cpp</first>
 											<second>myFuncAccel4</second>
 										</first>
-										<second>67</second>
+										<second>68</second>
 									</item>
 								</second>
 							</item>
@@ -2655,7 +2655,7 @@
 						<name>tmp_3_0_3</name>
 						<fileName>myIP.cpp</fileName>
 						<fileDirectory>/home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/ap_uint/accel4</fileDirectory>
-						<lineNumber>67</lineNumber>
+						<lineNumber>68</lineNumber>
 						<contextFuncName>myFuncAccel4</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2670,7 +2670,7 @@
 											<first>myIP.cpp</first>
 											<second>myFuncAccel4</second>
 										</first>
-										<second>67</second>
+										<second>68</second>
 									</item>
 								</second>
 							</item>
@@ -2701,10 +2701,10 @@
 					<Obj>
 						<type>0</type>
 						<id>98</id>
-						<name>bitcast_ln69</name>
+						<name>bitcast_ln72</name>
 						<fileName>myIP.cpp</fileName>
 						<fileDirectory>/home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/ap_uint/accel4</fileDirectory>
-						<lineNumber>69</lineNumber>
+						<lineNumber>72</lineNumber>
 						<contextFuncName>myFuncAccel4</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2719,7 +2719,7 @@
 											<first>myIP.cpp</first>
 											<second>myFuncAccel4</second>
 										</first>
-										<second>69</second>
+										<second>72</second>
 									</item>
 								</second>
 							</item>
@@ -2752,7 +2752,7 @@
 						<name>tmp_1</name>
 						<fileName>myIP.cpp</fileName>
 						<fileDirectory>/home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/ap_uint/accel4</fileDirectory>
-						<lineNumber>69</lineNumber>
+						<lineNumber>72</lineNumber>
 						<contextFuncName>myFuncAccel4</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2767,7 +2767,7 @@
 											<first>myIP.cpp</first>
 											<second>myFuncAccel4</second>
 										</first>
-										<second>69</second>
+										<second>72</second>
 									</item>
 								</second>
 							</item>
@@ -2800,10 +2800,10 @@
 					<Obj>
 						<type>0</type>
 						<id>100</id>
-						<name>trunc_ln69_1</name>
+						<name>trunc_ln72_1</name>
 						<fileName>myIP.cpp</fileName>
 						<fileDirectory>/home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/ap_uint/accel4</fileDirectory>
-						<lineNumber>69</lineNumber>
+						<lineNumber>72</lineNumber>
 						<contextFuncName>myFuncAccel4</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2818,7 +2818,7 @@
 											<first>myIP.cpp</first>
 											<second>myFuncAccel4</second>
 										</first>
-										<second>69</second>
+										<second>72</second>
 									</item>
 								</second>
 							</item>
@@ -2851,7 +2851,7 @@
 						<name>tmp_4</name>
 						<fileName>myIP.cpp</fileName>
 						<fileDirectory>/home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/ap_uint/accel4</fileDirectory>
-						<lineNumber>69</lineNumber>
+						<lineNumber>72</lineNumber>
 						<contextFuncName>myFuncAccel4</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2866,7 +2866,7 @@
 											<first>myIP.cpp</first>
 											<second>myFuncAccel4</second>
 										</first>
-										<second>69</second>
+										<second>72</second>
 									</item>
 								</second>
 							</item>
@@ -2899,10 +2899,10 @@
 					<Obj>
 						<type>0</type>
 						<id>102</id>
-						<name>icmp_ln69</name>
+						<name>icmp_ln72</name>
 						<fileName>myIP.cpp</fileName>
 						<fileDirectory>/home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/ap_uint/accel4</fileDirectory>
-						<lineNumber>69</lineNumber>
+						<lineNumber>72</lineNumber>
 						<contextFuncName>myFuncAccel4</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2917,7 +2917,7 @@
 											<first>myIP.cpp</first>
 											<second>myFuncAccel4</second>
 										</first>
-										<second>69</second>
+										<second>72</second>
 									</item>
 								</second>
 							</item>
@@ -2948,10 +2948,10 @@
 					<Obj>
 						<type>0</type>
 						<id>103</id>
-						<name>icmp_ln69_1</name>
+						<name>icmp_ln72_1</name>
 						<fileName>myIP.cpp</fileName>
 						<fileDirectory>/home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/ap_uint/accel4</fileDirectory>
-						<lineNumber>69</lineNumber>
+						<lineNumber>72</lineNumber>
 						<contextFuncName>myFuncAccel4</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2966,7 +2966,7 @@
 											<first>myIP.cpp</first>
 											<second>myFuncAccel4</second>
 										</first>
-										<second>69</second>
+										<second>72</second>
 									</item>
 								</second>
 							</item>
@@ -2997,10 +2997,10 @@
 					<Obj>
 						<type>0</type>
 						<id>104</id>
-						<name>or_ln69</name>
+						<name>or_ln72</name>
 						<fileName>myIP.cpp</fileName>
 						<fileDirectory>/home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/ap_uint/accel4</fileDirectory>
-						<lineNumber>69</lineNumber>
+						<lineNumber>72</lineNumber>
 						<contextFuncName>myFuncAccel4</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3015,7 +3015,7 @@
 											<first>myIP.cpp</first>
 											<second>myFuncAccel4</second>
 										</first>
-										<second>69</second>
+										<second>72</second>
 									</item>
 								</second>
 							</item>
@@ -3046,10 +3046,10 @@
 					<Obj>
 						<type>0</type>
 						<id>105</id>
-						<name>icmp_ln69_2</name>
+						<name>icmp_ln72_2</name>
 						<fileName>myIP.cpp</fileName>
 						<fileDirectory>/home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/ap_uint/accel4</fileDirectory>
-						<lineNumber>69</lineNumber>
+						<lineNumber>72</lineNumber>
 						<contextFuncName>myFuncAccel4</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3064,7 +3064,7 @@
 											<first>myIP.cpp</first>
 											<second>myFuncAccel4</second>
 										</first>
-										<second>69</second>
+										<second>72</second>
 									</item>
 								</second>
 							</item>
@@ -3095,10 +3095,10 @@
 					<Obj>
 						<type>0</type>
 						<id>106</id>
-						<name>or_ln69_1</name>
+						<name>or_ln72_1</name>
 						<fileName>myIP.cpp</fileName>
 						<fileDirectory>/home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/ap_uint/accel4</fileDirectory>
-						<lineNumber>69</lineNumber>
+						<lineNumber>72</lineNumber>
 						<contextFuncName>myFuncAccel4</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3113,7 +3113,7 @@
 											<first>myIP.cpp</first>
 											<second>myFuncAccel4</second>
 										</first>
-										<second>69</second>
+										<second>72</second>
 									</item>
 								</second>
 							</item>
@@ -3144,10 +3144,10 @@
 					<Obj>
 						<type>0</type>
 						<id>107</id>
-						<name>and_ln69</name>
+						<name>and_ln72</name>
 						<fileName>myIP.cpp</fileName>
 						<fileDirectory>/home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/ap_uint/accel4</fileDirectory>
-						<lineNumber>69</lineNumber>
+						<lineNumber>72</lineNumber>
 						<contextFuncName>myFuncAccel4</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3162,7 +3162,7 @@
 											<first>myIP.cpp</first>
 											<second>myFuncAccel4</second>
 										</first>
-										<second>69</second>
+										<second>72</second>
 									</item>
 								</second>
 							</item>
@@ -3196,7 +3196,7 @@
 						<name>tmp_5</name>
 						<fileName>myIP.cpp</fileName>
 						<fileDirectory>/home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/ap_uint/accel4</fileDirectory>
-						<lineNumber>69</lineNumber>
+						<lineNumber>72</lineNumber>
 						<contextFuncName>myFuncAccel4</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3211,7 +3211,7 @@
 											<first>myIP.cpp</first>
 											<second>myFuncAccel4</second>
 										</first>
-										<second>69</second>
+										<second>72</second>
 									</item>
 								</second>
 							</item>
@@ -3242,10 +3242,10 @@
 					<Obj>
 						<type>0</type>
 						<id>109</id>
-						<name>and_ln69_1</name>
+						<name>and_ln72_1</name>
 						<fileName>myIP.cpp</fileName>
 						<fileDirectory>/home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/ap_uint/accel4</fileDirectory>
-						<lineNumber>69</lineNumber>
+						<lineNumber>72</lineNumber>
 						<contextFuncName>myFuncAccel4</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3260,7 +3260,7 @@
 											<first>myIP.cpp</first>
 											<second>myFuncAccel4</second>
 										</first>
-										<second>69</second>
+										<second>72</second>
 									</item>
 								</second>
 							</item>
@@ -3291,10 +3291,10 @@
 					<Obj>
 						<type>0</type>
 						<id>110</id>
-						<name>zext_ln67</name>
+						<name>zext_ln68</name>
 						<fileName>myIP.cpp</fileName>
 						<fileDirectory>/home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/ap_uint/accel4</fileDirectory>
-						<lineNumber>67</lineNumber>
+						<lineNumber>68</lineNumber>
 						<contextFuncName>myFuncAccel4</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3309,7 +3309,7 @@
 											<first>myIP.cpp</first>
 											<second>myFuncAccel4</second>
 										</first>
-										<second>67</second>
+										<second>68</second>
 									</item>
 								</second>
 							</item>
@@ -3342,7 +3342,7 @@
 						<name>tmp_2_1</name>
 						<fileName>myIP.cpp</fileName>
 						<fileDirectory>/home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/ap_uint/accel4</fileDirectory>
-						<lineNumber>67</lineNumber>
+						<lineNumber>68</lineNumber>
 						<contextFuncName>myFuncAccel4</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3357,7 +3357,7 @@
 											<first>myIP.cpp</first>
 											<second>myFuncAccel4</second>
 										</first>
-										<second>67</second>
+										<second>68</second>
 									</item>
 								</second>
 							</item>
@@ -3391,7 +3391,7 @@
 						<name>tmp_3_1</name>
 						<fileName>myIP.cpp</fileName>
 						<fileDirectory>/home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/ap_uint/accel4</fileDirectory>
-						<lineNumber>67</lineNumber>
+						<lineNumber>68</lineNumber>
 						<contextFuncName>myFuncAccel4</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3406,7 +3406,7 @@
 											<first>myIP.cpp</first>
 											<second>myFuncAccel4</second>
 										</first>
-										<second>67</second>
+										<second>68</second>
 									</item>
 								</second>
 							</item>
@@ -3440,7 +3440,7 @@
 						<name>tmp_2_1_1</name>
 						<fileName>myIP.cpp</fileName>
 						<fileDirectory>/home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/ap_uint/accel4</fileDirectory>
-						<lineNumber>67</lineNumber>
+						<lineNumber>68</lineNumber>
 						<contextFuncName>myFuncAccel4</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3455,7 +3455,7 @@
 											<first>myIP.cpp</first>
 											<second>myFuncAccel4</second>
 										</first>
-										<second>67</second>
+										<second>68</second>
 									</item>
 								</second>
 							</item>
@@ -3489,7 +3489,7 @@
 						<name>tmp_3_1_1</name>
 						<fileName>myIP.cpp</fileName>
 						<fileDirectory>/home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/ap_uint/accel4</fileDirectory>
-						<lineNumber>67</lineNumber>
+						<lineNumber>68</lineNumber>
 						<contextFuncName>myFuncAccel4</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3504,7 +3504,7 @@
 											<first>myIP.cpp</first>
 											<second>myFuncAccel4</second>
 										</first>
-										<second>67</second>
+										<second>68</second>
 									</item>
 								</second>
 							</item>
@@ -3538,7 +3538,7 @@
 						<name>tmp_2_1_2</name>
 						<fileName>myIP.cpp</fileName>
 						<fileDirectory>/home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/ap_uint/accel4</fileDirectory>
-						<lineNumber>67</lineNumber>
+						<lineNumber>68</lineNumber>
 						<contextFuncName>myFuncAccel4</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3553,7 +3553,7 @@
 											<first>myIP.cpp</first>
 											<second>myFuncAccel4</second>
 										</first>
-										<second>67</second>
+										<second>68</second>
 									</item>
 								</second>
 							</item>
@@ -3587,7 +3587,7 @@
 						<name>tmp_3_1_2</name>
 						<fileName>myIP.cpp</fileName>
 						<fileDirectory>/home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/ap_uint/accel4</fileDirectory>
-						<lineNumber>67</lineNumber>
+						<lineNumber>68</lineNumber>
 						<contextFuncName>myFuncAccel4</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3602,7 +3602,7 @@
 											<first>myIP.cpp</first>
 											<second>myFuncAccel4</second>
 										</first>
-										<second>67</second>
+										<second>68</second>
 									</item>
 								</second>
 							</item>
@@ -3636,7 +3636,7 @@
 						<name>tmp_2_1_3</name>
 						<fileName>myIP.cpp</fileName>
 						<fileDirectory>/home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/ap_uint/accel4</fileDirectory>
-						<lineNumber>67</lineNumber>
+						<lineNumber>68</lineNumber>
 						<contextFuncName>myFuncAccel4</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3651,7 +3651,7 @@
 											<first>myIP.cpp</first>
 											<second>myFuncAccel4</second>
 										</first>
-										<second>67</second>
+										<second>68</second>
 									</item>
 								</second>
 							</item>
@@ -3685,7 +3685,7 @@
 						<name>tmp_3_1_3</name>
 						<fileName>myIP.cpp</fileName>
 						<fileDirectory>/home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/ap_uint/accel4</fileDirectory>
-						<lineNumber>67</lineNumber>
+						<lineNumber>68</lineNumber>
 						<contextFuncName>myFuncAccel4</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3700,7 +3700,7 @@
 											<first>myIP.cpp</first>
 											<second>myFuncAccel4</second>
 										</first>
-										<second>67</second>
+										<second>68</second>
 									</item>
 								</second>
 							</item>
@@ -3731,10 +3731,10 @@
 					<Obj>
 						<type>0</type>
 						<id>119</id>
-						<name>bitcast_ln69_2</name>
+						<name>bitcast_ln72_2</name>
 						<fileName>myIP.cpp</fileName>
 						<fileDirectory>/home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/ap_uint/accel4</fileDirectory>
-						<lineNumber>69</lineNumber>
+						<lineNumber>72</lineNumber>
 						<contextFuncName>myFuncAccel4</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3749,7 +3749,7 @@
 											<first>myIP.cpp</first>
 											<second>myFuncAccel4</second>
 										</first>
-										<second>69</second>
+										<second>72</second>
 									</item>
 								</second>
 							</item>
@@ -3782,7 +3782,7 @@
 						<name>tmp_6</name>
 						<fileName>myIP.cpp</fileName>
 						<fileDirectory>/home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/ap_uint/accel4</fileDirectory>
-						<lineNumber>69</lineNumber>
+						<lineNumber>72</lineNumber>
 						<contextFuncName>myFuncAccel4</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3797,7 +3797,7 @@
 											<first>myIP.cpp</first>
 											<second>myFuncAccel4</second>
 										</first>
-										<second>69</second>
+										<second>72</second>
 									</item>
 								</second>
 							</item>
@@ -3830,10 +3830,10 @@
 					<Obj>
 						<type>0</type>
 						<id>121</id>
-						<name>trunc_ln69_2</name>
+						<name>trunc_ln72_2</name>
 						<fileName>myIP.cpp</fileName>
 						<fileDirectory>/home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/ap_uint/accel4</fileDirectory>
-						<lineNumber>69</lineNumber>
+						<lineNumber>72</lineNumber>
 						<contextFuncName>myFuncAccel4</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3848,7 +3848,7 @@
 											<first>myIP.cpp</first>
 											<second>myFuncAccel4</second>
 										</first>
-										<second>69</second>
+										<second>72</second>
 									</item>
 								</second>
 							</item>
@@ -3878,10 +3878,10 @@
 					<Obj>
 						<type>0</type>
 						<id>122</id>
-						<name>icmp_ln69_4</name>
+						<name>icmp_ln72_4</name>
 						<fileName>myIP.cpp</fileName>
 						<fileDirectory>/home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/ap_uint/accel4</fileDirectory>
-						<lineNumber>69</lineNumber>
+						<lineNumber>72</lineNumber>
 						<contextFuncName>myFuncAccel4</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3896,7 +3896,7 @@
 											<first>myIP.cpp</first>
 											<second>myFuncAccel4</second>
 										</first>
-										<second>69</second>
+										<second>72</second>
 									</item>
 								</second>
 							</item>
@@ -3927,10 +3927,10 @@
 					<Obj>
 						<type>0</type>
 						<id>123</id>
-						<name>icmp_ln69_5</name>
+						<name>icmp_ln72_5</name>
 						<fileName>myIP.cpp</fileName>
 						<fileDirectory>/home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/ap_uint/accel4</fileDirectory>
-						<lineNumber>69</lineNumber>
+						<lineNumber>72</lineNumber>
 						<contextFuncName>myFuncAccel4</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3945,7 +3945,7 @@
 											<first>myIP.cpp</first>
 											<second>myFuncAccel4</second>
 										</first>
-										<second>69</second>
+										<second>72</second>
 									</item>
 								</second>
 							</item>
@@ -3976,10 +3976,10 @@
 					<Obj>
 						<type>0</type>
 						<id>124</id>
-						<name>or_ln69_2</name>
+						<name>or_ln72_2</name>
 						<fileName>myIP.cpp</fileName>
 						<fileDirectory>/home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/ap_uint/accel4</fileDirectory>
-						<lineNumber>69</lineNumber>
+						<lineNumber>72</lineNumber>
 						<contextFuncName>myFuncAccel4</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3994,7 +3994,7 @@
 											<first>myIP.cpp</first>
 											<second>myFuncAccel4</second>
 										</first>
-										<second>69</second>
+										<second>72</second>
 									</item>
 								</second>
 							</item>
@@ -4025,10 +4025,10 @@
 					<Obj>
 						<type>0</type>
 						<id>125</id>
-						<name>and_ln69_2</name>
+						<name>and_ln72_2</name>
 						<fileName>myIP.cpp</fileName>
 						<fileDirectory>/home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/ap_uint/accel4</fileDirectory>
-						<lineNumber>69</lineNumber>
+						<lineNumber>72</lineNumber>
 						<contextFuncName>myFuncAccel4</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -4043,7 +4043,7 @@
 											<first>myIP.cpp</first>
 											<second>myFuncAccel4</second>
 										</first>
-										<second>69</second>
+										<second>72</second>
 									</item>
 								</second>
 							</item>
@@ -4077,7 +4077,7 @@
 						<name>tmp_8</name>
 						<fileName>myIP.cpp</fileName>
 						<fileDirectory>/home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/ap_uint/accel4</fileDirectory>
-						<lineNumber>69</lineNumber>
+						<lineNumber>72</lineNumber>
 						<contextFuncName>myFuncAccel4</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -4092,7 +4092,7 @@
 											<first>myIP.cpp</first>
 											<second>myFuncAccel4</second>
 										</first>
-										<second>69</second>
+										<second>72</second>
 									</item>
 								</second>
 							</item>
@@ -4123,10 +4123,10 @@
 					<Obj>
 						<type>0</type>
 						<id>127</id>
-						<name>and_ln69_3</name>
+						<name>and_ln72_3</name>
 						<fileName>myIP.cpp</fileName>
 						<fileDirectory>/home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/ap_uint/accel4</fileDirectory>
-						<lineNumber>69</lineNumber>
+						<lineNumber>72</lineNumber>
 						<contextFuncName>myFuncAccel4</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -4141,7 +4141,7 @@
 											<first>myIP.cpp</first>
 											<second>myFuncAccel4</second>
 										</first>
-										<second>69</second>
+										<second>72</second>
 									</item>
 								</second>
 							</item>
@@ -4172,10 +4172,10 @@
 					<Obj>
 						<type>0</type>
 						<id>128</id>
-						<name>zext_ln67_1</name>
+						<name>zext_ln68_1</name>
 						<fileName>myIP.cpp</fileName>
 						<fileDirectory>/home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/ap_uint/accel4</fileDirectory>
-						<lineNumber>67</lineNumber>
+						<lineNumber>68</lineNumber>
 						<contextFuncName>myFuncAccel4</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -4190,7 +4190,7 @@
 											<first>myIP.cpp</first>
 											<second>myFuncAccel4</second>
 										</first>
-										<second>67</second>
+										<second>68</second>
 									</item>
 								</second>
 							</item>
@@ -4223,7 +4223,7 @@
 						<name>tmp_2_2</name>
 						<fileName>myIP.cpp</fileName>
 						<fileDirectory>/home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/ap_uint/accel4</fileDirectory>
-						<lineNumber>67</lineNumber>
+						<lineNumber>68</lineNumber>
 						<contextFuncName>myFuncAccel4</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -4238,7 +4238,7 @@
 											<first>myIP.cpp</first>
 											<second>myFuncAccel4</second>
 										</first>
-										<second>67</second>
+										<second>68</second>
 									</item>
 								</second>
 							</item>
@@ -4272,7 +4272,7 @@
 						<name>tmp_3_2</name>
 						<fileName>myIP.cpp</fileName>
 						<fileDirectory>/home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/ap_uint/accel4</fileDirectory>
-						<lineNumber>67</lineNumber>
+						<lineNumber>68</lineNumber>
 						<contextFuncName>myFuncAccel4</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -4287,7 +4287,7 @@
 											<first>myIP.cpp</first>
 											<second>myFuncAccel4</second>
 										</first>
-										<second>67</second>
+										<second>68</second>
 									</item>
 								</second>
 							</item>
@@ -4321,7 +4321,7 @@
 						<name>tmp_2_2_1</name>
 						<fileName>myIP.cpp</fileName>
 						<fileDirectory>/home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/ap_uint/accel4</fileDirectory>
-						<lineNumber>67</lineNumber>
+						<lineNumber>68</lineNumber>
 						<contextFuncName>myFuncAccel4</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -4336,7 +4336,7 @@
 											<first>myIP.cpp</first>
 											<second>myFuncAccel4</second>
 										</first>
-										<second>67</second>
+										<second>68</second>
 									</item>
 								</second>
 							</item>
@@ -4370,7 +4370,7 @@
 						<name>tmp_3_2_1</name>
 						<fileName>myIP.cpp</fileName>
 						<fileDirectory>/home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/ap_uint/accel4</fileDirectory>
-						<lineNumber>67</lineNumber>
+						<lineNumber>68</lineNumber>
 						<contextFuncName>myFuncAccel4</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -4385,7 +4385,7 @@
 											<first>myIP.cpp</first>
 											<second>myFuncAccel4</second>
 										</first>
-										<second>67</second>
+										<second>68</second>
 									</item>
 								</second>
 							</item>
@@ -4419,7 +4419,7 @@
 						<name>tmp_2_2_2</name>
 						<fileName>myIP.cpp</fileName>
 						<fileDirectory>/home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/ap_uint/accel4</fileDirectory>
-						<lineNumber>67</lineNumber>
+						<lineNumber>68</lineNumber>
 						<contextFuncName>myFuncAccel4</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -4434,7 +4434,7 @@
 											<first>myIP.cpp</first>
 											<second>myFuncAccel4</second>
 										</first>
-										<second>67</second>
+										<second>68</second>
 									</item>
 								</second>
 							</item>
@@ -4468,7 +4468,7 @@
 						<name>tmp_3_2_2</name>
 						<fileName>myIP.cpp</fileName>
 						<fileDirectory>/home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/ap_uint/accel4</fileDirectory>
-						<lineNumber>67</lineNumber>
+						<lineNumber>68</lineNumber>
 						<contextFuncName>myFuncAccel4</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -4483,7 +4483,7 @@
 											<first>myIP.cpp</first>
 											<second>myFuncAccel4</second>
 										</first>
-										<second>67</second>
+										<second>68</second>
 									</item>
 								</second>
 							</item>
@@ -4517,7 +4517,7 @@
 						<name>tmp_2_2_3</name>
 						<fileName>myIP.cpp</fileName>
 						<fileDirectory>/home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/ap_uint/accel4</fileDirectory>
-						<lineNumber>67</lineNumber>
+						<lineNumber>68</lineNumber>
 						<contextFuncName>myFuncAccel4</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -4532,7 +4532,7 @@
 											<first>myIP.cpp</first>
 											<second>myFuncAccel4</second>
 										</first>
-										<second>67</second>
+										<second>68</second>
 									</item>
 								</second>
 							</item>
@@ -4566,7 +4566,7 @@
 						<name>tmp_3_2_3</name>
 						<fileName>myIP.cpp</fileName>
 						<fileDirectory>/home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/ap_uint/accel4</fileDirectory>
-						<lineNumber>67</lineNumber>
+						<lineNumber>68</lineNumber>
 						<contextFuncName>myFuncAccel4</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -4581,7 +4581,7 @@
 											<first>myIP.cpp</first>
 											<second>myFuncAccel4</second>
 										</first>
-										<second>67</second>
+										<second>68</second>
 									</item>
 								</second>
 							</item>
@@ -4612,10 +4612,10 @@
 					<Obj>
 						<type>0</type>
 						<id>137</id>
-						<name>bitcast_ln69_3</name>
+						<name>bitcast_ln72_3</name>
 						<fileName>myIP.cpp</fileName>
 						<fileDirectory>/home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/ap_uint/accel4</fileDirectory>
-						<lineNumber>69</lineNumber>
+						<lineNumber>72</lineNumber>
 						<contextFuncName>myFuncAccel4</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -4630,7 +4630,7 @@
 											<first>myIP.cpp</first>
 											<second>myFuncAccel4</second>
 										</first>
-										<second>69</second>
+										<second>72</second>
 									</item>
 								</second>
 							</item>
@@ -4663,7 +4663,7 @@
 						<name>tmp_9</name>
 						<fileName>myIP.cpp</fileName>
 						<fileDirectory>/home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/ap_uint/accel4</fileDirectory>
-						<lineNumber>69</lineNumber>
+						<lineNumber>72</lineNumber>
 						<contextFuncName>myFuncAccel4</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -4678,7 +4678,7 @@
 											<first>myIP.cpp</first>
 											<second>myFuncAccel4</second>
 										</first>
-										<second>69</second>
+										<second>72</second>
 									</item>
 								</second>
 							</item>
@@ -4711,10 +4711,10 @@
 					<Obj>
 						<type>0</type>
 						<id>139</id>
-						<name>trunc_ln69_3</name>
+						<name>trunc_ln72_3</name>
 						<fileName>myIP.cpp</fileName>
 						<fileDirectory>/home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/ap_uint/accel4</fileDirectory>
-						<lineNumber>69</lineNumber>
+						<lineNumber>72</lineNumber>
 						<contextFuncName>myFuncAccel4</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -4729,7 +4729,7 @@
 											<first>myIP.cpp</first>
 											<second>myFuncAccel4</second>
 										</first>
-										<second>69</second>
+										<second>72</second>
 									</item>
 								</second>
 							</item>
@@ -4759,10 +4759,10 @@
 					<Obj>
 						<type>0</type>
 						<id>140</id>
-						<name>icmp_ln69_6</name>
+						<name>icmp_ln72_6</name>
 						<fileName>myIP.cpp</fileName>
 						<fileDirectory>/home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/ap_uint/accel4</fileDirectory>
-						<lineNumber>69</lineNumber>
+						<lineNumber>72</lineNumber>
 						<contextFuncName>myFuncAccel4</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -4777,7 +4777,7 @@
 											<first>myIP.cpp</first>
 											<second>myFuncAccel4</second>
 										</first>
-										<second>69</second>
+										<second>72</second>
 									</item>
 								</second>
 							</item>
@@ -4808,10 +4808,10 @@
 					<Obj>
 						<type>0</type>
 						<id>141</id>
-						<name>icmp_ln69_7</name>
+						<name>icmp_ln72_7</name>
 						<fileName>myIP.cpp</fileName>
 						<fileDirectory>/home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/ap_uint/accel4</fileDirectory>
-						<lineNumber>69</lineNumber>
+						<lineNumber>72</lineNumber>
 						<contextFuncName>myFuncAccel4</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -4826,7 +4826,7 @@
 											<first>myIP.cpp</first>
 											<second>myFuncAccel4</second>
 										</first>
-										<second>69</second>
+										<second>72</second>
 									</item>
 								</second>
 							</item>
@@ -4857,10 +4857,10 @@
 					<Obj>
 						<type>0</type>
 						<id>142</id>
-						<name>or_ln69_3</name>
+						<name>or_ln72_3</name>
 						<fileName>myIP.cpp</fileName>
 						<fileDirectory>/home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/ap_uint/accel4</fileDirectory>
-						<lineNumber>69</lineNumber>
+						<lineNumber>72</lineNumber>
 						<contextFuncName>myFuncAccel4</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -4875,7 +4875,7 @@
 											<first>myIP.cpp</first>
 											<second>myFuncAccel4</second>
 										</first>
-										<second>69</second>
+										<second>72</second>
 									</item>
 								</second>
 							</item>
@@ -4906,10 +4906,10 @@
 					<Obj>
 						<type>0</type>
 						<id>143</id>
-						<name>and_ln69_4</name>
+						<name>and_ln72_4</name>
 						<fileName>myIP.cpp</fileName>
 						<fileDirectory>/home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/ap_uint/accel4</fileDirectory>
-						<lineNumber>69</lineNumber>
+						<lineNumber>72</lineNumber>
 						<contextFuncName>myFuncAccel4</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -4924,7 +4924,7 @@
 											<first>myIP.cpp</first>
 											<second>myFuncAccel4</second>
 										</first>
-										<second>69</second>
+										<second>72</second>
 									</item>
 								</second>
 							</item>
@@ -4958,7 +4958,7 @@
 						<name>tmp_s</name>
 						<fileName>myIP.cpp</fileName>
 						<fileDirectory>/home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/ap_uint/accel4</fileDirectory>
-						<lineNumber>69</lineNumber>
+						<lineNumber>72</lineNumber>
 						<contextFuncName>myFuncAccel4</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -4973,7 +4973,7 @@
 											<first>myIP.cpp</first>
 											<second>myFuncAccel4</second>
 										</first>
-										<second>69</second>
+										<second>72</second>
 									</item>
 								</second>
 							</item>
@@ -5004,10 +5004,10 @@
 					<Obj>
 						<type>0</type>
 						<id>145</id>
-						<name>and_ln69_5</name>
+						<name>and_ln72_5</name>
 						<fileName>myIP.cpp</fileName>
 						<fileDirectory>/home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/ap_uint/accel4</fileDirectory>
-						<lineNumber>69</lineNumber>
+						<lineNumber>72</lineNumber>
 						<contextFuncName>myFuncAccel4</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -5022,7 +5022,7 @@
 											<first>myIP.cpp</first>
 											<second>myFuncAccel4</second>
 										</first>
-										<second>69</second>
+										<second>72</second>
 									</item>
 								</second>
 							</item>
@@ -5053,10 +5053,10 @@
 					<Obj>
 						<type>0</type>
 						<id>146</id>
-						<name>zext_ln67_2</name>
+						<name>zext_ln68_2</name>
 						<fileName>myIP.cpp</fileName>
 						<fileDirectory>/home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/ap_uint/accel4</fileDirectory>
-						<lineNumber>67</lineNumber>
+						<lineNumber>68</lineNumber>
 						<contextFuncName>myFuncAccel4</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -5071,7 +5071,7 @@
 											<first>myIP.cpp</first>
 											<second>myFuncAccel4</second>
 										</first>
-										<second>67</second>
+										<second>68</second>
 									</item>
 								</second>
 							</item>
@@ -5104,7 +5104,7 @@
 						<name>tmp_2_3</name>
 						<fileName>myIP.cpp</fileName>
 						<fileDirectory>/home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/ap_uint/accel4</fileDirectory>
-						<lineNumber>67</lineNumber>
+						<lineNumber>68</lineNumber>
 						<contextFuncName>myFuncAccel4</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -5119,7 +5119,7 @@
 											<first>myIP.cpp</first>
 											<second>myFuncAccel4</second>
 										</first>
-										<second>67</second>
+										<second>68</second>
 									</item>
 								</second>
 							</item>
@@ -5153,7 +5153,7 @@
 						<name>tmp_3_3</name>
 						<fileName>myIP.cpp</fileName>
 						<fileDirectory>/home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/ap_uint/accel4</fileDirectory>
-						<lineNumber>67</lineNumber>
+						<lineNumber>68</lineNumber>
 						<contextFuncName>myFuncAccel4</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -5168,7 +5168,7 @@
 											<first>myIP.cpp</first>
 											<second>myFuncAccel4</second>
 										</first>
-										<second>67</second>
+										<second>68</second>
 									</item>
 								</second>
 							</item>
@@ -5202,7 +5202,7 @@
 						<name>tmp_2_3_1</name>
 						<fileName>myIP.cpp</fileName>
 						<fileDirectory>/home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/ap_uint/accel4</fileDirectory>
-						<lineNumber>67</lineNumber>
+						<lineNumber>68</lineNumber>
 						<contextFuncName>myFuncAccel4</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -5217,7 +5217,7 @@
 											<first>myIP.cpp</first>
 											<second>myFuncAccel4</second>
 										</first>
-										<second>67</second>
+										<second>68</second>
 									</item>
 								</second>
 							</item>
@@ -5251,7 +5251,7 @@
 						<name>tmp_3_3_1</name>
 						<fileName>myIP.cpp</fileName>
 						<fileDirectory>/home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/ap_uint/accel4</fileDirectory>
-						<lineNumber>67</lineNumber>
+						<lineNumber>68</lineNumber>
 						<contextFuncName>myFuncAccel4</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -5266,7 +5266,7 @@
 											<first>myIP.cpp</first>
 											<second>myFuncAccel4</second>
 										</first>
-										<second>67</second>
+										<second>68</second>
 									</item>
 								</second>
 							</item>
@@ -5300,7 +5300,7 @@
 						<name>tmp_2_3_2</name>
 						<fileName>myIP.cpp</fileName>
 						<fileDirectory>/home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/ap_uint/accel4</fileDirectory>
-						<lineNumber>67</lineNumber>
+						<lineNumber>68</lineNumber>
 						<contextFuncName>myFuncAccel4</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -5315,7 +5315,7 @@
 											<first>myIP.cpp</first>
 											<second>myFuncAccel4</second>
 										</first>
-										<second>67</second>
+										<second>68</second>
 									</item>
 								</second>
 							</item>
@@ -5349,7 +5349,7 @@
 						<name>tmp_3_3_2</name>
 						<fileName>myIP.cpp</fileName>
 						<fileDirectory>/home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/ap_uint/accel4</fileDirectory>
-						<lineNumber>67</lineNumber>
+						<lineNumber>68</lineNumber>
 						<contextFuncName>myFuncAccel4</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -5364,7 +5364,7 @@
 											<first>myIP.cpp</first>
 											<second>myFuncAccel4</second>
 										</first>
-										<second>67</second>
+										<second>68</second>
 									</item>
 								</second>
 							</item>
@@ -5398,7 +5398,7 @@
 						<name>tmp_2_3_3</name>
 						<fileName>myIP.cpp</fileName>
 						<fileDirectory>/home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/ap_uint/accel4</fileDirectory>
-						<lineNumber>67</lineNumber>
+						<lineNumber>68</lineNumber>
 						<contextFuncName>myFuncAccel4</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -5413,7 +5413,7 @@
 											<first>myIP.cpp</first>
 											<second>myFuncAccel4</second>
 										</first>
-										<second>67</second>
+										<second>68</second>
 									</item>
 								</second>
 							</item>
@@ -5447,7 +5447,7 @@
 						<name>tmp_3_3_3</name>
 						<fileName>myIP.cpp</fileName>
 						<fileDirectory>/home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/ap_uint/accel4</fileDirectory>
-						<lineNumber>67</lineNumber>
+						<lineNumber>68</lineNumber>
 						<contextFuncName>myFuncAccel4</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -5462,7 +5462,7 @@
 											<first>myIP.cpp</first>
 											<second>myFuncAccel4</second>
 										</first>
-										<second>67</second>
+										<second>68</second>
 									</item>
 								</second>
 							</item>
@@ -5493,10 +5493,10 @@
 					<Obj>
 						<type>0</type>
 						<id>155</id>
-						<name>bitcast_ln69_4</name>
+						<name>bitcast_ln72_4</name>
 						<fileName>myIP.cpp</fileName>
 						<fileDirectory>/home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/ap_uint/accel4</fileDirectory>
-						<lineNumber>69</lineNumber>
+						<lineNumber>72</lineNumber>
 						<contextFuncName>myFuncAccel4</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -5511,7 +5511,7 @@
 											<first>myIP.cpp</first>
 											<second>myFuncAccel4</second>
 										</first>
-										<second>69</second>
+										<second>72</second>
 									</item>
 								</second>
 							</item>
@@ -5544,7 +5544,7 @@
 						<name>tmp_7</name>
 						<fileName>myIP.cpp</fileName>
 						<fileDirectory>/home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/ap_uint/accel4</fileDirectory>
-						<lineNumber>69</lineNumber>
+						<lineNumber>72</lineNumber>
 						<contextFuncName>myFuncAccel4</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -5559,7 +5559,7 @@
 											<first>myIP.cpp</first>
 											<second>myFuncAccel4</second>
 										</first>
-										<second>69</second>
+										<second>72</second>
 									</item>
 								</second>
 							</item>
@@ -5592,10 +5592,10 @@
 					<Obj>
 						<type>0</type>
 						<id>157</id>
-						<name>trunc_ln69_4</name>
+						<name>trunc_ln72_4</name>
 						<fileName>myIP.cpp</fileName>
 						<fileDirectory>/home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/ap_uint/accel4</fileDirectory>
-						<lineNumber>69</lineNumber>
+						<lineNumber>72</lineNumber>
 						<contextFuncName>myFuncAccel4</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -5610,7 +5610,7 @@
 											<first>myIP.cpp</first>
 											<second>myFuncAccel4</second>
 										</first>
-										<second>69</second>
+										<second>72</second>
 									</item>
 								</second>
 							</item>
@@ -5640,10 +5640,10 @@
 					<Obj>
 						<type>0</type>
 						<id>158</id>
-						<name>icmp_ln69_8</name>
+						<name>icmp_ln72_8</name>
 						<fileName>myIP.cpp</fileName>
 						<fileDirectory>/home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/ap_uint/accel4</fileDirectory>
-						<lineNumber>69</lineNumber>
+						<lineNumber>72</lineNumber>
 						<contextFuncName>myFuncAccel4</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -5658,7 +5658,7 @@
 											<first>myIP.cpp</first>
 											<second>myFuncAccel4</second>
 										</first>
-										<second>69</second>
+										<second>72</second>
 									</item>
 								</second>
 							</item>
@@ -5689,10 +5689,10 @@
 					<Obj>
 						<type>0</type>
 						<id>159</id>
-						<name>icmp_ln69_9</name>
+						<name>icmp_ln72_9</name>
 						<fileName>myIP.cpp</fileName>
 						<fileDirectory>/home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/ap_uint/accel4</fileDirectory>
-						<lineNumber>69</lineNumber>
+						<lineNumber>72</lineNumber>
 						<contextFuncName>myFuncAccel4</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -5707,7 +5707,7 @@
 											<first>myIP.cpp</first>
 											<second>myFuncAccel4</second>
 										</first>
-										<second>69</second>
+										<second>72</second>
 									</item>
 								</second>
 							</item>
@@ -5738,10 +5738,10 @@
 					<Obj>
 						<type>0</type>
 						<id>160</id>
-						<name>or_ln69_4</name>
+						<name>or_ln72_4</name>
 						<fileName>myIP.cpp</fileName>
 						<fileDirectory>/home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/ap_uint/accel4</fileDirectory>
-						<lineNumber>69</lineNumber>
+						<lineNumber>72</lineNumber>
 						<contextFuncName>myFuncAccel4</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -5756,7 +5756,7 @@
 											<first>myIP.cpp</first>
 											<second>myFuncAccel4</second>
 										</first>
-										<second>69</second>
+										<second>72</second>
 									</item>
 								</second>
 							</item>
@@ -5787,10 +5787,10 @@
 					<Obj>
 						<type>0</type>
 						<id>161</id>
-						<name>and_ln69_6</name>
+						<name>and_ln72_6</name>
 						<fileName>myIP.cpp</fileName>
 						<fileDirectory>/home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/ap_uint/accel4</fileDirectory>
-						<lineNumber>69</lineNumber>
+						<lineNumber>72</lineNumber>
 						<contextFuncName>myFuncAccel4</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -5805,7 +5805,7 @@
 											<first>myIP.cpp</first>
 											<second>myFuncAccel4</second>
 										</first>
-										<second>69</second>
+										<second>72</second>
 									</item>
 								</second>
 							</item>
@@ -5839,7 +5839,7 @@
 						<name>tmp_10</name>
 						<fileName>myIP.cpp</fileName>
 						<fileDirectory>/home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/ap_uint/accel4</fileDirectory>
-						<lineNumber>69</lineNumber>
+						<lineNumber>72</lineNumber>
 						<contextFuncName>myFuncAccel4</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -5854,7 +5854,7 @@
 											<first>myIP.cpp</first>
 											<second>myFuncAccel4</second>
 										</first>
-										<second>69</second>
+										<second>72</second>
 									</item>
 								</second>
 							</item>
@@ -5885,10 +5885,10 @@
 					<Obj>
 						<type>0</type>
 						<id>163</id>
-						<name>and_ln69_7</name>
+						<name>and_ln72_7</name>
 						<fileName>myIP.cpp</fileName>
 						<fileDirectory>/home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/ap_uint/accel4</fileDirectory>
-						<lineNumber>69</lineNumber>
+						<lineNumber>72</lineNumber>
 						<contextFuncName>myFuncAccel4</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -5903,7 +5903,7 @@
 											<first>myIP.cpp</first>
 											<second>myFuncAccel4</second>
 										</first>
-										<second>69</second>
+										<second>72</second>
 									</item>
 								</second>
 							</item>
@@ -5934,10 +5934,10 @@
 					<Obj>
 						<type>0</type>
 						<id>164</id>
-						<name>zext_ln69</name>
+						<name>zext_ln72</name>
 						<fileName>myIP.cpp</fileName>
 						<fileDirectory>/home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/ap_uint/accel4</fileDirectory>
-						<lineNumber>69</lineNumber>
+						<lineNumber>72</lineNumber>
 						<contextFuncName>myFuncAccel4</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -5952,7 +5952,7 @@
 											<first>myIP.cpp</first>
 											<second>myFuncAccel4</second>
 										</first>
-										<second>69</second>
+										<second>72</second>
 									</item>
 								</second>
 							</item>
@@ -5982,10 +5982,10 @@
 					<Obj>
 						<type>0</type>
 						<id>165</id>
-						<name>add_ln69</name>
+						<name>add_ln72</name>
 						<fileName>myIP.cpp</fileName>
 						<fileDirectory>/home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/ap_uint/accel4</fileDirectory>
-						<lineNumber>69</lineNumber>
+						<lineNumber>72</lineNumber>
 						<contextFuncName>myFuncAccel4</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -6000,7 +6000,7 @@
 											<first>myIP.cpp</first>
 											<second>myFuncAccel4</second>
 										</first>
-										<second>69</second>
+										<second>72</second>
 									</item>
 								</second>
 							</item>
@@ -6031,10 +6031,10 @@
 					<Obj>
 						<type>0</type>
 						<id>166</id>
-						<name>zext_ln69_1</name>
+						<name>zext_ln72_1</name>
 						<fileName>myIP.cpp</fileName>
 						<fileDirectory>/home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/ap_uint/accel4</fileDirectory>
-						<lineNumber>69</lineNumber>
+						<lineNumber>72</lineNumber>
 						<contextFuncName>myFuncAccel4</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -6049,7 +6049,7 @@
 											<first>myIP.cpp</first>
 											<second>myFuncAccel4</second>
 										</first>
-										<second>69</second>
+										<second>72</second>
 									</item>
 								</second>
 							</item>
@@ -6079,10 +6079,10 @@
 					<Obj>
 						<type>0</type>
 						<id>167</id>
-						<name>add_ln69_1</name>
+						<name>add_ln72_1</name>
 						<fileName>myIP.cpp</fileName>
 						<fileDirectory>/home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/ap_uint/accel4</fileDirectory>
-						<lineNumber>69</lineNumber>
+						<lineNumber>72</lineNumber>
 						<contextFuncName>myFuncAccel4</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -6097,7 +6097,7 @@
 											<first>myIP.cpp</first>
 											<second>myFuncAccel4</second>
 										</first>
-										<second>69</second>
+										<second>72</second>
 									</item>
 								</second>
 							</item>
@@ -6128,10 +6128,10 @@
 					<Obj>
 						<type>0</type>
 						<id>168</id>
-						<name>zext_ln69_2</name>
+						<name>zext_ln72_2</name>
 						<fileName>myIP.cpp</fileName>
 						<fileDirectory>/home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/ap_uint/accel4</fileDirectory>
-						<lineNumber>69</lineNumber>
+						<lineNumber>72</lineNumber>
 						<contextFuncName>myFuncAccel4</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -6146,7 +6146,7 @@
 											<first>myIP.cpp</first>
 											<second>myFuncAccel4</second>
 										</first>
-										<second>69</second>
+										<second>72</second>
 									</item>
 								</second>
 							</item>
@@ -6176,10 +6176,10 @@
 					<Obj>
 						<type>0</type>
 						<id>169</id>
-						<name>add_ln69_2</name>
+						<name>add_ln72_2</name>
 						<fileName>myIP.cpp</fileName>
 						<fileDirectory>/home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/ap_uint/accel4</fileDirectory>
-						<lineNumber>69</lineNumber>
+						<lineNumber>72</lineNumber>
 						<contextFuncName>myFuncAccel4</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -6194,7 +6194,7 @@
 											<first>myIP.cpp</first>
 											<second>myFuncAccel4</second>
 										</first>
-										<second>69</second>
+										<second>72</second>
 									</item>
 								</second>
 							</item>
@@ -6225,10 +6225,10 @@
 					<Obj>
 						<type>0</type>
 						<id>170</id>
-						<name>icmp_ln75</name>
+						<name>icmp_ln78</name>
 						<fileName>myIP.cpp</fileName>
 						<fileDirectory>/home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/ap_uint/accel4</fileDirectory>
-						<lineNumber>75</lineNumber>
+						<lineNumber>78</lineNumber>
 						<contextFuncName>myFuncAccel4</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -6243,7 +6243,7 @@
 											<first>myIP.cpp</first>
 											<second>myFuncAccel4</second>
 										</first>
-										<second>75</second>
+										<second>78</second>
 									</item>
 								</second>
 							</item>
@@ -6274,10 +6274,10 @@
 					<Obj>
 						<type>0</type>
 						<id>171</id>
-						<name>select_ln76</name>
+						<name>select_ln79</name>
 						<fileName>myIP.cpp</fileName>
 						<fileDirectory>/home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/ap_uint/accel4</fileDirectory>
-						<lineNumber>76</lineNumber>
+						<lineNumber>79</lineNumber>
 						<contextFuncName>myFuncAccel4</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -6292,7 +6292,7 @@
 											<first>myIP.cpp</first>
 											<second>myFuncAccel4</second>
 										</first>
-										<second>76</second>
+										<second>79</second>
 									</item>
 								</second>
 							</item>
@@ -6324,10 +6324,10 @@
 					<Obj>
 						<type>0</type>
 						<id>172</id>
-						<name>select_ln76_1</name>
+						<name>select_ln79_1</name>
 						<fileName>myIP.cpp</fileName>
 						<fileDirectory>/home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/ap_uint/accel4</fileDirectory>
-						<lineNumber>76</lineNumber>
+						<lineNumber>79</lineNumber>
 						<contextFuncName>myFuncAccel4</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -6342,7 +6342,7 @@
 											<first>myIP.cpp</first>
 											<second>myFuncAccel4</second>
 										</first>
-										<second>76</second>
+										<second>79</second>
 									</item>
 								</second>
 							</item>
@@ -6374,10 +6374,10 @@
 					<Obj>
 						<type>0</type>
 						<id>173</id>
-						<name>select_ln76_2</name>
+						<name>select_ln79_2</name>
 						<fileName>myIP.cpp</fileName>
 						<fileDirectory>/home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/ap_uint/accel4</fileDirectory>
-						<lineNumber>76</lineNumber>
+						<lineNumber>79</lineNumber>
 						<contextFuncName>myFuncAccel4</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -6392,7 +6392,7 @@
 											<first>myIP.cpp</first>
 											<second>myFuncAccel4</second>
 										</first>
-										<second>76</second>
+										<second>79</second>
 									</item>
 								</second>
 							</item>
@@ -6424,10 +6424,10 @@
 					<Obj>
 						<type>0</type>
 						<id>174</id>
-						<name>select_ln76_3</name>
+						<name>select_ln79_3</name>
 						<fileName>myIP.cpp</fileName>
 						<fileDirectory>/home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/ap_uint/accel4</fileDirectory>
-						<lineNumber>76</lineNumber>
+						<lineNumber>79</lineNumber>
 						<contextFuncName>myFuncAccel4</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -6442,7 +6442,7 @@
 											<first>myIP.cpp</first>
 											<second>myFuncAccel4</second>
 										</first>
-										<second>76</second>
+										<second>79</second>
 									</item>
 								</second>
 							</item>
@@ -6477,7 +6477,7 @@
 						<name>p_Result_2_3</name>
 						<fileName>myIP.cpp</fileName>
 						<fileDirectory>/home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/ap_uint/accel4</fileDirectory>
-						<lineNumber>76</lineNumber>
+						<lineNumber>79</lineNumber>
 						<contextFuncName>myFuncAccel4</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -6492,7 +6492,7 @@
 											<first>myIP.cpp</first>
 											<second>myFuncAccel4</second>
 										</first>
-										<second>76</second>
+										<second>79</second>
 									</item>
 								</second>
 							</item>
@@ -6526,10 +6526,10 @@
 					<Obj>
 						<type>0</type>
 						<id>176</id>
-						<name>data_out_V_write_ln79</name>
+						<name>data_out_V_write_ln83</name>
 						<fileName>myIP.cpp</fileName>
 						<fileDirectory>/home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/ap_uint/accel4</fileDirectory>
-						<lineNumber>79</lineNumber>
+						<lineNumber>83</lineNumber>
 						<contextFuncName>myFuncAccel4</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -6544,7 +6544,7 @@
 											<first>myIP.cpp</first>
 											<second>myFuncAccel4</second>
 										</first>
-										<second>79</second>
+										<second>83</second>
 									</item>
 								</second>
 							</item>
@@ -6624,10 +6624,10 @@
 					<Obj>
 						<type>0</type>
 						<id>180</id>
-						<name>_ln82</name>
+						<name>_ln85</name>
 						<fileName>myIP.cpp</fileName>
 						<fileDirectory>/home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/ap_uint/accel4</fileDirectory>
-						<lineNumber>82</lineNumber>
+						<lineNumber>85</lineNumber>
 						<contextFuncName>myFuncAccel4</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -6642,7 +6642,7 @@
 											<first>myIP.cpp</first>
 											<second>myFuncAccel4</second>
 										</first>
-										<second>82</second>
+										<second>85</second>
 									</item>
 								</second>
 							</item>

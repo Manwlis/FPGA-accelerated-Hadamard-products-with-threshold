@@ -4,6 +4,7 @@
  *	Diavasma eisodwn wste ka8e 8esh na diavazetai mono mia fora.	
  *	Ta oria twn pinakwn data0 einai gnwsta.
  *	Afaire8hke h generic ulopoihsh. Eixe xeiroterh epidosh apo ton accel16 me megaluterh katanalwsh porwn.
+ *	Afaire8hke to flag kai antikatasta8hke me to (r == 4/16)
  */
 
 
@@ -52,15 +53,11 @@ void myFuncAccel4 (unsigned int size, unsigned int dim, dataType_t threshold, da
 			 */
 			r += ( temp_dim[ k ] > threshold );
 		}
-		/*	Exw balei to flag giati den kserw pws 8a leitourghsei to hls an o ipologismos tou einai mesa sto triadiko
-		 *	telesth. Isws otan to loop ginei unroll, ftiaxnei ena comparator gia ka8e instance enw reiazetai mono enas.
-		 *	An dw oti den ginetai 8a to ksanabalw mesa.	Prepei na kanw to 2b gia na to dw.
-		 */
-		int flag = ( r == 4 ); 
+
 		/*	Idia leitourgia me to reference, alla to if ginetai operator anti flow control.	*/
 		for ( l = 0 ; l < 4 ; l ++ )
 		{
-			data2[ i*4 + l ] = flag ? 0.0f : temp_dim[ l ];	// Ipologizw oti auto 8a metafrastei se ena mux xwris comparator.
+			data2[ i*4 + l ] = ( r == 4 ) ? 0.0f : temp_dim[ l ];	// Ipologizw oti auto 8a metafrastei se ena mux xwris comparator.
 		}
 	}
 }
@@ -96,11 +93,10 @@ void myFuncAccel16 (unsigned int size, unsigned int dim, dataType_t threshold, d
 
 			r += ( temp_dim[ k ] > threshold );
 		}
-		int flag = ( r == 16 ); 
 
 		for ( l = 0 ; l < 16 ; l ++ )
 		{
-			data2[ i*16 + l ] = flag ? 0.0f : temp_dim[ l ];
+			data2[ i*16 + l ] = ( r == 16 ) ? 0.0f : temp_dim[ l ];
 		}
 	}
 }

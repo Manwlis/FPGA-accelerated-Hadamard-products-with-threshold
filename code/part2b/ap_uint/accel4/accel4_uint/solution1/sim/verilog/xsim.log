@@ -2,8 +2,8 @@
 # xsim v2019.1 (64-bit)
 # SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
 # IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
-# Start of session at: Thu Nov 21 00:02:31 2019
-# Process ID: 27004
+# Start of session at: Fri Nov 22 23:26:22 2019
+# Process ID: 18263
 # Current directory: /home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/ap_uint/accel4/accel4_uint/solution1/sim/verilog
 # Command line: xsim -mode tcl -source {xsim.dir/myFuncAccel4/xsim_script.tcl}
 # Log file: /home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/ap_uint/accel4/accel4_uint/solution1/sim/verilog/xsim.log
@@ -163,6 +163,6 @@ Time: 165 ns  Iteration: 11  Process: /apatb_myFuncAccel4_top/AESL_inst_myFuncAc
 // RTL Simulation : 1 / 1 [100.00%] @ "10425000"
 ////////////////////////////////////////////////////////////////////////////////////
 $finish called at time : 10465 ns : File "/home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/ap_uint/accel4/accel4_uint/solution1/sim/verilog/myFuncAccel4.autotb.v" Line 1336
-run: Time (s): cpu = 00:00:00.59 ; elapsed = 00:00:13 . Memory (MB): peak = 1508.062 ; gain = 72.004 ; free physical = 237 ; free virtual = 1418
+run: Time (s): cpu = 00:00:00.72 ; elapsed = 00:00:15 . Memory (MB): peak = 1492.055 ; gain = 72.004 ; free physical = 912 ; free virtual = 3098
 ## quit
-INFO: [Common 17-206] Exiting xsim at Thu Nov 21 00:02:58 2019...
+INFO: [Common 17-206] Exiting xsim at Fri Nov 22 23:26:49 2019...

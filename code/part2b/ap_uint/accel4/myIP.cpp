@@ -1,9 +1,9 @@
 #include "myLib.h"
 
 
+/* Oi pinakes data1 kai data2 prospelanontai me pointers tupou dataType_bus gia na pernane 4 floats tautoxrona */
 void myFuncAccel4 (unsigned int size, unsigned int dim, dataType_t threshold, dataType_t data0[16], dataType_bus * data1, dataType_bus * data_out)
 {
-	#pragma HLS expression_balance	// den fainetai na leitourgei
 	// to ap_stable deixnei sto hls oti ta dedomena einai sta8era
 	#pragma HLS INTERFACE ap_stable port=size bundle=control
 	#pragma HLS INTERFACE ap_stable port=dim bundle=control
@@ -14,14 +14,13 @@ void myFuncAccel4 (unsigned int size, unsigned int dim, dataType_t threshold, da
 
 
 	// interface gia pinakes agnwstou mege8ous
-	//#pragma HLS INTERFACE ap_bus port=data1 depth=1000
-	//#pragma HLS INTERFACE ap_bus port=data_out depth=1000
 	#pragma HLS INTERFACE axis port=data1 depth=1000
 	#pragma HLS INTERFACE axis port=data_out depth=1000
 
 
 	unsigned int i, k, l;
 	dataType_t temp_dim[4];
+	#pragma HLS array_partition variable=temp_dim complete
 
 
 	// gia convert apo uint se fp
@@ -32,14 +31,15 @@ void myFuncAccel4 (unsigned int size, unsigned int dim, dataType_t threshold, da
 
 	// topikes metablhtes gia tis eisodous, wste oi prosbvaseis sth mnhmh na einai oi elaxistes dinates
 	dataType_t temp1[4];
+	#pragma HLS array_partition variable=temp1 complete
 
+	// afou to mege8os tou pinaka einai gnwsto kai oi times tou sta8eres, mporei na metafer8ei se topiko pinaka
 	dataType_t temp0[16];
 	for ( i = 0 ; i < 16 ; i ++ )
 	{
 		#pragma HLS unroll
 		temp0[ i ] = data0[ i ];
 	}
-
 
 
 	for ( i = 0 ; i < size ; i ++ )
@@ -57,26 +57,29 @@ void myFuncAccel4 (unsigned int size, unsigned int dim, dataType_t threshold, da
 			temp1[ l ] = fi.fpval;
 		}
 
-
+		/* Oi ipologismoi ginontai xrhsimopoiwntas mono topikes metablhtes */
 		for ( k = 0 ; k < 4 ; k ++ )
 		{
 			temp_dim[ k ] = 0;
 
 			for ( l = 0 ; l < 4 ; l ++ )
 			{
+				#pragma HLS expression_balance
 				temp_dim[ k ] += temp0[ k*4 + l ] * temp1[ l ];
 			}
+			/* logo tou INTERFACE ap_stable, to hls gnwrizei oti h timh *
+			 * tou threshold einai sta8erh kai thn krataei se register  */
 			r += ( temp_dim[ k ] > threshold );
 		}
 
-		// pack output
+		// pack 4ada
 		for ( l = 0 ; l < 4 ; l ++ )
 		{
 			fi.fpval = ( r == 4 ) ? 0.0f : temp_dim[ l ];
 			temp_data_out.range( l*32 + 31 , l*32 ) = fi.uintval;
 
 		}
+		// send 4ada
 		data_out[i] = temp_data_out;
-
 	}
 }

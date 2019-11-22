@@ -1,1 +1,0 @@
-set ::AESL_AUTOSIM::gTopFileName /home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/fixed-ilopoihsh/accel4/accel4_fixed/solution1/./sim/autowrap/testbench/myIP.cpp_pre.cpp.tb.cpp

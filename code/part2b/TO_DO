@@ -32,7 +32,7 @@ allagh sthn eisodo twn dedomenwn kai sxolio			ok
 
 
 
-						Clock	uncertenty	latency		interval	dsp%	ff%		LUT
+dim = 4					Clock	uncertenty	latency		interval	dsp%	ff%		LUT
 
 fixed/ap_bus	swsta	8.868	1.25		13			4			7		0		0
 
@@ -43,6 +43,7 @@ float/ap_bus	swsta	8.750	1.25		36			4			9		3		8
 
 
 
-ap_uint reports
-ap_uint ka8arisma kwdika kai sxolia
-ap_uint 16
+ap_uint ka8arisma kwdika kai sxolia					ok
+ap_uint 16											ok
+
+ap_uint reports										!!!

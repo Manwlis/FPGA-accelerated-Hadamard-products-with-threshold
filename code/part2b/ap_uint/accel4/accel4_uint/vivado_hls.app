@@ -1,7 +1,7 @@
-<project xmlns="com.autoesl.autopilot.project" top="myFuncAccel4" name="accel4_uint">
+<project xmlns="com.autoesl.autopilot.project" name="accel4_uint" top="myFuncAccel4">
     <includePaths/>
     <libraryPaths/>
-    <Simulation argv="0 10 4 100">
+    <Simulation argv="0 1000 4 80">
         <SimFlow name="csim" csimMode="0" lastCsimMode="0"/>
     </Simulation>
     <files xmlns="">

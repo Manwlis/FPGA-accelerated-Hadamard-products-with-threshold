@@ -10,14 +10,15 @@
 
 
 #define BILLION (1E9)
+#define BUS_WIDTH (128)
 
 
 typedef float dataType_t;
 
+/* Xreisimopoihtai gia na mporoun na perasoun perissotera dedomena apo to bus tou accelerator tautoxrona. */
+typedef ap_uint<BUS_WIDTH> dataType_bus;
 
-typedef ap_uint<128> dataType_bus;
-
-
+/* Gia thn metatroph apo ap_uint se float kai antistrofa */
 typedef union { float fpval; unsigned int uintval;} fconvert;
 
 

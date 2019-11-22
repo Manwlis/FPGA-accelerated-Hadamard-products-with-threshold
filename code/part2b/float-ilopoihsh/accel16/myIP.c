@@ -4,6 +4,7 @@
 /*	Idia leitourgia me ton accel4 alla gia dim = 16.	*/
 void myFuncAccel16 (unsigned int size, unsigned int dim, dataType_t threshold, dataType_t data0[256], dataType_t * data1, dataType_t * data2)
 {
+
 	#pragma HLS INTERFACE ap_stable port=size bundle=control
 	#pragma HLS INTERFACE ap_stable port=dim bundle=control
 	#pragma HLS INTERFACE ap_stable port=threshold bundle=control
@@ -11,17 +12,17 @@ void myFuncAccel16 (unsigned int size, unsigned int dim, dataType_t threshold, d
 	#pragma HLS INTERFACE ap_stable port=data0 bundle=my_input0
 	#pragma HLS array_partition variable=data0 complete
 
-#pragma HLS INTERFACE axis port=data1 depth=160 bundle=my_input1
-#pragma HLS INTERFACE axis port=data2 depth=160 bundle=my_output
-//#pragma HLS INTERFACE ap_bus port=data1 depth=160 bundle=my_input1
-//#pragma HLS INTERFACE ap_bus port=data2 depth=160 bundle=my_output
+
+	#pragma HLS INTERFACE axis port=data1 depth=16000 bundle=my_input1
+	#pragma HLS INTERFACE axis port=data2 depth=16000 bundle=my_output
+
 
 	unsigned int i, k, l;
 	dataType_t temp_dim[16];
-	#pragma HLS array_partition variable=temp_dim complete	// den kserw kata poso kanei tipota. An oi topikoi pinakes einai idh se regs dn xreiazetai
+	#pragma HLS array_partition variable=temp_dim complete
 
 	dataType_t temp1[16];
-	#pragma HLS array_partition variable=temp1 complete	// den kserw kata poso kanei tipota. An oi topikoi pinakes einai idh se regs dn xreiazetai
+	#pragma HLS array_partition variable=temp1 complete
 
 	dataType_t temp0[256];
 	for ( i = 0 ; i < 256 ; i ++ )
@@ -29,6 +30,7 @@ void myFuncAccel16 (unsigned int size, unsigned int dim, dataType_t threshold, d
 		#pragma HLS unroll
 		temp0[ i ] = data0[ i ];
 	}
+
 
 	for ( i = 0 ; i < size ; i ++ )
 	{
@@ -38,7 +40,8 @@ void myFuncAccel16 (unsigned int size, unsigned int dim, dataType_t threshold, d
 
 		unsigned int r = 0 ;
 
-		for ( l = 0 ; l < 16 ; l ++ ) {
+		for ( l = 0 ; l < 16 ; l ++ )
+		{
 			temp1[ l ] = data1[ i*16 + l ];
 		}
 
@@ -53,11 +56,10 @@ void myFuncAccel16 (unsigned int size, unsigned int dim, dataType_t threshold, d
 			}
 			r += ( temp_dim[ k ] > threshold );
 		}
-		//int flag = ( r == 16 );
 
 		for ( l = 0 ; l < 16 ; l ++ )
 		{
-			data2[ i*16 + l ] = r == 16 ? 0.0 : temp_dim[ l ];
+			data2[ i*16 + l ] = r == 16 ? 0.0f : temp_dim[ l ];
 		}
 	}
 }

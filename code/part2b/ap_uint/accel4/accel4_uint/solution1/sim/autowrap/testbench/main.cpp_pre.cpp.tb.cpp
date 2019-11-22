@@ -68394,10 +68394,11 @@ inline bool operator!=(
 
 
 
+
 typedef float dataType_t;
 
 
-typedef ap_uint<128> dataType_bus;
+typedef ap_uint<(128)> dataType_bus;
 
 
 typedef union { float fpval; unsigned int uintval;} fconvert;

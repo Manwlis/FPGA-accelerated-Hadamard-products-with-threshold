@@ -50,7 +50,7 @@ proc run_exec {fileExe} {
 		return -code error -errorcode 10
 	}
 	set err {}
-	set ret [catch {eval exec "./$fileExe 0 1000 4 100 | tee tmp.log" >&@ stdout} err]
+	set ret [catch {eval exec "./$fileExe 0 1000 4 80 | tee tmp.log" >&@ stdout} err]
 	
 	cpfilecontent tmp.log ../../.temp11.log
 	

@@ -1,0 +1,5 @@
+   Build using "/run/media/epetrakos/60GB/Xilinx/Vivado/2019.1/tps/lnx64/gcc-6.2.0/bin/g++"
+   Compiling apatb_myFuncAccel16.cpp
+   Compiling myIP.cpp_pre.cpp.tb.cpp
+   Compiling main.cpp_pre.cpp.tb.cpp
+   Generating cosim.tv.exe
