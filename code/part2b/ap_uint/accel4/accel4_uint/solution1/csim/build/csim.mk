@@ -22,7 +22,7 @@ HLS_SOURCES = ../../../../main.cpp ../../../../myIP.cpp
 
 TARGET := csim.exe
 
-AUTOPILOT_ROOT := /run/media/epetrakos/60GB/Xilinx/Vivado/2019.1
+AUTOPILOT_ROOT := /media/manolis/90GB/Xilinx/Vivado/2019.1
 AUTOPILOT_MACH := lnx64
 ifdef AP_GCC_M32
   AUTOPILOT_MACH := Linux_x86
@@ -30,7 +30,7 @@ ifdef AP_GCC_M32
 endif
 IFLAG += -fPIC
 ifndef AP_GCC_PATH
-  AP_GCC_PATH := /run/media/epetrakos/60GB/Xilinx/Vivado/2019.1/tps/lnx64/gcc-6.2.0/bin
+  AP_GCC_PATH := /media/manolis/90GB/Xilinx/Vivado/2019.1/tps/lnx64/gcc-6.2.0/bin
 endif
 AUTOPILOT_TOOL := ${AUTOPILOT_ROOT}/${AUTOPILOT_MACH}/tools
 AP_CLANG_PATH := ${AUTOPILOT_TOOL}/clang-3.9/bin
@@ -45,6 +45,7 @@ IFLAG += -I "${AUTOPILOT_TECH}/generic/SystemC"
 IFLAG += -I "${AUTOPILOT_TECH}/generic/SystemC/AESL_FP_comp"
 IFLAG += -I "${AUTOPILOT_TECH}/generic/SystemC/AESL_comp"
 IFLAG += -I "${AUTOPILOT_TOOL}/auto_cc/include"
+IFLAG += -I "/usr/include/x86_64-linux-gnu"
 IFLAG += -D__SIM_FPO__
 
 IFLAG += -D__SIM_OPENCV__

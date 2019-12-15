@@ -7,7 +7,7 @@
 
 `define TV_IN_data1_V_TDATA "./c.myFuncAccel4.autotvin_data1_V.dat"
 
-`define AUTOTB_TRANSACTION_NUM 1
+`define AUTOTB_TRANSACTION_NUM 2
 
 module AESL_axi_s_data1_V (
     input clk,
@@ -27,7 +27,7 @@ module AESL_axi_s_data1_V (
     reg data1_V_TDATA_read_en;
     wire [128 - 1:0] data1_V_TDATA_read_data;
     
-    fifo #(1000, 128) fifo_data1_V_TDATA (
+    fifo #(500, 128) fifo_data1_V_TDATA (
         .reset(1'b0),
         .write_clock(clk),
         .write_en(data1_V_TDATA_write_en),

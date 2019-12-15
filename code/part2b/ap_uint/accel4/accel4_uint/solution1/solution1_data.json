@@ -136,9 +136,9 @@
       "impl\/misc\/myFuncAccel4_ap_fcmp_0_no_dsp_32_ip.tcl",
       "impl\/misc\/myFuncAccel4_ap_fmul_2_max_dsp_32_ip.tcl"
     ],
-    "DesignXml": "\/home\/epetrakos\/Documents\/GitHub\/HRY591-project\/code\/part2b\/ap_uint\/accel4\/accel4_uint\/solution1\/.autopilot\/db\/myFuncAccel4.design.xml",
-    "DebugDir": "\/home\/epetrakos\/Documents\/GitHub\/HRY591-project\/code\/part2b\/ap_uint\/accel4\/accel4_uint\/solution1\/.debug",
-    "ProtoInst": ["\/home\/epetrakos\/Documents\/GitHub\/HRY591-project\/code\/part2b\/ap_uint\/accel4\/accel4_uint\/solution1\/.debug\/myFuncAccel4.protoinst"]
+    "DesignXml": "\/home\/manolis\/Documents\/GitHub\/HRY591-project\/code\/part2b\/ap_uint\/accel4\/accel4_uint\/solution1\/.autopilot\/db\/myFuncAccel4.design.xml",
+    "DebugDir": "\/home\/manolis\/Documents\/GitHub\/HRY591-project\/code\/part2b\/ap_uint\/accel4\/accel4_uint\/solution1\/.debug",
+    "ProtoInst": ["\/home\/manolis\/Documents\/GitHub\/HRY591-project\/code\/part2b\/ap_uint\/accel4\/accel4_uint\/solution1\/.debug\/myFuncAccel4.protoinst"]
   },
   "SubcoreInfo": {
     "HasXpmMemory": false,
@@ -602,7 +602,7 @@
   },
   "GenData": {
     "DataVersion": "0.2",
-    "Time": "2019-11-22 23:20:08 EET",
+    "Time": "2019-12-14 23:08:43 EET",
     "ToolName": "vivado_hls",
     "ToolVersion": "2019.1"
   }

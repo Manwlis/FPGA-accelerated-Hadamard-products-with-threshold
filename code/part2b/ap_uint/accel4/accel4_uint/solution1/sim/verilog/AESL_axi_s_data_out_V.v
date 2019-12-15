@@ -7,7 +7,7 @@
 
 `define TV_OUT_data_out_V_TDATA "../tv/rtldatafile/rtl.myFuncAccel4.autotvout_data_out_V.dat"
 
-`define AUTOTB_TRANSACTION_NUM 1
+`define AUTOTB_TRANSACTION_NUM 2
 
 module AESL_axi_s_data_out_V (
     input clk,
@@ -27,7 +27,7 @@ module AESL_axi_s_data_out_V (
     reg data_out_V_TDATA_read_en;
     wire [128 - 1:0] data_out_V_TDATA_read_data;
     
-    fifo #(1000, 128) fifo_data_out_V_TDATA (
+    fifo #(500, 128) fifo_data_out_V_TDATA (
         .reset(1'b0),
         .write_clock(clk),
         .write_en(data_out_V_TDATA_write_en),

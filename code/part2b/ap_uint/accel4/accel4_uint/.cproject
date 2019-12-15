@@ -51,15 +51,15 @@
                                 								
                                 <option id="gnu.cpp.compiler.option.include.paths.1803459889" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" useByScannerDiscovery="false" valueType="includePath">
                                     									
-                                    <listOptionValue builtIn="false" value="/run/media/epetrakos/60GB/Xilinx/Vivado/2019.1/include/ap_sysc"/>
+                                    <listOptionValue builtIn="false" value="/media/manolis/90GB/Xilinx/Vivado/2019.1/lnx64/tools/systemc/include"/>
                                     									
-                                    <listOptionValue builtIn="false" value="/run/media/epetrakos/60GB/Xilinx/Vivado/2019.1/include/etc"/>
+                                    <listOptionValue builtIn="false" value="/media/manolis/90GB/Xilinx/Vivado/2019.1/include"/>
                                     									
-                                    <listOptionValue builtIn="false" value="/run/media/epetrakos/60GB/Xilinx/Vivado/2019.1/lnx64/tools/systemc/include"/>
+                                    <listOptionValue builtIn="false" value="/media/manolis/90GB/Xilinx/Vivado/2019.1/include/etc"/>
                                     									
-                                    <listOptionValue builtIn="false" value="/run/media/epetrakos/60GB/Xilinx/Vivado/2019.1/include"/>
+                                    <listOptionValue builtIn="false" value="/media/manolis/90GB/Xilinx/Vivado/2019.1/include/ap_sysc"/>
                                     									
-                                    <listOptionValue builtIn="false" value="/run/media/epetrakos/60GB/Xilinx/Vivado/2019.1/lnx64/tools/auto_cc/include"/>
+                                    <listOptionValue builtIn="false" value="/media/manolis/90GB/Xilinx/Vivado/2019.1/lnx64/tools/auto_cc/include"/>
                                     								
                                 </option>
                                 								
@@ -85,15 +85,15 @@
                                 								
                                 <option id="gnu.c.compiler.option.include.paths.1106115250" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" useByScannerDiscovery="false" valueType="includePath">
                                     									
-                                    <listOptionValue builtIn="false" value="/run/media/epetrakos/60GB/Xilinx/Vivado/2019.1/include/ap_sysc"/>
+                                    <listOptionValue builtIn="false" value="/media/manolis/90GB/Xilinx/Vivado/2019.1/lnx64/tools/systemc/include"/>
                                     									
-                                    <listOptionValue builtIn="false" value="/run/media/epetrakos/60GB/Xilinx/Vivado/2019.1/include/etc"/>
+                                    <listOptionValue builtIn="false" value="/media/manolis/90GB/Xilinx/Vivado/2019.1/include"/>
                                     									
-                                    <listOptionValue builtIn="false" value="/run/media/epetrakos/60GB/Xilinx/Vivado/2019.1/lnx64/tools/systemc/include"/>
+                                    <listOptionValue builtIn="false" value="/media/manolis/90GB/Xilinx/Vivado/2019.1/include/etc"/>
                                     									
-                                    <listOptionValue builtIn="false" value="/run/media/epetrakos/60GB/Xilinx/Vivado/2019.1/include"/>
+                                    <listOptionValue builtIn="false" value="/media/manolis/90GB/Xilinx/Vivado/2019.1/include/ap_sysc"/>
                                     									
-                                    <listOptionValue builtIn="false" value="/run/media/epetrakos/60GB/Xilinx/Vivado/2019.1/lnx64/tools/auto_cc/include"/>
+                                    <listOptionValue builtIn="false" value="/media/manolis/90GB/Xilinx/Vivado/2019.1/lnx64/tools/auto_cc/include"/>
                                     								
                                 </option>
                                 								
@@ -115,7 +115,7 @@
                                 								
                                 <option id="gnu.c.link.option.paths.2144059518" name="Library search path (-L)" superClass="gnu.c.link.option.paths" valueType="libPaths">
                                     									
-                                    <listOptionValue builtIn="false" value="/run/media/epetrakos/60GB/Xilinx/Vivado/2019.1/lnx64/tools/systemc/lib"/>
+                                    <listOptionValue builtIn="false" value="/media/manolis/90GB/Xilinx/Vivado/2019.1/lnx64/tools/systemc/lib"/>
                                     								
                                 </option>
                                 								
@@ -129,7 +129,7 @@
                                 								
                                 <option id="gnu.cpp.link.option.paths.1885687240" name="Library search path (-L)" superClass="gnu.cpp.link.option.paths" valueType="libPaths">
                                     									
-                                    <listOptionValue builtIn="false" value="/run/media/epetrakos/60GB/Xilinx/Vivado/2019.1/lnx64/tools/systemc/lib"/>
+                                    <listOptionValue builtIn="false" value="/media/manolis/90GB/Xilinx/Vivado/2019.1/lnx64/tools/systemc/lib"/>
                                     								
                                 </option>
                                 								
@@ -165,17 +165,17 @@
                             							
                             <option id="gnu.cpp.compiler.option.include.paths.1461679842" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" valueType="includePath">
                                 								
-                                <listOptionValue builtIn="false" value="/run/media/epetrakos/60GB/Xilinx/Vivado/2019.1/include/ap_sysc"/>
+                                <listOptionValue builtIn="false" value="/home/manolis/Documents/GitHub/HRY591-project/code/part2b/ap_uint/accel4"/>
                                 								
-                                <listOptionValue builtIn="false" value="/run/media/epetrakos/60GB/Xilinx/Vivado/2019.1/include/etc"/>
+                                <listOptionValue builtIn="false" value="/media/manolis/90GB/Xilinx/Vivado/2019.1/lnx64/tools/systemc/include"/>
                                 								
-                                <listOptionValue builtIn="false" value="/run/media/epetrakos/60GB/Xilinx/Vivado/2019.1/lnx64/tools/systemc/include"/>
+                                <listOptionValue builtIn="false" value="/media/manolis/90GB/Xilinx/Vivado/2019.1/include"/>
                                 								
-                                <listOptionValue builtIn="false" value="/run/media/epetrakos/60GB/Xilinx/Vivado/2019.1/include"/>
+                                <listOptionValue builtIn="false" value="/media/manolis/90GB/Xilinx/Vivado/2019.1/include/etc"/>
                                 								
-                                <listOptionValue builtIn="false" value="/home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/ap_uint/accel4"/>
+                                <listOptionValue builtIn="false" value="/media/manolis/90GB/Xilinx/Vivado/2019.1/include/ap_sysc"/>
                                 								
-                                <listOptionValue builtIn="false" value="/run/media/epetrakos/60GB/Xilinx/Vivado/2019.1/lnx64/tools/auto_cc/include"/>
+                                <listOptionValue builtIn="false" value="/media/manolis/90GB/Xilinx/Vivado/2019.1/lnx64/tools/auto_cc/include"/>
                                 							
                             </option>
                             							
@@ -249,15 +249,15 @@
                                 								
                                 <option id="gnu.cpp.compiler.option.include.paths.507365433" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" useByScannerDiscovery="false" valueType="includePath">
                                     									
-                                    <listOptionValue builtIn="false" value="/run/media/epetrakos/60GB/Xilinx/Vivado/2019.1/include/ap_sysc"/>
+                                    <listOptionValue builtIn="false" value="/media/manolis/90GB/Xilinx/Vivado/2019.1/lnx64/tools/systemc/include"/>
                                     									
-                                    <listOptionValue builtIn="false" value="/run/media/epetrakos/60GB/Xilinx/Vivado/2019.1/include/etc"/>
+                                    <listOptionValue builtIn="false" value="/media/manolis/90GB/Xilinx/Vivado/2019.1/include"/>
                                     									
-                                    <listOptionValue builtIn="false" value="/run/media/epetrakos/60GB/Xilinx/Vivado/2019.1/lnx64/tools/systemc/include"/>
+                                    <listOptionValue builtIn="false" value="/media/manolis/90GB/Xilinx/Vivado/2019.1/include/etc"/>
                                     									
-                                    <listOptionValue builtIn="false" value="/run/media/epetrakos/60GB/Xilinx/Vivado/2019.1/include"/>
+                                    <listOptionValue builtIn="false" value="/media/manolis/90GB/Xilinx/Vivado/2019.1/include/ap_sysc"/>
                                     									
-                                    <listOptionValue builtIn="false" value="/run/media/epetrakos/60GB/Xilinx/Vivado/2019.1/lnx64/tools/auto_cc/include"/>
+                                    <listOptionValue builtIn="false" value="/media/manolis/90GB/Xilinx/Vivado/2019.1/lnx64/tools/auto_cc/include"/>
                                     								
                                 </option>
                                 								
@@ -273,15 +273,15 @@
                                 								
                                 <option id="gnu.c.compiler.option.include.paths.749954668" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" useByScannerDiscovery="false" valueType="includePath">
                                     									
-                                    <listOptionValue builtIn="false" value="/run/media/epetrakos/60GB/Xilinx/Vivado/2019.1/include/ap_sysc"/>
+                                    <listOptionValue builtIn="false" value="/media/manolis/90GB/Xilinx/Vivado/2019.1/lnx64/tools/systemc/include"/>
                                     									
-                                    <listOptionValue builtIn="false" value="/run/media/epetrakos/60GB/Xilinx/Vivado/2019.1/include/etc"/>
+                                    <listOptionValue builtIn="false" value="/media/manolis/90GB/Xilinx/Vivado/2019.1/include"/>
                                     									
-                                    <listOptionValue builtIn="false" value="/run/media/epetrakos/60GB/Xilinx/Vivado/2019.1/lnx64/tools/systemc/include"/>
+                                    <listOptionValue builtIn="false" value="/media/manolis/90GB/Xilinx/Vivado/2019.1/include/etc"/>
                                     									
-                                    <listOptionValue builtIn="false" value="/run/media/epetrakos/60GB/Xilinx/Vivado/2019.1/include"/>
+                                    <listOptionValue builtIn="false" value="/media/manolis/90GB/Xilinx/Vivado/2019.1/include/ap_sysc"/>
                                     									
-                                    <listOptionValue builtIn="false" value="/run/media/epetrakos/60GB/Xilinx/Vivado/2019.1/lnx64/tools/auto_cc/include"/>
+                                    <listOptionValue builtIn="false" value="/media/manolis/90GB/Xilinx/Vivado/2019.1/lnx64/tools/auto_cc/include"/>
                                     								
                                 </option>
                                 								
@@ -293,7 +293,7 @@
                                 								
                                 <option id="gnu.c.link.option.paths.105987534" name="Library search path (-L)" superClass="gnu.c.link.option.paths" valueType="libPaths">
                                     									
-                                    <listOptionValue builtIn="false" value="/run/media/epetrakos/60GB/Xilinx/Vivado/2019.1/lnx64/tools/systemc/lib"/>
+                                    <listOptionValue builtIn="false" value="/media/manolis/90GB/Xilinx/Vivado/2019.1/lnx64/tools/systemc/lib"/>
                                     								
                                 </option>
                                 								
@@ -307,7 +307,7 @@
                                 								
                                 <option id="gnu.cpp.link.option.paths.1548161939" name="Library search path (-L)" superClass="gnu.cpp.link.option.paths" valueType="libPaths">
                                     									
-                                    <listOptionValue builtIn="false" value="/run/media/epetrakos/60GB/Xilinx/Vivado/2019.1/lnx64/tools/systemc/lib"/>
+                                    <listOptionValue builtIn="false" value="/media/manolis/90GB/Xilinx/Vivado/2019.1/lnx64/tools/systemc/lib"/>
                                     								
                                 </option>
                                 								
@@ -343,17 +343,17 @@
                             							
                             <option id="gnu.cpp.compiler.option.include.paths.481445036" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" valueType="includePath">
                                 								
-                                <listOptionValue builtIn="false" value="/run/media/epetrakos/60GB/Xilinx/Vivado/2019.1/include/ap_sysc"/>
+                                <listOptionValue builtIn="false" value="/home/manolis/Documents/GitHub/HRY591-project/code/part2b/ap_uint/accel4"/>
                                 								
-                                <listOptionValue builtIn="false" value="/run/media/epetrakos/60GB/Xilinx/Vivado/2019.1/include/etc"/>
+                                <listOptionValue builtIn="false" value="/media/manolis/90GB/Xilinx/Vivado/2019.1/lnx64/tools/systemc/include"/>
                                 								
-                                <listOptionValue builtIn="false" value="/run/media/epetrakos/60GB/Xilinx/Vivado/2019.1/lnx64/tools/systemc/include"/>
+                                <listOptionValue builtIn="false" value="/media/manolis/90GB/Xilinx/Vivado/2019.1/include"/>
                                 								
-                                <listOptionValue builtIn="false" value="/run/media/epetrakos/60GB/Xilinx/Vivado/2019.1/include"/>
+                                <listOptionValue builtIn="false" value="/media/manolis/90GB/Xilinx/Vivado/2019.1/include/etc"/>
                                 								
-                                <listOptionValue builtIn="false" value="/home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/ap_uint/accel4"/>
+                                <listOptionValue builtIn="false" value="/media/manolis/90GB/Xilinx/Vivado/2019.1/include/ap_sysc"/>
                                 								
-                                <listOptionValue builtIn="false" value="/run/media/epetrakos/60GB/Xilinx/Vivado/2019.1/lnx64/tools/auto_cc/include"/>
+                                <listOptionValue builtIn="false" value="/media/manolis/90GB/Xilinx/Vivado/2019.1/lnx64/tools/auto_cc/include"/>
                                 							
                             </option>
                             							

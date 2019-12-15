@@ -4,40 +4,50 @@ Size 1000
 Dimension 4
 Threshold 80.000000
 
+Software execution time: 0.000223
+free(): invalid pointer
+
+Seed 0
+Size 1000
+Dimension 4
+Threshold 80.000000
+
 Software execution time: 0.000222
-Hardware execution time: 0.133890
+Hardware execution time: 0.136598
 
 no errors
 
-INFO: [XSIM 43-3496] Using init file passed via -initfile option "/run/media/epetrakos/60GB/Xilinx/Vivado/2019.1/data/xsim/ip/xsim_ip.ini".
+INFO: [XSIM 43-3496] Using init file passed via -initfile option "/media/manolis/90GB/Xilinx/Vivado/2019.1/data/xsim/ip/xsim_ip.ini".
 Vivado Simulator 2019.1
 Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
-Running: /run/media/epetrakos/60GB/Xilinx/Vivado/2019.1/bin/unwrapped/lnx64.o/xelab xil_defaultlib.apatb_myFuncAccel4_top glbl -prj myFuncAccel4.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm --initfile /run/media/epetrakos/60GB/Xilinx/Vivado/2019.1/data/xsim/ip/xsim_ip.ini --lib ieee_proposed=./ieee_proposed -s myFuncAccel4 -debug wave 
+Running: /media/manolis/90GB/Xilinx/Vivado/2019.1/bin/unwrapped/lnx64.o/xelab xil_defaultlib.apatb_myFuncAccel4_top glbl -prj myFuncAccel4.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm --initfile /media/manolis/90GB/Xilinx/Vivado/2019.1/data/xsim/ip/xsim_ip.ini --lib ieee_proposed=./ieee_proposed -s myFuncAccel4 -debug wave 
 Multi-threading is on. Using 14 slave threads.
 Determining compilation order of HDL files.
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/ap_uint/accel4/accel4_uint/solution1/sim/verilog/glbl.v" into library work
+WARNING: [XSIM 43-3431] One or more environment variables have been detected which affect the operation of the C compiler. These are typically not set in standard installations and are not tested by Xilinx, however they may be appropriate for your system, so the flow will attempt to continue.  If errors occur, try running xelab with the "-mt off -v 1" switches to see more information from the C compiler. The following environment variables have been detected:
+    LIBRARY_PATH
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/manolis/Documents/GitHub/HRY591-project/code/part2b/ap_uint/accel4/accel4_uint/solution1/sim/verilog/glbl.v" into library work
 INFO: [VRFC 10-311] analyzing module glbl
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/ap_uint/accel4/accel4_uint/solution1/sim/verilog/myFuncAccel4_fadd_32ns_32ns_32_5_full_dsp_1.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module myFuncAccel4_fadd_32ns_32ns_32_5_full_dsp_1
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/ap_uint/accel4/accel4_uint/solution1/sim/verilog/myFuncAccel4.autotb.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/manolis/Documents/GitHub/HRY591-project/code/part2b/ap_uint/accel4/accel4_uint/solution1/sim/verilog/myFuncAccel4.autotb.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module apatb_myFuncAccel4_top
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/ap_uint/accel4/accel4_uint/solution1/sim/verilog/AESL_fifo.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module fifo
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/ap_uint/accel4/accel4_uint/solution1/sim/verilog/myFuncAccel4_fmul_32ns_32ns_32_4_max_dsp_1.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module myFuncAccel4_fmul_32ns_32ns_32_4_max_dsp_1
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/ap_uint/accel4/accel4_uint/solution1/sim/verilog/AESL_axi_s_data1_V.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/manolis/Documents/GitHub/HRY591-project/code/part2b/ap_uint/accel4/accel4_uint/solution1/sim/verilog/AESL_axi_s_data1_V.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module AESL_axi_s_data1_V
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/ap_uint/accel4/accel4_uint/solution1/sim/verilog/myFuncAccel4_fcmp_32ns_32ns_1_2_1.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/manolis/Documents/GitHub/HRY591-project/code/part2b/ap_uint/accel4/accel4_uint/solution1/sim/verilog/myFuncAccel4_fcmp_32ns_32ns_1_2_1.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module myFuncAccel4_fcmp_32ns_32ns_1_2_1
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/ap_uint/accel4/accel4_uint/solution1/sim/verilog/myFuncAccel4.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/manolis/Documents/GitHub/HRY591-project/code/part2b/ap_uint/accel4/accel4_uint/solution1/sim/verilog/myFuncAccel4.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module myFuncAccel4
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/ap_uint/accel4/accel4_uint/solution1/sim/verilog/AESL_axi_s_data_out_V.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/manolis/Documents/GitHub/HRY591-project/code/part2b/ap_uint/accel4/accel4_uint/solution1/sim/verilog/myFuncAccel4_fadd_32ns_32ns_32_5_full_dsp_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myFuncAccel4_fadd_32ns_32ns_32_5_full_dsp_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/manolis/Documents/GitHub/HRY591-project/code/part2b/ap_uint/accel4/accel4_uint/solution1/sim/verilog/myFuncAccel4_fmul_32ns_32ns_32_4_max_dsp_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myFuncAccel4_fmul_32ns_32ns_32_4_max_dsp_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/manolis/Documents/GitHub/HRY591-project/code/part2b/ap_uint/accel4/accel4_uint/solution1/sim/verilog/AESL_fifo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fifo
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/manolis/Documents/GitHub/HRY591-project/code/part2b/ap_uint/accel4/accel4_uint/solution1/sim/verilog/AESL_axi_s_data_out_V.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module AESL_axi_s_data_out_V
-INFO: [VRFC 10-163] Analyzing VHDL file "/home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/ap_uint/accel4/accel4_uint/solution1/sim/verilog/ip/xil_defaultlib/myFuncAccel4_ap_fmul_2_max_dsp_32.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/manolis/Documents/GitHub/HRY591-project/code/part2b/ap_uint/accel4/accel4_uint/solution1/sim/verilog/ip/xil_defaultlib/myFuncAccel4_ap_fmul_2_max_dsp_32.vhd" into library xil_defaultlib
 INFO: [VRFC 10-3107] analyzing entity 'myFuncAccel4_ap_fmul_2_max_dsp_32'
-INFO: [VRFC 10-163] Analyzing VHDL file "/home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/ap_uint/accel4/accel4_uint/solution1/sim/verilog/ip/xil_defaultlib/myFuncAccel4_ap_fcmp_0_no_dsp_32.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/manolis/Documents/GitHub/HRY591-project/code/part2b/ap_uint/accel4/accel4_uint/solution1/sim/verilog/ip/xil_defaultlib/myFuncAccel4_ap_fcmp_0_no_dsp_32.vhd" into library xil_defaultlib
 INFO: [VRFC 10-3107] analyzing entity 'myFuncAccel4_ap_fcmp_0_no_dsp_32'
-INFO: [VRFC 10-163] Analyzing VHDL file "/home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/ap_uint/accel4/accel4_uint/solution1/sim/verilog/ip/xil_defaultlib/myFuncAccel4_ap_fadd_3_full_dsp_32.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/manolis/Documents/GitHub/HRY591-project/code/part2b/ap_uint/accel4/accel4_uint/solution1/sim/verilog/ip/xil_defaultlib/myFuncAccel4_ap_fadd_3_full_dsp_32.vhd" into library xil_defaultlib
 INFO: [VRFC 10-3107] analyzing entity 'myFuncAccel4_ap_fadd_3_full_dsp_32'
 Starting static elaboration
 WARNING: [VRFC 10-3499] library name 'floating_point_v7_1_8' of instantiated unit conflicts with visible identifier [ip/xil_defaultlib/myFuncAccel4_ap_fadd_3_full_dsp_32.vhd:201]
@@ -216,7 +226,7 @@ Compiling architecture xilinx of entity floating_point_v7_1_8.floating_point_v7_
 Compiling architecture myfuncaccel4_ap_fcmp_0_no_dsp_32_arch of entity xil_defaultlib.myFuncAccel4_ap_fcmp_0_no_dsp_32 [myfuncaccel4_ap_fcmp_0_no_dsp_32...]
 Compiling module xil_defaultlib.myFuncAccel4_fcmp_32ns_32ns_1_2_...
 Compiling module xil_defaultlib.myFuncAccel4
-Compiling module xil_defaultlib.fifo(DEPTH=1000,WIDTH=128)
+Compiling module xil_defaultlib.fifo(DEPTH=500,WIDTH=128)
 Compiling module xil_defaultlib.AESL_axi_s_data1_V
 Compiling module xil_defaultlib.AESL_axi_s_data_out_V
 Compiling module xil_defaultlib.apatb_myFuncAccel4_top
@@ -228,8 +238,8 @@ Built simulation snapshot myFuncAccel4
   **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
     ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 
-source /home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/ap_uint/accel4/accel4_uint/solution1/sim/verilog/xsim.dir/myFuncAccel4/webtalk/xsim_webtalk.tcl -notrace
-INFO: [Common 17-206] Exiting Webtalk at Fri Nov 22 23:26:20 2019...
+source /home/manolis/Documents/GitHub/HRY591-project/code/part2b/ap_uint/accel4/accel4_uint/solution1/sim/verilog/xsim.dir/myFuncAccel4/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Sat Dec 14 23:10:16 2019...
 
 ****** xsim v2019.1 (64-bit)
   **** SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
@@ -354,53 +364,54 @@ WARNING: [Simtcl 6-197] One or more HDL objects could not be logged because of o
 //
 // RTL Simulation : "Inter-Transaction Progress" ["Intra-Transaction Progress"] @ "Simulation Time"
 ////////////////////////////////////////////////////////////////////////////////////
-// RTL Simulation : 0 / 1 [0.00%] @ "125000"
+// RTL Simulation : 0 / 2 [0.00%] @ "125000"
 Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
-Time: 165 ns  Iteration: 11  Process: /apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/myFuncAccel4_fadd_32ns_32ns_32_5_full_dsp_1_U1/myFuncAccel4_ap_fadd_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: /run/media/epetrakos/60GB/Xilinx/Vivado/2019.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Time: 165 ns  Iteration: 11  Process: /apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/myFuncAccel4_fadd_32ns_32ns_32_5_full_dsp_1_U1/myFuncAccel4_ap_fadd_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: /media/manolis/90GB/Xilinx/Vivado/2019.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
 Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
-Time: 165 ns  Iteration: 11  Process: /apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/myFuncAccel4_fadd_32ns_32ns_32_5_full_dsp_1_U2/myFuncAccel4_ap_fadd_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: /run/media/epetrakos/60GB/Xilinx/Vivado/2019.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Time: 165 ns  Iteration: 11  Process: /apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/myFuncAccel4_fadd_32ns_32ns_32_5_full_dsp_1_U2/myFuncAccel4_ap_fadd_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: /media/manolis/90GB/Xilinx/Vivado/2019.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
 Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
-Time: 165 ns  Iteration: 11  Process: /apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/myFuncAccel4_fadd_32ns_32ns_32_5_full_dsp_1_U3/myFuncAccel4_ap_fadd_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: /run/media/epetrakos/60GB/Xilinx/Vivado/2019.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Time: 165 ns  Iteration: 11  Process: /apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/myFuncAccel4_fadd_32ns_32ns_32_5_full_dsp_1_U3/myFuncAccel4_ap_fadd_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: /media/manolis/90GB/Xilinx/Vivado/2019.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
 Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
-Time: 165 ns  Iteration: 11  Process: /apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/myFuncAccel4_fadd_32ns_32ns_32_5_full_dsp_1_U4/myFuncAccel4_ap_fadd_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: /run/media/epetrakos/60GB/Xilinx/Vivado/2019.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Time: 165 ns  Iteration: 11  Process: /apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/myFuncAccel4_fadd_32ns_32ns_32_5_full_dsp_1_U4/myFuncAccel4_ap_fadd_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: /media/manolis/90GB/Xilinx/Vivado/2019.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
 Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
-Time: 165 ns  Iteration: 11  Process: /apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/myFuncAccel4_fadd_32ns_32ns_32_5_full_dsp_1_U5/myFuncAccel4_ap_fadd_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: /run/media/epetrakos/60GB/Xilinx/Vivado/2019.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Time: 165 ns  Iteration: 11  Process: /apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/myFuncAccel4_fadd_32ns_32ns_32_5_full_dsp_1_U5/myFuncAccel4_ap_fadd_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: /media/manolis/90GB/Xilinx/Vivado/2019.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
 Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
-Time: 165 ns  Iteration: 11  Process: /apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/myFuncAccel4_fadd_32ns_32ns_32_5_full_dsp_1_U6/myFuncAccel4_ap_fadd_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: /run/media/epetrakos/60GB/Xilinx/Vivado/2019.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Time: 165 ns  Iteration: 11  Process: /apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/myFuncAccel4_fadd_32ns_32ns_32_5_full_dsp_1_U6/myFuncAccel4_ap_fadd_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: /media/manolis/90GB/Xilinx/Vivado/2019.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
 Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
-Time: 165 ns  Iteration: 11  Process: /apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/myFuncAccel4_fadd_32ns_32ns_32_5_full_dsp_1_U7/myFuncAccel4_ap_fadd_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: /run/media/epetrakos/60GB/Xilinx/Vivado/2019.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Time: 165 ns  Iteration: 11  Process: /apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/myFuncAccel4_fadd_32ns_32ns_32_5_full_dsp_1_U7/myFuncAccel4_ap_fadd_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: /media/manolis/90GB/Xilinx/Vivado/2019.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
 Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
-Time: 165 ns  Iteration: 11  Process: /apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/myFuncAccel4_fadd_32ns_32ns_32_5_full_dsp_1_U8/myFuncAccel4_ap_fadd_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: /run/media/epetrakos/60GB/Xilinx/Vivado/2019.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Time: 165 ns  Iteration: 11  Process: /apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/myFuncAccel4_fadd_32ns_32ns_32_5_full_dsp_1_U8/myFuncAccel4_ap_fadd_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: /media/manolis/90GB/Xilinx/Vivado/2019.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
 Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
-Time: 165 ns  Iteration: 11  Process: /apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/myFuncAccel4_fadd_32ns_32ns_32_5_full_dsp_1_U9/myFuncAccel4_ap_fadd_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: /run/media/epetrakos/60GB/Xilinx/Vivado/2019.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Time: 165 ns  Iteration: 11  Process: /apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/myFuncAccel4_fadd_32ns_32ns_32_5_full_dsp_1_U9/myFuncAccel4_ap_fadd_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: /media/manolis/90GB/Xilinx/Vivado/2019.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
 Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
-Time: 165 ns  Iteration: 11  Process: /apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/myFuncAccel4_fadd_32ns_32ns_32_5_full_dsp_1_U10/myFuncAccel4_ap_fadd_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: /run/media/epetrakos/60GB/Xilinx/Vivado/2019.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Time: 165 ns  Iteration: 11  Process: /apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/myFuncAccel4_fadd_32ns_32ns_32_5_full_dsp_1_U10/myFuncAccel4_ap_fadd_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: /media/manolis/90GB/Xilinx/Vivado/2019.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
 Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
-Time: 165 ns  Iteration: 11  Process: /apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/myFuncAccel4_fadd_32ns_32ns_32_5_full_dsp_1_U11/myFuncAccel4_ap_fadd_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: /run/media/epetrakos/60GB/Xilinx/Vivado/2019.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Time: 165 ns  Iteration: 11  Process: /apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/myFuncAccel4_fadd_32ns_32ns_32_5_full_dsp_1_U11/myFuncAccel4_ap_fadd_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: /media/manolis/90GB/Xilinx/Vivado/2019.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
 Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
-Time: 165 ns  Iteration: 11  Process: /apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/myFuncAccel4_fadd_32ns_32ns_32_5_full_dsp_1_U12/myFuncAccel4_ap_fadd_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: /run/media/epetrakos/60GB/Xilinx/Vivado/2019.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Time: 165 ns  Iteration: 11  Process: /apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/myFuncAccel4_fadd_32ns_32ns_32_5_full_dsp_1_U12/myFuncAccel4_ap_fadd_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: /media/manolis/90GB/Xilinx/Vivado/2019.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
 Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
-Time: 165 ns  Iteration: 11  Process: /apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/myFuncAccel4_fadd_32ns_32ns_32_5_full_dsp_1_U13/myFuncAccel4_ap_fadd_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: /run/media/epetrakos/60GB/Xilinx/Vivado/2019.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Time: 165 ns  Iteration: 11  Process: /apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/myFuncAccel4_fadd_32ns_32ns_32_5_full_dsp_1_U13/myFuncAccel4_ap_fadd_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: /media/manolis/90GB/Xilinx/Vivado/2019.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
 Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
-Time: 165 ns  Iteration: 11  Process: /apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/myFuncAccel4_fadd_32ns_32ns_32_5_full_dsp_1_U14/myFuncAccel4_ap_fadd_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: /run/media/epetrakos/60GB/Xilinx/Vivado/2019.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Time: 165 ns  Iteration: 11  Process: /apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/myFuncAccel4_fadd_32ns_32ns_32_5_full_dsp_1_U14/myFuncAccel4_ap_fadd_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: /media/manolis/90GB/Xilinx/Vivado/2019.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
 Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
-Time: 165 ns  Iteration: 11  Process: /apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/myFuncAccel4_fadd_32ns_32ns_32_5_full_dsp_1_U15/myFuncAccel4_ap_fadd_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: /run/media/epetrakos/60GB/Xilinx/Vivado/2019.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Time: 165 ns  Iteration: 11  Process: /apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/myFuncAccel4_fadd_32ns_32ns_32_5_full_dsp_1_U15/myFuncAccel4_ap_fadd_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: /media/manolis/90GB/Xilinx/Vivado/2019.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
 Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
-Time: 165 ns  Iteration: 11  Process: /apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/myFuncAccel4_fadd_32ns_32ns_32_5_full_dsp_1_U16/myFuncAccel4_ap_fadd_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: /run/media/epetrakos/60GB/Xilinx/Vivado/2019.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
-// RTL Simulation : 1 / 1 [100.00%] @ "10425000"
+Time: 165 ns  Iteration: 11  Process: /apatb_myFuncAccel4_top/AESL_inst_myFuncAccel4/myFuncAccel4_fadd_32ns_32ns_32_5_full_dsp_1_U16/myFuncAccel4_ap_fadd_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: /media/manolis/90GB/Xilinx/Vivado/2019.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+// RTL Simulation : 1 / 2 [100.00%] @ "5425000"
+// RTL Simulation : 2 / 2 [100.00%] @ "10715000"
 ////////////////////////////////////////////////////////////////////////////////////
-$finish called at time : 10465 ns : File "/home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/ap_uint/accel4/accel4_uint/solution1/sim/verilog/myFuncAccel4.autotb.v" Line 1336
-run: Time (s): cpu = 00:00:00.72 ; elapsed = 00:00:15 . Memory (MB): peak = 1492.055 ; gain = 72.004 ; free physical = 912 ; free virtual = 3098
+$finish called at time : 10755 ns : File "/home/manolis/Documents/GitHub/HRY591-project/code/part2b/ap_uint/accel4/accel4_uint/solution1/sim/verilog/myFuncAccel4.autotb.v" Line 1336
+run: Time (s): cpu = 00:00:00.65 ; elapsed = 00:00:13 . Memory (MB): peak = 1513.367 ; gain = 72.004 ; free physical = 1185 ; free virtual = 4354
 ## quit
-INFO: [Common 17-206] Exiting xsim at Fri Nov 22 23:26:49 2019...
+INFO: [Common 17-206] Exiting xsim at Sat Dec 14 23:10:42 2019...
 
 Seed 0
 Size 1000
 Dimension 4
 Threshold 80.000000
 
-Software execution time: 0.000225
-Hardware execution time: 0.053514
+Software execution time: 0.000233
+Hardware execution time: 0.052321
 
 no errors
 

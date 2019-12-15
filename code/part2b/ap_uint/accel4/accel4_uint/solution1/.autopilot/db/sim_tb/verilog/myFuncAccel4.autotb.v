@@ -79,7 +79,7 @@
 `define AUTOTB_TVOUT_data_out_V_out_wrapc  "./impl_rtl.myFuncAccel4.autotvout_data_out_V.dat"
 module `AUTOTB_TOP;
 
-parameter AUTOTB_TRANSACTION_NUM = 1;
+parameter AUTOTB_TRANSACTION_NUM = 2;
 parameter PROGRESS_TIMEOUT = 10000000;
 parameter LATENCY_ESTIMATION = 1028;
 parameter LENGTH_size = 1;
@@ -100,8 +100,8 @@ parameter LENGTH_data0_12 = 1;
 parameter LENGTH_data0_13 = 1;
 parameter LENGTH_data0_14 = 1;
 parameter LENGTH_data0_15 = 1;
-parameter LENGTH_data1_V = 1000;
-parameter LENGTH_data_out_V = 1000;
+parameter LENGTH_data1_V = 500;
+parameter LENGTH_data_out_V = 500;
 
 task read_token;
     input integer fp;

@@ -216,7 +216,7 @@ ap_uint<128>* data_out)
 		{
 			aesl_fh.read(AUTOTB_TVOUT_PC_data_out_V, AESL_token); // data
 
-			sc_bv<128> *data_out_V_pc_buffer = new sc_bv<128>[1000];
+			sc_bv<128> *data_out_V_pc_buffer = new sc_bv<128>[500];
 			int i = 0;
 
 			while (AESL_token != "[[/transaction]]")
@@ -289,7 +289,7 @@ ap_uint<128>* data_out)
 					// {
 						// celement: data_out.V(127, 0)
 						// {
-							sc_lv<128>* data_out_V_lv0_0_999_1 = new sc_lv<128>[1000];
+							sc_lv<128>* data_out_V_lv0_0_499_1 = new sc_lv<128>[500];
 						// }
 					// }
 
@@ -298,12 +298,12 @@ ap_uint<128>* data_out)
 						int hls_map_index = 0;
 						// celement: data_out.V(127, 0)
 						{
-							// carray: (0) => (999) @ (1)
-							for (int i_0 = 0; i_0 <= 999; i_0 += 1)
+							// carray: (0) => (499) @ (1)
+							for (int i_0 = 0; i_0 <= 499; i_0 += 1)
 							{
 								if (&(data_out[0]) != NULL) // check the null address if the c port is array or others
 								{
-									data_out_V_lv0_0_999_1[hls_map_index].range(127, 0) = sc_bv<128>(data_out_V_pc_buffer[hls_map_index].range(127, 0));
+									data_out_V_lv0_0_499_1[hls_map_index].range(127, 0) = sc_bv<128>(data_out_V_pc_buffer[hls_map_index].range(127, 0));
 									hls_map_index++;
 								}
 							}
@@ -315,18 +315,18 @@ ap_uint<128>* data_out)
 						int hls_map_index = 0;
 						// celement: data_out.V(127, 0)
 						{
-							// carray: (0) => (999) @ (1)
-							for (int i_0 = 0; i_0 <= 999; i_0 += 1)
+							// carray: (0) => (499) @ (1)
+							for (int i_0 = 0; i_0 <= 499; i_0 += 1)
 							{
 								// sub                    : i_0
 								// ori_name               : data_out[i_0]
 								// sub_1st_elem           : 0
 								// ori_name_1st_elem      : data_out[0]
 								// output_left_conversion : data_out[i_0]
-								// output_type_conversion : (data_out_V_lv0_0_999_1[hls_map_index]).to_string(SC_BIN).c_str()
+								// output_type_conversion : (data_out_V_lv0_0_499_1[hls_map_index]).to_string(SC_BIN).c_str()
 								if (&(data_out[0]) != NULL) // check the null address if the c port is array or others
 								{
-									data_out[i_0] = (data_out_V_lv0_0_999_1[hls_map_index]).to_string(SC_BIN).c_str();
+									data_out[i_0] = (data_out_V_lv0_0_499_1[hls_map_index]).to_string(SC_BIN).c_str();
 									hls_map_index++;
 								}
 							}
@@ -1290,7 +1290,7 @@ ap_uint<128>* data_out)
 		sprintf(tvin_data1_V, "[[transaction]] %d\n", AESL_transaction);
 		aesl_fh.write(AUTOTB_TVIN_data1_V, tvin_data1_V);
 
-		sc_bv<128>* data1_V_tvin_wrapc_buffer = new sc_bv<128>[1000];
+		sc_bv<128>* data1_V_tvin_wrapc_buffer = new sc_bv<128>[500];
 
 		// RTL Name: data1_V
 		{
@@ -1299,8 +1299,8 @@ ap_uint<128>* data_out)
 				int hls_map_index = 0;
 				// celement: data1.V(127, 0)
 				{
-					// carray: (0) => (999) @ (1)
-					for (int i_0 = 0; i_0 <= 999; i_0 += 1)
+					// carray: (0) => (499) @ (1)
+					for (int i_0 = 0; i_0 <= 499; i_0 += 1)
 					{
 						// sub                   : i_0
 						// ori_name              : data1[i_0]
@@ -1321,13 +1321,13 @@ ap_uint<128>* data_out)
 		}
 
 		// dump tv to file
-		for (int i = 0; i < 1000; i++)
+		for (int i = 0; i < 500; i++)
 		{
 			sprintf(tvin_data1_V, "%s\n", (data1_V_tvin_wrapc_buffer[i]).to_string(SC_HEX).c_str());
 			aesl_fh.write(AUTOTB_TVIN_data1_V, tvin_data1_V);
 		}
 
-		tcl_file.set_num(1000, &tcl_file.data1_V_depth);
+		tcl_file.set_num(500, &tcl_file.data1_V_depth);
 		sprintf(tvin_data1_V, "[[/transaction]] \n");
 		aesl_fh.write(AUTOTB_TVIN_data1_V, tvin_data1_V);
 
@@ -1338,7 +1338,7 @@ ap_uint<128>* data_out)
 		sprintf(tvin_data_out_V, "[[transaction]] %d\n", AESL_transaction);
 		aesl_fh.write(AUTOTB_TVIN_data_out_V, tvin_data_out_V);
 
-		sc_bv<128>* data_out_V_tvin_wrapc_buffer = new sc_bv<128>[1000];
+		sc_bv<128>* data_out_V_tvin_wrapc_buffer = new sc_bv<128>[500];
 
 		// RTL Name: data_out_V
 		{
@@ -1347,8 +1347,8 @@ ap_uint<128>* data_out)
 				int hls_map_index = 0;
 				// celement: data_out.V(127, 0)
 				{
-					// carray: (0) => (999) @ (1)
-					for (int i_0 = 0; i_0 <= 999; i_0 += 1)
+					// carray: (0) => (499) @ (1)
+					for (int i_0 = 0; i_0 <= 499; i_0 += 1)
 					{
 						// sub                   : i_0
 						// ori_name              : data_out[i_0]
@@ -1369,13 +1369,13 @@ ap_uint<128>* data_out)
 		}
 
 		// dump tv to file
-		for (int i = 0; i < 1000; i++)
+		for (int i = 0; i < 500; i++)
 		{
 			sprintf(tvin_data_out_V, "%s\n", (data_out_V_tvin_wrapc_buffer[i]).to_string(SC_HEX).c_str());
 			aesl_fh.write(AUTOTB_TVIN_data_out_V, tvin_data_out_V);
 		}
 
-		tcl_file.set_num(1000, &tcl_file.data_out_V_depth);
+		tcl_file.set_num(500, &tcl_file.data_out_V_depth);
 		sprintf(tvin_data_out_V, "[[/transaction]] \n");
 		aesl_fh.write(AUTOTB_TVIN_data_out_V, tvin_data_out_V);
 
@@ -1393,7 +1393,7 @@ ap_uint<128>* data_out)
 		sprintf(tvout_data_out_V, "[[transaction]] %d\n", AESL_transaction);
 		aesl_fh.write(AUTOTB_TVOUT_data_out_V, tvout_data_out_V);
 
-		sc_bv<128>* data_out_V_tvout_wrapc_buffer = new sc_bv<128>[1000];
+		sc_bv<128>* data_out_V_tvout_wrapc_buffer = new sc_bv<128>[500];
 
 		// RTL Name: data_out_V
 		{
@@ -1402,8 +1402,8 @@ ap_uint<128>* data_out)
 				int hls_map_index = 0;
 				// celement: data_out.V(127, 0)
 				{
-					// carray: (0) => (999) @ (1)
-					for (int i_0 = 0; i_0 <= 999; i_0 += 1)
+					// carray: (0) => (499) @ (1)
+					for (int i_0 = 0; i_0 <= 499; i_0 += 1)
 					{
 						// sub                   : i_0
 						// ori_name              : data_out[i_0]
@@ -1424,13 +1424,13 @@ ap_uint<128>* data_out)
 		}
 
 		// dump tv to file
-		for (int i = 0; i < 1000; i++)
+		for (int i = 0; i < 500; i++)
 		{
 			sprintf(tvout_data_out_V, "%s\n", (data_out_V_tvout_wrapc_buffer[i]).to_string(SC_HEX).c_str());
 			aesl_fh.write(AUTOTB_TVOUT_data_out_V, tvout_data_out_V);
 		}
 
-		tcl_file.set_num(1000, &tcl_file.data_out_V_depth);
+		tcl_file.set_num(500, &tcl_file.data_out_V_depth);
 		sprintf(tvout_data_out_V, "[[/transaction]] \n");
 		aesl_fh.write(AUTOTB_TVOUT_data_out_V, tvout_data_out_V);
 

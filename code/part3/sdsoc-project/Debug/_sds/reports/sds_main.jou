@@ -1,0 +1,22 @@
+(c) Copyright 2012-2019 Xilinx, Inc. All Rights Reserved.
+#-----------------------------------------------------------
+# Tool version  : sds++ 2019.1 SW Build 2552052 on Fri May 24 14:48:04 MDT 2019
+# Start time    : Sat Dec 14 19:43:26 EET 2019
+# Command line  : sds++ -Wall -O0 -g -I../src -c -fmessage-length=0 -MTsrc/main.o -MMD -MP -MFsrc/main.d -MTsrc/main.o -o src/main.o ../src/main.cpp -sds-sys-config linux -sds-proc linux -sds-pf zed
+# Log file      : /home/manolis/Documents/GitHub/HRY591-project/code/part3/sdsoc-project/Debug/_sds/reports/sds_main.log
+# Journal file  : /home/manolis/Documents/GitHub/HRY591-project/code/part3/sdsoc-project/Debug/_sds/reports/sds_main.jou
+# Report file   : /home/manolis/Documents/GitHub/HRY591-project/code/part3/sdsoc-project/Debug/_sds/reports/sds_main.rpt
+#-----------------------------------------------------------
+
+#-----------------------------------------------------------
+# This file contains undocumented internal commands and is
+# provided for diagnostic purposes. To reproduce the results
+# of this run, please run the sds++ command line above again.
+#-----------------------------------------------------------
+
+# Analyzing source for RTL template usage
+/media/manolis/90GB/Xilinx/SDx/2019.1/bin/rtl_template_extract  /home/manolis/Documents/GitHub/HRY591-project/code/part3/sdsoc-project/src/main.cpp  -save-query /home/manolis/Documents/GitHub/HRY591-project/code/part3/sdsoc-project/Debug/_sds/.llvm/src/main.rtlx  --  -c  -I../src  -Wall -g -fmessage-length=0 -MMD -MP -D __SDSCC__  
+    -target arm-linux-gnueabihf -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -O0 -g -w      -I /media/manolis/90GB/Xilinx/SDx/2019.1/target/aarch32-linux/include  -D HLS_NO_XIL_FPO_LIB  -I /media/manolis/90GB/Xilinx/Vivado/2019.1/include   -I/media/manolis/90GB/Xilinx/SDK/2019.1/gnu/aarch32/lin/gcc-arm-linux-gnueabi/arm-linux-gnueabihf/include/c++/8.2.0 -I/media/manolis/90GB/Xilinx/SDK/2019.1/gnu/aarch32/lin/gcc-arm-linux-gnueabi/arm-linux-gnueabihf/include/c++/8.2.0/arm-linux-gnueabihf -I/media/manolis/90GB/Xilinx/SDK/2019.1/gnu/aarch32/lin/gcc-arm-linux-gnueabi/arm-linux-gnueabihf/include/c++/8.2.0/backward -I/media/manolis/90GB/Xilinx/SDK/2019.1/gnu/aarch32/lin/gcc-arm-linux-gnueabi/lib/gcc/arm-linux-gnueabihf/8.2.0/include -I/media/manolis/90GB/Xilinx/SDK/2019.1/gnu/aarch32/lin/gcc-arm-linux-gnueabi/lib/gcc/arm-linux-gnueabihf/8.2.0/include-fixed -I/media/manolis/90GB/Xilinx/SDK/2019.1/gnu/aarch32/lin/gcc-arm-linux-gnueabi/arm-linux-gnueabihf/include -I/media/manolis/90GB/Xilinx/SDK/2019.1/gnu/aarch32/lin/gcc-arm-linux-gnueabi/arm-linux-gnueabihf/libc/usr/include  -std=c++11
+# ERROR: [SdsCompiler 83-5176] RTL template analysis exited with non-zero code processing /home/manolis/Documents/GitHub/HRY591-project/code/part3/sdsoc-project/src/main.cpp
+# ERROR: [SdsCompiler 83-5004] Build failed
+# sds++ completed at Sat Dec 14 19:43:29 EET 2019

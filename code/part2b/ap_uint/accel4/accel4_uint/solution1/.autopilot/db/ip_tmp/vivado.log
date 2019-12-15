@@ -2,19 +2,18 @@
 # Vivado v2019.1 (64-bit)
 # SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
 # IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
-# Start of session at: Fri Nov 22 23:25:19 2019
-# Process ID: 17570
-# Current directory: /home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/ap_uint/accel4/accel4_uint/solution1/.autopilot/db/ip_tmp
+# Start of session at: Sat Dec 14 23:09:25 2019
+# Process ID: 10243
+# Current directory: /home/manolis/Documents/GitHub/HRY591-project/code/part2b/ap_uint/accel4/accel4_uint/solution1/.autopilot/db/ip_tmp
 # Command line: vivado  -notrace -mode batch -source run_vivado_gen_ip.tcl
-# Log file: /home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/ap_uint/accel4/accel4_uint/solution1/.autopilot/db/ip_tmp/vivado.log
-# Journal file: /home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/ap_uint/accel4/accel4_uint/solution1/.autopilot/db/ip_tmp/vivado.jou
+# Log file: /home/manolis/Documents/GitHub/HRY591-project/code/part2b/ap_uint/accel4/accel4_uint/solution1/.autopilot/db/ip_tmp/vivado.log
+# Journal file: /home/manolis/Documents/GitHub/HRY591-project/code/part2b/ap_uint/accel4/accel4_uint/solution1/.autopilot/db/ip_tmp/vivado.jou
 #-----------------------------------------------------------
 source run_vivado_gen_ip.tcl -notrace
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
-INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/run/media/epetrakos/60GB/Xilinx/Vivado/2019.1/data/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/media/manolis/90GB/Xilinx/Vivado/2019.1/data/ip'.
 WARNING: [IP_Flow 19-4832] The IP name 'myFuncAccel4_ap_fmul_2_max_dsp_32' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
-create_ip: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1447.023 ; gain = 42.137 ; free physical = 863 ; free virtual = 2968
 INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'myFuncAccel4_ap_fmul_2_max_dsp_32'...
 INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'myFuncAccel4_ap_fmul_2_max_dsp_32'...
 WARNING: [IP_Flow 19-4832] The IP name 'myFuncAccel4_ap_fcmp_0_no_dsp_32' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
@@ -23,4 +22,4 @@ INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'myFuncAccel4_ap_f
 WARNING: [IP_Flow 19-4832] The IP name 'myFuncAccel4_ap_fadd_3_full_dsp_32' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
 INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'myFuncAccel4_ap_fadd_3_full_dsp_32'...
 INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'myFuncAccel4_ap_fadd_3_full_dsp_32'...
-INFO: [Common 17-206] Exiting Vivado at Fri Nov 22 23:25:49 2019...
+INFO: [Common 17-206] Exiting Vivado at Sat Dec 14 23:09:49 2019...

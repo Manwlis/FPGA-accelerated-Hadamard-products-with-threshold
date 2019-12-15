@@ -42,7 +42,7 @@ set SCTraceOption all
 set TargetInfo xc7z020:-clg484:-1
 set SourceFiles {sc {} c ../../myIP.cpp}
 set SourceFlags {sc {} c {{}}}
-set DirectiveFile /home/epetrakos/Documents/GitHub/HRY591-project/code/part2b/ap_uint/accel4/accel4_uint/solution1/solution1.directive
+set DirectiveFile /home/manolis/Documents/GitHub/HRY591-project/code/part2b/ap_uint/accel4/accel4_uint/solution1/solution1.directive
 set TBFiles {verilog ../../main.cpp bc ../../main.cpp vhdl ../../main.cpp sc ../../main.cpp cas ../../main.cpp c {}}
 set SpecLanguage C
 set TVInFiles {bc {} c {} sc {} cas {} vhdl {} verilog {}}

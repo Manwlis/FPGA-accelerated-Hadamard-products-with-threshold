@@ -1,0 +1,26 @@
+2019-12-14T19:43:25.14617700255-19:43:25 **** Incremental Build of configuration Debug for project sdsoc-project ****
+000-make all 
+000-make --no-print-directory pre-build
+000-sdsoc_make_clean Debug
+000- 
+000-make --no-print-directory main-build
+000-Building file: ../src/main.cpp
+000-Invoking: SDS++ Compiler
+000-sds++ -Wall -O0 -g -I"../src" -c -fmessage-length=0 -MT"src/main.o" -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp" -sds-sys-config linux -sds-proc linux -sds-pf "zed"
+000-Analyzing source for RTL template usage
+000/sdsoc-project/src/main.cpp2-1-1fatal error: 'sds_utils.h' file not found2-/home/manolis/Documents/GitHub/HRY591-project/code/part3/sdsoc-project/src/main.cpp:2:10: fatal error: 'sds_utils.h' file not found
+000-#include "sds_utils.h"
+000-         ^
+000-Error while processing /home/manolis/Documents/GitHub/HRY591-project/code/part3/sdsoc-project/src/main.cpp.
+000/sdsoc-project/Debug0-1-1TemplateExtract 83-3509: Failed to run clang frontend action of rtl_template_extract!2-ERROR: [TemplateExtract 83-3509] Failed to run clang frontend action of rtl_template_extract!
+000/sdsoc-project/Debug0-1-1SdsCompiler 83-5176: RTL template analysis exited with non-zero code processing /home/manolis/Documents/GitHub/HRY591-project/code/part3/sdsoc-project/src/main.cpp2-ERROR: [SdsCompiler 83-5176] RTL template analysis exited with non-zero code processing /home/manolis/Documents/GitHub/HRY591-project/code/part3/sdsoc-project/src/main.cpp
+000-sds++ log file saved as /home/manolis/Documents/GitHub/HRY591-project/code/part3/sdsoc-project/Debug/_sds/reports/sds_main.log
+000/sdsoc-project/Debug0-1-1SdsCompiler 83-5004: Build failed2-ERROR: [SdsCompiler 83-5004] Build failed
+000-
+000/sdsoc-project/Debug/src/subdir.mk21-1-1recipe for target 'src/main.o' failed2-src/subdir.mk:21: recipe for target 'src/main.o' failed
+000/sdsoc-project/Debug0-1-1make[1]: *** [src/main.o] Error 12-make[1]: *** [src/main.o] Error 1
+000/sdsoc-project/Debug/makefile39-1-1recipe for target 'all' failed2-makefile:39: recipe for target 'all' failed
+000/sdsoc-project/Debug0-1-1make: *** [all] Error 22-make: *** [all] Error 2
+00255-
+19:43:29 Build Finished (took 4s.544ms)
+

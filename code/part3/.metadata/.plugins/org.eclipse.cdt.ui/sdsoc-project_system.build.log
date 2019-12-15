@@ -1,0 +1,7 @@
+10:47:40 **** Clean-only build of configuration Debug for project sdsoc-project_system ****
+make clean 
+rm -rf ./_sds
+rm -rf sd_card
+
+10:47:41 Build Finished (took 426ms)
+

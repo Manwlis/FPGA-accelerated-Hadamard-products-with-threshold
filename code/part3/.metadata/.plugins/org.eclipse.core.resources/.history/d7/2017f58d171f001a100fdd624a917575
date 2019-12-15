@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="ASCII"?>
+<systemproject:SystemProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdsproject="http://www.xilinx.com/sdsproject" xmlns:systemproject="http://www.xilinx.com/systemproject" name="sdsoc-project_system" platform="/media/manolis/90GB/Xilinx/SDx/2019.1/platforms/zed/zed.xpfm" platformUID="xilinx.com:zed:zed:1.0" sysConfig="linux" runtime="C/C++">
+  <configuration name="Debug">
+    <configBuildOptions xsi:type="systemproject:SystemOptions">
+      <applications name="sdsoc-project" domainName="linux" domainPrettyName="linux" appBuildConfig="Release"/>
+      <options xsi:type="sdsproject:Option" gensdcard="true" dmclkid="2" enableHwSwTrace="false" emuModelType="Debug"/>
+    </configBuildOptions>
+    <lastBuildOptions xsi:type="systemproject:SystemOptions">
+      <applications name="sdsoc-project" domainName="linux" domainPrettyName="linux" appBuildConfig="Release"/>
+      <options xsi:type="sdsproject:Option" gensdcard="true" dmclkid="2" enableHwSwTrace="false" emuModelType="Debug"/>
+    </lastBuildOptions>
+  </configuration>
+  <configuration name="Release">
+    <configBuildOptions xsi:type="systemproject:SystemOptions">
+      <applications name="sdsoc-project" domainName="linux" domainPrettyName="linux" appBuildConfig="Release"/>
+      <options xsi:type="sdsproject:Option" gensdcard="true" dmclkid="2"/>
+    </configBuildOptions>
+  </configuration>
+</systemproject:SystemProject>

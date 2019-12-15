@@ -11,7 +11,7 @@ __SIM_DDS__ = 1
 
 TARGET := cosim.tv.exe
 
-AUTOPILOT_ROOT := /run/media/epetrakos/60GB/Xilinx/Vivado/2019.1
+AUTOPILOT_ROOT := /media/manolis/90GB/Xilinx/Vivado/2019.1
 AUTOPILOT_MACH := lnx64
 
 ifdef COSIM_M32
@@ -24,7 +24,7 @@ ifdef AP_GCC_M32
 endif
 IFLAG += -fPIC
 ifndef AP_GCC_PATH
-  AP_GCC_PATH := /run/media/epetrakos/60GB/Xilinx/Vivado/2019.1/tps/lnx64/gcc-6.2.0/bin
+  AP_GCC_PATH := /media/manolis/90GB/Xilinx/Vivado/2019.1/tps/lnx64/gcc-6.2.0/bin
 endif
 AUTOPILOT_TOOL = ${AUTOPILOT_ROOT}/${AUTOPILOT_MACH}/tools
 AUTOPILOT_TECH = ${AUTOPILOT_ROOT}/common/technology
@@ -40,6 +40,7 @@ IFLAG += -I "${AUTOPILOT_ROOT}/common/technology/generic/SystemC/AESL_FP_comp"
 IFLAG += -I "${AUTOPILOT_ROOT}/common/technology/generic/SystemC/AESL_comp"
 IFLAG += -I "${AUTOPILOT_ROOT}/${AUTOPILOT_MACH}/tools/systemc/include"
 IFLAG += -I "${AUTOPILOT_ROOT}/${AUTOPILOT_MACH}/tools/auto_cc/include"
+IFLAG += -I "/usr/include/x86_64-linux-gnu"
 IFLAG += -D__SIM_FPO__
 IFLAG += -D__SIM_OPENCV__
 IFLAG += -D__SIM_FFT__
