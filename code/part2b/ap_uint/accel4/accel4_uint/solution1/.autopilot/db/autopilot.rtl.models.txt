@@ -1,4 +1,0 @@
-myFuncAccel4_fadd_32ns_32ns_32_5_full_dsp_1
-myFuncAccel4_fmul_32ns_32ns_32_4_max_dsp_1
-myFuncAccel4_fcmp_32ns_32ns_1_2_1
-myFuncAccel4

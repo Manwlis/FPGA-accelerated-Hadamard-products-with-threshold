@@ -11,7 +11,7 @@ open_solution "solution1"
 set_part {xc7z020-clg484-1} -tool vivado
 create_clock -period 10 -name default
 #source "./accel4_uint/solution1/directives.tcl"
-csim_design -argv {0 1000 4 80}
+csim_design -argv {0 10 4 80}
 csynth_design
 cosim_design -trace_level all -argv {0 1000 4 80}
 export_design -format ip_catalog

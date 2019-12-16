@@ -9273,24 +9273,24 @@ void myFuncAccel4 (unsigned int size, unsigned int dim, dataType_t threshold, da
 
 
 void myFuncAccel4 (unsigned int size, unsigned int dim, dataType_t threshold, dataType_t data0[16], dataType_bus * data1, dataType_bus * data_out)
-{_ssdm_SpecArrayDimSize(data0, 16);
+{
 
-#pragma HLS INTERFACE ap_stable port=&size bundle=control
-#pragma HLS INTERFACE ap_stable port=&dim bundle=control
-#pragma HLS INTERFACE ap_stable port=&threshold bundle=control
+#pragma HLS INTERFACE ap_stable port=size bundle=control
+#pragma HLS INTERFACE ap_stable port=dim bundle=control
+#pragma HLS INTERFACE ap_stable port=threshold bundle=control
 
-#pragma HLS INTERFACE ap_stable port=&data0
-#pragma HLS array_partition variable=&data0 complete
+#pragma HLS INTERFACE ap_stable port=data0
+#pragma HLS array_partition variable=data0 complete
 
 
 
-#pragma HLS INTERFACE axis port=&data1 depth=500
-#pragma HLS INTERFACE axis port=&data_out depth=500
+#pragma HLS INTERFACE axis port=data1 depth=1000
+#pragma HLS INTERFACE axis port=data_out depth=1000
 
 
  unsigned int i, k, l;
  dataType_t temp_dim[4];
-#pragma HLS array_partition variable=&temp_dim complete
+#pragma HLS array_partition variable=temp_dim complete
 
 
 
@@ -9301,7 +9301,7 @@ void myFuncAccel4 (unsigned int size, unsigned int dim, dataType_t threshold, da
 
 
  dataType_t temp1[4];
-#pragma HLS array_partition variable=&temp1 complete
+#pragma HLS array_partition variable=temp1 complete
 
 
  dataType_t temp0[16];

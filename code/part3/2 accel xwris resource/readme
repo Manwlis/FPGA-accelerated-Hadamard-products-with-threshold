@@ -1,0 +1,9 @@
+2 diaforetikoi accel
+zero copy
+
+
+Estimated resource usage:
+dsps used = 160/220
+bram used = 24/140
+luts used = 30958/53200
+FFs used = 20220/106400

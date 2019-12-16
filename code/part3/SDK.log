@@ -37,3 +37,40 @@
 10:47:35 INFO  : Successfully done setting XSCT server connection channel  
 10:47:36 INFO  : Successfully done setting workspace for the tool. 
 10:47:36 INFO  : Successfully done query RDI_DATADIR 
+15:42:14 INFO  : Launching XSCT server: xsct -n -sdx -interactive /home/manolis/Documents/GitHub/HRY591-project/code/part3/temp_xsdb_launch_script.tcl
+15:42:15 INFO  : Registering command handlers for SDx TCF services
+15:42:16 INFO  : Validating SDSoC License...
+15:42:18 INFO  : XSCT server has started successfully.
+15:42:18 INFO  : plnx-install-location is set to ''
+15:42:18 INFO  : Successfully done setting XSCT server connection channel  
+15:42:18 INFO  : Successfully done setting workspace for the tool. 
+15:42:18 INFO  : Successfully done query RDI_DATADIR 
+15:42:20 INFO  : License available for SDSoC
+15:42:20 INFO  : Validating SDAccel License...
+15:42:27 INFO  : License available for SDAccel
+17:03:42 WARN  : Internal browser is not available to display the HTML report. It will be opened in an external browser
+17:35:14 INFO  : Launching XSCT server: xsct -n -sdx -interactive /home/manolis/Documents/GitHub/HRY591-project/code/part3/temp_xsdb_launch_script.tcl
+17:35:16 INFO  : Registering command handlers for SDx TCF services
+17:35:17 INFO  : Validating SDSoC License...
+17:35:19 INFO  : License available for SDSoC
+17:35:19 INFO  : Validating SDAccel License...
+17:35:19 INFO  : License available for SDAccel
+17:35:20 INFO  : XSCT server has started successfully.
+17:35:20 INFO  : Successfully done setting XSCT server connection channel  
+17:35:20 INFO  : plnx-install-location is set to ''
+17:35:20 INFO  : Successfully done setting workspace for the tool. 
+17:35:20 INFO  : Successfully done query RDI_DATADIR 
+17:57:03 WARN  : Internal browser is not available to display the HTML report. It will be opened in an external browser
+17:57:37 WARN  : Internal browser is not available to display the HTML report. It will be opened in an external browser
+19:16:26 WARN  : Internal browser is not available to display the HTML report. It will be opened in an external browser
+19:43:11 INFO  : Launching XSCT server: xsct -n -sdx -interactive /home/manolis/Documents/GitHub/HRY591-project/code/part3/temp_xsdb_launch_script.tcl
+19:43:12 INFO  : Registering command handlers for SDx TCF services
+19:43:13 INFO  : Validating SDSoC License...
+19:43:15 INFO  : XSCT server has started successfully.
+19:43:16 INFO  : License available for SDSoC
+19:43:16 INFO  : Validating SDAccel License...
+19:43:16 INFO  : plnx-install-location is set to ''
+19:43:16 INFO  : Successfully done setting XSCT server connection channel  
+19:43:16 INFO  : Successfully done setting workspace for the tool. 
+19:43:16 INFO  : Successfully done query RDI_DATADIR 
+19:43:17 INFO  : License available for SDAccel

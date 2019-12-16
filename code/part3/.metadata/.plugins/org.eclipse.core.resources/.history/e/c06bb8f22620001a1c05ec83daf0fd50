@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="ASCII"?>
+<sdsproject:SDSProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdsproject="http://www.xilinx.com/sdsproject" name="sdsoc-project" location="/home/manolis/Documents/GitHub/HRY591-project/code/part3/sdsoc-project" platform="/media/manolis/90GB/Xilinx/SDx/2019.1/platforms/zed/zed.xpfm" platformUID="xilinx.com:zed:zed:1.0" systemProject="sdsoc-project_system" sysConfig="linux" runtime="C/C++" cpu="linux" cpuInstance="" os="linux" ConfigType="Debug">
+  <configuration name="Debug" id="com.xilinx.sdsoc.managedbuild.project.debug.202651465" dirty="true">
+    <configBuildOptions xsi:type="sdsproject:Option" insertapm="false" gensdcard="true" dmclkid="2" enableHwSwTrace="false" traceApplication="false"/>
+    <lastBuildOptions xsi:type="sdsproject:Option" insertapm="false" gensdcard="true" dmclkid="2" enableHwSwTrace="false" traceApplication="false"/>
+  </configuration>
+  <configuration name="Release" id="com.xilinx.sdsoc.managedbuild.project.release.538787739">
+    <configBuildOptions xsi:type="sdsproject:Option" insertapm="false" gensdcard="true" dmclkid="2" enableHwSwTrace="false" traceApplication="false">
+      <accelerator name="myFuncAccel4_1" filepath="src/myIP.cpp" clkid="2" location="/home/manolis/Documents/GitHub/HRY591-project/code/part3/sdsoc-project/src/myIP.cpp">
+        <args name="size"/>
+        <args name="dim"/>
+        <args name="threshold"/>
+        <args name="data0"/>
+        <args name="data1"/>
+        <args name="data_out"/>
+      </accelerator>
+      <accelerator name="myFuncAccel4_2" filepath="src/myIP.cpp" clkid="2" location="/home/manolis/Documents/GitHub/HRY591-project/code/part3/sdsoc-project/src/myIP.cpp">
+        <args name="size"/>
+        <args name="dim"/>
+        <args name="threshold"/>
+        <args name="data0"/>
+        <args name="data1"/>
+        <args name="data_out"/>
+      </accelerator>
+    </configBuildOptions>
+    <lastBuildOptions xsi:type="sdsproject:Option" insertapm="false" gensdcard="true" dmclkid="2" enableHwSwTrace="false" traceApplication="false">
+      <accelerator name="myFuncAccel4_1" filepath="src/myIP.cpp" clkid="2" location="/home/manolis/Documents/GitHub/HRY591-project/code/part3/sdsoc-project/src/myIP.cpp">
+        <args name="size"/>
+        <args name="dim"/>
+        <args name="threshold"/>
+        <args name="data0"/>
+        <args name="data1"/>
+        <args name="data_out"/>
+      </accelerator>
+      <accelerator name="myFuncAccel4_2" filepath="src/myIP.cpp" clkid="2" location="/home/manolis/Documents/GitHub/HRY591-project/code/part3/sdsoc-project/src/myIP.cpp">
+        <args name="size"/>
+        <args name="dim"/>
+        <args name="threshold"/>
+        <args name="data0"/>
+        <args name="data1"/>
+        <args name="data_out"/>
+      </accelerator>
+    </lastBuildOptions>
+  </configuration>
+</sdsproject:SDSProject>

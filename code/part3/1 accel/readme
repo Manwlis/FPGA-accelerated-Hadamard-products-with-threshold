@@ -1,0 +1,14 @@
+1 klhsh accelerator
+zero copy
+
+
+Estimated resource usage:
+dsps used = 80/220
+bram used = 24/140
+luts used = 15479/53200
+FFs used = 10110/106400
+
+
+#pragma SDS data mem_attribute(data0:PHYSICAL_CONTIGUOUS, data1:PHYSICAL_CONTIGUOUS, data_out:PHYSICAL_CONTIGUOUS)
+#pragma SDS data zero_copy(data0[0:dim*dim], data1[0:size], data_out[0:size])
+#pragma SDS data access_pattern(data0:SEQUENTIAL, data1:SEQUENTIAL, data_out:SEQUENTIAL)

@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    table, th, td
+    {
+      border-collapse:collapse;
+      border:1px solid black;
+    }
+    th, td
+    {
+      padding:5px;
+    }
+    p
+    {
+      font-size:200%
+    }
+  </style>
+  <title> Data Motion Network Report </title>
+</head>
+<body>
+<p>Partition 0</p>
+<sup><strong>Note:</strong>
+ <ol><li>"(size)" may show up in the Declared/Transfer Size of an argument if the actual array size was not present in the C/C++ source code, most likely the argument is a pointer.</li>
+<li>Line number under Callsite with an asterisk * is based on the generated source file located at .../_sds/.llvm.  It is not based on the original source file.</li></ol></sup><table>
+<caption><b><font size="5">Data Motion Network</font></b></caption>
+<tr>
+<th>Accelerator</th>
+<th>Argument</th>
+<th>IP Port</th>
+<th>Direction</th>
+<th>Declared Size(bytes)</th>
+<th>Pragmas</th>
+<th>Connection</th>
+</tr>
+<tr>
+<td>myFuncAccel41</td>
+<td>size</td>
+<td>size</td>
+<td>IN</td>
+<td>4</td>
+<td><ul>
+</ul>
+</td>
+<td>ps7_M_AXI_GP0:AXILITE:0xC</td>
+</tr>
+<td></td>
+<td>dim</td>
+<td>dim</td>
+<td>IN</td>
+<td>4</td>
+<td><ul>
+</ul>
+</td>
+<td>ps7_M_AXI_GP0:AXILITE:0x10</td>
+</tr>
+<td></td>
+<td>threshold</td>
+<td>threshold</td>
+<td>IN</td>
+<td>4</td>
+<td><ul>
+</ul>
+</td>
+<td>ps7_M_AXI_GP0:AXILITE:0x14</td>
+</tr>
+<td></td>
+<td>data0</td>
+<td>data0_offset</td>
+<td>IN</td>
+<td>16*4</td>
+<td><ul>
+<li>length:(dim*dim)</li>
+<li>mem_attribute:PHYSICAL_CONTIGUOUS</li>
+<li>data_mover:zero_copy</li>
+</ul>
+</td>
+<td>ps7_S_AXI_ACP:AXIMM:0x18</td>
+</tr>
+<td></td>
+<td>data1</td>
+<td>data1_V</td>
+<td>IN</td>
+<td>(size)*16</td>
+<td><ul>
+<li>length:(loops)</li>
+<li>mem_attribute:PHYSICAL_CONTIGUOUS</li>
+<li>data_mover:zero_copy</li>
+</ul>
+</td>
+<td>ps7_S_AXI_ACP:AXIMM:0x1C</td>
+</tr>
+<td></td>
+<td>data_out</td>
+<td>data_out_V</td>
+<td>OUT</td>
+<td>(size)*16</td>
+<td><ul>
+<li>length:(loops)</li>
+<li>mem_attribute:PHYSICAL_CONTIGUOUS</li>
+<li>data_mover:zero_copy</li>
+</ul>
+</td>
+<td>ps7_S_AXI_ACP:AXIMM:0x20</td>
+</tr>
+<tr>
+<td>myFuncAccel42</td>
+<td>size</td>
+<td>size</td>
+<td>IN</td>
+<td>4</td>
+<td><ul>
+</ul>
+</td>
+<td>ps7_M_AXI_GP0:AXILITE:0xC</td>
+</tr>
+<td></td>
+<td>dim</td>
+<td>dim</td>
+<td>IN</td>
+<td>4</td>
+<td><ul>
+</ul>
+</td>
+<td>ps7_M_AXI_GP0:AXILITE:0x10</td>
+</tr>
+<td></td>
+<td>threshold</td>
+<td>threshold</td>
+<td>IN</td>
+<td>4</td>
+<td><ul>
+</ul>
+</td>
+<td>ps7_M_AXI_GP0:AXILITE:0x14</td>
+</tr>
+<td></td>
+<td>data0</td>
+<td>data0_offset</td>
+<td>IN</td>
+<td>16*4</td>
+<td><ul>
+<li>length:(dim*dim)</li>
+<li>mem_attribute:PHYSICAL_CONTIGUOUS</li>
+<li>data_mover:zero_copy</li>
+</ul>
+</td>
+<td>ps7_S_AXI_ACP:AXIMM:0x18</td>
+</tr>
+<td></td>
+<td>data1</td>
+<td>data1_V</td>
+<td>IN</td>
+<td>(size)*16</td>
+<td><ul>
+<li>length:(loops)</li>
+<li>mem_attribute:PHYSICAL_CONTIGUOUS</li>
+<li>data_mover:zero_copy</li>
+</ul>
+</td>
+<td>ps7_S_AXI_ACP:AXIMM:0x1C</td>
+</tr>
+<td></td>
+<td>data_out</td>
+<td>data_out_V</td>
+<td>OUT</td>
+<td>(size)*16</td>
+<td><ul>
+<li>length:(loops)</li>
+<li>mem_attribute:PHYSICAL_CONTIGUOUS</li>
+<li>data_mover:zero_copy</li>
+</ul>
+</td>
+<td>ps7_S_AXI_ACP:AXIMM:0x20</td>
+</tr>
+</table>
+
+<table>
+<caption><b><font size="5">Accelerator Callsites</font></b></caption>
+<tr>
+<th>Accelerator</th>
+<th>Callsite</th>
+<th>IP Port</th>
+<th>Transfer Size(bytes)</th>
+<th>Paged or Contiguous</th>
+<th>Datamover Setup Time(CPU cycles)</th>
+<th>Transfer Time(CPU cycles)</th>
+</tr>
+<tr>
+<td>myFuncAccel41</td>
+<td>main.cpp:127:2</td>
+<td>size</td>
+<td>4</td>
+<td>paged</td>
+<td>0</td>
+<td>13</td>
+</tr>
+<td></td>
+<td></td>
+<td>dim</td>
+<td>4</td>
+<td>paged</td>
+<td>0</td>
+<td>13</td>
+</tr>
+<td></td>
+<td></td>
+<td>threshold</td>
+<td>4</td>
+<td>paged</td>
+<td>0</td>
+<td>13</td>
+</tr>
+<td></td>
+<td></td>
+<td>data0_offset</td>
+<td>(dim*dim) * 4</td>
+<td>PHYSICAL_CONTIGUOUS</td>
+<td>475</td>
+<td>2029</td>
+</tr>
+<td></td>
+<td></td>
+<td>data1_V</td>
+<td>(loops) * 16</td>
+<td>PHYSICAL_CONTIGUOUS</td>
+<td>976</td>
+<td>14005540</td>
+</tr>
+<td></td>
+<td></td>
+<td>data_out_V</td>
+<td>(loops) * 16</td>
+<td>PHYSICAL_CONTIGUOUS</td>
+<td>976</td>
+<td>14005540</td>
+</tr>
+<tr>
+<td>myFuncAccel42</td>
+<td>main.cpp:138:2</td>
+<td>size</td>
+<td>4</td>
+<td>paged</td>
+<td>0</td>
+<td>13</td>
+</tr>
+<td></td>
+<td></td>
+<td>dim</td>
+<td>4</td>
+<td>paged</td>
+<td>0</td>
+<td>13</td>
+</tr>
+<td></td>
+<td></td>
+<td>threshold</td>
+<td>4</td>
+<td>paged</td>
+<td>0</td>
+<td>13</td>
+</tr>
+<td></td>
+<td></td>
+<td>data0_offset</td>
+<td>(dim*dim) * 4</td>
+<td>PHYSICAL_CONTIGUOUS</td>
+<td>475</td>
+<td>2029</td>
+</tr>
+<td></td>
+<td></td>
+<td>data1_V</td>
+<td>(loops) * 16</td>
+<td>PHYSICAL_CONTIGUOUS</td>
+<td>976</td>
+<td>14005540</td>
+</tr>
+<td></td>
+<td></td>
+<td>data_out_V</td>
+<td>(loops) * 16</td>
+<td>PHYSICAL_CONTIGUOUS</td>
+<td>976</td>
+<td>14005540</td>
+</tr>
+</table>
+</body>
+<dmn>
+	<accel name="myFuncAccel41">
+		<arg name="size" ipPort="size" direction="IN" size="4" pragma="" connectionIpPort="ps7_M_AXI_GP0" connectionDm="AXILITE"\>
+		<arg name="dim" ipPort="dim" direction="IN" size="4" pragma="" connectionIpPort="ps7_M_AXI_GP0" connectionDm="AXILITE"\>
+		<arg name="threshold" ipPort="threshold" direction="IN" size="4" pragma="" connectionIpPort="ps7_M_AXI_GP0" connectionDm="AXILITE"\>
+		<arg name="data0" ipPort="data0_offset" direction="IN" size="16*4" pragma="" connectionIpPort="ps7_S_AXI_ACP" connectionDm="AXIMM"\>
+		<arg name="data1" ipPort="data1_V" direction="IN" size="(size)*16" pragma="" connectionIpPort="ps7_S_AXI_ACP" connectionDm="AXIMM"\>
+		<arg name="data_out" ipPort="data_out_V" direction="OUT" size="(size)*16" pragma="" connectionIpPort="ps7_S_AXI_ACP" connectionDm="AXIMM"\>
+	</accel>
+	<accel name="myFuncAccel42">
+		<arg name="size" ipPort="size" direction="IN" size="4" pragma="" connectionIpPort="ps7_M_AXI_GP0" connectionDm="AXILITE"\>
+		<arg name="dim" ipPort="dim" direction="IN" size="4" pragma="" connectionIpPort="ps7_M_AXI_GP0" connectionDm="AXILITE"\>
+		<arg name="threshold" ipPort="threshold" direction="IN" size="4" pragma="" connectionIpPort="ps7_M_AXI_GP0" connectionDm="AXILITE"\>
+		<arg name="data0" ipPort="data0_offset" direction="IN" size="16*4" pragma="" connectionIpPort="ps7_S_AXI_ACP" connectionDm="AXIMM"\>
+		<arg name="data1" ipPort="data1_V" direction="IN" size="(size)*16" pragma="" connectionIpPort="ps7_S_AXI_ACP" connectionDm="AXIMM"\>
+		<arg name="data_out" ipPort="data_out_V" direction="OUT" size="(size)*16" pragma="" connectionIpPort="ps7_S_AXI_ACP" connectionDm="AXIMM"\>
+	</accel>
+	<call accel="myFuncAccel41" site="main.cpp:127:2">
+		<arg ipPort="size" size="4" memType="paged" setup="0" transfer="13"/>
+		<arg ipPort="dim" size="4" memType="paged" setup="0" transfer="13"/>
+		<arg ipPort="threshold" size="4" memType="paged" setup="0" transfer="13"/>
+		<arg ipPort="data0_offset" size="(dim*dim) * 4" memType="PHYSICAL_CONTIGUOUS" setup="475" transfer="2029"/>
+		<arg ipPort="data1_V" size="(loops) * 16" memType="PHYSICAL_CONTIGUOUS" setup="976" transfer="14005540"/>
+		<arg ipPort="data_out_V" size="(loops) * 16" memType="PHYSICAL_CONTIGUOUS" setup="976" transfer="14005540"/>
+	</call>
+	<call accel="myFuncAccel42" site="main.cpp:138:2">
+		<arg ipPort="size" size="4" memType="paged" setup="0" transfer="13"/>
+		<arg ipPort="dim" size="4" memType="paged" setup="0" transfer="13"/>
+		<arg ipPort="threshold" size="4" memType="paged" setup="0" transfer="13"/>
+		<arg ipPort="data0_offset" size="(dim*dim) * 4" memType="PHYSICAL_CONTIGUOUS" setup="475" transfer="2029"/>
+		<arg ipPort="data1_V" size="(loops) * 16" memType="PHYSICAL_CONTIGUOUS" setup="976" transfer="14005540"/>
+		<arg ipPort="data_out_V" size="(loops) * 16" memType="PHYSICAL_CONTIGUOUS" setup="976" transfer="14005540"/>
+	</call>
+</dmn>
+</html>

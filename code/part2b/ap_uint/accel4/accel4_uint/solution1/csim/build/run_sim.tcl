@@ -8,7 +8,7 @@ set ::env(LD_LIBRARY_PATH) $::env(LD_LIBRARY_PATH):/media/manolis/90GB/Xilinx/Vi
 set ::env(LD_LIBRARY_PATH) $::env(LD_LIBRARY_PATH):/media/manolis/90GB/Xilinx/Vivado/2019.1/lnx64/tools/fir_v7_0
 set ::env(LD_LIBRARY_PATH) $::env(LD_LIBRARY_PATH):/media/manolis/90GB/Xilinx/Vivado/2019.1/lnx64/tools/dds_v6_0
 set ::env(LD_LIBRARY_PATH) $::env(LD_LIBRARY_PATH):/usr/lib/x86_64-linux-gnu
-set ap_argv "0 1000 4 80"
+set ap_argv "0 10 4 80"
 set ::env(LD_LIBRARY_PATH) $::env(LD_LIBRARY_PATH):/media/manolis/90GB/Xilinx/Vivado/2019.1/lnx64/csim
 ### C sim ###
 if {![file exists csim.exe]} {

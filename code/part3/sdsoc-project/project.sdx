@@ -6,7 +6,15 @@
   </configuration>
   <configuration name="Release" id="com.xilinx.sdsoc.managedbuild.project.release.538787739">
     <configBuildOptions xsi:type="sdsproject:Option" insertapm="false" gensdcard="true" dmclkid="2" enableHwSwTrace="false" traceApplication="false">
-      <accelerator name="myFuncAccel4" filepath="src/myIP.cpp" clkid="2" location="/home/manolis/Documents/GitHub/HRY591-project/code/part3/sdsoc-project/src/myIP.cpp">
+      <accelerator name="myFuncAccel4_1" filepath="src/myIP.cpp" clkid="2" location="/home/manolis/Documents/GitHub/HRY591-project/code/part3/sdsoc-project/src/myIP.cpp">
+        <args name="size"/>
+        <args name="dim"/>
+        <args name="threshold"/>
+        <args name="data0"/>
+        <args name="data1"/>
+        <args name="data_out"/>
+      </accelerator>
+      <accelerator name="myFuncAccel4_2" filepath="src/myIP.cpp" clkid="2" location="/home/manolis/Documents/GitHub/HRY591-project/code/part3/sdsoc-project/src/myIP.cpp">
         <args name="size"/>
         <args name="dim"/>
         <args name="threshold"/>
@@ -15,8 +23,16 @@
         <args name="data_out"/>
       </accelerator>
     </configBuildOptions>
-    <lastBuildOptions xsi:type="sdsproject:Option" insertapm="false" gensdcard="true" dmclkid="2" enableHwSwTrace="false" traceApplication="false">
-      <accelerator name="myFuncAccel4" filepath="src/myIP.cpp" clkid="2" location="/home/manolis/Documents/GitHub/HRY591-project/code/part3/sdsoc-project/src/myIP.cpp">
+    <lastBuildOptions xsi:type="sdsproject:Option" insertapm="false" gensdcard="true" dmclkid="2" estimateSpeedup="true" enableHwSwTrace="false" traceApplication="false">
+      <accelerator name="myFuncAccel4_1" filepath="src/myIP.cpp" clkid="2" location="/home/manolis/Documents/GitHub/HRY591-project/code/part3/sdsoc-project/src/myIP.cpp">
+        <args name="size"/>
+        <args name="dim"/>
+        <args name="threshold"/>
+        <args name="data0"/>
+        <args name="data1"/>
+        <args name="data_out"/>
+      </accelerator>
+      <accelerator name="myFuncAccel4_2" filepath="src/myIP.cpp" clkid="2" location="/home/manolis/Documents/GitHub/HRY591-project/code/part3/sdsoc-project/src/myIP.cpp">
         <args name="size"/>
         <args name="dim"/>
         <args name="threshold"/>
