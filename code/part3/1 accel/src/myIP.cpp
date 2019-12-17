@@ -51,8 +51,6 @@ void myFuncAccel4 (unsigned int size, unsigned int dim, dataType_t threshold, da
 				#pragma HLS expression_balance
 				temp_dim[ k ] += temp0[ k*4 + l ] * temp1[ l ];
 			}
-			/* logo tou INTERFACE ap_stable, to hls gnwrizei oti h timh *
-			 * tou threshold einai sta8erh kai thn krataei se register  */
 			r += ( temp_dim[ k ] > threshold );
 		}
 

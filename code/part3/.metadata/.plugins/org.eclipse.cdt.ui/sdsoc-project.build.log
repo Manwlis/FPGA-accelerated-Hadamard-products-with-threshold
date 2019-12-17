@@ -1,7 +1,0 @@
-19:44:59 **** Clean-only build of configuration Release for project sdsoc-project ****
-make clean 
-rm -rf _sds sd_card  ./src/main.o ./src/myIP.o  ./src/main.d ./src/myIP.d  sdsoc-project.elf
- 
-
-19:44:59 Build Finished (took 431ms)
-

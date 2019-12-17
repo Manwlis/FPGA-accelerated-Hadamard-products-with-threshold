@@ -59,6 +59,7 @@ int main(int argc, char ** argv)
 	printf("\nSeed %u\nSize %u\nDimension %u\nThreshold %f\n", seed, size, dim, threshold);
 	fflush(stdout);	
 
+	// Oi pinakes pou 8a xrhsimopoihsei to hw ginetai allocate se continuous xwro xrhsimopoiwntas thn sds_alloc.
 	dataType_t * data0 = (dataType_t *) sds_alloc(sizeof(dataType_t)*dim*dim);
 	assert(data0!=NULL);
 
@@ -123,7 +124,6 @@ int main(int argc, char ** argv)
 	// klhsh accelerator
 	myFuncAccel4( size , dim , threshold , data0 , (dataType_bus*) data1 , (dataType_bus*) data2_hw );
 
-
 	clock_gettime(CLOCK_REALTIME, &timerStop_hw);
 	totalTime_hw = (timerStop_hw.tv_sec-timerStart_hw.tv_sec)+ (timerStop_hw.tv_nsec-timerStart_hw.tv_nsec) / BILLION;
 
@@ -157,7 +157,7 @@ int main(int argc, char ** argv)
 	if(flag)
 		printf("no errors\n\n");
 
-	// clear data
+	// clear data.
 	sds_free(data0);
 	sds_free(data1);
 	free(data2_sw);
