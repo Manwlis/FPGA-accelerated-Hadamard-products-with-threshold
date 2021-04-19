@@ -2,4 +2,4 @@
 
 Accelerated with High Level Synthesis tools on Zynq-7000. Reconfigurable Digital Systems project.
 
-Developed with Xilinx HLS & Xilinx SDSoC 2018
+Developed with Xilinx Vivado HLS & Xilinx Vivado SDSoC 2018
